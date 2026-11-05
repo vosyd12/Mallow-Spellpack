@@ -1,0 +1,187 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using UnityEngine;
+using UnityEngine.Pool;
+using Unity.Profiling;
+
+public sealed class DustBenchmarkPool : IObjectPool<LandingDust>
+{
+    public bool Measuring;
+    public int Created, Destroyed, Requests, Returns;
+    public long CallTicks, Allocated;
+    public readonly bool Pooled;
+    readonly LandingDust prefab;
+    readonly Transform parent;
+    readonly ObjectPool<LandingDust> pool;
+    readonly HashSet<LandingDust> live = new HashSet<LandingDust>();
+    public int CountInactive { get { return pool != null ? pool.CountInactive : 0; } }
+    public DustBenchmarkPool(LandingDust source, Transform root, bool pooled)
+    {
+        prefab = source; parent = root; Pooled = pooled;
+        if (pooled) pool = new ObjectPool<LandingDust>(Create, null, d => d.gameObject.SetActive(false), d => UnityEngine.Object.Destroy(d.gameObject), true, 40, 64);
+    }
+    LandingDust Create()
+    {
+        var d = UnityEngine.Object.Instantiate(prefab, parent);
+        d.SetPool(this);
+        if (Pooled) d.gameObject.SetActive(false);
+        live.Add(d);
+        if (Measuring) Created++;
+        return d;
+    }
+    public LandingDust Get() { return Pooled ? pool.Get() : Create(); }
+    public PooledObject<LandingDust> Get(out LandingDust element)
+    { element = Get(); return new PooledObject<LandingDust>(element, this); }
+    public void Emit(int index)
+    {
+        long bytes = GC.GetAllocatedBytesForCurrentThread();
+        long ticks = Stopwatch.GetTimestamp();
+        var d = Get();
+        d.transform.position = new Vector3((index % 8 - 3.5f) * .8f, ((index / 8) % 5 - 2) * .9f, 0);
+        var ps = d.GetComponent<ParticleSystem>();
+        ps.useAutoRandomSeed = false;
+        ps.randomSeed = (uint)(1234 + index);
+        d.gameObject.SetActive(true);
+        int kind = index % 3;
+        d.Play(kind == 0 ? 3.66f : kind == 1 ? 2.75f : 1.83f, kind == 0 ? 20 : kind == 1 ? 25 : 30);
+        if (Measuring)
+        {
+            Requests++; CallTicks += Stopwatch.GetTimestamp() - ticks;
+            Allocated += GC.GetAllocatedBytesForCurrentThread() - bytes;
+        }
+    }
+    public void Release(LandingDust element)
+    {
+        long bytes = GC.GetAllocatedBytesForCurrentThread();
+        long ticks = Stopwatch.GetTimestamp();
+        if (Pooled) pool.Release(element);
+        else { live.Remove(element); UnityEngine.Object.Destroy(element.gameObject); }
+        if (Measuring)
+        {
+            Returns++; if (!Pooled) Destroyed++;
+            CallTicks += Stopwatch.GetTimestamp() - ticks;
+            Allocated += GC.GetAllocatedBytesForCurrentThread() - bytes;
+        }
+    }
+    public void Clear()
+    {
+        Measuring = false;
+        foreach (var d in live) if (d != null) UnityEngine.Object.Destroy(d.gameObject);
+        live.Clear();
+    }
+    public void Warm()
+    {
+        if (!Pooled) return;
+        var objects = new LandingDust[40];
+        for (int i = 0; i < 40; i++) objects[i] = Get();
+        for (int i = 0; i < 40; i++) Release(objects[i]);
+    }
+}
+
+public sealed class DustBenchmarkRunner : MonoBehaviour
+{
+    public struct FrameData
+    {
+        public float ms;
+        public long gcBytes;
+    }
+    public sealed class Result
+    {
+        public string mode;
+        public int trial, rate, requests, returns, created, destroyed, gc0, gc1, gc2;
+        public double prewarmMs, prewarmBytes, callMs;
+        public long managedCallBytes;
+        public List<FrameData> frames;
+    }
+    LandingDust prefab;
+    DustBenchmarkPool adapter;
+    List<Result> results = new List<Result>(6);
+    List<FrameData> frames;
+    // ABBAAB order balances direction across consecutive pairs.
+    bool[] order = { false, true, true, false, false, true };
+    int[] rates = {70, 350, 700};
+    int rate;
+    int current = -1, phase, emitted, gc0, gc1, gc2;
+    float started;
+    double prewarmMs, prewarmBytes;
+    ProfilerRecorder gcRecorder;
+    bool recorderValid;
+    bool oldBackground;
+    public void Initialize(LandingDust source)
+    {
+        prefab = source;
+        oldBackground = Application.runInBackground;
+        Application.runInBackground = true;
+        foreach (var motion in UnityEngine.Object.FindObjectsByType<SlimeMotion>(FindObjectsSortMode.None)) motion.enabled = false;
+        foreach (var enemy in UnityEngine.Object.FindObjectsByType<Enemy>(FindObjectsSortMode.None)) enemy.enabled = false;
+        foreach (var player in UnityEngine.Object.FindObjectsByType<Player>(FindObjectsSortMode.None)) player.enabled = false;
+        foreach (var attack in UnityEngine.Object.FindObjectsByType<PlayerAttack>(FindObjectsSortMode.None)) attack.enabled = false;
+        foreach (var rb in UnityEngine.Object.FindObjectsByType<Rigidbody2D>(FindObjectsSortMode.None))
+        { rb.linearVelocity = Vector2.zero; rb.angularVelocity = 0; }
+        foreach (var d in UnityEngine.Object.FindObjectsByType<LandingDust>(FindObjectsSortMode.None))
+            d.GetComponent<ParticleSystem>().Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        gcRecorder = ProfilerRecorder.StartNew(ProfilerCategory.Memory, "GC Allocated In Frame", 1);
+        recorderValid = gcRecorder.Valid;
+        NextCase();
+    }
+    void NextCase()
+    {
+        if (adapter != null) adapter.Clear();
+        current++;
+        if (current >= order.Length * rates.Length) { Finish(); return; }
+        rate = rates[current / order.Length];
+        adapter = new DustBenchmarkPool(prefab, transform, order[current % order.Length]);
+        long bytes = GC.GetAllocatedBytesForCurrentThread();
+        long ticks = Stopwatch.GetTimestamp();
+        adapter.Warm();
+        prewarmMs = (Stopwatch.GetTimestamp() - ticks) * 1000.0 / Stopwatch.Frequency;
+        prewarmBytes = GC.GetAllocatedBytesForCurrentThread() - bytes;
+        frames = new List<FrameData>(5000);
+        started = Time.unscaledTime; emitted = 0; phase = 0;
+    }
+    void LateUpdate()
+    {
+        if (current >= order.Length * rates.Length) return;
+        float elapsed = Time.unscaledTime - started;
+        // 1s warmup, then .45s drain before the measured work.
+        if (phase == 0)
+        {
+            while (emitted < rate && emitted < elapsed * rate) adapter.Emit(emitted++);
+            if (elapsed < 1.45f) return;
+            phase = 1; started = Time.unscaledTime; emitted = 0;
+            gc0 = GC.CollectionCount(0); gc1 = GC.CollectionCount(1); gc2 = GC.CollectionCount(2);
+            adapter.Measuring = true;
+            return;
+        }
+        // Exactly 210 bursts at 70/sec + .5s tail to include final returns.
+        while (emitted < rate * 3 && emitted < elapsed * rate) adapter.Emit(emitted++);
+        frames.Add(new FrameData { ms = Time.unscaledDeltaTime * 1000, gcBytes = recorderValid ? gcRecorder.LastValue : -1 });
+        if (elapsed < 3.5f) return;
+        adapter.Measuring = false;
+        results.Add(new Result {
+            mode = order[current % order.Length] ? "pool" : "instantiate_destroy", trial = current + 1, rate = rate,
+            requests = adapter.Requests, returns = adapter.Returns, created = adapter.Created, destroyed = adapter.Destroyed,
+            callMs = adapter.CallTicks * 1000.0 / Stopwatch.Frequency, managedCallBytes = adapter.Allocated,
+            gc0 = GC.CollectionCount(0) - gc0, gc1 = GC.CollectionCount(1) - gc1, gc2 = GC.CollectionCount(2) - gc2,
+            prewarmMs = prewarmMs, prewarmBytes = prewarmBytes, frames = frames
+        });
+        UnityEditor.SessionState.SetString("Mallow.DustBenchmark.Progress", "Completed " + results.Count + "/18");
+        NextCase();
+    }
+    void Finish()
+    {
+        gcRecorder.Dispose();
+        var data = new { environment = Application.unityVersion + " WindowsEditor", recorderValid = recorderValid,
+            vSync = QualitySettings.vSyncCount, targetFps = Application.targetFrameRate, results = results };
+        System.IO.File.WriteAllText("Library/DustPerformance/results.json", Newtonsoft.Json.JsonConvert.SerializeObject(data));
+        UnityEditor.SessionState.SetString("Mallow.DustBenchmark.Progress", "Complete");
+        Application.runInBackground = oldBackground;
+        enabled = false;
+    }
+    void OnDestroy()
+    {
+        if (gcRecorder.Valid) gcRecorder.Dispose();
+        Application.runInBackground = oldBackground;
+    }
+}

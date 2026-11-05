@@ -1,0 +1,29 @@
+절대 규칙
+해당 변경된 이력이 존재한 경우에만 날짜별로 구분해서 관리한다.
+간단한 이력만 남기고 자세한 이력은 문서 폴더에 yyyy-mm-dd 짤막한 변경 이력을 파일명으로 작성해서 관리한다.
+
+## 2026-11-06
+
+- 생성·전투·도약·먼지 풀링의 구현 현황과 문제 해결 경위, 남은 연결을 정리하고 마일스톤·문서 진입점을 최신화했다. [구현 정리](문서/2026-11-06-COMBAT-AND-SLIME-IMPLEMENTATION.md) · [공유·재개](문서/2026-11-06-PROJECT-HANDOFF.md)
+
+- 먼지 생성·삭제와 풀링을 기본·5배·10배 부하에서 비교하고 수치·그래프·측정 한계를 기록했다. [성능 비교](문서/2026-11-06-DUST-POOL-PERFORMANCE.md)
+
+- 씬에 공용 먼지 풀을 연결하고 MCP에서 착지 재생·반환을 확인했다. [풀링 검증·남은 전투 연결](문서/2026-11-06-LANDING-DUST-POOL-CHECK.md)
+
+- 착지 먼지 이미지·재질·Particle System Prefab을 준비했다. [설정·미리보기·코드 연결 범위](문서/2026-11-06-LANDING-DUST-ASSETS.md)
+
+## 2026-11-05
+
+- 플레이어와 소·중·대 슬라임 외형 이미지를 적용하고 대형에 콧수염을 표현했다. [이미지·Prefab 위치 및 확인](문서/2026-11-05-CHARACTER-VISUALS.md)
+
+- Stage 가로·세로와 경계 벽을 1.5배 확대하고 Main Camera의 Orthographic Size를 7.5로 조정했다. [크기 변경](문서/2026-11-05-STAGE-SCALE.md)
+
+- Stage Prefab에 네 방향의 충돌 벽을 추가했다. [경계 설정](문서/2026-11-05-STAGE-BOUNDS.md)
+
+- 사용자 피드백에 따라 쿼터뷰 변경을 취소하고 카메라를 이전 정면 설정으로 복원했다. [복원 기록](문서/2026-11-05-QUARTER-VIEW.md#원상복구)
+
+- Main Camera를 Stage 중심의 Orthographic 쿼터뷰로 변경했다. [카메라 설정](문서/2026-11-05-QUARTER-VIEW.md)
+
+- Hierarchy를 SceneSetup·Stage·Characters·UI로 정리하고 Stage 중심으로 Scene 뷰를 맞췄다. [정리 범위](문서/2026-11-05-HIERARCHY-ORGANIZATION.md)
+
+- SampleScene에 Stage 타일 바닥을 추가했다. [구성 및 확인](문서/2026-11-05-STAGE-TILES.md)

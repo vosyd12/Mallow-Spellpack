@@ -1,0 +1,1 @@
+{"success": true, "message": "Retrieved 1 log entries.", "data": [{"type": "Error", "message": "Assets\\Scripts\\Stage\\Stage.cs(7,1): error CS1519: Invalid token '}' in class, record, struct, or interface member declaration\n", "file": "Assets\\Scripts\\Stage\\Stage.cs", "line": 7, "stackTrace": null}]}

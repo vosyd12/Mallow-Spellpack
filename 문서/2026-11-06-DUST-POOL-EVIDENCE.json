@@ -1,0 +1,662 @@
+{
+  "sourceSha256": {
+    "Assets/Scripts/Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets/Scripts/Effects/LandingDust.cs": "a1e302d84f4f4b45efa833695df4e177581fc1f92bd989fbbce461dd3d538603",
+    "Assets/Scripts/Effects/LandingDustPool.cs": "659db9589b51c73a56885f86367b2d7b2e4a35e9ed290ecf3f54d35647270e02",
+    "Assets/Scripts/Enemy/Enemy.cs": "4313124dfebe6f33ce68eba08c98d05bf8e04dbbebd6632f0e3951378fc683bb",
+    "Assets/Scripts/Enemy/EnemySpawner.cs": "7d127919feb4e3bddd15231ade321d5623819d0700d3f47f1edf8f2f0926a9ae",
+    "Assets/Scripts/Enemy/SlimeMotion.cs": "48518a3500837ef7023a83855ae7ee2437aff585054dcd8205ca963eebe44c08",
+    "Assets/Scripts/Player/Player.cs": "65f4f70afaf2e0959d594614be3a1c542948b1becc7cc17d87a30fa31c5265cf",
+    "Assets/Scripts/Player/PlayerAttack.cs": "d73ec836bf579211981500c5d4fa99af96dfe7f52928e15969923d51070a2eb8",
+    "Assets/Scripts/Stage/Stage.cs": "5c6575063fe48998d8e0516f22ee719ccc557f8b27fc84ce0e5993726897bc4c",
+    "Assets/Scripts/StateDTO/EnemyState.cs": "2ec1b8af80130678368e424f6c1147e7bd9b0b4dc1cd640c9db080275969ee27",
+    "Assets/Scripts/StateDTO/PlayerState.cs": "353b5474b59a9f82f4196e2629da0553c610fe4b36eb4cee8204aad259f15519",
+    "Assets/Scenes/SampleScene.unity": "a4a56ea608bf012c76e8b623be65e1baf9f139fc65235bafe28e4b0b0f19fcef",
+    "Assets/Prefab/Effects/LandingDust.prefab": "82bed4fc61cf7651f19fb9194ea4c6babe63017390ee04d3bfb81c99b74e6537"
+  },
+  "observation": {
+    "gameSeconds": 5.042259,
+    "initialTotal": {
+      "time": 20.6688824,
+      "total": 40,
+      "active": 29,
+      "inactive": 11
+    },
+    "finalTotal": 40,
+    "maxTotal": 40,
+    "observedRentals": 264,
+    "observedReturns": 288,
+    "activeFlagMismatches": 0,
+    "uniqueObjects": 40,
+    "enemyCount": 40,
+    "playerTarget": null,
+    "samples": [
+      {
+        "time": 20.6688824,
+        "total": 40,
+        "active": 29,
+        "inactive": 11
+      },
+      {
+        "time": 20.7373085,
+        "total": 40,
+        "active": 14,
+        "inactive": 26
+      },
+      {
+        "time": 20.8045959,
+        "total": 40,
+        "active": 7,
+        "inactive": 33
+      },
+      {
+        "time": 20.85602,
+        "total": 40,
+        "active": 1,
+        "inactive": 39
+      },
+      {
+        "time": 20.90627,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 20.9569588,
+        "total": 40,
+        "active": 6,
+        "inactive": 34
+      },
+      {
+        "time": 21.0075264,
+        "total": 40,
+        "active": 18,
+        "inactive": 22
+      },
+      {
+        "time": 21.0580521,
+        "total": 40,
+        "active": 26,
+        "inactive": 14
+      },
+      {
+        "time": 21.1093769,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 21.1598854,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 21.2102528,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 21.26068,
+        "total": 40,
+        "active": 25,
+        "inactive": 15
+      },
+      {
+        "time": 21.3115826,
+        "total": 40,
+        "active": 15,
+        "inactive": 25
+      },
+      {
+        "time": 21.3622646,
+        "total": 40,
+        "active": 5,
+        "inactive": 35
+      },
+      {
+        "time": 21.4130764,
+        "total": 40,
+        "active": 4,
+        "inactive": 36
+      },
+      {
+        "time": 21.4635658,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 21.5144768,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 21.5655327,
+        "total": 40,
+        "active": 15,
+        "inactive": 25
+      },
+      {
+        "time": 21.6162338,
+        "total": 40,
+        "active": 25,
+        "inactive": 15
+      },
+      {
+        "time": 21.66708,
+        "total": 40,
+        "active": 35,
+        "inactive": 5
+      },
+      {
+        "time": 21.7178574,
+        "total": 40,
+        "active": 36,
+        "inactive": 4
+      },
+      {
+        "time": 21.7682476,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 21.8192558,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 21.87004,
+        "total": 40,
+        "active": 26,
+        "inactive": 14
+      },
+      {
+        "time": 21.92018,
+        "total": 40,
+        "active": 15,
+        "inactive": 25
+      },
+      {
+        "time": 21.9704227,
+        "total": 40,
+        "active": 7,
+        "inactive": 33
+      },
+      {
+        "time": 22.02055,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 22.071104,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 22.12153,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 22.17265,
+        "total": 40,
+        "active": 5,
+        "inactive": 35
+      },
+      {
+        "time": 22.2228813,
+        "total": 40,
+        "active": 16,
+        "inactive": 24
+      },
+      {
+        "time": 22.2730789,
+        "total": 40,
+        "active": 23,
+        "inactive": 17
+      },
+      {
+        "time": 22.3238983,
+        "total": 40,
+        "active": 36,
+        "inactive": 4
+      },
+      {
+        "time": 22.3745728,
+        "total": 40,
+        "active": 40,
+        "inactive": 0
+      },
+      {
+        "time": 22.424902,
+        "total": 40,
+        "active": 40,
+        "inactive": 0
+      },
+      {
+        "time": 22.4752579,
+        "total": 40,
+        "active": 38,
+        "inactive": 2
+      },
+      {
+        "time": 22.5258141,
+        "total": 40,
+        "active": 27,
+        "inactive": 13
+      },
+      {
+        "time": 22.5762386,
+        "total": 40,
+        "active": 18,
+        "inactive": 22
+      },
+      {
+        "time": 22.6268978,
+        "total": 40,
+        "active": 5,
+        "inactive": 35
+      },
+      {
+        "time": 22.6776237,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 22.7278423,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 22.7781982,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 22.8283215,
+        "total": 40,
+        "active": 11,
+        "inactive": 29
+      },
+      {
+        "time": 22.8793144,
+        "total": 40,
+        "active": 18,
+        "inactive": 22
+      },
+      {
+        "time": 22.93039,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 22.9805641,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 23.0316849,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 23.08257,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 23.1326447,
+        "total": 40,
+        "active": 22,
+        "inactive": 18
+      },
+      {
+        "time": 23.18371,
+        "total": 40,
+        "active": 15,
+        "inactive": 25
+      },
+      {
+        "time": 23.23378,
+        "total": 40,
+        "active": 8,
+        "inactive": 32
+      },
+      {
+        "time": 23.2845116,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 23.3356514,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 23.3862057,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 23.4364185,
+        "total": 40,
+        "active": 15,
+        "inactive": 25
+      },
+      {
+        "time": 23.4864864,
+        "total": 40,
+        "active": 26,
+        "inactive": 14
+      },
+      {
+        "time": 23.53661,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 23.5876141,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 23.6378918,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 23.6883087,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 23.7381649,
+        "total": 40,
+        "active": 25,
+        "inactive": 15
+      },
+      {
+        "time": 23.788517,
+        "total": 40,
+        "active": 14,
+        "inactive": 26
+      },
+      {
+        "time": 23.8395462,
+        "total": 40,
+        "active": 5,
+        "inactive": 35
+      },
+      {
+        "time": 23.8897572,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 23.940609,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 23.9916363,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 24.0421581,
+        "total": 40,
+        "active": 6,
+        "inactive": 34
+      },
+      {
+        "time": 24.0922413,
+        "total": 40,
+        "active": 18,
+        "inactive": 22
+      },
+      {
+        "time": 24.1426964,
+        "total": 40,
+        "active": 35,
+        "inactive": 5
+      },
+      {
+        "time": 24.19312,
+        "total": 40,
+        "active": 40,
+        "inactive": 0
+      },
+      {
+        "time": 24.24336,
+        "total": 40,
+        "active": 40,
+        "inactive": 0
+      },
+      {
+        "time": 24.29376,
+        "total": 40,
+        "active": 40,
+        "inactive": 0
+      },
+      {
+        "time": 24.3444462,
+        "total": 40,
+        "active": 35,
+        "inactive": 5
+      },
+      {
+        "time": 24.3946285,
+        "total": 40,
+        "active": 24,
+        "inactive": 16
+      },
+      {
+        "time": 24.4449863,
+        "total": 40,
+        "active": 13,
+        "inactive": 27
+      },
+      {
+        "time": 24.4958649,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 24.5462532,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 24.5972233,
+        "total": 40,
+        "active": 0,
+        "inactive": 40
+      },
+      {
+        "time": 24.6483574,
+        "total": 40,
+        "active": 5,
+        "inactive": 35
+      },
+      {
+        "time": 24.69891,
+        "total": 40,
+        "active": 11,
+        "inactive": 29
+      },
+      {
+        "time": 24.74946,
+        "total": 40,
+        "active": 22,
+        "inactive": 18
+      },
+      {
+        "time": 24.8006535,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 24.8511467,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 24.9015827,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 24.95161,
+        "total": 40,
+        "active": 28,
+        "inactive": 12
+      },
+      {
+        "time": 25.0022545,
+        "total": 40,
+        "active": 23,
+        "inactive": 17
+      },
+      {
+        "time": 25.0534363,
+        "total": 40,
+        "active": 21,
+        "inactive": 19
+      },
+      {
+        "time": 25.1041069,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 25.154213,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 25.2045746,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 25.254858,
+        "total": 40,
+        "active": 9,
+        "inactive": 31
+      },
+      {
+        "time": 25.30509,
+        "total": 40,
+        "active": 18,
+        "inactive": 22
+      },
+      {
+        "time": 25.3564758,
+        "total": 40,
+        "active": 19,
+        "inactive": 21
+      },
+      {
+        "time": 25.4076672,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 25.4586029,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 25.5081253,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 25.5594749,
+        "total": 40,
+        "active": 31,
+        "inactive": 9
+      },
+      {
+        "time": 25.6100864,
+        "total": 40,
+        "active": 24,
+        "inactive": 16
+      },
+      {
+        "time": 25.6604252,
+        "total": 40,
+        "active": 13,
+        "inactive": 27
+      },
+      {
+        "time": 25.7111416,
+        "total": 40,
+        "active": 5,
+        "inactive": 35
+      }
+    ]
+  },
+  "flow": {
+    "success": true,
+    "message": "Code executed successfully.",
+    "data": {
+      "result": "{\"outside\":0,\"prepare\":5,\"jump\":35,\"land\":0,\"playerTarget\":false,\"spawnerAssigned\":false,\"poolScaleX\":1.0,\"poolScaleY\":1.0,\"poolScaleZ\":1.0}",
+      "compiler": "codedom"
+    }
+  },
+  "cleanup": {
+    "success": true,
+    "message": "Code executed successfully.",
+    "data": {
+      "result": {
+        "playing": false,
+        "background": false,
+        "timeScale": 1.0,
+        "sceneDirty": true
+      },
+      "compiler": "codedom"
+    }
+  },
+  "consoleAfterStop": {
+    "success": true,
+    "message": "Retrieved 0 log entries.",
+    "data": []
+  }
+}

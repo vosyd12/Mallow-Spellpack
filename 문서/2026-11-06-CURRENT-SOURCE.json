@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-06",
+  "basis": "Saved files during documentation/publish; no new execution validation",
+  "sha256": {
+    "Assets/Scripts/Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets/Scripts/Effects/LandingDust.cs": "a1e302d84f4f4b45efa833695df4e177581fc1f92bd989fbbce461dd3d538603",
+    "Assets/Scripts/Effects/LandingDustPool.cs": "659db9589b51c73a56885f86367b2d7b2e4a35e9ed290ecf3f54d35647270e02",
+    "Assets/Scripts/Enemy/Enemy.cs": "4313124dfebe6f33ce68eba08c98d05bf8e04dbbebd6632f0e3951378fc683bb",
+    "Assets/Scripts/Enemy/EnemySpawner.cs": "7d127919feb4e3bddd15231ade321d5623819d0700d3f47f1edf8f2f0926a9ae",
+    "Assets/Scripts/Enemy/SlimeMotion.cs": "48518a3500837ef7023a83855ae7ee2437aff585054dcd8205ca963eebe44c08",
+    "Assets/Scripts/Player/Player.cs": "65f4f70afaf2e0959d594614be3a1c542948b1becc7cc17d87a30fa31c5265cf",
+    "Assets/Scripts/Player/PlayerAttack.cs": "d73ec836bf579211981500c5d4fa99af96dfe7f52928e15969923d51070a2eb8",
+    "Assets/Scripts/Stage/Stage.cs": "9d32ae55927afbdbd4707b8f1e1ca500035871b4b2fed29385c7324dea6e582f",
+    "Assets/Scripts/StateDTO/EnemyState.cs": "2ec1b8af80130678368e424f6c1147e7bd9b0b4dc1cd640c9db080275969ee27",
+    "Assets/Scripts/StateDTO/PlayerState.cs": "353b5474b59a9f82f4196e2629da0553c610fe4b36eb4cee8204aad259f15519",
+    "Assets/Prefab/Bullet.prefab": "adb379892bfc3dc09d1e6cfdc4e7af7e7d74465aa1246542474d1f46a33f4315",
+    "Assets/Prefab/SlimeLarge.prefab": "ae488fd26eac4b8df452a418cf8f87ee813824a197b323f966cc5b1c41144f33",
+    "Assets/Prefab/SlimeMedium.prefab": "9602ec02b7d5df79938c312235114b4b8dd62b153c7ca400b269e395261392e1",
+    "Assets/Prefab/SlimeSmall.prefab": "f7b8cfb6f2214a5866c567f3243e82bb92c59bec6a0893f6a57f763f0e611f01",
+    "Assets/Prefab/Stage.prefab": "1121b1ba617f9156c122f3aa13cdbe0d46cbc30ee86e7e0ac7bba86f211df904",
+    "Assets/Prefab/Effects/LandingDust.prefab": "82bed4fc61cf7651f19fb9194ea4c6babe63017390ee04d3bfb81c99b74e6537",
+    "Assets/Scenes/SampleScene.unity": "a4a56ea608bf012c76e8b623be65e1baf9f139fc65235bafe28e4b0b0f19fcef",
+    "Packages/manifest.json": "25ebdbb30b2dd857f72d2cb103c1b7a7ea8fe66a8026d3b8b13e092dceb9bb80",
+    "Packages/packages-lock.json": "3a341864fc0494ee75cf87cc7d3fc479332aab0deafa4fe79e172cd594c1b843",
+    "ProjectSettings/ProjectVersion.txt": "68312bd68c3d81c0dabeaa9905955fd523a6a184f4e6ae180377a1cdb8b2fd42"
+  }
+}

@@ -1,0 +1,519 @@
+[
+  {
+    "rate": 70,
+    "mode": "instantiate_destroy",
+    "trials": 2,
+    "requestsPerTrial": 210,
+    "callCpuUsPerEffect": 210.46809523809526,
+    "callCpuUsPerEffectRange": [
+      197.19190476190477,
+      223.74428571428572
+    ],
+    "managedCallBytesPerEffect": null,
+    "managedCallBytesPerEffectRange": null,
+    "created": 210.0,
+    "createdRange": [
+      210,
+      210
+    ],
+    "destroyed": 210.0,
+    "destroyedRange": [
+      210,
+      210
+    ],
+    "frameMeanMs": 1.2317755265487362,
+    "frameMeanMsRange": [
+      1.2033043995971124,
+      1.26024665350036
+    ],
+    "frameMedianMs": 1.16857642,
+    "frameMedianMsRange": [
+      1.14080215,
+      1.19635069
+    ],
+    "frameP95Ms": 1.6295923832499999,
+    "frameP95MsRange": [
+      1.5921442719999999,
+      1.6670404945000001
+    ],
+    "frameP99Ms": 2.12695559185,
+    "frameP99MsRange": [
+      2.0598785492,
+      2.1940326345
+    ],
+    "frameMaxMs": 3.112900375,
+    "frameMaxMsRange": [
+      2.72059941,
+      3.50520134
+    ],
+    "framesOver16_67Percent": 0.0,
+    "framesOver16_67PercentRange": [
+      0.0,
+      0.0
+    ],
+    "prewarmMs": 0.0,
+    "prewarmMsRange": [
+      0.0,
+      0.0
+    ],
+    "prewarmBytes": null,
+    "prewarmBytesRange": null,
+    "frameGcMeanBytes": 9251.136503765158,
+    "frameGcMeanBytesRange": [
+      9245.264008250258,
+      9257.008999280057
+    ],
+    "frameGcMeanKiB": 9.034312991958162,
+    "frameGcMeanKiBRange": [
+      9.028578133056893,
+      9.04004785085943
+    ],
+    "gcCollections": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "rate": 70,
+    "mode": "pool",
+    "trials": 3,
+    "requestsPerTrial": 210,
+    "callCpuUsPerEffect": 27.519523809523808,
+    "callCpuUsPerEffectRange": [
+      26.624761904761904,
+      28.066666666666666
+    ],
+    "managedCallBytesPerEffect": null,
+    "managedCallBytesPerEffectRange": null,
+    "created": 0,
+    "createdRange": [
+      0,
+      0
+    ],
+    "destroyed": 0,
+    "destroyedRange": [
+      0,
+      0
+    ],
+    "frameMeanMs": 1.2003934161231138,
+    "frameMeanMsRange": [
+      1.180352866408294,
+      1.2437239440895205
+    ],
+    "frameMedianMs": 1.1596512799999998,
+    "frameMedianMsRange": [
+      1.13399947,
+      1.20170069
+    ],
+    "frameP95Ms": 1.5555998425,
+    "frameP95MsRange": [
+      1.508421985,
+      1.5776700609999996
+    ],
+    "frameP99Ms": 1.8736004754999993,
+    "frameP99MsRange": [
+      1.8667718704999998,
+      2.0148892146
+    ],
+    "frameMaxMs": 2.92889762,
+    "frameMaxMsRange": [
+      2.734694,
+      5.63309956
+    ],
+    "framesOver16_67Percent": 0.0,
+    "framesOver16_67PercentRange": [
+      0.0,
+      0.0
+    ],
+    "prewarmMs": 5.0063,
+    "prewarmMsRange": [
+      4.708,
+      5.3142
+    ],
+    "prewarmBytes": null,
+    "prewarmBytesRange": null,
+    "frameGcMeanBytes": 9222.21308159137,
+    "frameGcMeanBytesRange": [
+      9218.911522633745,
+      9231.986500888099
+    ],
+    "frameGcMeanKiB": 9.006067462491572,
+    "frameGcMeanKiBRange": [
+      9.002843283822017,
+      9.015611817273534
+    ],
+    "gcCollections": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "rate": 350,
+    "mode": "instantiate_destroy",
+    "trials": 3,
+    "requestsPerTrial": 1050,
+    "callCpuUsPerEffect": 176.32561904761903,
+    "callCpuUsPerEffectRange": [
+      170.4684761904762,
+      186.14990476190476
+    ],
+    "managedCallBytesPerEffect": null,
+    "managedCallBytesPerEffectRange": null,
+    "created": 1050,
+    "createdRange": [
+      1050,
+      1050
+    ],
+    "destroyed": 1050,
+    "destroyedRange": [
+      1050,
+      1050
+    ],
+    "frameMeanMs": 1.560657244373161,
+    "frameMeanMsRange": [
+      1.5005782257325333,
+      2.044869811175173
+    ],
+    "frameMedianMs": 1.49559951,
+    "frameMedianMsRange": [
+      1.483297945,
+      1.5560019
+    ],
+    "frameP95Ms": 1.960411775,
+    "frameP95MsRange": [
+      1.9021811280000005,
+      1.9742381239999998
+    ],
+    "frameP99Ms": 2.8074231737999993,
+    "frameP99MsRange": [
+      2.717733723999999,
+      2.8161340182999965
+    ],
+    "frameMaxMs": 4.20389748,
+    "frameMaxMsRange": [
+      3.89930558,
+      1236.53
+    ],
+    "framesOver16_67Percent": 0.0,
+    "framesOver16_67PercentRange": [
+      0.0,
+      0.04325259515570934
+    ],
+    "prewarmMs": 0.0,
+    "prewarmMsRange": [
+      0.0,
+      0.0001
+    ],
+    "prewarmBytes": null,
+    "prewarmBytesRange": null,
+    "frameGcMeanBytes": 9434.416406598306,
+    "frameGcMeanBytesRange": [
+      9414.547577854672,
+      9438.245177882554
+    ],
+    "frameGcMeanKiB": 9.213297272068658,
+    "frameGcMeanKiBRange": [
+      9.193894118998703,
+      9.217036306525932
+    ],
+    "gcCollections": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "rate": 350,
+    "mode": "pool",
+    "trials": 3,
+    "requestsPerTrial": 1050,
+    "callCpuUsPerEffect": 28.88714285714286,
+    "callCpuUsPerEffectRange": [
+      28.751333333333335,
+      29.316190476190478
+    ],
+    "managedCallBytesPerEffect": null,
+    "managedCallBytesPerEffectRange": null,
+    "created": 49,
+    "createdRange": [
+      49,
+      49
+    ],
+    "destroyed": 0,
+    "destroyedRange": [
+      0,
+      0
+    ],
+    "frameMeanMs": 1.398647103264083,
+    "frameMeanMsRange": [
+      1.3443092168410138,
+      1.3996598945245902
+    ],
+    "frameMedianMs": 1.36590135,
+    "frameMedianMsRange": [
+      1.338297185,
+      1.36919641
+    ],
+    "frameP95Ms": 1.74109972,
+    "frameP95MsRange": [
+      1.644585393,
+      1.7775191000000001
+    ],
+    "frameP99Ms": 2.142099,
+    "frameP99MsRange": [
+      2.0566860122999984,
+      2.2258240338000004
+    ],
+    "frameMaxMs": 2.89640021,
+    "frameMaxMsRange": [
+      2.51510072,
+      4.167694
+    ],
+    "framesOver16_67Percent": 0.0,
+    "framesOver16_67PercentRange": [
+      0.0,
+      0.0
+    ],
+    "prewarmMs": 4.976,
+    "prewarmMsRange": [
+      4.883,
+      5.0959
+    ],
+    "prewarmBytes": null,
+    "prewarmBytesRange": null,
+    "frameGcMeanBytes": 9249.629244906113,
+    "frameGcMeanBytesRange": [
+      9246.780721966206,
+      9260.24350259896
+    ],
+    "frameGcMeanKiB": 9.032841059478626,
+    "frameGcMeanKiBRange": [
+      9.030059298795123,
+      9.043206545506797
+    ],
+    "gcCollections": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "rate": 700,
+    "mode": "instantiate_destroy",
+    "trials": 3,
+    "requestsPerTrial": 2100,
+    "callCpuUsPerEffect": 159.29690476190476,
+    "callCpuUsPerEffectRange": [
+      159.2557619047619,
+      179.55738095238095
+    ],
+    "managedCallBytesPerEffect": null,
+    "managedCallBytesPerEffectRange": null,
+    "created": 2100,
+    "createdRange": [
+      2100,
+      2100
+    ],
+    "destroyed": 2100,
+    "destroyedRange": [
+      2100,
+      2100
+    ],
+    "frameMeanMs": 1.8500279633012684,
+    "frameMeanMsRange": [
+      1.8195514548799376,
+      1.975242725672122
+    ],
+    "frameMedianMs": 1.846697925,
+    "frameMedianMsRange": [
+      1.84609914,
+      1.96605015
+    ],
+    "frameP95Ms": 2.9881827215,
+    "frameP95MsRange": [
+      2.9366545189999997,
+      3.1805328164999995
+    ],
+    "frameP99Ms": 3.247948791199999,
+    "frameP99MsRange": [
+      3.164776335,
+      3.4759638743999997
+    ],
+    "frameMaxMs": 4.019303,
+    "frameMaxMsRange": [
+      3.926502,
+      4.059999
+    ],
+    "framesOver16_67Percent": 0.0,
+    "framesOver16_67PercentRange": [
+      0.0,
+      0.0
+    ],
+    "prewarmMs": 0.0,
+    "prewarmMsRange": [
+      0.0,
+      0.0001
+    ],
+    "prewarmBytes": null,
+    "prewarmBytesRange": null,
+    "frameGcMeanBytes": 9950.652748414377,
+    "frameGcMeanBytesRange": [
+      9823.193866943868,
+      10020.713318284425
+    ],
+    "frameGcMeanKiB": 9.717434324623415,
+    "frameGcMeanKiBRange": [
+      9.59296276068737,
+      9.785852849887133
+    ],
+    "gcCollections": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  {
+    "rate": 700,
+    "mode": "pool",
+    "trials": 3,
+    "requestsPerTrial": 2100,
+    "callCpuUsPerEffect": 29.973095238095237,
+    "callCpuUsPerEffectRange": [
+      29.740285714285715,
+      30.219761904761906
+    ],
+    "managedCallBytesPerEffect": null,
+    "managedCallBytesPerEffectRange": null,
+    "created": 162,
+    "createdRange": [
+      162,
+      162
+    ],
+    "destroyed": 0,
+    "destroyedRange": [
+      0,
+      0
+    ],
+    "frameMeanMs": 1.62802069794,
+    "frameMeanMsRange": [
+      1.6115861879714548,
+      1.660463378059298
+    ],
+    "frameMedianMs": 1.65215063,
+    "frameMedianMsRange": [
+      1.647349835,
+      1.705799995
+    ],
+    "frameP95Ms": 1.9710076435,
+    "frameP95MsRange": [
+      1.9573863335,
+      1.9763758124999997
+    ],
+    "frameP99Ms": 2.4024430031999966,
+    "frameP99MsRange": [
+      2.3954104046999998,
+      2.4549745154
+    ],
+    "frameMaxMs": 2.85760331,
+    "frameMaxMsRange": [
+      2.69199967,
+      2.862805
+    ],
+    "framesOver16_67Percent": 0.0,
+    "framesOver16_67PercentRange": [
+      0.0,
+      0.0
+    ],
+    "prewarmMs": 5.0037,
+    "prewarmMsRange": [
+      4.9599,
+      5.0338
+    ],
+    "prewarmBytes": null,
+    "prewarmBytesRange": null,
+    "frameGcMeanBytes": 9293.143720930233,
+    "frameGcMeanBytesRange": [
+      9283.961786372007,
+      9330.196394686907
+    ],
+    "frameGcMeanKiB": 9.07533566497093,
+    "frameGcMeanKiBRange": [
+      9.066368932003913,
+      9.111519916686433
+    ],
+    "gcCollections": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+]
