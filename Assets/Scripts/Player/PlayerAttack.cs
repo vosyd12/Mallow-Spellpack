@@ -6,7 +6,6 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float _attackRange = 5f;
     [SerializeField] private float _attackInterval = 1f;
     [SerializeField] private Player _player;
-
     private Enemy _target;
 
     private float _attackTimer;
@@ -22,18 +21,32 @@ public class PlayerAttack : MonoBehaviour
     {
         _attackTimer -= Time.deltaTime;
 
-        if (_target == null || !_target.isActiveAndEnabled) return;
+        _target = _player.Target;
 
-        if (_attackTimer > 0f) return;
+        if (_target == null || 
+            !_target.isActiveAndEnabled)
+        {
+            return;
+        }
 
-        Vector2 direction = _target.transform.position - transform.position;
+        if (_attackTimer > 0f)
+        {
+            return;
+        }
 
-        if (direction.sqrMagnitude > _attackRange * _attackRange) return;
+        Vector2 direction = 
+            _target.transform.position - transform.position;
+
+        if (direction.sqrMagnitude > _attackRange * _attackRange)
+        {
+            return;
+        }
 
         if(_player.Job == EPlayerJob.EWizard)
         {
             MagicAttack();
         }
+
         _attackTimer = _attackInterval;
     }
 

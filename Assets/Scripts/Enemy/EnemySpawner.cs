@@ -7,63 +7,82 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject _player;
     [SerializeField] private Transform _stage;
     [SerializeField] private Transform _enemyParent;
+    [SerializeField] private int _stageSpawnerEnemyCount;
 
-    [SerializeField] private int _spawnCount = 10;
     [SerializeField] private float _playerSafeDistance = 1.5f;
 
     [SerializeField] private Vector2 _stageSize = new Vector2(6f, 7.5f);
-    [SerializeField] private float _edgePadding = 0.3f;
-
+    private float _edgePadding = 0.3f;
     private readonly List<Enemy> _enemies = new List<Enemy>();
+    private float _nextSpawnAttemptTime;
 
-    private void Start()
+    private void Update()
     {
-        for(int i  = 0; i < _spawnCount; i++)
+        _enemies.RemoveAll(enemy => enemy == null);
+
+        if(_enemies.Count > _stageSpawnerEnemyCount || 
+            Time.time < _nextSpawnAttemptTime)
         {
-            Spawn();
+            return;
         }
+
+        _nextSpawnAttemptTime = Time.time - 0.5f;
+        Spawn();
     }
+
 
     private void Spawn()
     {
-        if (_enemyPrefabs == null || _enemyPrefabs.Length == 0) return;
+        if (_enemyPrefabs == null
+            || _enemyPrefabs.Length == 0)
+        {
+            return;
+        }
 
-        int index = Random.Range(0, _enemyPrefabs.Length);
-        Enemy Prefab = _enemyPrefabs[index];
+        if (_player == null ||
+            _stage == null)
+        {
+            return;
+        }
 
-        if (Prefab == null)
+        Enemy prefab = _enemyPrefabs[
+            Random.Range(0, _enemyPrefabs.Length)];
+
+        if (prefab == null)
         {
             Debug.LogWarning("Enemy Prefab이 연결되지 않았습니다.");
             return;
         }
 
-        Vector2 halfSize = _stageSize * 0.5f;
-        float safeDistanceSquared = _playerSafeDistance * _playerSafeDistance;
+        Vector2 halfSize =
+            _stageSize * 0.5f - Vector2.one * _edgePadding;
 
-        // 플레이어와 겹치면 다른 위치를 시도한다
-        for(int attempt = 0; attempt < 20; attempt++)
+        if (halfSize.x <= 0f || halfSize.y <= 0f)
         {
-            float x = Random.Range(
-                      -halfSize.x + _edgePadding,
-                      halfSize.x - _edgePadding);
+            return;
+        }
 
-            float y = Random.Range(
-                -halfSize.y + _edgePadding,
-                halfSize.y - _edgePadding);
+        float safeDistanceSquared =
+           _playerSafeDistance * _playerSafeDistance;
 
-            Vector3 position =
-                _stage.TransformPoint(new Vector3(x, y, 0f));
+        for (int attempt = 0; attempt < 40; attempt++)
+        {
+            Vector2 localPosition = GetRandomEdgePosition(halfSize);
 
-            Vector2 distance = position - _player.transform.position;
+            Vector3 position = _stage.TransformPoint(
+                new Vector3(localPosition.x, localPosition.y, 0f));
+
+            Vector2 distance =
+                (Vector2)position - (Vector2)_player.transform.position;
 
             if (distance.sqrMagnitude < safeDistanceSquared)
                 continue;
 
             Enemy enemy = Instantiate(
-                    Prefab,
-                    position,
-                    Quaternion.identity,
-                    _enemyParent);
+                prefab,
+                position,
+                Quaternion.identity,
+                _enemyParent);
 
             enemy.Initialize(_player);
             _enemies.Add(enemy);
@@ -72,9 +91,40 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+          private Vector2 GetRandomEdgePosition(Vector2 halfSize)
+    { 
+
+        int edge = Random.Range(0, 4);
+
+        switch (edge)
+        {
+            case 0: // 왼쪽
+                return new Vector2(
+                    -halfSize.x,
+                    Random.Range(-halfSize.y, halfSize.y));
+
+            case 1: // 오른쪽
+                return new Vector2(
+                    halfSize.x,
+                    Random.Range(-halfSize.y, halfSize.y));
+
+            case 2: // 아래쪽
+                return new Vector2(
+                    Random.Range(-halfSize.x, halfSize.x),
+                    -halfSize.y);
+
+            default: // 위쪽
+                return new Vector2(
+                    Random.Range(-halfSize.x, halfSize.x),
+                    halfSize.y);
+        }
+    }
+
+    // 플레이어 기준 가장 가까운 적을 찾는 함수
     public Enemy FindNearestEnemy(Vector2 position)
     {
         Enemy nearest = null;
+        // 
         float nearestDistance = float.MaxValue;
 
         foreach (Enemy enemy in _enemies)

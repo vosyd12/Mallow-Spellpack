@@ -39,12 +39,18 @@ public class SlimeMotion : MonoBehaviour
     [SerializeField, Min(0.01f)]
     private float _attackDuration = 0.8f;
 
-    [SerializeField, Min(0f)] private float _attackRange = 1.5f;
-    [SerializeField, Min(0.01f)] private float _attackCooldown = 2f;
-    [SerializeField, Min(1f)] private float _attackMoveSpeedMultiplier = 4f;
-    [SerializeField, Min(0f)] private float _attackHopHeight = 1.4f;
-    [SerializeField, Range(1f, 3f)] private float _attackDustSpread = 1.8f;
-    [SerializeField, Range(1, 3)] private int _attackDustCountMultiplier = 2;
+    [SerializeField, Min(0f)] 
+    private float _attackRange = 1.5f;
+    [SerializeField, Min(0.01f)] 
+    private float _attackCooldown = 2f;
+    [SerializeField, Min(1f)] 
+    private float _attackMoveSpeedMultiplier = 4f;
+    [SerializeField, Min(0f)] 
+    private float _attackHopHeight = 1.4f;
+    [SerializeField, Range(1f, 3f)] 
+    private float _attackDustSpread = 1.8f;
+    [SerializeField, Range(1, 3)] 
+    private int _attackDustCountMultiplier = 2;
 
     // 실제 도약 클립의 최고 높이에 맞추는 먼지 연출 기준값.
     [SerializeField, Min(0f)]
@@ -55,6 +61,9 @@ public class SlimeMotion : MonoBehaviour
 
     [SerializeField]
     private Vector2 _dustOffset = new Vector2(0f, -0.15f);
+
+    [SerializeField]
+    private float _attackHitRange = 0.6f;
 
     private Enemy _enemy;
     private Rigidbody2D _rd;
@@ -175,7 +184,6 @@ public class SlimeMotion : MonoBehaviour
                 break;
 
             case MotionState.Attack:
-                // Attack 클립에 착지·잔반동까지 포함되어 있다.
                 ChangeState(MotionState.Prepare);
                 break;
         }
@@ -249,5 +257,28 @@ public class SlimeMotion : MonoBehaviour
             strength,
             _dustParticleCount * (attack ? _attackDustCountMultiplier : 1),
             attack ? _attackDustSpread : 1f);
+    }
+
+    private void TryHitPlayer()
+    {
+        Transform target = _enemy.Target;
+
+        if(target == null)
+        {
+            return;
+        }
+
+        Vector2 offset =
+            (Vector2)target.position - _rd.position;
+
+        if(offset.sqrMagnitude > _attackHitRange * _attackHitRange)
+        {
+            return;
+        }
+
+        if(target.TryGetComponent<Player>(out var player))
+        {
+            player.TakeDamage(_enemy.EnemyState.Attack);
+        }
     }
 }

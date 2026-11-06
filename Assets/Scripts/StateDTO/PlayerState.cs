@@ -1,8 +1,8 @@
 public struct PlayerState
 {
-    public int LEVEL;
+    public int Level;
 
-    public int EXP;
+    public int Exp;
 
     public int HP;
     public int MP;

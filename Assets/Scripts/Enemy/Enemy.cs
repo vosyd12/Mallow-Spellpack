@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public float MoveSpeed => _enemy.MoveSpeed;
     
     private EnemyState _enemy;
+    public EnemyState EnemyState => _enemy;
     private Rigidbody2D _rd;
 
     private Vector3 _pos;
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
         _enemy.MP = 50;
         _enemy.Attack = 5;
         _enemy.Defense = 1;
+        _enemy.Exp = 10;
         _enemy.MoveSpeed = _moveSpeed;
         _enemy.AttackSpeed = 5f;
 
@@ -52,9 +54,26 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        _enemy.HP = Mathf.Max(0, _enemy.HP - damage);
+        if(_enemy.HP <= 0 || damage <= 0)
+        {
+            return;
+        }
 
-        if(_enemy.HP <= 0 ) { Destroy(gameObject); }
+        _enemy.HP = 
+            Mathf.Max(0, _enemy.HP - damage);
+
+        if(_enemy.HP > 0)
+        {
+            return;
+        }
+
+        if(_traceObject != null &&
+           _traceObject.TryGetComponent<Player>(out var player))
+        {
+            player.GainExperience(_enemy.Exp);
+        }
+
+        Destroy(gameObject);
     }
 
     public void Initialize(GameObject player)
