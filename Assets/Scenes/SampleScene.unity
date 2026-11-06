@@ -458,7 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c96e7cfe737b5f449004c1a9c19657a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  _enemySpawner: {fileID: 0}
+  _enemySpawner: {fileID: 1238217183}
   _moveSpeed: 1
   _avoidDistance: 3
   _distanceGain: 3
@@ -624,7 +624,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 068bf6b82d6dcc54b9db55c16550f5e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
-  _target: {fileID: 0}
   _bulletPrefab: {fileID: 4059685567556334284, guid: c0f1ee53f2b701e47b49ab59f2cac1a8, type: 3}
   _attackRange: 5
   _attackInterval: 1

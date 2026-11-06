@@ -2,6 +2,8 @@
 
 2026-11-06. 사용자 작성 C# 코드와 AI가 보조한 씬·외형·검증 작업을 현재 파일 기준으로 정리했다. 새 게임 규칙을 확정하는 문서가 아니다. 수치는 조정 가능한 구현값이며 최신 기획은 확정 시 GAME_DESIGN.md에 기록한다.
 
+같은 날 후속 작업으로 슬라임 외형 연출을 Animator로 이전했다. 아래 문제 해결 경위의 사인 곡선은 전환 전 구현이다. 현재 구조·조정 방법·실행 미확인 범위는 [Animator 전환 기록](2026-11-06-SLIME-ANIMATOR.md)을 따른다.
+
 ## 요청과 작업 방식
 
 사용자는 이전의 큰 구현을 잠시 멈추고 직접 이해·수정할 수 있는 현재 프로젝트로 작업을 바꿨다. 게임 방향을 바꾼 것이 아니라 코드 작성의 주도권과 작업 단위를 바꾼 것이다. 사용자가 코드를 작성·수정하고, AI는 설계 제안·관련 코드 검토·요청받은 Hierarchy와 시각 작업을 보조한다. MCP·Notion은 요청한 경우에만 사용한다.
@@ -12,7 +14,7 @@
 | --- | --- |
 | EnemySpawner.cs | Enemy[]에서 Prefab 선택 → Stage.TransformPoint로 위치 변환 → Enemy.Initialize(player) → 생성 목록 등록 |
 | Enemy.cs | 추적 대상·초기 스탯·HP 감소·사망. 기본 이동을 끄면 슬라임 이동과 중복하지 않음 |
-| SlimeMotion.cs | Prepare → Jump → Land. 루트 Rigidbody2D로 전진하고 Visual 자식으로 높이·압축·복원 표현 |
+| SlimeMotion.cs | Idle·Prepare → Jump → Land. 루트 Rigidbody2D 이동·먼지 호출·Animator 재생 제어. 외형은 Animation 클립이 VisualRoot 자식에서 표현 |
 | Player.cs | 능력치·레벨업 코드·가까운 적 검색·회피. 현재 검색 타이머/씬 연결 결함은 남음 |
 | PlayerAttack.cs | 사거리·발사 주기·현재 INT를 반영한 무작위 피해·Bullet 생성. Player.Target 연결은 남음 |
 | Bullet.cs | Initialize로 대상/피해 전달 → Rigidbody2D 추적 → 지정 대상 명중 → 피해 후 제거. 수명/대상 소멸 시 제거 |

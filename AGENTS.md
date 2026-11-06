@@ -2,6 +2,7 @@
 한국어로 대화
 불필요한 과정을 제거하라
 해당 작업은 최대한 단순하고 최적화 하라
+사용자의 모든 요구사항에 의심을 하라
 Coding Convention 준수하라
 Best Practice를 생각하라
 GAME_DESIGN, MILESTONES, CHANGELOG파일은 작성하기 전에 상단에 존재하는 규칙을 읽을것!

@@ -1,12 +1,13 @@
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
-{
-    [SerializeField] private Enemy _target;
+{ 
     [SerializeField] private Bullet _bulletPrefab;
     [SerializeField] private float _attackRange = 5f;
     [SerializeField] private float _attackInterval = 1f;
     [SerializeField] private Player _player;
+
+    private Enemy _target;
 
     private float _attackTimer;
     private int _baseMinDamage = 5;

@@ -20,7 +20,7 @@ public class LandingDustPool : MonoBehaviour
             defaultCapacity: 40,
             maxSize: 64);
 
-        // ½ÃÀÛÇÒ ¶§ 40°³¸¦ ¹Ì¸® »ı¼ºÇØ µĞ´Ù.
+        // ì‹œì‘í•  ë•Œ 40ê°œë¥¼ ë¯¸ë¦¬ ìƒì„±í•´ ë‘”ë‹¤.
         LandingDust[] prepared = new LandingDust[40];
 
         for (int i = 0; i < prepared.Length; i++)
@@ -47,13 +47,14 @@ public class LandingDustPool : MonoBehaviour
     public void Play(
         Vector3 position,
         float landingSpeed,
-        int particleCount)
+        int particleCount,
+        float spreadMultiplier = 1f)
     {
         LandingDust dust = _pool.Get();
 
         dust.transform.position = position;
         dust.gameObject.SetActive(true);
-        dust.Play(landingSpeed, particleCount);
+        dust.Play(landingSpeed, particleCount, spreadMultiplier);
     }
 
     private void OnDestroy()

@@ -22,12 +22,12 @@ public class LandingDust : MonoBehaviour
         main.stopAction = ParticleSystemStopAction.Callback;
     }
 
-    public void Play(float landingSpeed, int particleCount)
+    public void Play(float landingSpeed, int particleCount, float spreadMultiplier = 1f)
     {
         _isInUse = true;
         _particles.Clear(true);
 
-        // ÂøÁö ¼Óµµ°¡ ±âÁØ°ªº¸´Ù ³ôÀ¸¸é ¸ÕÁö°¡ ´õ ºü¸£°Ô ÆÛÁö°í ³ô°Ô ¿Ã¶ó°£´Ù.
+        // ì°©ì§€ ì†ë„ê°€ ê¸°ì¤€ê°’ë³´ë‹¤ ë†’ìœ¼ë©´ ë¨¼ì§€ê°€ ë” ë¹ ë¥´ê²Œ í¼ì§€ê³  ë†’ê²Œ ì˜¬ë¼ê°„ë‹¤.
         float strength = Mathf.Clamp(
             landingSpeed / _referenceLandingSpeed,
             0.5f,
@@ -38,18 +38,19 @@ public class LandingDust : MonoBehaviour
         particleCount = Mathf.Clamp(
             particleCount, 1, main.maxParticles);
 
-        // ÀÔÀÚ¸¶´Ù ÁÂ¿ì¡¤À§ÂÊ ¼Óµµ¸¦ ¹«ÀÛÀ§·Î ¼±ÅÃÇÑ´Ù.
+        // ì…ìë§ˆë‹¤ ì¢Œìš°Â·ìœ„ìª½ ì†ë„ë¥¼ ë¬´ì‘ìœ„ë¡œ ì„ íƒí•œë‹¤.
+        float spread = Mathf.Clamp(spreadMultiplier, 1f, 3f);
         var velocity = _particles.velocityOverLifetime;
 
         velocity.x = new ParticleSystem.MinMaxCurve(
-            -_horizontalSpeed * strength,
-            _horizontalSpeed * strength);
+            -_horizontalSpeed * strength * spread,
+            _horizontalSpeed * strength * spread);
 
         velocity.y = new ParticleSystem.MinMaxCurve(
-            0.05f * strength,
-            _verticalSpeed * strength);
+            0.05f * strength * spread,
+            _verticalSpeed * strength * spread);
 
-        // ÁØºñµÈ PrefabÀÇ Burst °³¼ö¸¸ º¯°æÇÑ´Ù.
+        // ì¤€ë¹„ëœ Prefabì˜ Burst ê°œìˆ˜ë§Œ ë³€ê²½í•œë‹¤.
         var emission = _particles.emission;
 
         emission.SetBurst(

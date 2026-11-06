@@ -1,15 +1,31 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy), typeof(Rigidbody2D))]
 public class SlimeMotion : MonoBehaviour
 {
+    // Attack í´ë¦½ì˜ ì´ë¥™Â·ì²« ì°©ì§€ í‚¤ ì‹œê°„ê³¼ í•¨ê»˜ ìœ ì§€í•œë‹¤.
+    private const float AttackTakeoffTime = 0.18f;
+    private const float AttackImpactTime = 0.68f;
+
     private enum MotionState
     {
-        Prepare,    // Á¤Áö - ¼­¼­È÷ ³³ÀÛÇÏ°Ô ¾ĞÃà
-        Jump,       // µµ¾à - À§·Î ¼Ú¾Ò´Ù ³»·Á¿À¸ç ¼¼·Î·Î ´Ã¾î³²
-        Land        // Á¤Áö - °¡·Î·Î ÆÛÁ³´Ù°¡ ¿ø·¡ Å©±â·Î º¹¿ø
+        Idle,
+        Prepare,
+        Jump,
+        Land,
+        Attack
     }
 
-    [SerializeField] private Transform _visual;
+    private static readonly int[] AnimationStates =
+    {
+        Animator.StringToHash("Base Layer.Idle"),
+        Animator.StringToHash("Base Layer.Prepare"),
+        Animator.StringToHash("Base Layer.Jump"),
+        Animator.StringToHash("Base Layer.Land"),
+        Animator.StringToHash("Base Layer.Attack")
+    };
+
+    [SerializeField] private Animator _animator;
 
     [SerializeField, Min(0.01f)]
     private float _prepareDuration = 0.15f;
@@ -20,166 +36,218 @@ public class SlimeMotion : MonoBehaviour
     [SerializeField, Min(0.01f)]
     private float _landDuration = 0.12f;
 
-    [SerializeField] private float _hopHeight = 0.7f;
+    [SerializeField, Min(0.01f)]
+    private float _attackDuration = 0.8f;
 
-    [SerializeField, Range(0f, 0.3f)]
-    private float _squashAmount = 0.2f;
+    [SerializeField, Min(0f)] private float _attackRange = 1.5f;
+    [SerializeField, Min(0.01f)] private float _attackCooldown = 2f;
+    [SerializeField, Min(1f)] private float _attackMoveSpeedMultiplier = 4f;
+    [SerializeField, Min(0f)] private float _attackHopHeight = 1.4f;
+    [SerializeField, Range(1f, 3f)] private float _attackDustSpread = 1.8f;
+    [SerializeField, Range(1, 3)] private int _attackDustCountMultiplier = 2;
 
-    [SerializeField] private int _dustParticleCount = 15;
-    [SerializeField] private Vector2 _dustOffset = new Vector2(0f, -0.15f); // ¿ùµå ÁÂÇ¥ ±âÁØ ¹ß¹Ø À§Ä¡ º¸Á¤°ª
+    // ì‹¤ì œ ë„ì•½ í´ë¦½ì˜ ìµœê³  ë†’ì´ì— ë§ì¶”ëŠ” ë¨¼ì§€ ì—°ì¶œ ê¸°ì¤€ê°’.
+    [SerializeField, Min(0f)]
+    private float _hopHeight = 0.7f;
+
+    [SerializeField, Min(1)]
+    private int _dustParticleCount = 15;
+
+    [SerializeField]
+    private Vector2 _dustOffset = new Vector2(0f, -0.15f);
 
     private Enemy _enemy;
     private Rigidbody2D _rd;
 
-    private Vector3 _basePosition;
-    private Vector3 _baseScale;
-
     private MotionState _state;
     private float _stateTime;
+    private float _stateDuration;
 
     private Vector2 _jumpDirection;
     private float _jumpSpeed;
+    private float _attackCooldownRemaining;
+    private bool _attackDustSpawned;
 
     private void Awake()
     {
         _enemy = GetComponent<Enemy>();
         _rd = GetComponent<Rigidbody2D>();
 
-        _basePosition = _visual.localPosition;
-        _baseScale = _visual.localScale;
+        if (_animator == null ||
+            _animator.runtimeAnimatorController == null)
+        {
+            Debug.LogError(
+                "SlimeMotionì— Animatorì™€ Controllerë¥¼ ì—°ê²°í•´ì•¼ í•©ë‹ˆë‹¤.",
+                this);
 
-        // Ã¹ µµ¾à ½ÃÁ¡À» Á¶±İ¾¿ ´Ù¸£°Ô ÇÑ´Ù.
-        _stateTime = -Random.Range(0f, _prepareDuration);
+            enabled = false;
+        }
+    }
+
+    private void OnEnable()
+    {
+        ChangeState(MotionState.Idle);
+        _attackCooldownRemaining = Random.Range(0f, _attackCooldown);
+    }
+
+    private void OnDisable()
+    {
+        if (_rd != null)
+            _rd.linearVelocity = Vector2.zero;
     }
 
     private void FixedUpdate()
     {
-        // ÁØºñ¡¤ÂøÁö Áß¿¡´Â ÀÌÀü ÀÌµ¿ ¼Óµµ°¡ ³²Áö ¾Êµµ·Ï ÇÑ´Ù.
         _rd.linearVelocity = Vector2.zero;
+        _attackCooldownRemaining = Mathf.Max(
+            0f, _attackCooldownRemaining - Time.fixedDeltaTime);
 
         if (_enemy.Target == null)
         {
-            ChangeState(MotionState.Prepare);
-            SetVisual(0f, 0f);
+            if (_state != MotionState.Idle)
+                ChangeState(MotionState.Idle);
+
             return;
+        }
+
+        if (_state == MotionState.Idle)
+        {
+            ChangeState(MotionState.Prepare);
+            return;
+        }
+
+        if (_state == MotionState.Jump)
+        {
+            float moveTime = Mathf.Min(
+                Time.fixedDeltaTime,
+                Mathf.Max(0f, _stateDuration - _stateTime));
+
+            _rd.MovePosition(
+                _rd.position +
+                _jumpDirection * _jumpSpeed * moveTime);
+        }
+        else if (_state == MotionState.Attack)
+        {
+            // ì••ì¶•Â·ì°©ì§€ ë°˜ë™ ì¤‘ì—ëŠ” ë©ˆì¶”ê³ , ê³µì¤‘ êµ¬ê°„ì—ì„œë§Œ ì „ì§„í•œë‹¤.
+            float flightStart = _stateDuration * AttackTakeoffTime;
+            float flightEnd = _stateDuration * AttackImpactTime;
+            float moveTime = Mathf.Max(
+                0f,
+                Mathf.Min(_stateTime + Time.fixedDeltaTime, flightEnd) -
+                Mathf.Max(_stateTime, flightStart));
+
+            if (moveTime > 0f)
+            {
+                _rd.MovePosition(
+                    _rd.position + _jumpDirection * _jumpSpeed * moveTime);
+            }
         }
 
         _stateTime += Time.fixedDeltaTime;
 
+        if (_state == MotionState.Attack && !_attackDustSpawned &&
+            _stateTime >= _stateDuration * AttackImpactTime)
+        {
+            _attackDustSpawned = true;
+            SpawnLandingDust(true);
+        }
+
+        if (_stateTime < _stateDuration)
+            return;
+
         switch (_state)
         {
             case MotionState.Prepare:
-                Prepare();
+                Vector2 offset =
+                    (Vector2)_enemy.Target.position - _rd.position;
+                bool attack = _attackCooldownRemaining <= 0f &&
+                    offset.sqrMagnitude <= _attackRange * _attackRange;
+                BeginJump(attack);
                 break;
 
             case MotionState.Jump:
-                Jump();
+                ChangeState(MotionState.Land);
+                SpawnLandingDust();
                 break;
 
             case MotionState.Land:
-                Land();
+                ChangeState(MotionState.Prepare);
+                break;
+
+            case MotionState.Attack:
+                // Attack í´ë¦½ì— ì°©ì§€Â·ì”ë°˜ë™ê¹Œì§€ í¬í•¨ë˜ì–´ ìˆë‹¤.
+                ChangeState(MotionState.Prepare);
                 break;
         }
     }
 
-    private void Prepare()
+    private void BeginJump(bool attack)
     {
-        float progress =
-            Mathf.Clamp01(_stateTime / _prepareDuration);
-
-        SetVisual(_squashAmount * progress, 0f);
-
-        if (_stateTime < _prepareDuration)
-            return;
-
         Vector2 offset =
             (Vector2)_enemy.Target.position - _rd.position;
 
         _jumpDirection = offset.normalized;
 
-        // Ãâ¹ß ½Ã ´ë»ó±îÁöÀÇ °Å¸®¸¦ ³Ñ¾î°¡Áö ¾Êµµ·Ï Á¦ÇÑÇÑ´Ù.
+        float duration = attack
+            ? _attackDuration * (AttackImpactTime - AttackTakeoffTime)
+            : _jumpDuration;
+        float speedMultiplier = attack ? _attackMoveSpeedMultiplier : 1f;
+
+        // ë„ì•½ ì‹œì‘ ë•Œ ë°©í–¥ì„ ê³ ì •í•˜ê³  ë‹¹ì‹œ íƒ€ê¹ƒ ìœ„ì¹˜ë¥¼ ë„˜ì§€ ì•Šê²Œ í•œë‹¤.
         _jumpSpeed = Mathf.Min(
-            _enemy.MoveSpeed,
-            offset.magnitude / _jumpDuration);
+            Mathf.Max(0f, _enemy.MoveSpeed) * speedMultiplier,
+            offset.magnitude / Mathf.Max(0.01f, duration));
 
-        ChangeState(MotionState.Jump);
-    }
-
-    private void Jump()
-    {
-        float progress =
-            Mathf.Clamp01(_stateTime / _jumpDuration);
-
-        float arc = Mathf.Sin(progress * Mathf.PI);
-
-        // Ãâ¹ß¡¤ÂøÁö ¶§ ¾ĞÃàµÇ°í, °øÁß¿¡¼­´Â ¼¼·Î·Î ´Ã¾î³­´Ù.
-        float squash = _squashAmount * (1f - 2f * arc);
-
-        SetVisual(squash, arc * _hopHeight);
-
-        float remainingTime =
-            _jumpDuration - (_stateTime - Time.fixedDeltaTime);
-
-        float moveTime = Mathf.Clamp(
-            remainingTime, 0f, Time.fixedDeltaTime);
-
-        _rd.MovePosition(
-            _rd.position + _jumpDirection * _jumpSpeed * moveTime);
-
-        if (_stateTime >= _jumpDuration)
+        if (attack)
         {
-            // °£´ÜÇÏ°Ô »óÅÂ¸Ó½ÅÀ» ±¸ÇöÇØºÃÀ½
-            ChangeState(MotionState.Land);
-            SpawnLandingDust();
+            _attackCooldownRemaining = _attackCooldown;
+            _attackDustSpawned = false;
         }
-    }
 
-    private void Land()
-    {
-        float progress =
-            Mathf.Clamp01(_stateTime / _landDuration);
-
-        SetVisual(_squashAmount * (1f - progress), 0f);
-
-        if (_stateTime >= _landDuration)
-        {
-            ChangeState(MotionState.Prepare);
-        }
+        ChangeState(attack ? MotionState.Attack : MotionState.Jump);
     }
 
     private void ChangeState(MotionState state)
     {
         _state = state;
         _stateTime = 0f;
+
+        float duration = state switch
+        {
+            MotionState.Prepare => _prepareDuration,
+            MotionState.Jump => _jumpDuration,
+            MotionState.Land => _landDuration,
+            MotionState.Attack => _attackDuration,
+            _ => 1f
+        };
+
+        _stateDuration = Mathf.Max(0.01f, duration);
+
+        // í˜„ì¬ í”„ë¡œì íŠ¸ì˜ ëª¨ë“  í´ë¦½ì´ 1ì´ˆë¼ëŠ” ì „ì œ.
+        _animator.speed = 1f / _stateDuration;
+        _animator.Play(AnimationStates[(int)state], 0, 0f);
     }
 
-    private void SetVisual(float squash, float height)
+    private void SpawnLandingDust(bool attack = false)
     {
-        _visual.localPosition =
-            _basePosition + Vector3.up * height;
+        if (LandingDustPool.Instance == null)
+            return;
 
-        _visual.localScale = new Vector3(
-            _baseScale.x * (1f + squash),
-            _baseScale.y * (1f - squash),
-            _baseScale.z);
-    }
+        float height = attack ? _attackHopHeight : _hopHeight;
+        float duration = attack
+            ? _attackDuration * (AttackImpactTime - AttackTakeoffTime)
+            : _jumpDuration;
+        float worldHeight = height * Mathf.Abs(transform.lossyScale.y);
 
-    // ¸ÕÁö¸¦ »ı¼ºÇÏ´Â ÇÔ¼ö
-    private void SpawnLandingDust()
-    {
-        float worldHeight =
-            _hopHeight * Mathf.Abs(transform.lossyScale.y);
-
-        float landingSpeed =
-            Mathf.PI * worldHeight / _jumpDuration;
-
-        Vector2 position = _rd.position + _dustOffset;
-
-        if (LandingDustPool.Instance == null) return;
+        // ì‹¤ì œ ì¶©ëŒ ì†ë„ê°€ ì•„ë‹Œ ë¨¼ì§€ ì—°ì¶œìš© ê¸°ì¤€ê°’.
+        float strength =
+            Mathf.PI * worldHeight /
+            Mathf.Max(0.01f, duration);
 
         LandingDustPool.Instance.Play(
-            position,
-            landingSpeed,
-            _dustParticleCount);
+            _rd.position + _dustOffset,
+            strength,
+            _dustParticleCount * (attack ? _attackDustCountMultiplier : 1),
+            attack ? _attackDustSpread : 1f);
     }
 }
