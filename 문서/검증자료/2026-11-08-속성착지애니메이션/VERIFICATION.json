@@ -1,0 +1,430 @@
+{
+  "date": "2026-11-08",
+  "scope": "Landing VFX assets only",
+  "csharpUnchanged": true,
+  "csharpCount": 13,
+  "csharpSHA256": {
+    "Assets\\Scripts\\Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets\\Scripts\\Effects\\HitReaction.cs": "bd38940bc81fdc348c7e39500a21d52418af85fac588085e48929494ff621f2c",
+    "Assets\\Scripts\\Effects\\LandingDust.cs": "49a1b4bc5e7dbfbf36a3f19d52c4484c465b22050d7453ecef9af0a5ddc9d5f8",
+    "Assets\\Scripts\\Effects\\LandingDustPool.cs": "d1783cf149f9bfeb3044a96fc78596eb0a4c63d8209a4a1eae3a38072a9872d3",
+    "Assets\\Scripts\\Enemy\\Enemy.cs": "adb3b02b29fd247b44fed6760630af97d8afafc42e43fc74bc5ea08e4a9880b0",
+    "Assets\\Scripts\\Enemy\\EnemySpawner.cs": "7693967d0022cfa645023f48f6b666f070ce9f3ab43936ddf3dfce72818e6341",
+    "Assets\\Scripts\\Enemy\\SlimeMotion.cs": "c081aaca794eeb40de8c72f0e70a99b658463d0ce41681209277e1ae612eff71",
+    "Assets\\Scripts\\Player\\Player.cs": "91cd04e382bed287e76583dba6e4cbe735e6665e08e7115da6ca152f4a9bcedb",
+    "Assets\\Scripts\\Player\\PlayerAttack.cs": "e22f71a855ba9e0e895f476a60edd5e259af394539f52a286e5bba128574ff4e",
+    "Assets\\Scripts\\Stage\\Stage.cs": "6a755dd96304418a19bad8fa37b1e64eaa0a3622bf8f0487b35df73d32cc1458",
+    "Assets\\Scripts\\StateDTO\\EnemyState.cs": "630ddd2d8b3ae589f5b2b1e2f03b845c4c17b80e38e5fbb3c5cb9c9de78ce750",
+    "Assets\\Scripts\\StateDTO\\PlayerState.cs": "303b708221fefe281576e8f823464113a0003bb884df9770956dc2b456d2a988",
+    "Assets\\Scripts\\UI\\HealthBar.cs": "f50a77aed72918925f46db64137469775a01f75eb8339689957b1f11518c6f72"
+  },
+  "frameTimes": [
+    {
+      "time": 0.04,
+      "file": "04-timeline-004-2.png"
+    },
+    {
+      "time": 0.1,
+      "file": "04-timeline-010-2.png"
+    },
+    {
+      "time": 0.18,
+      "file": "04-timeline-018-2.png"
+    },
+    {
+      "time": 0.28,
+      "file": "04-timeline-028-2.png"
+    },
+    {
+      "time": 0.4,
+      "file": "04-timeline-040-2.png"
+    },
+    {
+      "time": 0.56,
+      "file": "04-timeline-056-2.png"
+    },
+    {
+      "time": 0.68,
+      "file": "04-timeline-068-2.png"
+    },
+    {
+      "time": 0.84,
+      "file": "04-timeline-084-2.png"
+    }
+  ],
+  "poolReuse": [
+    {
+      "cycle": 1,
+      "emitted": [
+        {
+          "success": true,
+          "message": "Code executed successfully.",
+          "data": {
+            "result": [
+              {
+                "name": "LandingDustFire(Clone)",
+                "id": "568105589213601332",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustWater(Clone)",
+                "id": "568105589213601224",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustEarth(Clone)",
+                "id": "568105589213601116",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustWind(Clone)",
+                "id": "568105589213601008",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustLightning(Clone)",
+                "id": "568105589213600900",
+                "particles": 1,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustPure(Clone)",
+                "id": "568105589213600792",
+                "particles": 44,
+                "childCount": 0
+              }
+            ],
+            "compiler": "codedom"
+          }
+        }
+      ],
+      "returned": [
+        {
+          "success": true,
+          "message": "Code executed successfully.",
+          "data": {
+            "result": {
+              "isPlaying": true,
+              "isPaused": false,
+              "pools": [
+                {
+                  "element": "Fire",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Water",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Earth",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Wind",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Lightning",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Pure",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                }
+              ]
+            },
+            "compiler": "codedom"
+          }
+        }
+      ]
+    },
+    {
+      "cycle": 2,
+      "emitted": [
+        {
+          "success": true,
+          "message": "Code executed successfully.",
+          "data": {
+            "result": [
+              {
+                "name": "LandingDustFire(Clone)",
+                "id": "568105589213601332",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustWater(Clone)",
+                "id": "568105589213601224",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustEarth(Clone)",
+                "id": "568105589213601116",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustWind(Clone)",
+                "id": "568105589213601008",
+                "particles": 44,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustLightning(Clone)",
+                "id": "568105589213600900",
+                "particles": 1,
+                "childCount": 1
+              },
+              {
+                "name": "LandingDustPure(Clone)",
+                "id": "568105589213600792",
+                "particles": 44,
+                "childCount": 0
+              }
+            ],
+            "compiler": "codedom"
+          }
+        }
+      ],
+      "returned": [
+        {
+          "success": true,
+          "message": "Code executed successfully.",
+          "data": {
+            "result": {
+              "isPlaying": true,
+              "isPaused": false,
+              "pools": [
+                {
+                  "element": "Fire",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Water",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Earth",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Wind",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Lightning",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                },
+                {
+                  "element": "Pure",
+                  "active": 0,
+                  "inactive": 6,
+                  "all": 6
+                }
+              ]
+            },
+            "compiler": "codedom"
+          }
+        }
+      ]
+    }
+  ],
+  "finalEditorAndAssets": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Code executed successfully.\",\"data\":{\"result\":{\"play\":false,\"pause\":false,\"dirty\":false,\"scene\":\"Assets/Scenes/SampleScene.unity\",\"background\":false,\"camera\":7.5,\"effects\":[{\"element\":\"Pure\",\"lifetime\":0.74,\"max\":64,\"children\":0,\"shader\":\"Universal Render Pipeline/Particles/Unlit\",\"scale\":\"(1.00, 1.00, 1.00)\",\"texture\":\"LandingAnimationAtlas\"},{\"element\":\"Fire\",\"lifetime\":0.74,\"max\":64,\"children\":1,\"shader\":\"Universal Render Pipeline/Particles/Unlit\",\"scale\":\"(1.00, 1.00, 1.00)\",\"texture\":\"LandingAnimationAtlas\"},{\"element\":\"Water\",\"lifetime\":0.74,\"max\":64,\"children\":1,\"shader\":\"Universal Render Pipeline/Particles/Unlit\",\"scale\":\"(1.00, 1.00, 1.00)\",\"texture\":\"LandingAnimationAtlas\"},{\"element\":\"Earth\",\"lifetime\":0.74,\"max\":64,\"children\":1,\"shader\":\"Universal Render Pipeline/Particles/Unlit\",\"scale\":\"(1.00, 1.00, 1.00)\",\"texture\":\"LandingAnimationAtlas\"},{\"element\":\"Wind\",\"lifetime\":0.74,\"max\":64,\"children\":1,\"shader\":\"Universal Render Pipeline/Particles/Unlit\",\"scale\":\"(1.00, 1.00, 1.00)\",\"texture\":\"LandingAnimationAtlas\"},{\"element\":\"Lightning\",\"lifetime\":0.74,\"max\":1,\"children\":1,\"shader\":\"Universal Render Pipeline/Particles/Unlit\",\"scale\":\"(1.00, 1.00, 1.00)\",\"texture\":\"LandingAnimationAtlas\"}]},\"compiler\":\"codedom\"}}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "play": false,
+          "pause": false,
+          "dirty": false,
+          "scene": "Assets/Scenes/SampleScene.unity",
+          "background": false,
+          "camera": 7.5,
+          "effects": [
+            {
+              "element": "Pure",
+              "lifetime": 0.74,
+              "max": 64,
+              "children": 0,
+              "shader": "Universal Render Pipeline/Particles/Unlit",
+              "scale": "(1.00, 1.00, 1.00)",
+              "texture": "LandingAnimationAtlas"
+            },
+            {
+              "element": "Fire",
+              "lifetime": 0.74,
+              "max": 64,
+              "children": 1,
+              "shader": "Universal Render Pipeline/Particles/Unlit",
+              "scale": "(1.00, 1.00, 1.00)",
+              "texture": "LandingAnimationAtlas"
+            },
+            {
+              "element": "Water",
+              "lifetime": 0.74,
+              "max": 64,
+              "children": 1,
+              "shader": "Universal Render Pipeline/Particles/Unlit",
+              "scale": "(1.00, 1.00, 1.00)",
+              "texture": "LandingAnimationAtlas"
+            },
+            {
+              "element": "Earth",
+              "lifetime": 0.74,
+              "max": 64,
+              "children": 1,
+              "shader": "Universal Render Pipeline/Particles/Unlit",
+              "scale": "(1.00, 1.00, 1.00)",
+              "texture": "LandingAnimationAtlas"
+            },
+            {
+              "element": "Wind",
+              "lifetime": 0.74,
+              "max": 64,
+              "children": 1,
+              "shader": "Universal Render Pipeline/Particles/Unlit",
+              "scale": "(1.00, 1.00, 1.00)",
+              "texture": "LandingAnimationAtlas"
+            },
+            {
+              "element": "Lightning",
+              "lifetime": 0.74,
+              "max": 1,
+              "children": 1,
+              "shader": "Universal Render Pipeline/Particles/Unlit",
+              "scale": "(1.00, 1.00, 1.00)",
+              "texture": "LandingAnimationAtlas"
+            }
+          ]
+        },
+        "compiler": "codedom"
+      }
+    },
+    "isError": false
+  },
+  "finalConsole": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Retrieved 0 log entries.\",\"data\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Retrieved 0 log entries.",
+      "data": []
+    },
+    "isError": false
+  },
+  "naturalMotionCaptures": [
+    [
+      {
+        "success": true,
+        "message": "Screenshot captured to '문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-01-1.png' (camera: Main Camera).",
+        "data": {
+          "path": "문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-01-1.png",
+          "fullPath": "C:/Users/PC/Mallow Spellpack/문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-01-1.png",
+          "superSize": 1,
+          "isAsync": false,
+          "camera": "Main Camera",
+          "captureSource": "game_view"
+        }
+      }
+    ],
+    [
+      {
+        "success": true,
+        "message": "Screenshot captured to '문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-02-1.png' (camera: Main Camera).",
+        "data": {
+          "path": "문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-02-1.png",
+          "fullPath": "C:/Users/PC/Mallow Spellpack/문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-02-1.png",
+          "superSize": 1,
+          "isAsync": false,
+          "camera": "Main Camera",
+          "captureSource": "game_view"
+        }
+      }
+    ],
+    [
+      {
+        "success": true,
+        "message": "Screenshot captured to '문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-03-1.png' (camera: Main Camera).",
+        "data": {
+          "path": "문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-03-1.png",
+          "fullPath": "C:/Users/PC/Mallow Spellpack/문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-03-1.png",
+          "superSize": 1,
+          "isAsync": false,
+          "camera": "Main Camera",
+          "captureSource": "game_view"
+        }
+      }
+    ],
+    [
+      {
+        "success": true,
+        "message": "Screenshot captured to '문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-04-1.png' (camera: Main Camera).",
+        "data": {
+          "path": "문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-04-1.png",
+          "fullPath": "C:/Users/PC/Mallow Spellpack/문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-04-1.png",
+          "superSize": 1,
+          "isAsync": false,
+          "camera": "Main Camera",
+          "captureSource": "game_view"
+        }
+      }
+    ],
+    [
+      {
+        "success": true,
+        "message": "Screenshot captured to '문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-05-1.png' (camera: Main Camera).",
+        "data": {
+          "path": "문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-05-1.png",
+          "fullPath": "C:/Users/PC/Mallow Spellpack/문서/검증자료/2026-11-08-속성착지애니메이션/05-live-motion-05-1.png",
+          "superSize": 1,
+          "isAsync": false,
+          "camera": "Main Camera",
+          "captureSource": "game_view"
+        }
+      }
+    ]
+  ],
+  "limits": [
+    "Controlled Medium 6-element preview; not all 18 combinations",
+    "No mobile device or performance measurements",
+    "Natural SlimeMotion replay uses temporary targets; not full player combat"
+  ]
+}

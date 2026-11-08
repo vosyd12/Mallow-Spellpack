@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-07",
+  "type": "serialized asset wiring checks",
+  "connections": [
+    {
+      "asset": "Assets/Prefab/SlimeSmall.prefab",
+      "actor": "Enemy",
+      "actorId": 4119530335923162714,
+      "healthBarId": 3441239441603555928,
+      "bodyRendererId": 9200000000000000003,
+      "hitReactionId": 7400000000000000100,
+      "damageImageId": 7400000000000000101,
+      "barInstanceId": 8520084924036333697
+    },
+    {
+      "asset": "Assets/Prefab/SlimeMedium.prefab",
+      "actor": "Enemy",
+      "actorId": 4119530335923162714,
+      "healthBarId": 9179286580302712166,
+      "bodyRendererId": 9200000000000000003,
+      "hitReactionId": 7400000000000000100,
+      "damageImageId": 7400000000000000101,
+      "barInstanceId": 8100000000000000003
+    },
+    {
+      "asset": "Assets/Prefab/SlimeLarge.prefab",
+      "actor": "Enemy",
+      "actorId": 4119530335923162714,
+      "healthBarId": 5434031264842715825,
+      "bodyRendererId": 9200000000000000003,
+      "hitReactionId": 7400000000000000100,
+      "damageImageId": 7400000000000000101,
+      "barInstanceId": 8100000000000000003
+    },
+    {
+      "asset": "Assets/Scenes/SampleScene.unity",
+      "actor": "Player",
+      "actorId": 741759331,
+      "healthBarId": 741759337,
+      "bodyRendererId": 1002527581,
+      "hitReactionId": 7400000000000000100,
+      "damageImageId": 7400000000000000101,
+      "barInstanceId": 1800000001
+    }
+  ],
+  "inheritingVariants": 18,
+  "damageTrail": {
+    "delaySeconds": 0.2,
+    "normalizedSpeedPerSecond": 1,
+    "color": [
+      1,
+      0.74,
+      0.22,
+      1
+    ]
+  },
+  "hitReaction": {
+    "durationSeconds": 0.12,
+    "color": [
+      1,
+      0.4,
+      0.4,
+      1
+    ]
+  },
+  "assetChanges": [
+    {
+      "asset": "Assets/Prefab/SlimeLarge.prefab",
+      "beforeSha256": "8e2b209e57f320ba99926911c87e06b0c8bf2dbf12f0c0eff87d69d49fe9fc4f",
+      "afterSha256": "d74401f3403cccd05f3133409f3e2021f20a8e90559064320abcd2a21dc9a250"
+    },
+    {
+      "asset": "Assets/Prefab/SlimeMedium.prefab",
+      "beforeSha256": "e1000a0eb579fe84f7504967e9dc04e0f336929d0522e512c5caec1be946d241",
+      "afterSha256": "e31725fdc1ea78da20568afebd46289f9683c8dfffc143a0dd41365a4dc9c609"
+    },
+    {
+      "asset": "Assets/Prefab/SlimeSmall.prefab",
+      "beforeSha256": "ff8192a4373daeebb5ae79e868c724d7e141444f2fd3e83ebf6986892abd89c2",
+      "afterSha256": "000a8eee5969b3da624c7558a3cbbed3d97126bddeaf9e1d83de482f52356ac0"
+    },
+    {
+      "asset": "Assets/Scenes/SampleScene.unity",
+      "beforeSha256": "03b6c7566ca573da92346f001ead77116106c8d01a91e86cacdf2d05a856f44c",
+      "afterSha256": "d6626954d89ab48afc357506a1eeab648d35d3d344de205988858078714dc7a2"
+    },
+    {
+      "asset": "Assets/Prefab/UI/HealthBar.prefab",
+      "beforeSha256": "4798d3124871d5e40761bd35169fc30564ef2317857246aa209af831452e8dd5",
+      "afterSha256": "b7ea8ffe9c239934a97dceb1299b23928dd9060627a9c591c08f92ee062ca47e"
+    }
+  ],
+  "codeFilesUnchanged": true,
+  "codeHashes": {
+    "Assets/Scripts/Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets/Scripts/Effects/HitReaction.cs": "bd38940bc81fdc348c7e39500a21d52418af85fac588085e48929494ff621f2c",
+    "Assets/Scripts/Effects/LandingDust.cs": "500d5571c2da43052a1fa61bafa21dda61c6c62674546a4900541a2bd362ec43",
+    "Assets/Scripts/Effects/LandingDustPool.cs": "2a70d1d2d920aa3c89ca629cb894a6d693fa8ff497af2552e41d3d50ca92df65",
+    "Assets/Scripts/Enemy/Enemy.cs": "104a07047fe5c3073b1825ab7637907173e59f36db9116e4ceb56101ad0c6c46",
+    "Assets/Scripts/Enemy/EnemySpawner.cs": "a71e8accf28ed7160fcf14f99ac204e70b422946166b4632fbd047ac24c8c81c",
+    "Assets/Scripts/Enemy/SlimeMotion.cs": "09f54e119efd4217103c6a70084e56e8c5bbed8632d6d05582933d3ee3ac0f43",
+    "Assets/Scripts/Player/Player.cs": "91cd04e382bed287e76583dba6e4cbe735e6665e08e7115da6ca152f4a9bcedb",
+    "Assets/Scripts/Player/PlayerAttack.cs": "e22f71a855ba9e0e895f476a60edd5e259af394539f52a286e5bba128574ff4e",
+    "Assets/Scripts/Stage/Stage.cs": "6a755dd96304418a19bad8fa37b1e64eaa0a3622bf8f0487b35df73d32cc1458",
+    "Assets/Scripts/StateDTO/EnemyState.cs": "0cc27ae38c7ed63d23b351b09619de683fbfab2e84c75a727494fc8ff52a3665",
+    "Assets/Scripts/StateDTO/PlayerState.cs": "303b708221fefe281576e8f823464113a0003bb884df9770956dc2b456d2a988",
+    "Assets/Scripts/UI/HealthBar.cs": "f50a77aed72918925f46db64137469775a01f75eb8339689957b1f11518c6f72"
+  },
+  "checks": [
+    "non-null HitReaction/Body/Fill/DamageFill asset references",
+    "DamageFill behind Fill with matching geometry and horizontal left fill",
+    "18 attribute variants inherit 3 base prefab connections without overrides",
+    "user timer fix and TakeDamage Play calls present",
+    "only the intended 5 asset files changed; C# and animations unchanged"
+  ],
+  "unityImportVerified": false,
+  "playModeVerified": false,
+  "mcpUsed": false,
+  "knownLimitation": "Enemy is destroyed immediately on a lethal hit, so its final hit reaction and HP trail disappear with it."
+}

@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-07",
+  "type": "static asset and animation binding checks",
+  "variants": 18,
+  "changedExistingAssets": [
+    "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab"
+  ],
+  "checks": [
+    "body and face Sprite references on 18 inherited variants",
+    "FaceMotion active; duplicate mouth/moustache hidden",
+    "body/face cell dimensions, pivots and transforms match",
+    "unique new GUIDs and existing override target IDs",
+    "source images, base prefabs, scenes, C# and Animation hashes unchanged"
+  ],
+  "faceMotionClipsWithChangingPositions": [
+    "SlimeAttackLarge.anim",
+    "SlimeAttackMedium.anim",
+    "SlimeAttackSmall.anim",
+    "SlimeJumpLarge.anim",
+    "SlimeJumpMedium.anim",
+    "SlimeJumpSmall.anim",
+    "SlimeLand.anim",
+    "SlimePrepare.anim"
+  ],
+  "cornerAlphaSamples": {
+    "Pure_Medium": [
+      1,
+      0,
+      0,
+      0
+    ],
+    "Lightning_Large": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Water_Medium": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Earth_Large": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Wind_Medium": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Fire_Medium": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Water_Small": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Lightning_Small": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Wind_Large": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Pure_Large": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Pure_Small": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Fire_Large": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Earth_Small": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Lightning_Medium": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Fire_Small": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Water_Large": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Earth_Medium": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "Wind_Small": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "unityImportVerified": false,
+  "playModeVerified": false,
+  "mcpUsed": false,
+  "devicePerformanceMeasured": false
+}

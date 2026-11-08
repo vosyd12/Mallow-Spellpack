@@ -1,0 +1,1694 @@
+fileFormatVersion: 2
+guid: 1dde8a2ba168f2741b26e7e985c8c1c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4805548601039742490
+    second: LandingAnimationAtlas_0
+  - first:
+      213: -4282638031129285726
+    second: LandingAnimationAtlas_1
+  - first:
+      213: 1770787206885883627
+    second: LandingAnimationAtlas_2
+  - first:
+      213: 7513595766031693883
+    second: LandingAnimationAtlas_3
+  - first:
+      213: -2596481399835039473
+    second: LandingAnimationAtlas_4
+  - first:
+      213: -6102904476733659225
+    second: LandingAnimationAtlas_5
+  - first:
+      213: -1456740675308610889
+    second: LandingAnimationAtlas_6
+  - first:
+      213: 8734750873439069074
+    second: LandingAnimationAtlas_7
+  - first:
+      213: -7012707986202583938
+    second: LandingAnimationAtlas_8
+  - first:
+      213: 3174533619882420710
+    second: LandingAnimationAtlas_9
+  - first:
+      213: 1870364632875685585
+    second: LandingAnimationAtlas_10
+  - first:
+      213: -6844594332960663855
+    second: LandingAnimationAtlas_11
+  - first:
+      213: -1049008913058299726
+    second: LandingAnimationAtlas_12
+  - first:
+      213: 8810768922907079347
+    second: LandingAnimationAtlas_13
+  - first:
+      213: -5239828271853263067
+    second: LandingAnimationAtlas_14
+  - first:
+      213: -7795962365081355787
+    second: LandingAnimationAtlas_15
+  - first:
+      213: -2400458841176643257
+    second: LandingAnimationAtlas_16
+  - first:
+      213: -1795079109712600123
+    second: LandingAnimationAtlas_17
+  - first:
+      213: 5565452981679531908
+    second: LandingAnimationAtlas_18
+  - first:
+      213: 2268144389697187419
+    second: LandingAnimationAtlas_19
+  - first:
+      213: -4728798651116765721
+    second: LandingAnimationAtlas_20
+  - first:
+      213: -746787494529557467
+    second: LandingAnimationAtlas_21
+  - first:
+      213: -9010592511042567534
+    second: LandingAnimationAtlas_22
+  - first:
+      213: -7175429440767472551
+    second: LandingAnimationAtlas_23
+  - first:
+      213: -6354676453249448606
+    second: LandingAnimationAtlas_24
+  - first:
+      213: -8331884691304544315
+    second: LandingAnimationAtlas_25
+  - first:
+      213: -6302617333365426283
+    second: LandingAnimationAtlas_26
+  - first:
+      213: -5225034336119495096
+    second: LandingAnimationAtlas_27
+  - first:
+      213: 5405534697196417851
+    second: LandingAnimationAtlas_28
+  - first:
+      213: 6324455221776788728
+    second: LandingAnimationAtlas_29
+  - first:
+      213: -6500281107355049840
+    second: LandingAnimationAtlas_30
+  - first:
+      213: 4819363196087105641
+    second: LandingAnimationAtlas_31
+  - first:
+      213: 4481308813199318533
+    second: LandingAnimationAtlas_32
+  - first:
+      213: -2739099111329350711
+    second: LandingAnimationAtlas_33
+  - first:
+      213: 5315106072023787263
+    second: LandingAnimationAtlas_34
+  - first:
+      213: 1176812033982139759
+    second: LandingAnimationAtlas_35
+  - first:
+      213: -8299356341504825168
+    second: LandingAnimationAtlas_36
+  - first:
+      213: -6618102501973271015
+    second: LandingAnimationAtlas_37
+  - first:
+      213: -1576220256950116078
+    second: LandingAnimationAtlas_38
+  - first:
+      213: -1001331600343128773
+    second: LandingAnimationAtlas_39
+  - first:
+      213: 8785758458167369807
+    second: LandingAnimationAtlas_40
+  - first:
+      213: 8532162860294667016
+    second: LandingAnimationAtlas_41
+  - first:
+      213: 5988083762247782093
+    second: LandingAnimationAtlas_42
+  - first:
+      213: 8060096965051296134
+    second: LandingAnimationAtlas_43
+  - first:
+      213: 1082184555719235955
+    second: LandingAnimationAtlas_44
+  - first:
+      213: 4572197661435775421
+    second: LandingAnimationAtlas_45
+  - first:
+      213: -351147327832202812
+    second: LandingAnimationAtlas_46
+  - first:
+      213: 3714604407707840397
+    second: LandingAnimationAtlas_47
+  - first:
+      213: -2316501377055141484
+    second: LandingAnimationAtlas_48
+  - first:
+      213: -2088472461338782880
+    second: LandingAnimationAtlas_49
+  - first:
+      213: 6024497014320524358
+    second: LandingAnimationAtlas_50
+  - first:
+      213: 8399336601449517478
+    second: LandingAnimationAtlas_51
+  - first:
+      213: -6238741354000989820
+    second: LandingAnimationAtlas_52
+  - first:
+      213: 146370254420529861
+    second: LandingAnimationAtlas_53
+  - first:
+      213: 3332646264943641834
+    second: LandingAnimationAtlas_54
+  - first:
+      213: -7624337021745200079
+    second: LandingAnimationAtlas_55
+  - first:
+      213: -1021268100407498793
+    second: LandingAnimationAtlas_56
+  - first:
+      213: -7404390229751240304
+    second: LandingAnimationAtlas_57
+  - first:
+      213: 8196964072023454361
+    second: LandingAnimationAtlas_58
+  - first:
+      213: 2719357777757098836
+    second: LandingAnimationAtlas_59
+  - first:
+      213: 2938717191672056728
+    second: LandingAnimationAtlas_60
+  - first:
+      213: 5639431098435570280
+    second: LandingAnimationAtlas_61
+  - first:
+      213: -7747611417803924302
+    second: LandingAnimationAtlas_62
+  - first:
+      213: -5907923769839723943
+    second: LandingAnimationAtlas_63
+  - first:
+      213: -7081657321650303475
+    second: LandingAnimationAtlas_64
+  - first:
+      213: 228277573804719332
+    second: LandingAnimationAtlas_65
+  - first:
+      213: -4140395828477727212
+    second: LandingAnimationAtlas_66
+  - first:
+      213: 2159301647646445624
+    second: LandingAnimationAtlas_67
+  - first:
+      213: 5374013346984051259
+    second: LandingAnimationAtlas_68
+  - first:
+      213: 5846341579067220003
+    second: LandingAnimationAtlas_69
+  - first:
+      213: -3413418876693722717
+    second: LandingAnimationAtlas_70
+  - first:
+      213: -5625210269763061378
+    second: LandingAnimationAtlas_71
+  - first:
+      213: 8947658437537526930
+    second: LandingAnimationAtlas_72
+  - first:
+      213: -6276639725170154608
+    second: LandingAnimationAtlas_73
+  - first:
+      213: 1368580705424802138
+    second: LandingAnimationAtlas_74
+  - first:
+      213: 7330527750544919106
+    second: LandingAnimationAtlas_75
+  - first:
+      213: 7408623511542314803
+    second: LandingAnimationAtlas_76
+  - first:
+      213: -41387876724099018
+    second: LandingAnimationAtlas_77
+  - first:
+      213: -7851397723510594415
+    second: LandingAnimationAtlas_78
+  - first:
+      213: -7663905414159800291
+    second: LandingAnimationAtlas_79
+  - first:
+      213: -198773531107714055
+    second: LandingAnimationAtlas_80
+  - first:
+      213: -7565927311990469600
+    second: LandingAnimationAtlas_81
+  - first:
+      213: -3710820032824671063
+    second: LandingAnimationAtlas_82
+  - first:
+      213: 5980115725820819860
+    second: LandingAnimationAtlas_83
+  - first:
+      213: 2343819290172522055
+    second: LandingAnimationAtlas_84
+  - first:
+      213: 4078525845595449594
+    second: LandingAnimationAtlas_85
+  - first:
+      213: 3990582302103362451
+    second: LandingAnimationAtlas_86
+  - first:
+      213: -3284376751530415964
+    second: LandingAnimationAtlas_87
+  - first:
+      213: 5485099721228748541
+    second: LandingAnimationAtlas_88
+  - first:
+      213: 2848848943766178145
+    second: LandingAnimationAtlas_89
+  - first:
+      213: -3500801132178761998
+    second: LandingAnimationAtlas_90
+  - first:
+      213: 6827548899204644261
+    second: LandingAnimationAtlas_91
+  - first:
+      213: 2974154232672480295
+    second: LandingAnimationAtlas_92
+  - first:
+      213: 1336049014060848024
+    second: LandingAnimationAtlas_93
+  - first:
+      213: -8840370314712873243
+    second: LandingAnimationAtlas_94
+  - first:
+      213: -2299630731019184465
+    second: LandingAnimationAtlas_95
+  - first:
+      213: 3101050779084487169
+    second: LandingAnimationAtlas_96
+  - first:
+      213: -613569411784752353
+    second: LandingAnimationAtlas_97
+  - first:
+      213: 4409929786100697384
+    second: LandingAnimationAtlas_98
+  - first:
+      213: 7858842000321342542
+    second: LandingAnimationAtlas_99
+  - first:
+      213: 581109389858422981
+    second: LandingAnimationAtlas_100
+  - first:
+      213: -6050200144785884866
+    second: LandingAnimationAtlas_101
+  - first:
+      213: -7683984489812461034
+    second: LandingAnimationAtlas_102
+  - first:
+      213: -7601779110630493209
+    second: LandingAnimationAtlas_103
+  - first:
+      213: 1665314791594283840
+    second: LandingAnimationAtlas_104
+  - first:
+      213: 1337662572861822157
+    second: LandingAnimationAtlas_105
+  - first:
+      213: 2899836363394226254
+    second: LandingAnimationAtlas_106
+  - first:
+      213: 3385086328446263384
+    second: LandingAnimationAtlas_107
+  - first:
+      213: 4412355053199741097
+    second: LandingAnimationAtlas_108
+  - first:
+      213: -3570424749237211277
+    second: LandingAnimationAtlas_109
+  - first:
+      213: -2588808356607155474
+    second: LandingAnimationAtlas_110
+  - first:
+      213: 6125575036498028134
+    second: LandingAnimationAtlas_111
+  - first:
+      213: 576749810454052206
+    second: LandingAnimationAtlas_112
+  - first:
+      213: 762348054115915486
+    second: LandingAnimationAtlas_113
+  - first:
+      213: -7366184778741885752
+    second: LandingAnimationAtlas_114
+  - first:
+      213: -6269655557769302896
+    second: LandingAnimationAtlas_115
+  - first:
+      213: 2825284290428617214
+    second: LandingAnimationAtlas_116
+  - first:
+      213: 8711417063450708742
+    second: LandingAnimationAtlas_117
+  - first:
+      213: 8482279868082913905
+    second: LandingAnimationAtlas_118
+  - first:
+      213: 401353835329234014
+    second: LandingAnimationAtlas_119
+  - first:
+      213: 7020152016601412778
+    second: LandingAnimationAtlas_120
+  - first:
+      213: -460320256496250192
+    second: LandingAnimationAtlas_121
+  - first:
+      213: 8483598628261874461
+    second: LandingAnimationAtlas_122
+  - first:
+      213: 884990998754217556
+    second: LandingAnimationAtlas_123
+  - first:
+      213: -6945589233252102740
+    second: LandingAnimationAtlas_124
+  - first:
+      213: -7539542104873184851
+    second: LandingAnimationAtlas_125
+  - first:
+      213: -3341371803643659751
+    second: LandingAnimationAtlas_126
+  - first:
+      213: -8692590259891632638
+    second: LandingAnimationAtlas_127
+  - first:
+      213: -4752505262226881373
+    second: LandingAnimationAtlas_128
+  - first:
+      213: 8605566006330778135
+    second: LandingAnimationAtlas_129
+  - first:
+      213: -8065690687052773950
+    second: LandingAnimationAtlas_130
+  - first:
+      213: -5763762611864655454
+    second: LandingAnimationAtlas_131
+  - first:
+      213: 5294895372284001524
+    second: LandingAnimationAtlas_132
+  - first:
+      213: 3197141273039867170
+    second: LandingAnimationAtlas_133
+  - first:
+      213: -7919366204030780779
+    second: LandingAnimationAtlas_134
+  - first:
+      213: 8374649107426807112
+    second: LandingAnimationAtlas_135
+  - first:
+      213: 8571565091277342013
+    second: LandingAnimationAtlas_136
+  - first:
+      213: 2989476335987503796
+    second: LandingAnimationAtlas_137
+  - first:
+      213: -1115529227903990164
+    second: LandingAnimationAtlas_138
+  - first:
+      213: 297185397205723405
+    second: LandingAnimationAtlas_139
+  - first:
+      213: 7692457325503083293
+    second: LandingAnimationAtlas_140
+  - first:
+      213: -160263759304281578
+    second: LandingAnimationAtlas_141
+  - first:
+      213: 9131377683073347503
+    second: LandingAnimationAtlas_142
+  - first:
+      213: -5278662407431452266
+    second: LandingAnimationAtlas_143
+  - first:
+      213: 2554357205650601376
+    second: LandingAnimationAtlas_144
+  - first:
+      213: -4035436188476879096
+    second: LandingAnimationAtlas_145
+  - first:
+      213: -7538099140843928142
+    second: LandingAnimationAtlas_146
+  - first:
+      213: 3739225220892008380
+    second: LandingAnimationAtlas_147
+  - first:
+      213: 7441405238125930818
+    second: LandingAnimationAtlas_148
+  - first:
+      213: -3674369488434585062
+    second: LandingAnimationAtlas_149
+  - first:
+      213: -4830445451038504268
+    second: LandingAnimationAtlas_150
+  - first:
+      213: 1184673303829981039
+    second: LandingAnimationAtlas_151
+  - first:
+      213: -3941630396170785517
+    second: LandingAnimationAtlas_152
+  - first:
+      213: -754119325139795781
+    second: LandingAnimationAtlas_153
+  - first:
+      213: -8443685464676853703
+    second: LandingAnimationAtlas_154
+  - first:
+      213: -2963645838865281738
+    second: LandingAnimationAtlas_155
+  - first:
+      213: 2635120557689862211
+    second: LandingAnimationAtlas_156
+  - first:
+      213: 1098286324429101383
+    second: Fire_0
+  - first:
+      213: 7419590508823533442
+    second: Fire_1
+  - first:
+      213: 2333874723133794383
+    second: Fire_2
+  - first:
+      213: 6211036013863027259
+    second: Fire_3
+  - first:
+      213: 2168491126659702453
+    second: Fire_4
+  - first:
+      213: 3081219861163341933
+    second: Fire_5
+  - first:
+      213: 6049605792901559095
+    second: Water_0
+  - first:
+      213: -5882170695943828418
+    second: Water_1
+  - first:
+      213: 7591774343886807129
+    second: Water_2
+  - first:
+      213: 8088830456793213489
+    second: Water_3
+  - first:
+      213: 4177692092066526168
+    second: Water_4
+  - first:
+      213: 8954592487278907307
+    second: Water_5
+  - first:
+      213: 6423806749927177598
+    second: Earth_0
+  - first:
+      213: -3086602609980112195
+    second: Earth_1
+  - first:
+      213: 6924314980402435031
+    second: Earth_2
+  - first:
+      213: 8294369937034324297
+    second: Earth_3
+  - first:
+      213: 5955687731921373103
+    second: Earth_4
+  - first:
+      213: 7385045655152147662
+    second: Earth_5
+  - first:
+      213: 4578591244471777430
+    second: Wind_0
+  - first:
+      213: -1387331921383137420
+    second: Wind_1
+  - first:
+      213: 1714587572013046209
+    second: Wind_2
+  - first:
+      213: 4418870476218435729
+    second: Wind_3
+  - first:
+      213: 7144953509852361976
+    second: Wind_4
+  - first:
+      213: -4360064557889419803
+    second: Wind_5
+  - first:
+      213: -894095381526335850
+    second: Lightning_0
+  - first:
+      213: 1757268892636325777
+    second: Lightning_1
+  - first:
+      213: -3844808008048746940
+    second: Lightning_2
+  - first:
+      213: 2027566014926527852
+    second: Lightning_3
+  - first:
+      213: -4619879911555016802
+    second: Lightning_4
+  - first:
+      213: -7997413134559260832
+    second: Lightning_5
+  - first:
+      213: 5296703704962629517
+    second: Particle_0
+  - first:
+      213: -3713193396896522445
+    second: Particle_1
+  - first:
+      213: 6862439951214820975
+    second: Particle_2
+  - first:
+      213: -8676825090279252556
+    second: Particle_3
+  - first:
+      213: -7138660540900764361
+    second: Particle_4
+  - first:
+      213: -2986910910271116145
+    second: Particle_5
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fire_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1045
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7491445d795ed3f00800000000000000
+      internalID: 1098286324429101383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1045
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2875941d14ea7f660800000000000000
+      internalID: 7419590508823533442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1045
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4827aef1b6936020800000000000000
+      internalID: 2333874723133794383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1045
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b32c67dd858023650800000000000000
+      internalID: 6211036013863027259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 1045
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be5327c037081e10800000000000000
+      internalID: 2168491126659702453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1045
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68f4838321b2ca20800000000000000
+      internalID: 3081219861163341933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 836
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733fa0d9a6484f350800000000000000
+      internalID: 6049605792901559095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 836
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c4e08cae45e5ea0800000000000000
+      internalID: -5882170695943828418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 836
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9502c46fa866b5960800000000000000
+      internalID: 7591774343886807129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 836
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a2589a17c414070800000000000000
+      internalID: 8088830456793213489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 836
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d37598c2d42af930800000000000000
+      internalID: 4177692092066526168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 836
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf04a87c6a154c70800000000000000
+      internalID: 8954592487278907307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 627
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d7a2b4432f52950800000000000000
+      internalID: 6423806749927177598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 627
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2875d974f2a25d0800000000000000
+      internalID: -3086602609980112195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 627
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d39dcfb9cb181060800000000000000
+      internalID: 6924314980402435031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 627
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9492c9423858b1370800000000000000
+      internalID: 8294369937034324297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 627
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa74356007ad6a250800000000000000
+      internalID: 5955687731921373103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Earth_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 627
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eccb26d45e3fc7660800000000000000
+      internalID: 7385045655152147662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698347a7a7c6a8f30800000000000000
+      internalID: 4578591244471777430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47fd568c7f43fbce0800000000000000
+      internalID: -1387331921383137420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9132eff407bc710800000000000000
+      internalID: 1714587572013046209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1980673394bf25d30800000000000000
+      internalID: 4418870476218435729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f43e639c59f72360800000000000000
+      internalID: 7144953509852361976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wind_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 418
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e50b3d9260fd73c0800000000000000
+      internalID: -4360064557889419803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e2ec4dcf88793f0800000000000000
+      internalID: -894095381526335850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197ae685fb2136810800000000000000
+      internalID: 1757268892636325777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e5da2cc7f74aac0800000000000000
+      internalID: -3844808008048746940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d995e4c8c532c10800000000000000
+      internalID: 2027566014926527852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97dcc692b3e2efb0800000000000000
+      internalID: -4619879911555016802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 209
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f4d80502b730190800000000000000
+      internalID: -7997413134559260832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Particle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ffaced4fba18940800000000000000
+      internalID: 5296703704962629517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Particle_1
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f18a36746187cc0800000000000000
+      internalID: -3713193396896522445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Particle_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ebb90e6c84c3f50800000000000000
+      internalID: 6862439951214820975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Particle_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd55bb5d89b59780800000000000000
+      internalID: -8676825090279252556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Particle_4
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735138f6f026eec90800000000000000
+      internalID: -7138660540900764361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Particle_5
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 0
+        width: 209
+        height: 209
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c2d893a5c5c86d0800000000000000
+      internalID: -2986910910271116145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Earth_0: 6423806749927177598
+      Earth_1: -3086602609980112195
+      Earth_2: 6924314980402435031
+      Earth_3: 8294369937034324297
+      Earth_4: 5955687731921373103
+      Earth_5: 7385045655152147662
+      Fire_0: 1098286324429101383
+      Fire_1: 7419590508823533442
+      Fire_2: 2333874723133794383
+      Fire_3: 6211036013863027259
+      Fire_4: 2168491126659702453
+      Fire_5: 3081219861163341933
+      LandingAnimationAtlas_0: 4805548601039742490
+      LandingAnimationAtlas_1: -4282638031129285726
+      LandingAnimationAtlas_10: 1870364632875685585
+      LandingAnimationAtlas_100: 581109389858422981
+      LandingAnimationAtlas_101: -6050200144785884866
+      LandingAnimationAtlas_102: -7683984489812461034
+      LandingAnimationAtlas_103: -7601779110630493209
+      LandingAnimationAtlas_104: 1665314791594283840
+      LandingAnimationAtlas_105: 1337662572861822157
+      LandingAnimationAtlas_106: 2899836363394226254
+      LandingAnimationAtlas_107: 3385086328446263384
+      LandingAnimationAtlas_108: 4412355053199741097
+      LandingAnimationAtlas_109: -3570424749237211277
+      LandingAnimationAtlas_11: -6844594332960663855
+      LandingAnimationAtlas_110: -2588808356607155474
+      LandingAnimationAtlas_111: 6125575036498028134
+      LandingAnimationAtlas_112: 576749810454052206
+      LandingAnimationAtlas_113: 762348054115915486
+      LandingAnimationAtlas_114: -7366184778741885752
+      LandingAnimationAtlas_115: -6269655557769302896
+      LandingAnimationAtlas_116: 2825284290428617214
+      LandingAnimationAtlas_117: 8711417063450708742
+      LandingAnimationAtlas_118: 8482279868082913905
+      LandingAnimationAtlas_119: 401353835329234014
+      LandingAnimationAtlas_12: -1049008913058299726
+      LandingAnimationAtlas_120: 7020152016601412778
+      LandingAnimationAtlas_121: -460320256496250192
+      LandingAnimationAtlas_122: 8483598628261874461
+      LandingAnimationAtlas_123: 884990998754217556
+      LandingAnimationAtlas_124: -6945589233252102740
+      LandingAnimationAtlas_125: -7539542104873184851
+      LandingAnimationAtlas_126: -3341371803643659751
+      LandingAnimationAtlas_127: -8692590259891632638
+      LandingAnimationAtlas_128: -4752505262226881373
+      LandingAnimationAtlas_129: 8605566006330778135
+      LandingAnimationAtlas_13: 8810768922907079347
+      LandingAnimationAtlas_130: -8065690687052773950
+      LandingAnimationAtlas_131: -5763762611864655454
+      LandingAnimationAtlas_132: 5294895372284001524
+      LandingAnimationAtlas_133: 3197141273039867170
+      LandingAnimationAtlas_134: -7919366204030780779
+      LandingAnimationAtlas_135: 8374649107426807112
+      LandingAnimationAtlas_136: 8571565091277342013
+      LandingAnimationAtlas_137: 2989476335987503796
+      LandingAnimationAtlas_138: -1115529227903990164
+      LandingAnimationAtlas_139: 297185397205723405
+      LandingAnimationAtlas_14: -5239828271853263067
+      LandingAnimationAtlas_140: 7692457325503083293
+      LandingAnimationAtlas_141: -160263759304281578
+      LandingAnimationAtlas_142: 9131377683073347503
+      LandingAnimationAtlas_143: -5278662407431452266
+      LandingAnimationAtlas_144: 2554357205650601376
+      LandingAnimationAtlas_145: -4035436188476879096
+      LandingAnimationAtlas_146: -7538099140843928142
+      LandingAnimationAtlas_147: 3739225220892008380
+      LandingAnimationAtlas_148: 7441405238125930818
+      LandingAnimationAtlas_149: -3674369488434585062
+      LandingAnimationAtlas_15: -7795962365081355787
+      LandingAnimationAtlas_150: -4830445451038504268
+      LandingAnimationAtlas_151: 1184673303829981039
+      LandingAnimationAtlas_152: -3941630396170785517
+      LandingAnimationAtlas_153: -754119325139795781
+      LandingAnimationAtlas_154: -8443685464676853703
+      LandingAnimationAtlas_155: -2963645838865281738
+      LandingAnimationAtlas_156: 2635120557689862211
+      LandingAnimationAtlas_16: -2400458841176643257
+      LandingAnimationAtlas_17: -1795079109712600123
+      LandingAnimationAtlas_18: 5565452981679531908
+      LandingAnimationAtlas_19: 2268144389697187419
+      LandingAnimationAtlas_2: 1770787206885883627
+      LandingAnimationAtlas_20: -4728798651116765721
+      LandingAnimationAtlas_21: -746787494529557467
+      LandingAnimationAtlas_22: -9010592511042567534
+      LandingAnimationAtlas_23: -7175429440767472551
+      LandingAnimationAtlas_24: -6354676453249448606
+      LandingAnimationAtlas_25: -8331884691304544315
+      LandingAnimationAtlas_26: -6302617333365426283
+      LandingAnimationAtlas_27: -5225034336119495096
+      LandingAnimationAtlas_28: 5405534697196417851
+      LandingAnimationAtlas_29: 6324455221776788728
+      LandingAnimationAtlas_3: 7513595766031693883
+      LandingAnimationAtlas_30: -6500281107355049840
+      LandingAnimationAtlas_31: 4819363196087105641
+      LandingAnimationAtlas_32: 4481308813199318533
+      LandingAnimationAtlas_33: -2739099111329350711
+      LandingAnimationAtlas_34: 5315106072023787263
+      LandingAnimationAtlas_35: 1176812033982139759
+      LandingAnimationAtlas_36: -8299356341504825168
+      LandingAnimationAtlas_37: -6618102501973271015
+      LandingAnimationAtlas_38: -1576220256950116078
+      LandingAnimationAtlas_39: -1001331600343128773
+      LandingAnimationAtlas_4: -2596481399835039473
+      LandingAnimationAtlas_40: 8785758458167369807
+      LandingAnimationAtlas_41: 8532162860294667016
+      LandingAnimationAtlas_42: 5988083762247782093
+      LandingAnimationAtlas_43: 8060096965051296134
+      LandingAnimationAtlas_44: 1082184555719235955
+      LandingAnimationAtlas_45: 4572197661435775421
+      LandingAnimationAtlas_46: -351147327832202812
+      LandingAnimationAtlas_47: 3714604407707840397
+      LandingAnimationAtlas_48: -2316501377055141484
+      LandingAnimationAtlas_49: -2088472461338782880
+      LandingAnimationAtlas_5: -6102904476733659225
+      LandingAnimationAtlas_50: 6024497014320524358
+      LandingAnimationAtlas_51: 8399336601449517478
+      LandingAnimationAtlas_52: -6238741354000989820
+      LandingAnimationAtlas_53: 146370254420529861
+      LandingAnimationAtlas_54: 3332646264943641834
+      LandingAnimationAtlas_55: -7624337021745200079
+      LandingAnimationAtlas_56: -1021268100407498793
+      LandingAnimationAtlas_57: -7404390229751240304
+      LandingAnimationAtlas_58: 8196964072023454361
+      LandingAnimationAtlas_59: 2719357777757098836
+      LandingAnimationAtlas_6: -1456740675308610889
+      LandingAnimationAtlas_60: 2938717191672056728
+      LandingAnimationAtlas_61: 5639431098435570280
+      LandingAnimationAtlas_62: -7747611417803924302
+      LandingAnimationAtlas_63: -5907923769839723943
+      LandingAnimationAtlas_64: -7081657321650303475
+      LandingAnimationAtlas_65: 228277573804719332
+      LandingAnimationAtlas_66: -4140395828477727212
+      LandingAnimationAtlas_67: 2159301647646445624
+      LandingAnimationAtlas_68: 5374013346984051259
+      LandingAnimationAtlas_69: 5846341579067220003
+      LandingAnimationAtlas_7: 8734750873439069074
+      LandingAnimationAtlas_70: -3413418876693722717
+      LandingAnimationAtlas_71: -5625210269763061378
+      LandingAnimationAtlas_72: 8947658437537526930
+      LandingAnimationAtlas_73: -6276639725170154608
+      LandingAnimationAtlas_74: 1368580705424802138
+      LandingAnimationAtlas_75: 7330527750544919106
+      LandingAnimationAtlas_76: 7408623511542314803
+      LandingAnimationAtlas_77: -41387876724099018
+      LandingAnimationAtlas_78: -7851397723510594415
+      LandingAnimationAtlas_79: -7663905414159800291
+      LandingAnimationAtlas_8: -7012707986202583938
+      LandingAnimationAtlas_80: -198773531107714055
+      LandingAnimationAtlas_81: -7565927311990469600
+      LandingAnimationAtlas_82: -3710820032824671063
+      LandingAnimationAtlas_83: 5980115725820819860
+      LandingAnimationAtlas_84: 2343819290172522055
+      LandingAnimationAtlas_85: 4078525845595449594
+      LandingAnimationAtlas_86: 3990582302103362451
+      LandingAnimationAtlas_87: -3284376751530415964
+      LandingAnimationAtlas_88: 5485099721228748541
+      LandingAnimationAtlas_89: 2848848943766178145
+      LandingAnimationAtlas_9: 3174533619882420710
+      LandingAnimationAtlas_90: -3500801132178761998
+      LandingAnimationAtlas_91: 6827548899204644261
+      LandingAnimationAtlas_92: 2974154232672480295
+      LandingAnimationAtlas_93: 1336049014060848024
+      LandingAnimationAtlas_94: -8840370314712873243
+      LandingAnimationAtlas_95: -2299630731019184465
+      LandingAnimationAtlas_96: 3101050779084487169
+      LandingAnimationAtlas_97: -613569411784752353
+      LandingAnimationAtlas_98: 4409929786100697384
+      LandingAnimationAtlas_99: 7858842000321342542
+      Lightning_0: -894095381526335850
+      Lightning_1: 1757268892636325777
+      Lightning_2: -3844808008048746940
+      Lightning_3: 2027566014926527852
+      Lightning_4: -4619879911555016802
+      Lightning_5: -7997413134559260832
+      Particle_0: 5296703704962629517
+      Particle_1: -3713193396896522445
+      Particle_2: 6862439951214820975
+      Particle_3: -8676825090279252556
+      Particle_4: -7138660540900764361
+      Particle_5: -2986910910271116145
+      Water_0: 6049605792901559095
+      Water_1: -5882170695943828418
+      Water_2: 7591774343886807129
+      Water_3: 8088830456793213489
+      Water_4: 4177692092066526168
+      Water_5: 8954592487278907307
+      Wind_0: 4578591244471777430
+      Wind_1: -1387331921383137420
+      Wind_2: 1714587572013046209
+      Wind_3: 4418870476218435729
+      Wind_4: 7144953509852361976
+      Wind_5: -4360064557889419803
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

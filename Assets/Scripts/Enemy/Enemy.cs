@@ -5,20 +5,27 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject _traceObject;
     [SerializeField] private bool _useDefaultMovement = true;
     [SerializeField] private float _moveSpeed;
+    [SerializeField] private HealthBar _healthBar;
+
+    [SerializeField] private int _maxHP;
+
+    [SerializeField]
+    private HitReaction _hitReaction;
+
+    [SerializeField]
+    private EnemyState _enemy;
+    public EnemyState EnemyState => _enemy;
 
     public Transform Target => _traceObject != null ? _traceObject.transform : null;
     public float MoveSpeed => _enemy.MoveSpeed;
-    
-    private EnemyState _enemy;
-    public EnemyState EnemyState => _enemy;
+
     private Rigidbody2D _rd;
 
     private Vector3 _pos;
 
-
     private void Awake()
     {
-        _enemy.HP = 50;
+        _enemy.HP = _maxHP;
         _enemy.MP = 50;
         _enemy.Attack = 5;
         _enemy.Defense = 1;
@@ -27,6 +34,7 @@ public class Enemy : MonoBehaviour
         _enemy.AttackSpeed = 5f;
 
         _rd = GetComponent<Rigidbody2D>();
+        _healthBar.SetHealth(_enemy.HP, _maxHP);
     }
 
     private void Update()
@@ -59,10 +67,12 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        _enemy.HP = 
-            Mathf.Max(0, _enemy.HP - damage);
+        _enemy.HP = Mathf.Max(0, _enemy.HP - damage);
 
-        if(_enemy.HP > 0)
+        _healthBar.SetHealth(_enemy.HP, _maxHP);
+        _hitReaction.Play();
+
+        if (_enemy.HP > 0)
         {
             return;
         }

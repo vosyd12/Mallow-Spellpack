@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07",
+  "type": "static asset checks",
+  "variants": 18,
+  "checks": [
+    "18 unique element/size combinations with byte-identical approved PNG copies",
+    "unique asset GUIDs and existing base/override targets",
+    "single Sprite import, alpha, Point filtering, bottom pivots and normalized widths",
+    "only appearance/name/origin overrides; no gameplay/component overrides",
+    "Small width factor 1.2; Medium/Large width factor 1.0",
+    "all pre-existing Assets hashes unchanged"
+  ],
+  "unityImportVerified": false,
+  "playModeVerified": false,
+  "mcpUsed": false,
+  "devicePerformanceMeasured": false
+}

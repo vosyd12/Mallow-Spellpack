@@ -31,7 +31,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9200000000000000102}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &1765932277532297567
@@ -117,8 +118,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.32
-      minScalar: 0.18
+      scalar: 0.44
+      minScalar: 0.26
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -288,8 +289,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.23
-      minScalar: 0.13
+      scalar: 0.34
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -4916,3 +4917,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13ab61c2cc68e6a47a89fd9ba366f7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LandingDust
+  _referenceLandingSpeed: 2
+  _horizontalSpeed: 1.65
+  _verticalSpeed: 0.55
+--- !u!1001 &9200000000000000101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8060266235405181921}
+    m_Modifications: []
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a53d38d19e04ab3be27970df6dd27ff, type: 3}
+--- !u!4 &9200000000000000102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8060266235405181921, guid: 8a53d38d19e04ab3be27970df6dd27ff, type: 3}
+  m_PrefabInstance: {fileID: 9200000000000000101}
+  m_PrefabAsset: {fileID: 0}

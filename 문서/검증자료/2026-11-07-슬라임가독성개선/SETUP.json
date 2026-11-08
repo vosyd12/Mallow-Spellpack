@@ -1,0 +1,528 @@
+{
+  "date": "2026-11-07",
+  "assets": {
+    "Fire": {
+      "image": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireIndependentLayers.png",
+      "guid": "c3bc33e565574fcda96f6d54480bb06c",
+      "width": 1254,
+      "height": 1254,
+      "bounds": [
+        [
+          31,
+          133,
+          596,
+          567
+        ],
+        [
+          820,
+          206,
+          1061,
+          481
+        ],
+        [
+          251,
+          873,
+          376,
+          1032
+        ],
+        [
+          1254,
+          1254,
+          -1,
+          -1
+        ]
+      ],
+      "ppu": 565
+    },
+    "Water": {
+      "image": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterIndependentLayers.png",
+      "guid": "69cad1f677a940ca8838de04e9291842",
+      "width": 1254,
+      "height": 1254,
+      "bounds": [
+        [
+          53,
+          94,
+          591,
+          546
+        ],
+        [
+          769,
+          186,
+          1121,
+          459
+        ],
+        [
+          194,
+          797,
+          447,
+          1108
+        ],
+        [
+          1254,
+          1254,
+          -1,
+          -1
+        ]
+      ],
+      "ppu": 538
+    },
+    "Earth": {
+      "image": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthIndependentLayers.png",
+      "guid": "96be16710770430bb01299de13f1e557",
+      "width": 1254,
+      "height": 1254,
+      "bounds": [
+        [
+          54,
+          99,
+          603,
+          534
+        ],
+        [
+          813,
+          203,
+          1078,
+          460
+        ],
+        [
+          238,
+          867,
+          418,
+          1035
+        ],
+        [
+          1254,
+          1254,
+          -1,
+          -1
+        ]
+      ],
+      "ppu": 549
+    },
+    "Wind": {
+      "image": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindIndependentLayers.png",
+      "guid": "c58bb934c3f347f5b726e0ebd070a2bf",
+      "width": 1254,
+      "height": 1254,
+      "bounds": [
+        [
+          46,
+          93,
+          606,
+          558
+        ],
+        [
+          789,
+          149,
+          1096,
+          511
+        ],
+        [
+          152,
+          864,
+          494,
+          1062
+        ],
+        [
+          1254,
+          1254,
+          -1,
+          -1
+        ]
+      ],
+      "ppu": 560
+    },
+    "Lightning": {
+      "image": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningIndependentLayers.png",
+      "guid": "e8169b3756064c3dbf5af4f42058e93f",
+      "width": 1254,
+      "height": 1254,
+      "bounds": [
+        [
+          47,
+          96,
+          580,
+          523
+        ],
+        [
+          795,
+          149,
+          1107,
+          502
+        ],
+        [
+          239,
+          839,
+          420,
+          1069
+        ],
+        [
+          1254,
+          1254,
+          -1,
+          -1
+        ]
+      ],
+      "ppu": 533
+    }
+  },
+  "variants": [
+    {
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+      "element": "Pure",
+      "size": "Small",
+      "scaleFactor": 1.6,
+      "ornamentSeparated": false
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+      "element": "Pure",
+      "size": "Medium",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": false
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+      "element": "Pure",
+      "size": "Large",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": false
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+      "element": "Fire",
+      "size": "Small",
+      "scaleFactor": 1.6,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+      "element": "Fire",
+      "size": "Medium",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+      "element": "Fire",
+      "size": "Large",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+      "element": "Water",
+      "size": "Small",
+      "scaleFactor": 1.6,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+      "element": "Water",
+      "size": "Medium",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+      "element": "Water",
+      "size": "Large",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+      "element": "Earth",
+      "size": "Small",
+      "scaleFactor": 1.6,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+      "element": "Earth",
+      "size": "Medium",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+      "element": "Earth",
+      "size": "Large",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+      "element": "Wind",
+      "size": "Small",
+      "scaleFactor": 1.6,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+      "element": "Wind",
+      "size": "Medium",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+      "element": "Wind",
+      "size": "Large",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+      "element": "Lightning",
+      "size": "Small",
+      "scaleFactor": 1.6,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+      "element": "Lightning",
+      "size": "Medium",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    },
+    {
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+      "element": "Lightning",
+      "size": "Large",
+      "scaleFactor": 1.5,
+      "ornamentSeparated": true
+    }
+  ],
+  "effects": [
+    {
+      "element": "Fire",
+      "prefab": "Assets/Prefab/Effects/LandingDustFire.prefab",
+      "guid": "17e40e1974d14e5f91e9ffd8ad2f3905",
+      "componentId": 4916308919100026255
+    },
+    {
+      "element": "Water",
+      "prefab": "Assets/Prefab/Effects/LandingDustWater.prefab",
+      "guid": "0df1a1289acc4c0a850e3d996aa9d63e",
+      "componentId": 4916308919100026255
+    },
+    {
+      "element": "Earth",
+      "prefab": "Assets/Prefab/Effects/LandingDustEarth.prefab",
+      "guid": "671eda4b3dfa49b69f2c765b5e4b242c",
+      "componentId": 4916308919100026255
+    },
+    {
+      "element": "Wind",
+      "prefab": "Assets/Prefab/Effects/LandingDustWind.prefab",
+      "guid": "25451d4e63344fd4b253d5f026e808fc",
+      "componentId": 4916308919100026255
+    },
+    {
+      "element": "Lightning",
+      "prefab": "Assets/Prefab/Effects/LandingDustLightning.prefab",
+      "guid": "660974d4a54c413d8373c8a2004c9fc1",
+      "componentId": 4916308919100026255
+    },
+    {
+      "element": "Pure",
+      "prefab": "Assets/Prefab/Effects/LandingDustPure.prefab",
+      "guid": "83540e6cc3d1448ebebe53a0c36fbee5",
+      "componentId": 4916308919100026255
+    }
+  ],
+  "outputs": [
+    "Assets/Sprites/Characters/Slimes/Fire/SlimeFireIndependentLayers.png",
+    "Assets/Sprites/Characters/Slimes/Fire/SlimeFireIndependentLayers.png.meta",
+    "Assets/Sprites/Characters/Slimes/Water/SlimeWaterIndependentLayers.png",
+    "Assets/Sprites/Characters/Slimes/Water/SlimeWaterIndependentLayers.png.meta",
+    "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthIndependentLayers.png",
+    "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthIndependentLayers.png.meta",
+    "Assets/Sprites/Characters/Slimes/Wind/SlimeWindIndependentLayers.png",
+    "Assets/Sprites/Characters/Slimes/Wind/SlimeWindIndependentLayers.png.meta",
+    "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningIndependentLayers.png",
+    "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningIndependentLayers.png.meta",
+    "Assets/Prefab/SlimeSmall.prefab",
+    "Assets/Prefab/SlimeMedium.prefab",
+    "Assets/Prefab/SlimeLarge.prefab",
+    "Assets/Animations/Slime/SlimeAttackLarge.anim",
+    "Assets/Animations/Slime/SlimeAttackMedium.anim",
+    "Assets/Animations/Slime/SlimeAttackSmall.anim",
+    "Assets/Animations/Slime/SlimeIdle.anim",
+    "Assets/Animations/Slime/SlimeJumpLarge.anim",
+    "Assets/Animations/Slime/SlimeJumpMedium.anim",
+    "Assets/Animations/Slime/SlimeJumpSmall.anim",
+    "Assets/Animations/Slime/SlimeLand.anim",
+    "Assets/Animations/Slime/SlimePrepare.anim",
+    "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+    "Assets/Materials/Effects/LandingDustFire.mat",
+    "Assets/Materials/Effects/LandingDustFire.mat.meta",
+    "Assets/Prefab/Effects/LandingDustFire.prefab",
+    "Assets/Prefab/Effects/LandingDustFire.prefab.meta",
+    "Assets/Materials/Effects/LandingDustWater.mat",
+    "Assets/Materials/Effects/LandingDustWater.mat.meta",
+    "Assets/Prefab/Effects/LandingDustWater.prefab",
+    "Assets/Prefab/Effects/LandingDustWater.prefab.meta",
+    "Assets/Materials/Effects/LandingDustEarth.mat",
+    "Assets/Materials/Effects/LandingDustEarth.mat.meta",
+    "Assets/Prefab/Effects/LandingDustEarth.prefab",
+    "Assets/Prefab/Effects/LandingDustEarth.prefab.meta",
+    "Assets/Materials/Effects/LandingDustWind.mat",
+    "Assets/Materials/Effects/LandingDustWind.mat.meta",
+    "Assets/Prefab/Effects/LandingDustWind.prefab",
+    "Assets/Prefab/Effects/LandingDustWind.prefab.meta",
+    "Assets/Materials/Effects/LandingDustLightning.mat",
+    "Assets/Materials/Effects/LandingDustLightning.mat.meta",
+    "Assets/Prefab/Effects/LandingDustLightning.prefab",
+    "Assets/Prefab/Effects/LandingDustLightning.prefab.meta",
+    "Assets/Prefab/Effects/LandingDustPure.prefab",
+    "Assets/Prefab/Effects/LandingDustPure.prefab.meta",
+    "Assets/Scenes/SampleScene.unity"
+  ],
+  "codeFilesUnchanged": true,
+  "mcpUsed": false,
+  "playModeVerified": false,
+  "state": "applied",
+  "hierarchyIds": {
+    "ReadabilityScale": 7500000000000000010,
+    "BodyMotion": 7500000000000000020,
+    "ElementAnchor": 7500000000000000030,
+    "ElementMotion": 7500000000000000040,
+    "ElementVisual": 7500000000000000050
+  },
+  "animationBodyPath": "VisualRoot/ReadabilityScale/BodyMotion",
+  "animationFacePath": "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion",
+  "animationElementPath": "VisualRoot/ReadabilityScale/ElementAnchor/ElementMotion",
+  "staticChecksPassed": true,
+  "outputHashes": {
+    "Assets/Sprites/Characters/Slimes/Fire/SlimeFireIndependentLayers.png": "0cb3753fdd8e9e0b198fd2c4b5f1853f322623958f2b2e538a901e895d6fe5d8",
+    "Assets/Sprites/Characters/Slimes/Fire/SlimeFireIndependentLayers.png.meta": "f77d31de8e2f06daabe1700bea96ac1dd59b9de52bce7b43c09deee5c1f00881",
+    "Assets/Sprites/Characters/Slimes/Water/SlimeWaterIndependentLayers.png": "89e8c911a1233863d7d0f814a0861b6ced67480e47e73b3715da16ba59a53790",
+    "Assets/Sprites/Characters/Slimes/Water/SlimeWaterIndependentLayers.png.meta": "90a9573150ae679ce3463cecf2ec2110dca511a6d310ceaf0fe4fc448ea648ba",
+    "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthIndependentLayers.png": "89fb5ccb70a8c845645b45647b4938640d0247f3575dd36722403fcff4af9fbc",
+    "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthIndependentLayers.png.meta": "5ad996942384b962462a65a6a00b60bffdd39ac75f358690b0e8195ac2bc1e77",
+    "Assets/Sprites/Characters/Slimes/Wind/SlimeWindIndependentLayers.png": "4106da25ed9f5b7ea50b21d8e3e08266f70fa64585947ec4a9ad834686629dd3",
+    "Assets/Sprites/Characters/Slimes/Wind/SlimeWindIndependentLayers.png.meta": "a809f76c4cd5ae574d23dc52f08c34f46f8e0d525a1d557357f97c5b5e714031",
+    "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningIndependentLayers.png": "3960dc1fcfbb1bf92f0c53f45a8959d27cfcf6b4347289778a4a99ca8aa72acb",
+    "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningIndependentLayers.png.meta": "1607d94cc3311ccb4e287bb3d6e55f0c717b3f2b6ddb7663e56a8cb3cd1e60a0",
+    "Assets/Prefab/SlimeSmall.prefab": "638ee1b667497bb64899b950f35687fb7128487002b177165b9063d67e5aa407",
+    "Assets/Prefab/SlimeMedium.prefab": "bd2f2c1a6c6e9256e8f19499a9c0c6dda1d62b54b0ff3a6911228c65c98e75b4",
+    "Assets/Prefab/SlimeLarge.prefab": "1b5a9868f0676070e6f6dad3c08f63a27cfaa7bfd3f7fd450365d2560e7056db",
+    "Assets/Animations/Slime/SlimeAttackLarge.anim": "0fcbc561960c3c1a2c31758e253dcfd37f4571be352a41ba020180427276313f",
+    "Assets/Animations/Slime/SlimeAttackMedium.anim": "06a02d833dfb4e5afa8c8bd1c84ac3b5b5d5c4044026ad7919c68a5d22b66e00",
+    "Assets/Animations/Slime/SlimeAttackSmall.anim": "6d0417f2067a800f9b6eda10f10ad13cb46047546b89a4c8fbc6a28cc415b088",
+    "Assets/Animations/Slime/SlimeIdle.anim": "45c574388a5e177dc1f60aad1efa12d8c2241444b072361a63edff9a4f182167",
+    "Assets/Animations/Slime/SlimeJumpLarge.anim": "d6bc0e6a275d8bb57367d7b1107cd7e618e6aef21ab883e819ac3e52ead4a8f8",
+    "Assets/Animations/Slime/SlimeJumpMedium.anim": "e015dfe477375b6ec603e72ac3deee65a5ce9d3af60eb8fa91c786d7e8bff7aa",
+    "Assets/Animations/Slime/SlimeJumpSmall.anim": "845528aafa7a2e181759dc44dbd2b0413109a5d3911c5867afdb8f630d67a9be",
+    "Assets/Animations/Slime/SlimeLand.anim": "c883f5f5bfba37cb7ebbc3f01ad9a9a64e71757765132dd9dd95181f6b15bba9",
+    "Assets/Animations/Slime/SlimePrepare.anim": "4f1dc788401c4ff87f0585e63856d8e7361c5a0b46cfc34339a242e2fd402c56",
+    "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab": "a8a1c452b13dc9e3cefc5d50ed51003ed960caee576879b7ef2221c59be3d7b8",
+    "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab": "b8ae164afcc24ea64bcff82a7e50185b6eb6c452269b17e3923959cbf4fbaceb",
+    "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab": "ec157182fdd061a5cd5a638653b6250b9b08b8d2e0247434d8f6ebaf415c598a",
+    "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab": "3a564f990cf5779438ee4e3e06e6adaee8090141b1f0de746d1bf828c785f72a",
+    "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab": "bacf0e07dcc38b9e246b41d3ff18cf78922caaebc12a1fd844a45c4464abd34a",
+    "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab": "3a852558426cb382309fe3fbdffc6d56226835870461799105d9cb1d74707319",
+    "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab": "03acf6dab7fadd4fb88518c3b4c93ebe0526a36dfa551a89ea8a4b026a884a5a",
+    "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab": "52003dfb877204df364a6772d82af958e2b27b2b5ac6191e6a341b08c0c344be",
+    "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab": "4de6f181c84d3d0dda53768aeb33d69dc78445eaec82a8ec556484f3ad71c4a3",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab": "b5d6da167c6d40539a784530153925f881b87063af5e3df42b0ddb650921f0ef",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab": "79cbf66298f67039ae37e6141329712c803870ca5dae6a87b3e9b07920c6ddb6",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab": "9ced4357d99c0afd1a8a4159ef4e3f7650f414d7232d537dd331ab34539efe9e",
+    "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab": "b30fe467e782115865bfdb08acf2d5b4c991e3ac9c227665713d2aa9900b8c9c",
+    "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab": "0ca13347f0c87f9dd9e988f743eb3fe28a731353eee2002c142b9681fd39aaf2",
+    "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab": "ea82c675704e5d95dd1c551482270f4a94ec04ea97e2e2bf8d9a4f5fb2946a43",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab": "517a95c20516bd89f787d4781af36a1fcb4d2e8210a97eff2ae9d0d468e31784",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab": "bff8e4b1753817e4ea5a95bd54a9c1d80200a6475b351b844eb9f4fa44ea06fc",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab": "050e9bb46567cdec452b70b86092b16fe5164e7f8c24bff63c4c3c461d37d7ef",
+    "Assets/Materials/Effects/LandingDustFire.mat": "41c8f00aaee95f31f6021fe0fa70652905707746ca7ced0e0b8addfb6feac967",
+    "Assets/Materials/Effects/LandingDustFire.mat.meta": "096de0a0c73a2d3bb88737e4ce1483a397b10d1b90e7a7e2bc1d57f93961857f",
+    "Assets/Prefab/Effects/LandingDustFire.prefab": "0a85c5bd9455a1c16a3c33d8f74d20b0f0a3731e73569d64526cd59f13ccdd68",
+    "Assets/Prefab/Effects/LandingDustFire.prefab.meta": "8b6cfb3ccae6171e08d6ec37dde5ed87d13ba64c5adb718a9f357c1b1b1a0699",
+    "Assets/Materials/Effects/LandingDustWater.mat": "ca3f01e4f9894ea8f92eea9ad2c326b1f8c25cb11b772cc513f2dcd0763bddf8",
+    "Assets/Materials/Effects/LandingDustWater.mat.meta": "df911959e77b27d1c6587b027207e0b4a07000fc95da198307d0d0eafdcef4d7",
+    "Assets/Prefab/Effects/LandingDustWater.prefab": "cda9a73b0da323828da2b0de635e717b6c895c2282c9927a314da92b0a2e7aa3",
+    "Assets/Prefab/Effects/LandingDustWater.prefab.meta": "5b53826dc1bfb7545c56ac2226943221ae6a412dd46b91fc98d237678f624f1b",
+    "Assets/Materials/Effects/LandingDustEarth.mat": "8def8632a54d74704257b22e137574ae893e0cd0cad1fff63716fc0294c6db79",
+    "Assets/Materials/Effects/LandingDustEarth.mat.meta": "d2deb979096c6a0970750e365a6df5d7b62a703c671d9fb5cc41ddb59c66aa3b",
+    "Assets/Prefab/Effects/LandingDustEarth.prefab": "5a655af55c5ebb8679acafe2ca1744aefc39efadad098c5dbb01b134bc29bfa7",
+    "Assets/Prefab/Effects/LandingDustEarth.prefab.meta": "cbd04c8e8eda113cc5be4006ce7c2c4cb619e3c38bcc59d58686f8cf1cf46bea",
+    "Assets/Materials/Effects/LandingDustWind.mat": "96aead0eeb1b68ba842f36833bc438af594eeee5510057837ed325a27ac4cd59",
+    "Assets/Materials/Effects/LandingDustWind.mat.meta": "8018ddace7d26f9467760bdba56aae61a641471853ba6e1abf2f70442485eac6",
+    "Assets/Prefab/Effects/LandingDustWind.prefab": "4402b019b24ee028180e2d09fdfa3e4787696db02adeb045f6f794e4634195be",
+    "Assets/Prefab/Effects/LandingDustWind.prefab.meta": "64368dd5a11039742e9595e7b212917c87b4700fa2a98d0e27bb5dcd96978413",
+    "Assets/Materials/Effects/LandingDustLightning.mat": "65e0453777812154222c65eaa16145b7ad4b7ee7c63699d31c5bde6e2eac45e3",
+    "Assets/Materials/Effects/LandingDustLightning.mat.meta": "8ce8ce198e695dfaa3b5159b45711f83774b2cf6e70640d042162396992743fa",
+    "Assets/Prefab/Effects/LandingDustLightning.prefab": "cd7b2318213b1e2298d474cba4cf21cd3b58cc796731e24b37c318ee13e140ad",
+    "Assets/Prefab/Effects/LandingDustLightning.prefab.meta": "d8b8831dc3340fc8576ec7557f656bedcf9f51aa9629c33358c697407a8ab3ec",
+    "Assets/Prefab/Effects/LandingDustPure.prefab": "b1daf60be45fd8f867adc42825646ebdb294effc7898570679d82c868b777264",
+    "Assets/Prefab/Effects/LandingDustPure.prefab.meta": "1067fca0fd4005523fe824d7c28106da46c91dddfbb07b642bc2506ba4996ad6",
+    "Assets/Scenes/SampleScene.unity": "6d2c9475ab464a46bf01e6bb75ec787db2aa309831a1a82a094866dd9b2d55b0"
+  },
+  "unityImportVerified": true,
+  "nativePrefabImportsObserved": [
+    "Assets/Prefab/SlimeSmall.prefab",
+    "Assets/Prefab/SlimeMedium.prefab",
+    "Assets/Prefab/SlimeLarge.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+    "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+    "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+    "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+    "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+    "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+    "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+    "Assets/Prefab/Effects/LandingDustFire.prefab",
+    "Assets/Prefab/Effects/LandingDustWater.prefab",
+    "Assets/Prefab/Effects/LandingDustEarth.prefab",
+    "Assets/Prefab/Effects/LandingDustWind.prefab",
+    "Assets/Prefab/Effects/LandingDustLightning.prefab",
+    "Assets/Prefab/Effects/LandingDustPure.prefab"
+  ],
+  "importErrors": [],
+  "codeHashes": {
+    "Assets/Scripts/Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets/Scripts/Effects/HitReaction.cs": "bd38940bc81fdc348c7e39500a21d52418af85fac588085e48929494ff621f2c",
+    "Assets/Scripts/Effects/LandingDust.cs": "49a1b4bc5e7dbfbf36a3f19d52c4484c465b22050d7453ecef9af0a5ddc9d5f8",
+    "Assets/Scripts/Effects/LandingDustPool.cs": "d1783cf149f9bfeb3044a96fc78596eb0a4c63d8209a4a1eae3a38072a9872d3",
+    "Assets/Scripts/Enemy/Enemy.cs": "adb3b02b29fd247b44fed6760630af97d8afafc42e43fc74bc5ea08e4a9880b0",
+    "Assets/Scripts/Enemy/EnemySpawner.cs": "7693967d0022cfa645023f48f6b666f070ce9f3ab43936ddf3dfce72818e6341",
+    "Assets/Scripts/Enemy/SlimeMotion.cs": "c081aaca794eeb40de8c72f0e70a99b658463d0ce41681209277e1ae612eff71",
+    "Assets/Scripts/Player/Player.cs": "91cd04e382bed287e76583dba6e4cbe735e6665e08e7115da6ca152f4a9bcedb",
+    "Assets/Scripts/Player/PlayerAttack.cs": "e22f71a855ba9e0e895f476a60edd5e259af394539f52a286e5bba128574ff4e",
+    "Assets/Scripts/Stage/Stage.cs": "6a755dd96304418a19bad8fa37b1e64eaa0a3622bf8f0487b35df73d32cc1458",
+    "Assets/Scripts/StateDTO/EnemyState.cs": "630ddd2d8b3ae589f5b2b1e2f03b845c4c17b80e38e5fbb3c5cb9c9de78ce750",
+    "Assets/Scripts/StateDTO/PlayerState.cs": "303b708221fefe281576e8f823464113a0003bb884df9770956dc2b456d2a988",
+    "Assets/Scripts/UI/HealthBar.cs": "f50a77aed72918925f46db64137469775a01f75eb8339689957b1f11518c6f72"
+  },
+  "verificationScope": "Isolated Unity import with minimal local packages; source Play Mode and rendering not verified"
+}

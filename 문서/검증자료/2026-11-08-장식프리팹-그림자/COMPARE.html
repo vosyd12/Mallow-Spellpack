@@ -1,0 +1,11 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>배경 Prefab·그림자 적용</title>
+<style>body{font:16px/1.65 system-ui,sans-serif;max-width:1160px;margin:30px auto;padding:0 20px;background:#f4f6ef;color:#233729}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;border:1px solid #c9d3c0;border-radius:10px;background:white;padding:10px}img{width:100%;height:auto;display:block}figcaption{padding:8px;font-weight:600}a{color:#2b633c}@media(max-width:650px){.pair{grid-template-columns:1fr}}</style>
+<h1>배경 Prefab·타입별 배치와 공통 그림자</h1><p>2026-11-08 · 아래는 MCP로 캡처한 실제 Unity 화면입니다. 카메라 크기는 기본 7.5이며 플레이어 확대 사진만 1.8입니다.</p>
+<div class="pair"><figure><img src="01-before-scenery-shadows.png"><figcaption>작업 전 · 고정 나무 배치</figcaption></figure><figure><img src="07-final-live-scenery-shadows.png"><figcaption>최종 · 타입별 장식 + 실제 적 생성·착지</figcaption></figure></div>
+<h2>스테이지 호출에 따른 배치 변화</h2><div class="pair"><figure><img src="02-stage1-scenery-shadows-1.png"><figcaption>Stage 1 · 타입별 3~4개</figcaption></figure><figure><img src="04-stage2-random-layout.png"><figcaption>EnterStage(2) 호출 후 재배치</figcaption></figure></div>
+<p>처음 3/4/3/3개 → Stage 2에서 4/4/4/4개를 확인했습니다. 별도 실행 설정에서는 나무만 1개·꽃만 6개로 변경해 독립 조절을 확인했습니다. 보스 처치 등 실제 전환 조건은 아직 연결하지 않았습니다.</p>
+<h2>그림자의 접지와 도약</h2><div class="pair"><figure><img src="05-all18-slime-contact-shadows.png"><figcaption>슬라임 18종 · 착지 포즈</figcaption></figure><figure><img src="06-all18-slime-jump-shadows.png"><figcaption>동일 개체 · 점프 중 그림자는 바닥 유지</figcaption></figure></div>
+<p>각 행은 무속성·불·물·땅·바람·번개, 각 열은 Small·Medium·Large입니다. 정지 포즈를 통제해 비교한 자료이며 자연 전투의 전체 회귀 검증은 아닙니다.</p>
+<figure style="max-width:440px;margin:16px auto"><img src="03-shadow-closeup.png"><figcaption>플레이어 발밑 그림자 확대 확인</figcaption></figure>
+<p>기준은 카메라 쪽 왼쪽 위 광원이며, 공통 Sprite 마스크와 색·오프셋으로 표현합니다. 실시간 물리 그림자는 아닙니다. 최종 콘솔 오류·경고 0개, 다시 임포트한 뒤 적 조합 18개 조회와 실제 5개체 생성을 확인했습니다. 모바일 성능은 미측정입니다.</p>
+<p><a href="../../2026-11-08-SCENERY-PREFABS-SHADOWS.md">구성·문제 해결·조절 위치</a> · <a href="VERIFICATION.json">검증 기록</a> · <a href="ART_PROMPT.md">이미지 프롬프트</a></p></html>

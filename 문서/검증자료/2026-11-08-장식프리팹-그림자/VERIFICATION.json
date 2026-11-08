@@ -1,0 +1,1263 @@
+{
+  "date": "2026-11-08",
+  "unity": "6000.5.10f1",
+  "changedGameCode": [
+    "Assets\\Scripts\\Stage\\StageScenery.cs"
+  ],
+  "csharpSHA256": {
+    "Assets\\Scripts\\Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets\\Scripts\\Effects\\HitReaction.cs": "bd38940bc81fdc348c7e39500a21d52418af85fac588085e48929494ff621f2c",
+    "Assets\\Scripts\\Effects\\LandingDust.cs": "49a1b4bc5e7dbfbf36a3f19d52c4484c465b22050d7453ecef9af0a5ddc9d5f8",
+    "Assets\\Scripts\\Effects\\LandingDustPool.cs": "d1783cf149f9bfeb3044a96fc78596eb0a4c63d8209a4a1eae3a38072a9872d3",
+    "Assets\\Scripts\\Enemy\\Enemy.cs": "adb3b02b29fd247b44fed6760630af97d8afafc42e43fc74bc5ea08e4a9880b0",
+    "Assets\\Scripts\\Enemy\\EnemySpawner.cs": "7693967d0022cfa645023f48f6b666f070ce9f3ab43936ddf3dfce72818e6341",
+    "Assets\\Scripts\\Enemy\\SlimeMotion.cs": "c081aaca794eeb40de8c72f0e70a99b658463d0ce41681209277e1ae612eff71",
+    "Assets\\Scripts\\Player\\Player.cs": "91cd04e382bed287e76583dba6e4cbe735e6665e08e7115da6ca152f4a9bcedb",
+    "Assets\\Scripts\\Player\\PlayerAttack.cs": "e22f71a855ba9e0e895f476a60edd5e259af394539f52a286e5bba128574ff4e",
+    "Assets\\Scripts\\Stage\\Stage.cs": "86b9d78c28538ea9e6cf1bf7c68d4972cb0bcf6fee701dc2e7f5393837f5ddf5",
+    "Assets\\Scripts\\Stage\\StageScenery.cs": "6628b0919af79c5f4c1319d19724770110f1d13c05aa69ff9a087b8dfaa79c08",
+    "Assets\\Scripts\\StateDTO\\EnemyState.cs": "630ddd2d8b3ae589f5b2b1e2f03b845c4c17b80e38e5fbb3c5cb9c9de78ce750",
+    "Assets\\Scripts\\StateDTO\\PlayerState.cs": "303b708221fefe281576e8f823464113a0003bb884df9770956dc2b456d2a988",
+    "Assets\\Scripts\\UI\\HealthBar.cs": "f50a77aed72918925f46db64137469775a01f75eb8339689957b1f11518c6f72"
+  },
+  "assets": {
+    "atlasWidth": 1774,
+    "atlasHeight": 887,
+    "spriteRects": [
+      {
+        "name": "MeadowOakRound",
+        "rect": "(x:61.00, y:444.00, width:357.00, height:356.00)"
+      },
+      {
+        "name": "MeadowOakTall",
+        "rect": "(x:486.00, y:444.00, width:367.00, height:419.00)"
+      },
+      {
+        "name": "MeadowGrassClumpA",
+        "rect": "(x:953.00, y:448.00, width:286.00, height:179.00)"
+      },
+      {
+        "name": "MeadowGrassClumpB",
+        "rect": "(x:1399.00, y:448.00, width:311.00, height:204.00)"
+      },
+      {
+        "name": "MeadowFlowerBushA",
+        "rect": "(x:57.00, y:67.00, width:339.00, height:221.00)"
+      },
+      {
+        "name": "MeadowFlowerBushB",
+        "rect": "(x:497.00, y:67.00, width:333.00, height:225.00)"
+      },
+      {
+        "name": "MeadowFlowersA",
+        "rect": "(x:987.00, y:67.00, width:237.00, height:194.00)"
+      },
+      {
+        "name": "MeadowFlowersB",
+        "rect": "(x:1429.00, y:67.00, width:246.00, height:193.00)"
+      }
+    ],
+    "prefabs": [
+      {
+        "name": "MeadowOakRound",
+        "height": 1.85,
+        "width": 1.8551966,
+        "shadowWidth": 1.20587778
+      },
+      {
+        "name": "MeadowOakTall",
+        "height": 1.85,
+        "width": 1.62040579,
+        "shadowWidth": 1.05326378
+      },
+      {
+        "name": "MeadowGrassClumpA",
+        "height": 0.26,
+        "width": 0.415418983,
+        "shadowWidth": 0.311564237
+      },
+      {
+        "name": "MeadowGrassClumpB",
+        "height": 0.26,
+        "width": 0.396372527,
+        "shadowWidth": 0.2972794
+      },
+      {
+        "name": "MeadowFlowerBushA",
+        "height": 0.34,
+        "width": 0.521538436,
+        "shadowWidth": 0.3911538
+      },
+      {
+        "name": "MeadowFlowerBushB",
+        "height": 0.34,
+        "width": 0.5032,
+        "shadowWidth": 0.377399981
+      },
+      {
+        "name": "MeadowFlowersA",
+        "height": 0.23,
+        "width": 0.280979365,
+        "shadowWidth": 0.1264407
+      },
+      {
+        "name": "MeadowFlowersB",
+        "height": 0.23,
+        "width": 0.293160647,
+        "shadowWidth": 0.13192229
+      }
+    ]
+  },
+  "stageChecks": {
+    "stage1": {
+      "stageNumber": 1,
+      "counts": {
+        "Tree": 3,
+        "GrassClump": 4,
+        "FlowerBush": 3,
+        "Flowers": 3
+      },
+      "nearest": 0.9334164,
+      "activeObjects": 13,
+      "childrenIncludingPendingDestroy": 13,
+      "sceneryColliders": 0,
+      "objects": [
+        {
+          "name": "MeadowOakTall(Clone)",
+          "type": "Tree",
+          "position": "(5.135, 0.879, 0.000)",
+          "scale": "(0.684, 0.684, 0.684)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowOakRound(Clone)",
+          "type": "Tree",
+          "position": "(-4.992, 3.617, 0.000)",
+          "scale": "(0.752, 0.752, 0.752)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowOakRound(Clone)",
+          "type": "Tree",
+          "position": "(5.078, -2.126, 0.000)",
+          "scale": "(0.680, 0.680, 0.680)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(-3.179, 4.610, 0.000)",
+          "scale": "(1.015, 1.015, 1.015)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpB(Clone)",
+          "type": "GrassClump",
+          "position": "(-0.772, -4.945, 0.000)",
+          "scale": "(0.911, 0.911, 0.911)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(-0.647, 5.038, 0.000)",
+          "scale": "(0.947, 0.947, 0.947)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(-3.854, -0.626, 0.000)",
+          "scale": "(0.969, 0.969, 0.969)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushB(Clone)",
+          "type": "FlowerBush",
+          "position": "(3.391, 2.102, 0.000)",
+          "scale": "(0.990, 0.990, 0.990)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushB(Clone)",
+          "type": "FlowerBush",
+          "position": "(0.703, -3.901, 0.000)",
+          "scale": "(1.058, 1.058, 1.058)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushA(Clone)",
+          "type": "FlowerBush",
+          "position": "(-2.496, 3.484, 0.000)",
+          "scale": "(0.992, 0.992, 0.992)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(-3.525, 3.743, 0.000)",
+          "scale": "(1.041, 1.041, 1.041)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(0.640, 2.875, 0.000)",
+          "scale": "(1.074, 1.074, 1.074)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(-2.330, 0.769, 0.000)",
+          "scale": "(0.950, 0.950, 0.950)",
+          "renderers": 3,
+          "missingScripts": 0
+        }
+      ]
+    },
+    "stage2": {
+      "stageNumber": 2,
+      "counts": {
+        "Tree": 4,
+        "GrassClump": 4,
+        "FlowerBush": 4,
+        "Flowers": 4
+      },
+      "nearest": 0.7903867,
+      "activeObjects": 16,
+      "childrenIncludingPendingDestroy": 16,
+      "sceneryColliders": 0,
+      "objects": [
+        {
+          "name": "MeadowOakTall(Clone)",
+          "type": "Tree",
+          "position": "(-4.940, 3.496, 0.000)",
+          "scale": "(0.699, 0.699, 0.699)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowOakTall(Clone)",
+          "type": "Tree",
+          "position": "(5.076, 3.640, 0.000)",
+          "scale": "(0.685, 0.685, 0.685)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowOakTall(Clone)",
+          "type": "Tree",
+          "position": "(0.268, -7.460, 0.000)",
+          "scale": "(0.771, 0.771, 0.771)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowOakTall(Clone)",
+          "type": "Tree",
+          "position": "(3.361, -7.463, 0.000)",
+          "scale": "(0.711, 0.711, 0.711)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpB(Clone)",
+          "type": "GrassClump",
+          "position": "(-0.992, -4.981, 0.000)",
+          "scale": "(1.038, 1.038, 1.038)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(-3.058, -4.624, 0.000)",
+          "scale": "(0.933, 0.933, 0.933)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(2.659, 4.738, 0.000)",
+          "scale": "(0.925, 0.925, 0.925)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(4.058, 3.019, 0.000)",
+          "scale": "(1.047, 1.047, 1.047)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushA(Clone)",
+          "type": "FlowerBush",
+          "position": "(-3.105, 0.922, 0.000)",
+          "scale": "(1.094, 1.094, 1.094)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushB(Clone)",
+          "type": "FlowerBush",
+          "position": "(-3.038, -2.477, 0.000)",
+          "scale": "(1.020, 1.020, 1.020)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushB(Clone)",
+          "type": "FlowerBush",
+          "position": "(-3.656, -4.108, 0.000)",
+          "scale": "(1.091, 1.091, 1.091)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushB(Clone)",
+          "type": "FlowerBush",
+          "position": "(3.696, 4.411, 0.000)",
+          "scale": "(0.957, 0.957, 0.957)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(-2.898, 4.651, 0.000)",
+          "scale": "(1.096, 1.096, 1.096)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersB(Clone)",
+          "type": "Flowers",
+          "position": "(1.782, -2.461, 0.000)",
+          "scale": "(1.100, 1.100, 1.100)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(3.635, -3.609, 0.000)",
+          "scale": "(0.934, 0.934, 0.934)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(0.677, 2.902, 0.000)",
+          "scale": "(0.910, 0.910, 0.910)",
+          "renderers": 3,
+          "missingScripts": 0
+        }
+      ]
+    },
+    "customCounts": {
+      "stageNumber": 3,
+      "counts": {
+        "Tree": 1,
+        "GrassClump": 3,
+        "FlowerBush": 3,
+        "Flowers": 6
+      },
+      "nearest": 1.08542669,
+      "activeObjects": 13,
+      "childrenIncludingPendingDestroy": 13,
+      "sceneryColliders": 0,
+      "objects": [
+        {
+          "name": "MeadowOakTall(Clone)",
+          "type": "Tree",
+          "position": "(4.936, 3.707, 0.000)",
+          "scale": "(0.658, 0.658, 0.658)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpB(Clone)",
+          "type": "GrassClump",
+          "position": "(-0.809, -4.969, 0.000)",
+          "scale": "(0.991, 0.991, 0.991)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(-3.028, -4.411, 0.000)",
+          "scale": "(1.069, 1.069, 1.069)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowGrassClumpA(Clone)",
+          "type": "GrassClump",
+          "position": "(3.898, -2.897, 0.000)",
+          "scale": "(0.972, 0.972, 0.972)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushA(Clone)",
+          "type": "FlowerBush",
+          "position": "(-2.587, 3.457, 0.000)",
+          "scale": "(0.955, 0.955, 0.955)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushA(Clone)",
+          "type": "FlowerBush",
+          "position": "(-0.361, 4.158, 0.000)",
+          "scale": "(0.946, 0.946, 0.946)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowerBushB(Clone)",
+          "type": "FlowerBush",
+          "position": "(0.749, -4.006, 0.000)",
+          "scale": "(0.950, 0.950, 0.950)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(2.839, -4.721, 0.000)",
+          "scale": "(1.084, 1.084, 1.084)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(1.562, -2.403, 0.000)",
+          "scale": "(0.902, 0.902, 0.902)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersB(Clone)",
+          "type": "Flowers",
+          "position": "(-0.218, -2.993, 0.000)",
+          "scale": "(1.066, 1.066, 1.066)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersB(Clone)",
+          "type": "Flowers",
+          "position": "(-1.899, 2.525, 0.000)",
+          "scale": "(0.972, 0.972, 0.972)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersA(Clone)",
+          "type": "Flowers",
+          "position": "(0.534, 2.721, 0.000)",
+          "scale": "(1.039, 1.039, 1.039)",
+          "renderers": 3,
+          "missingScripts": 0
+        },
+        {
+          "name": "MeadowFlowersB(Clone)",
+          "type": "Flowers",
+          "position": "(-3.645, 3.701, 0.000)",
+          "scale": "(0.943, 0.943, 0.943)",
+          "renderers": 3,
+          "missingScripts": 0
+        }
+      ]
+    },
+    "layoutChanged": true,
+    "stage2Capture": [
+      {
+        "success": true,
+        "message": "Screenshot captured to '문서/검증자료/2026-11-08-장식프리팹-그림자/04-stage2-random-layout.png' (camera: Main Camera).",
+        "data": {
+          "path": "문서/검증자료/2026-11-08-장식프리팹-그림자/04-stage2-random-layout.png",
+          "fullPath": "C:/Users/PC/Mallow Spellpack/문서/검증자료/2026-11-08-장식프리팹-그림자/04-stage2-random-layout.png",
+          "superSize": 1,
+          "isAsync": false,
+          "camera": "Main Camera",
+          "captureSource": "game_view"
+        }
+      }
+    ]
+  },
+  "contact18": [
+    {
+      "name": "ShadowCheck_PureSmall",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.0838, -0.0322, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_PureMedium",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1053, -0.0405, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_PureLarge",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1920, -0.0738, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_FireSmall",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.0837, -0.0322, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_FireMedium",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1052, -0.0404, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_FireLarge",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1918, -0.0737, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_WaterSmall",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.0837, -0.0322, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_WaterMedium",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1052, -0.0404, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_WaterLarge",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1918, -0.0737, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_EarthSmall",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.0840, -0.0323, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_EarthMedium",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1056, -0.0406, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_EarthLarge",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1925, -0.0740, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_WindSmall",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.0838, -0.0322, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_WindMedium",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1054, -0.0405, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_WindLarge",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1922, -0.0738, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_LightningSmall",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.0838, -0.0322, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_LightningMedium",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1054, -0.0405, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    },
+    {
+      "name": "ShadowCheck_LightningLarge",
+      "contactSprite": "GroundShadowMask",
+      "contactColor": "RGBA(0.080, 0.140, 0.100, 0.185)",
+      "castDelta": "(0.1921, -0.0738, 0.0000)",
+      "onGroundRoot": true,
+      "missingScripts": 0
+    }
+  ],
+  "jump18": [
+    {
+      "name": "ShadowCheck_PureSmall",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.76066351,
+      "castDelta": "(0.0438, -0.0289, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_WindMedium",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.27159035,
+      "castDelta": "(0.0551, -0.0364, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_WaterMedium",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.27159035,
+      "castDelta": "(0.0550, -0.0363, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_PureLarge",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 0.8314245,
+      "castDelta": "(0.1004, -0.0663, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_WaterSmall",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.76066351,
+      "castDelta": "(0.0437, -0.0289, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_WindSmall",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.76066351,
+      "castDelta": "(0.0438, -0.0289, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_LightningMedium",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.27159035,
+      "castDelta": "(0.0551, -0.0364, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_WindLarge",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 0.8314245,
+      "castDelta": "(0.1005, -0.0664, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_EarthMedium",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.27159035,
+      "castDelta": "(0.0552, -0.0365, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_LightningSmall",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.76066351,
+      "castDelta": "(0.0438, -0.0289, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_EarthSmall",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.76066351,
+      "castDelta": "(0.0439, -0.0290, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_WaterLarge",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 0.8314245,
+      "castDelta": "(0.1003, -0.0662, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_FireMedium",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.27159035,
+      "castDelta": "(0.0550, -0.0363, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_EarthLarge",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 0.8314245,
+      "castDelta": "(0.1006, -0.0665, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_FireSmall",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.76066351,
+      "castDelta": "(0.0438, -0.0289, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_PureMedium",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 1.27159035,
+      "castDelta": "(0.0551, -0.0364, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_FireLarge",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 0.8314245,
+      "castDelta": "(0.1003, -0.0662, 0.0000)"
+    },
+    {
+      "name": "ShadowCheck_LightningLarge",
+      "shadowMoved": 0.0,
+      "contactAlpha": 0.1017726,
+      "visualLocalY": 0.8314245,
+      "castDelta": "(0.1005, -0.0664, 0.0000)"
+    }
+  ],
+  "shadowPixelFitting": {
+    "effectiveMaskWidth": 4.2265625,
+    "effectiveMaskHeight": 1.2890625,
+    "actors": [
+      {
+        "name": "SlimeSmall",
+        "opaqueWidthWorld": 0.38173002,
+        "footprintWorld": 0.32447052,
+        "feetWorld": 1.84805286
+      },
+      {
+        "name": "SlimeMedium",
+        "opaqueWidthWorld": 0.576,
+        "footprintWorld": 0.4896,
+        "feetWorld": 1.78242075
+      },
+      {
+        "name": "SlimeLarge",
+        "opaqueWidthWorld": 1.05,
+        "footprintWorld": 0.8925,
+        "feetWorld": 1.63258886
+      },
+      {
+        "name": "SlimeEarthLarge",
+        "opaqueWidthWorld": 1.05000007,
+        "footprintWorld": 0.8925001,
+        "feetWorld": -0.363881648
+      },
+      {
+        "name": "SlimeEarthMedium",
+        "opaqueWidthWorld": 0.576,
+        "footprintWorld": 0.4896,
+        "feetWorld": -0.215643123
+      },
+      {
+        "name": "SlimeEarthSmall",
+        "opaqueWidthWorld": 0.458076,
+        "footprintWorld": 0.3893646,
+        "feetWorld": -0.150524884
+      },
+      {
+        "name": "SlimeFireLarge",
+        "opaqueWidthWorld": 1.04628325,
+        "footprintWorld": 0.889340758,
+        "feetWorld": -0.3639358
+      },
+      {
+        "name": "SlimeFireMedium",
+        "opaqueWidthWorld": 0.573961,
+        "footprintWorld": 0.487866879,
+        "feetWorld": -0.215672821
+      },
+      {
+        "name": "SlimeFireSmall",
+        "opaqueWidthWorld": 0.456454515,
+        "footprintWorld": 0.387986362,
+        "feetWorld": -0.1505485
+      },
+      {
+        "name": "SlimeLightningLarge",
+        "opaqueWidthWorld": 1.04803014,
+        "footprintWorld": 0.8908256,
+        "feetWorld": -0.363824248
+      },
+      {
+        "name": "SlimeLightningMedium",
+        "opaqueWidthWorld": 0.574919343,
+        "footprintWorld": 0.488681465,
+        "feetWorld": -0.215611622
+      },
+      {
+        "name": "SlimeLightningSmall",
+        "opaqueWidthWorld": 0.457216531,
+        "footprintWorld": 0.388634056,
+        "feetWorld": -0.150499851
+      },
+      {
+        "name": "SlimePureLarge",
+        "opaqueWidthWorld": 1.04746079,
+        "footprintWorld": 0.8903417,
+        "feetWorld": -0.3645245
+      },
+      {
+        "name": "SlimePureMedium",
+        "opaqueWidthWorld": 0.5746019,
+        "footprintWorld": 0.4884116,
+        "feetWorld": -0.216692284
+      },
+      {
+        "name": "SlimePureSmall",
+        "opaqueWidthWorld": 0.456970841,
+        "footprintWorld": 0.388425231,
+        "feetWorld": -0.15080668
+      },
+      {
+        "name": "SlimeWaterLarge",
+        "opaqueWidthWorld": 1.04609656,
+        "footprintWorld": 0.8891821,
+        "feetWorld": -0.3657942
+      },
+      {
+        "name": "SlimeWaterMedium",
+        "opaqueWidthWorld": 0.5738587,
+        "footprintWorld": 0.4877799,
+        "feetWorld": -0.216692284
+      },
+      {
+        "name": "SlimeWaterSmall",
+        "opaqueWidthWorld": 0.456373066,
+        "footprintWorld": 0.387917131,
+        "feetWorld": -0.15135926
+      },
+      {
+        "name": "SlimeWindLarge",
+        "opaqueWidthWorld": 1.048125,
+        "footprintWorld": 0.8909063,
+        "feetWorld": -0.3639192
+      },
+      {
+        "name": "SlimeWindMedium",
+        "opaqueWidthWorld": 0.5749714,
+        "footprintWorld": 0.4887257,
+        "feetWorld": -0.215663731
+      },
+      {
+        "name": "SlimeWindSmall",
+        "opaqueWidthWorld": 0.457258,
+        "footprintWorld": 0.3886693,
+        "feetWorld": -0.150541261
+      },
+      {
+        "name": "Player",
+        "opaqueWidthWorld": 0.630000055,
+        "footprintWorld": 0.53550005,
+        "feetWorld": -0.5010697
+      }
+    ]
+  },
+  "finalState": {
+    "playing": false,
+    "paused": false,
+    "dirty": false,
+    "stageNumber": 1,
+    "groups": [
+      {
+        "name": "Tree",
+        "count": "(3, 4)",
+        "prefabs": 2,
+        "points": 14
+      },
+      {
+        "name": "GrassClump",
+        "count": "(3, 4)",
+        "prefabs": 2,
+        "points": 12
+      },
+      {
+        "name": "FlowerBush",
+        "count": "(3, 4)",
+        "prefabs": 2,
+        "points": 12
+      },
+      {
+        "name": "Flowers",
+        "count": "(3, 4)",
+        "prefabs": 2,
+        "points": 12
+      }
+    ],
+    "walls": 4,
+    "camera": 7.5,
+    "playerShadow": true
+  },
+  "spawnerRepair": [
+    {
+      "path": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+      "guid": "691ef2a038a54ebbadfb9d3ca7e16d8c",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+      "guid": "1377a442ea8b4e1783c3c76e5fdb5eb8",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+      "guid": "e7ee916144a6425faee4a024e466e409",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+      "guid": "9fd8d7a4b1d140d39926b93090f93873",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+      "guid": "491256a5d31146aeac885e23e954d51a",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+      "guid": "4e2b051cec5546ce81ff454f33c32e50",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+      "guid": "898a53dcd84e4cecb6e77bd3d498da6c",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+      "guid": "abbb0a23bd5f432fbe850f0e1383d508",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+      "guid": "0a215889ffd4472aa66bdd6890000301",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+      "guid": "313e2326ecb34777bb17c3824063c118",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+      "guid": "69db08c40d2b4be2909414b514881c33",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+      "guid": "d283edd84dac460ead1940dc4133ee9b",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+      "guid": "568b19b96ff1458495c9766113346cca",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+      "guid": "657a4c4d21ee47e8945a29ac24075bcd",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+      "guid": "2487457d95a6440da7695a72e8463980",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+      "guid": "2ea4db1df1b3478faecffb4dde15c5c8",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+      "guid": "20b7a49b000b40a3990b3a4aa13284a1",
+      "localId": 6657811535022214718
+    },
+    {
+      "path": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+      "guid": "2a7f93c8540f46eea7b51ce42acff39c",
+      "localId": 6657811535022214718
+    }
+  ],
+  "reimportCombinations": {
+    "validCombinations": 18,
+    "names": [
+      "SlimeFireSmall",
+      "SlimeWaterSmall",
+      "SlimeEarthSmall",
+      "SlimeWindSmall",
+      "SlimeLightningSmall",
+      "SlimePureSmall",
+      "SlimeFireMedium",
+      "SlimeWaterMedium",
+      "SlimeEarthMedium",
+      "SlimeWindMedium",
+      "SlimeLightningMedium",
+      "SlimePureMedium",
+      "SlimeFireLarge",
+      "SlimeWaterLarge",
+      "SlimeEarthLarge",
+      "SlimeWindLarge",
+      "SlimeLightningLarge",
+      "SlimePureLarge"
+    ]
+  },
+  "liveAfterRepair": {
+    "playing": true,
+    "tiles": 1,
+    "mapBounds": "Center: (3.00, 3.75, 0.50), Extents: (5.25, 6.00, 0.50)",
+    "trees": 12,
+    "walls": 4,
+    "sceneryColliders": 0,
+    "enemies": [
+      {
+        "name": "SlimeWindSmall(Clone)",
+        "position": "(0.17, -1.71, 0.00)",
+        "element": "Wind",
+        "motion": true
+      },
+      {
+        "name": "SlimeWaterMedium(Clone)",
+        "position": "(2.05, 2.77, 0.00)",
+        "element": "Water",
+        "motion": true
+      },
+      {
+        "name": "SlimeFireSmall(Clone)",
+        "position": "(-0.05, 1.70, 0.00)",
+        "element": "Fire",
+        "motion": true
+      },
+      {
+        "name": "SlimeWaterLarge(Clone)",
+        "position": "(1.77, 3.21, 0.00)",
+        "element": "Water",
+        "motion": true
+      },
+      {
+        "name": "SlimeLightningSmall(Clone)",
+        "position": "(-1.39, 1.22, 0.00)",
+        "element": "Lightning",
+        "motion": true
+      }
+    ],
+    "cameraSize": 7.5
+  },
+  "finalConsole": {
+    "success": true,
+    "message": "Retrieved 0 log entries.",
+    "data": []
+  },
+  "consoleBeforeRepair": {
+    "success": true,
+    "message": "Retrieved 18 log entries.",
+    "data": [
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Medium / Water",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Small / Water",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Medium / Fire",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Medium / Lightning",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Large / Earth",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Small / Fire",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Small / Pure",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Large / Wind",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Medium / Wind",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Medium / Earth",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Medium / Pure",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Large / Water",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Large / Fire",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Large / Lightning",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Small / Earth",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Small / Lightning",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Small / Wind",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      },
+      {
+        "type": "Warning",
+        "message": "등록되지 않은 적 조합: Large / Pure",
+        "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+        "line": 57,
+        "stackTrace": "UnityEngine.Debug:LogWarning (object)\nEnemySpawner:Spawn () (at Assets/Scripts/Enemy/EnemySpawner.cs:57)\nEnemySpawner:Update () (at Assets/Scripts/Enemy/EnemySpawner.cs:31)\n"
+      }
+    ]
+  },
+  "compilation": {
+    "check": "Compile Stage and StageScenery against actual Unity references",
+    "exitCode": 0,
+    "stdout": ".utmp\\StageScenery-20261108\\Stage.cs(17,26): warning CS0649: 'Stage._stageScenery' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.\n.utmp\\StageScenery-20261108\\StageScenery.cs(43,28): warning CS0649: 'StageScenery._groups' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.\n.utmp\\StageScenery-20261108\\StageScenery.cs(29,29): warning CS0649: 'StageScenery.SceneryGroup.Prefabs' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.\n.utmp\\StageScenery-20261108\\StageScenery.cs(17,23): warning CS0649: 'StageScenery._sceneryRoot' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.\n.utmp\\StageScenery-20261108\\StageScenery.cs(27,23): warning CS0649: 'StageScenery.SceneryGroup.Name' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.\n.utmp\\StageScenery-20261108\\StageScenery.cs(31,28): warning CS0649: 'StageScenery.SceneryGroup.SpawnPoints' 필드에는 할당되지 않으므로 항상 null 기본값을 사용합니다.\n",
+    "stderr": "",
+    "runtimeVerified": false,
+    "sceneConnected": false
+  },
+  "limits": [
+    "2D sprite approximation, not real-time physical light shadows",
+    "No mobile performance or full stage progression verification",
+    "No persistent random seed",
+    "Spacing uses object centers rather than full sprite silhouettes"
+  ]
+}

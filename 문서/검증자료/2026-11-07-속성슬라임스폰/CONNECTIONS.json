@@ -1,0 +1,370 @@
+{
+  "date": "2026-11-07",
+  "type": "serialized asset and lookup-combination checks",
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "variants": [
+    {
+      "name": "SlimeFireSmall",
+      "element": "Fire",
+      "elementValue": 0,
+      "size": "Small",
+      "sizeValue": 0,
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+      "prefabGuid": "4e2b051cec5546ce81ff454f33c32e50",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeFireMedium",
+      "element": "Fire",
+      "elementValue": 0,
+      "size": "Medium",
+      "sizeValue": 1,
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+      "prefabGuid": "491256a5d31146aeac885e23e954d51a",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeFireLarge",
+      "element": "Fire",
+      "elementValue": 0,
+      "size": "Large",
+      "sizeValue": 2,
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+      "prefabGuid": "9fd8d7a4b1d140d39926b93090f93873",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeWaterSmall",
+      "element": "Water",
+      "elementValue": 1,
+      "size": "Small",
+      "sizeValue": 0,
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+      "prefabGuid": "2487457d95a6440da7695a72e8463980",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeWaterMedium",
+      "element": "Water",
+      "elementValue": 1,
+      "size": "Medium",
+      "sizeValue": 1,
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+      "prefabGuid": "657a4c4d21ee47e8945a29ac24075bcd",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeWaterLarge",
+      "element": "Water",
+      "elementValue": 1,
+      "size": "Large",
+      "sizeValue": 2,
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+      "prefabGuid": "568b19b96ff1458495c9766113346cca",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeEarthSmall",
+      "element": "Earth",
+      "elementValue": 2,
+      "size": "Small",
+      "sizeValue": 0,
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+      "prefabGuid": "e7ee916144a6425faee4a024e466e409",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeEarthMedium",
+      "element": "Earth",
+      "elementValue": 2,
+      "size": "Medium",
+      "sizeValue": 1,
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+      "prefabGuid": "1377a442ea8b4e1783c3c76e5fdb5eb8",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeEarthLarge",
+      "element": "Earth",
+      "elementValue": 2,
+      "size": "Large",
+      "sizeValue": 2,
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+      "prefabGuid": "691ef2a038a54ebbadfb9d3ca7e16d8c",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeWindSmall",
+      "element": "Wind",
+      "elementValue": 3,
+      "size": "Small",
+      "sizeValue": 0,
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+      "prefabGuid": "2a7f93c8540f46eea7b51ce42acff39c",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeWindMedium",
+      "element": "Wind",
+      "elementValue": 3,
+      "size": "Medium",
+      "sizeValue": 1,
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+      "prefabGuid": "20b7a49b000b40a3990b3a4aa13284a1",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeWindLarge",
+      "element": "Wind",
+      "elementValue": 3,
+      "size": "Large",
+      "sizeValue": 2,
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+      "prefabGuid": "2ea4db1df1b3478faecffb4dde15c5c8",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeLightningSmall",
+      "element": "Lightning",
+      "elementValue": 4,
+      "size": "Small",
+      "sizeValue": 0,
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+      "prefabGuid": "0a215889ffd4472aa66bdd6890000301",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeLightningMedium",
+      "element": "Lightning",
+      "elementValue": 4,
+      "size": "Medium",
+      "sizeValue": 1,
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+      "prefabGuid": "abbb0a23bd5f432fbe850f0e1383d508",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimeLightningLarge",
+      "element": "Lightning",
+      "elementValue": 4,
+      "size": "Large",
+      "sizeValue": 2,
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+      "prefabGuid": "898a53dcd84e4cecb6e77bd3d498da6c",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimePureSmall",
+      "element": "Pure",
+      "elementValue": 5,
+      "size": "Small",
+      "sizeValue": 0,
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+      "prefabGuid": "d283edd84dac460ead1940dc4133ee9b",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimePureMedium",
+      "element": "Pure",
+      "elementValue": 5,
+      "size": "Medium",
+      "sizeValue": 1,
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+      "prefabGuid": "69db08c40d2b4be2909414b514881c33",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "baseEnemyComponentFileId": 4119530335923162714
+    },
+    {
+      "name": "SlimePureLarge",
+      "element": "Pure",
+      "elementValue": 5,
+      "size": "Large",
+      "sizeValue": 2,
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+      "prefabGuid": "313e2326ecb34777bb17c3824063c118",
+      "enemyComponentFileId": 7100000000000000100,
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "baseEnemyComponentFileId": 4119530335923162714
+    }
+  ],
+  "checks": [
+    "18 unique Size/Element pairs cover 3 x 6 outcomes; Max is not registered",
+    "18 unique scene Enemy references resolve to variant-local inherited components",
+    "only two classification overrides and an Enemy reference added to each variant",
+    "only the Spawner prefab array changed inside the scene",
+    "all C#, original prefabs, images, animations and other Assets hashes unchanged"
+  ],
+  "codeFilesUnchanged": true,
+  "codeHashes": {
+    "Assets/Scripts/Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets/Scripts/Effects/HitReaction.cs": "bd38940bc81fdc348c7e39500a21d52418af85fac588085e48929494ff621f2c",
+    "Assets/Scripts/Effects/LandingDust.cs": "500d5571c2da43052a1fa61bafa21dda61c6c62674546a4900541a2bd362ec43",
+    "Assets/Scripts/Effects/LandingDustPool.cs": "2a70d1d2d920aa3c89ca629cb894a6d693fa8ff497af2552e41d3d50ca92df65",
+    "Assets/Scripts/Enemy/Enemy.cs": "adb3b02b29fd247b44fed6760630af97d8afafc42e43fc74bc5ea08e4a9880b0",
+    "Assets/Scripts/Enemy/EnemySpawner.cs": "7693967d0022cfa645023f48f6b666f070ce9f3ab43936ddf3dfce72818e6341",
+    "Assets/Scripts/Enemy/SlimeMotion.cs": "09f54e119efd4217103c6a70084e56e8c5bbed8632d6d05582933d3ee3ac0f43",
+    "Assets/Scripts/Player/Player.cs": "91cd04e382bed287e76583dba6e4cbe735e6665e08e7115da6ca152f4a9bcedb",
+    "Assets/Scripts/Player/PlayerAttack.cs": "e22f71a855ba9e0e895f476a60edd5e259af394539f52a286e5bba128574ff4e",
+    "Assets/Scripts/Stage/Stage.cs": "6a755dd96304418a19bad8fa37b1e64eaa0a3622bf8f0487b35df73d32cc1458",
+    "Assets/Scripts/StateDTO/EnemyState.cs": "630ddd2d8b3ae589f5b2b1e2f03b845c4c17b80e38e5fbb3c5cb9c9de78ce750",
+    "Assets/Scripts/StateDTO/PlayerState.cs": "303b708221fefe281576e8f823464113a0003bb884df9770956dc2b456d2a988",
+    "Assets/Scripts/UI/HealthBar.cs": "f50a77aed72918925f46db64137469775a01f75eb8339689957b1f11518c6f72"
+  },
+  "assetChanges": [
+    {
+      "asset": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+      "beforeSha256": "7c2cbb990615115839612e669218d0984118fb63cdc9cf8ea057703d133c5477",
+      "afterSha256": "4ad38e96cff044d034a4b8524c7c3d2e1d742c5b96dbdbfc178f71f2e1c7571e"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+      "beforeSha256": "c7e3c41425157a7e8377d8beaed4f7d61a8edc4ec21a92cf178198ec17643286",
+      "afterSha256": "b2c5aa9433c979e9243aa69c8e8f31936d3005ff0360da582c8c7c02f8bba8d3"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+      "beforeSha256": "6a55c70d35ea6225c2dd0b5b3570a5765d876ba744284207782119a988e63f28",
+      "afterSha256": "bd77da711bee4feaa13771d4314ecc08fd1217d195aedab636695b9ac5e251db"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+      "beforeSha256": "c1b10a99af6ca9632790e80e08bcc0397a1a6bd0c76abe0b09a88d666a10df21",
+      "afterSha256": "d9133598de171b31adac646c1136f802584085b7e0acc2344b7f7b1f700b2347"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+      "beforeSha256": "48e5bc5fb917e4f776f9531dd81a9e47087881f67b3f417840ca9f1e22d7ba0e",
+      "afterSha256": "275f1306127b6f33c7fc8119f1db3bfcac0679ec65f60de4877427acfa0b19f3"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+      "beforeSha256": "b991b1121259030353bfde344a6091935e550f1232f25429a5e114488e2eec37",
+      "afterSha256": "52ea792e11ba0a39560690898d490af15ea49461ff5c7301d8564750807f151f"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+      "beforeSha256": "ef9894512b8235d1d0b7b33d0e0ceda8979475cc90ce58870aa63c4706701b70",
+      "afterSha256": "6823e34e7c58255f56cbda6ed73e5f873a193479b8b7976573e2ba1e92518a9a"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+      "beforeSha256": "1468aaa9f36f6b9cd9bd46125fbeae1136754d8e7cf1e59ea39265702944f331",
+      "afterSha256": "befcfc90c1887e2a3b587e1d1e3bd685a83d01cf4b4ee079b10581e124e4c074"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+      "beforeSha256": "6b2fb848a55c500e24e0c18f2f773ac6c6b9140da2ffa63add73b66137bf0c4f",
+      "afterSha256": "689ae38c665a3e07bce902871757d54a6070dec0598acb7b351d27faaa879c81"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+      "beforeSha256": "d5256179bcd636140c50d64977c3edc6aeeae8db4e1e094a2d13f8fb8ea4e994",
+      "afterSha256": "ad7d4721898d2dee501af874659cc50befc885f80bcaa2c9acc0ca12c06093c8"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+      "beforeSha256": "47a258fd883dddea83a437d759e663bc0216b46bba75043276f50963dbc71bfe",
+      "afterSha256": "166bcc76145a31addb5243b40d240d03c9dcc72ea54cc8926af112639e053fcd"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+      "beforeSha256": "31991ad29b288fc9621f9ed2488a500cd6179a883a5ab8d5af43df8367ad3389",
+      "afterSha256": "3522ae7affab57fc2878f545e56de49b10579273a078d200947a28894dc5a1d2"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+      "beforeSha256": "bafa1c7e9a9b6e59483e8d7826ebd68e631e3c8dca74be691874c9947086da23",
+      "afterSha256": "dc22d6d57f311b01b5f724c9bf2bb6bcb41778a33afed9e25bba752752c0fef4"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+      "beforeSha256": "65d6fb5d3e21c52367f0ff0c5fcc1ad114b98f1ee965e2575409961cbde50b55",
+      "afterSha256": "359ab2d342fff9331de94584692f077fc503589ad61f54a8780efac741d0a9cd"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+      "beforeSha256": "c4fca3021044d18abe2b67eee4878ba7639bd8ab1fe42a683a2580d07124f14f",
+      "afterSha256": "71cc64c81c5a997e7dab2323e12e05465edf0fcb7a009cd149b31510f140b557"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+      "beforeSha256": "77aa10ac4c6bdc52a421b822e5655578737961e58503923740b8325a26279b2f",
+      "afterSha256": "9dff16ef13b0fe45e08b8b72c9ad1bc3dc0754a16de7c49768f97ceff1c61559"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+      "beforeSha256": "915ac32301289d9144a873e990db88327a0e063c1d957a6b92d97ec0c531e6ef",
+      "afterSha256": "4bc3d1f4481d50de434bb13a28653d526232065c8d0d8b671dfe2bbba097015b"
+    },
+    {
+      "asset": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+      "beforeSha256": "cc72b1dc5ad05c2c4b87b221284d589a46c62b4f6dbb148c29ffeed8d40ffb22",
+      "afterSha256": "35c2c655cdf3739e8b698e579dbd9153ba86584a72c0bc30f8aabbb1abd8d5c6"
+    },
+    {
+      "asset": "Assets/Scenes/SampleScene.unity",
+      "beforeSha256": "976e3796a1e238df6c8dd692c71c22a6d8151461ac43e85a3f9278be92d11ffd",
+      "afterSha256": "9c965c331b76ee2a144b280ff8c4a67c9295a21c6f0cfa176ea4310ba2b12ae4"
+    }
+  ],
+  "unityImportVerified": false,
+  "playModeVerified": false,
+  "mcpUsed": false,
+  "knownRemaining": [
+    "spawn count comparison remains >",
+    "spawn retry time remains Time.time - 0.5f",
+    "element-specific damage/effects/affinities not implemented",
+    "HP zero fast-trail cleanup not implemented"
+  ]
+}

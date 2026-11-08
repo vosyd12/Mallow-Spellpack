@@ -17,9 +17,15 @@ public class Player : MonoBehaviour
     private float _avoidStopMargin = 0.3f;
 
     [SerializeField]
+    private HitReaction _hitReaction;
+
+    [SerializeField]
     private int _maxHP;
     [SerializeField]
     private int _maxMP;
+
+    [SerializeField]
+    private HealthBar _healthBar;
 
     private Vector2 _avoidVelocity;
  
@@ -58,6 +64,8 @@ public class Player : MonoBehaviour
         _job = EPlayerJob.EWizard;
 
         _rd = GetComponent<Rigidbody2D>();
+
+        _healthBar.SetHealth(_player.HP, _maxHP);
     }
 
     private void Update()
@@ -196,6 +204,9 @@ public class Player : MonoBehaviour
 
         _player.HP = Mathf.Max(0, _player.HP - damage);
 
-        print($"플레이어의 남은 HP {_player.HP / _maxHP}");
+        _healthBar.SetHealth(_player.HP, _maxHP);
+        _hitReaction.Play();
+
+        print($"플레이어의 남은 HP {_player.HP} / {_maxHP}");
     }
 }

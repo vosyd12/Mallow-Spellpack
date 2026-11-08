@@ -1,0 +1,1507 @@
+{
+  "date": "2026-11-07",
+  "variants": [
+    {
+      "element": "Pure",
+      "size": "Small",
+      "name": "SlimePureSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Pure_Small.png",
+      "sourceSha256": "6ec74f1adf1e690d8a91710862c536f5a25ee8181c6e830b4decb10b19fc84fe",
+      "image": "Assets/Sprites/Characters/Slimes/Pure/SlimePureSmall.png",
+      "spriteGuid": "648d1530d18b444abfdd0d948d835d5a",
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+      "prefabGuid": "d283edd84dac460ead1940dc4133ee9b",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        61,
+        230,
+        1193,
+        1099
+      ],
+      "pixelsPerUnit": 1132,
+      "pivot": [
+        0.5,
+        0.12360446570972887
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.22033507880815914,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Pure/SlimePureSmallLayers.png",
+      "layerGuid": "36607400d5214e58b1f0f7a4cc399ec9",
+      "layerSha256": "b8ee256ffab9e56a577b8ccbe5be1360f5a4ddf94c23d4082dd3582d431acb3f",
+      "bodyBounds": [
+        887,
+        887,
+        29,
+        139,
+        858,
+        777
+      ],
+      "faceBounds": [
+        887,
+        887,
+        206,
+        418,
+        681,
+        585
+      ],
+      "layerPixelsPerUnit": 829,
+      "layerPivot": [
+        0.5,
+        0.12401352874859076
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "faceLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Pure/SlimePureSmallLayers.png",
+      "prompt": "Use case: compositing. Edit target: attached approved Pure Small pixel-art slime. Convert this ONE approved character into a production-ready TWO-LAYER SPRITE ATLAS on a truly transparent background. Output a wide 2:1 canvas consisting of TWO equal square cells, left and right, no grid lines or text. LEFT CELL: the exact approved slime body including its existing highlights, dark stepped outline, shading and any head/element ornament; REMOVE ALL eyes, mouth and pink cheeks, smoothly reconstruct the body colors underneath, so this body has absolutely NO face. RIGHT CELL: ONLY the removed eyes, smiling mouth and pink cheeks on pure transparency, with no body fill, no surrounding colored rectangle, no highlight or outline of a body. IMPORTANT REGISTRATION: both cells have exactly the same local coordinate grid; place each face feature at the exact position where it belongs on the left body when the right cell is overlaid on the left cell without scaling or shifting. Treat this as layer separation, not a redesign. Retain the reference's chunky pixel geometry, soft mint palette, silhouette width/height proportions, expression and feature spacing. Same scale in both cells. Fit the full body into the left square with generous transparent margins; no cropping. No duplicate body on the right, no extra face on the left, no labels, no checkerboard, no shadows, no floor. Real alpha transparency everywhere outside the intended painted parts.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Pure",
+      "size": "Medium",
+      "name": "SlimePureMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Pure_Medium.png",
+      "sourceSha256": "7a8ea76b00fbb9fbbd18e7f539202e06194a3a16839beb1577c242c8747a530a",
+      "image": "Assets/Sprites/Characters/Slimes/Pure/SlimePureMedium.png",
+      "spriteGuid": "a233f04cdda54645a02f2bd2cd84612e",
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+      "prefabGuid": "69db08c40d2b4be2909414b514881c33",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        113,
+        280,
+        1141,
+        1060
+      ],
+      "pixelsPerUnit": 1028,
+      "pivot": [
+        0.5,
+        0.1547049441786284
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.2996504636426294,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Pure/SlimePureMediumLayers.png",
+      "layerGuid": "ac31ab2eabc049f79af148eb7e0413b4",
+      "layerSha256": "052d99ad37ad63de677d640002ba8f0ac02ad922e14fb12ecc808c00782f7d56",
+      "bodyBounds": [
+        887,
+        887,
+        32,
+        139,
+        856,
+        782
+      ],
+      "faceBounds": [
+        887,
+        887,
+        252,
+        351,
+        634,
+        604
+      ],
+      "layerPixelsPerUnit": 824,
+      "layerPivot": [
+        0.5005636978579482,
+        0.11837655016910936
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "faceLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Pure/SlimePureMediumLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Pure Medium slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Pure ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and the ONE raised eyebrow; no pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Pure",
+      "size": "Large",
+      "name": "SlimePureLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Pure_Large.png",
+      "sourceSha256": "0d3d0b7755967e15d155c654aba4729b39f78a99d9013425cc107af03fa8d37b",
+      "image": "Assets/Sprites/Characters/Slimes/Pure/SlimePureLarge.png",
+      "spriteGuid": "6f533eb256fb4d4794addfcf3c12263b",
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+      "prefabGuid": "313e2326ecb34777bb17c3824063c118",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        90,
+        258,
+        1164,
+        1091
+      ],
+      "pixelsPerUnit": 1074,
+      "pivot": [
+        0.5,
+        0.12998405103668262
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5417170410592503,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Pure/SlimePureLargeLayers.png",
+      "layerGuid": "ecd5a1447e254a869e536c46a436a1d9",
+      "layerSha256": "137344c097c6e62aa03947a5352f7a4cc0db55832b55d0aed33bbec11fcb05a2",
+      "bodyBounds": [
+        887,
+        887,
+        30,
+        139,
+        857,
+        779
+      ],
+      "faceBounds": [
+        887,
+        887,
+        190,
+        415,
+        700,
+        690
+      ],
+      "layerPixelsPerUnit": 827,
+      "layerPivot": [
+        0.5,
+        0.12175873731679819
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "faceLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Pure/SlimePureLargeLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Pure Large slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Pure ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes and the large curled moustache; retain the moustache silhouette, no extra mouth or pink cheeks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false,
+      "refinement": {
+        "prompt": "undefined\nQUALITY CORRECTION: make absolutely CLEAN empty transparent margins in ALL FOUR CORNERS and above/below/between the two layers. No scattered white pixels, no dust, no grain, no paint speckles or debris anywhere. The canvas outside the body and facial marks must be alpha=0. Include precisely TWO eyes and ONE curled moustache in the right cell. The left cell is a pristine faceless mint body, with no residual facial features.",
+        "generatedPath": "C:\\Users\\PC\\.codex\\generated_images\\01a1875f-b9c7-78f2-a097-4bdcc17fb7f5\\exec-a9203344-5d26-492b-a10f-c6fa5c397104.png"
+      }
+    },
+    {
+      "element": "Fire",
+      "size": "Small",
+      "name": "SlimeFireSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Fire_Small.png",
+      "sourceSha256": "d21c7d283aad6f99f35a216e5fe5e6232656874f09668e1e88e9f3d9dca8d596",
+      "image": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireSmall.png",
+      "spriteGuid": "84c40a7f79c94f998e879e033d0674e6",
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+      "prefabGuid": "4e2b051cec5546ce81ff454f33c32e50",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        90,
+        1194,
+        1099
+      ],
+      "pixelsPerUnit": 1135,
+      "pivot": [
+        0.4996012759170654,
+        0.12360446570972887
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.26014851287616453,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireSmallLayers.png",
+      "layerGuid": "bf37f6770bec47dbb30e61cbab8bb1b1",
+      "layerSha256": "74e3f3ce7faea802fcbc6e183fc2f0641366adab13e35b1f1fdeca6f74817d45",
+      "bodyBounds": [
+        887,
+        887,
+        18,
+        58,
+        872,
+        834
+      ],
+      "faceBounds": [
+        887,
+        887,
+        193,
+        457,
+        695,
+        633
+      ],
+      "layerPixelsPerUnit": 854,
+      "layerPivot": [
+        0.5016910935738444,
+        0.05975197294250282
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "faceLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireSmallLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Fire Small slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Fire ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Fire",
+      "size": "Medium",
+      "name": "SlimeFireMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Fire_Medium.png",
+      "sourceSha256": "11909c9e71fb2545e3cd3f25a0de2be297c7315a30e7f4260d8b6a4f68c3527c",
+      "image": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireMedium.png",
+      "spriteGuid": "389325ac52164c02a3c7f9df7774ce77",
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+      "prefabGuid": "491256a5d31146aeac885e23e954d51a",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        223,
+        1144,
+        1062
+      ],
+      "pixelsPerUnit": 1033,
+      "pivot": [
+        0.5003987240829346,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.3179054314234653,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireMediumLayers.png",
+      "layerGuid": "ba51a8150a00425ba8515ed1e2280138",
+      "layerSha256": "4b6e2b5c581898402fdb8c859636cc02905e673d233f4a2d9b989a6f4737ed91",
+      "bodyBounds": [
+        887,
+        887,
+        45,
+        99,
+        870,
+        782
+      ],
+      "faceBounds": [
+        887,
+        887,
+        245,
+        351,
+        625,
+        626
+      ],
+      "layerPixelsPerUnit": 825,
+      "layerPivot": [
+        0.5157835400225479,
+        0.11837655016910936
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "faceLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireMediumLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Fire Medium slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Fire ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and the ONE raised eyebrow; no pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Fire",
+      "size": "Large",
+      "name": "SlimeFireLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Fire_Large.png",
+      "sourceSha256": "4950d09218da78b79f9ad0e712417b278241591c283cb237896843485f36f27e",
+      "image": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireLarge.png",
+      "spriteGuid": "148fa96e6dad4dd39162d0f2245cb651",
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+      "prefabGuid": "9fd8d7a4b1d140d39926b93090f93873",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        85,
+        119,
+        1169,
+        1137
+      ],
+      "pixelsPerUnit": 1084,
+      "pivot": [
+        0.5,
+        0.09330143540669857
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.6757333227086334,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireLargeLayers.png",
+      "layerGuid": "3de0053e15194cff88758113a54cf967",
+      "layerSha256": "39522e9044283f3d40139ea7a63da3cb101db13a3b029810da7bb6e8d707ff63",
+      "bodyBounds": [
+        887,
+        887,
+        83,
+        82,
+        833,
+        806
+      ],
+      "faceBounds": [
+        887,
+        887,
+        170,
+        420,
+        703,
+        692
+      ],
+      "layerPixelsPerUnit": 750,
+      "layerPivot": [
+        0.5163472378804961,
+        0.09131905298759865
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "faceLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireLargeLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Fire Large slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Fire ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes and the large curled moustache; retain the moustache silhouette, no extra mouth or pink cheeks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false,
+      "refinement": {
+        "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Fire Large slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Fire ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes and the large curled moustache; retain the moustache silhouette, no extra mouth or pink cheeks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.\nPRODUCTION SAFETY CORRECTION: The body and its three fire crests must be ENTIRELY INSIDE the left square, with at least 8% completely TRANSPARENT margin between ALL sides of the painted body and the borders of its square. Scale the whole body down evenly if needed. It must NEVER touch or cross the center divider. The right cell also needs at least 8% transparent margin around its face marks. NO body sliver at the left edge of the right cell. Both cells must use the same exact scale and registration. Clean empty alpha=0 margins, no dust or specks. Keep all three flame crests and the curled moustache from Image 1.",
+        "generatedPath": "C:\\Users\\PC\\.codex\\generated_images\\01a1875f-b9c7-78f2-a097-4bdcc17fb7f5\\exec-57000ceb-8fb3-4fee-8b6e-685b017004b4.png"
+      }
+    },
+    {
+      "element": "Water",
+      "size": "Small",
+      "name": "SlimeWaterSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Water_Small.png",
+      "sourceSha256": "e61da146273c389afaf2c9a40e703b2b0e275ddd446886a36a5dd6fdcbb846e6",
+      "image": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterSmall.png",
+      "spriteGuid": "12da66611a5149899671e0657c07bea7",
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+      "prefabGuid": "2487457d95a6440da7695a72e8463980",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        60,
+        85,
+        1194,
+        1097
+      ],
+      "pixelsPerUnit": 1134,
+      "pivot": [
+        0.5,
+        0.1251993620414673
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.25681053717387975,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterSmallLayers.png",
+      "layerGuid": "b4371100653e4931abbc2be3a6eae821",
+      "layerSha256": "2a7982bf7643daf89e5d377b953a42333e9afec146dedf7325162b54dc5843da",
+      "bodyBounds": [
+        887,
+        887,
+        34,
+        81,
+        869,
+        830
+      ],
+      "faceBounds": [
+        887,
+        887,
+        208,
+        420,
+        681,
+        585
+      ],
+      "layerPixelsPerUnit": 835,
+      "layerPivot": [
+        0.5090191657271702,
+        0.06426155580608793
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "faceLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterSmallLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Water Small slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Water ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Water",
+      "size": "Medium",
+      "name": "SlimeWaterMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Water_Medium.png",
+      "sourceSha256": "a2c2fdd0fcbe5dfd06dc53ebbe33493940a31f21c1de9bb52cde37bdd368249d",
+      "image": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterMedium.png",
+      "spriteGuid": "1aea7d11ca104940b2afb6c10bbcf84e",
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+      "prefabGuid": "657a4c4d21ee47e8945a29ac24075bcd",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        279,
+        1146,
+        1062
+      ],
+      "pixelsPerUnit": 1035,
+      "pivot": [
+        0.5011961722488039,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.30343716385996916,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterMediumLayers.png",
+      "layerGuid": "6bc6503db9a24006af75b67a9e20c16d",
+      "layerSha256": "9d66b1075901261e58a750d115f03632d58f2e6efc3fc538fccf70b2feb42f5f",
+      "bodyBounds": [
+        887,
+        887,
+        56,
+        131,
+        852,
+        760
+      ],
+      "faceBounds": [
+        887,
+        887,
+        247,
+        337,
+        617,
+        583
+      ],
+      "layerPixelsPerUnit": 796,
+      "layerPivot": [
+        0.5118376550169109,
+        0.14317925591882752
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "faceLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterMediumLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Water Medium slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Water ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and the ONE raised eyebrow; no pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Water",
+      "size": "Large",
+      "name": "SlimeWaterLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Water_Large.png",
+      "sourceSha256": "c8157663ccf7b44e894dd4dc863ac4341a6cdc27c341bd36ddc85aafbcc78ac6",
+      "image": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterLarge.png",
+      "spriteGuid": "f5a2d3d9da0c4716a67af3649460d350",
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+      "prefabGuid": "568b19b96ff1458495c9766113346cca",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        88,
+        258,
+        1165,
+        1091
+      ],
+      "pixelsPerUnit": 1077,
+      "pivot": [
+        0.4996012759170654,
+        0.12998405103668262
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5534117560044706,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterLargeLayers.png",
+      "layerGuid": "fedba1ab86004bb0b679de2ee1cac44a",
+      "layerSha256": "41ec03ffbbd565d8edd286b0e8cee36ce2c3492708920fae41e3905541a08c1e",
+      "bodyBounds": [
+        887,
+        887,
+        19,
+        126,
+        869,
+        798
+      ],
+      "faceBounds": [
+        887,
+        887,
+        160,
+        399,
+        730,
+        664
+      ],
+      "layerPixelsPerUnit": 850,
+      "layerPivot": [
+        0.5005636978579482,
+        0.10033821871476889
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "faceLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterLargeLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Water Large slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Water ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes and the large curled moustache; retain the moustache silhouette, no extra mouth or pink cheeks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Earth",
+      "size": "Small",
+      "name": "SlimeEarthSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Earth_Small.png",
+      "sourceSha256": "7d82b327187c7b11edd2a624d0e228aa37f260ccab136708c0b87ef45cb39013",
+      "image": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthSmall.png",
+      "spriteGuid": "ddc569b4827944eb894a11d777e9160d",
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+      "prefabGuid": "e7ee916144a6425faee4a024e466e409",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        183,
+        1195,
+        1098
+      ],
+      "pixelsPerUnit": 1136,
+      "pivot": [
+        0.5,
+        0.12440191387559808
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.23613568920628572,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthSmallLayers.png",
+      "layerGuid": "cc070e7d80b24b4393311921cba68c56",
+      "layerSha256": "b8553ecf61452ae4fb441d2ba6281dff6eee29a8813602860825a62c5fda56cb",
+      "bodyBounds": [
+        887,
+        887,
+        37,
+        97,
+        876,
+        789
+      ],
+      "faceBounds": [
+        887,
+        887,
+        201,
+        420,
+        687,
+        592
+      ],
+      "layerPixelsPerUnit": 839,
+      "layerPivot": [
+        0.5146561443066516,
+        0.1104847801578354
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "faceLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthSmallLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Earth Small slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Earth ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Earth",
+      "size": "Medium",
+      "name": "SlimeEarthMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Earth_Medium.png",
+      "sourceSha256": "4d04d1e134475fe94533926ad9b09fbf92c9493303999186d8246a3d9b6d217b",
+      "image": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthMedium.png",
+      "spriteGuid": "72547e41b54d43488a55909d13783645",
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+      "prefabGuid": "1377a442ea8b4e1783c3c76e5fdb5eb8",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        277,
+        1144,
+        1062
+      ],
+      "pixelsPerUnit": 1033,
+      "pivot": [
+        0.5003987240829346,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.30222662808063244,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthMediumLayers.png",
+      "layerGuid": "93beef7202fb442d932ff7540e3e5eb7",
+      "layerSha256": "455ffc6433f5c185c6044b0cf8afedc308fa308ca904d0893f35d8281a253250",
+      "bodyBounds": [
+        887,
+        887,
+        42,
+        130,
+        845,
+        762
+      ],
+      "faceBounds": [
+        887,
+        887,
+        257,
+        343,
+        626,
+        586
+      ],
+      "layerPixelsPerUnit": 803,
+      "layerPivot": [
+        0.5,
+        0.14092446448703494
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "faceLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthMediumLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Earth Medium slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Earth ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and the ONE raised eyebrow; no pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Earth",
+      "size": "Large",
+      "name": "SlimeEarthLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Earth_Large.png",
+      "sourceSha256": "0f5fd9dcf96333a4aa57497a8814aae1e35971f0ac394b521afe0c6e8896497f",
+      "image": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthLarge.png",
+      "spriteGuid": "454885983db24a9686d752226b40fe12",
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+      "prefabGuid": "691ef2a038a54ebbadfb9d3ca7e16d8c",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        90,
+        256,
+        1164,
+        1093
+      ],
+      "pixelsPerUnit": 1074,
+      "pivot": [
+        0.5,
+        0.1283891547049442
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5739495708076006,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthLargeLayers.png",
+      "layerGuid": "4a7362b4f3b44cf2a9d9f29ed28f1116",
+      "layerSha256": "db4e104b982c983a14f0fae960e812dbe7af5f1afb9f497b83655dccc6607d25",
+      "bodyBounds": [
+        887,
+        887,
+        28,
+        114,
+        861,
+        797
+      ],
+      "faceBounds": [
+        887,
+        887,
+        178,
+        401,
+        709,
+        663
+      ],
+      "layerPixelsPerUnit": 833,
+      "layerPivot": [
+        0.5011273957158963,
+        0.10146561443066517
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "faceLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthLargeLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Earth Large slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Earth ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes and the large curled moustache; retain the moustache silhouette, no extra mouth or pink cheeks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Wind",
+      "size": "Small",
+      "name": "SlimeWindSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Wind_Small.png",
+      "sourceSha256": "ad78449e9c69982cbadf4575653b2b53b645547254fb6a274b9f224b739edf5a",
+      "image": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindSmall.png",
+      "spriteGuid": "05540f468d8740f1b657c98cab89c4ad",
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+      "prefabGuid": "2a7f93c8540f46eea7b51ce42acff39c",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        139,
+        1195,
+        1097
+      ],
+      "pixelsPerUnit": 1136,
+      "pivot": [
+        0.5,
+        0.1251993620414673
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.24366478852150456,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindSmallLayers.png",
+      "layerGuid": "9226f7887aa145969db44e6209240859",
+      "layerSha256": "08a175818e69ee71f0f073ea16ce0d6331a36580407a660456676c29dbde406a",
+      "bodyBounds": [
+        887,
+        887,
+        43,
+        88,
+        869,
+        791
+      ],
+      "faceBounds": [
+        887,
+        887,
+        206,
+        417,
+        680,
+        590
+      ],
+      "layerPixelsPerUnit": 826,
+      "layerPivot": [
+        0.5140924464487034,
+        0.10822998872604284
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "faceLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindSmallLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Wind Small slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Wind ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Wind",
+      "size": "Medium",
+      "name": "SlimeWindMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Wind_Medium.png",
+      "sourceSha256": "3d2dbea6a0e140ebdfd15e3849fea68330e56f8e2e125573d7fc67894fe6184a",
+      "image": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindMedium.png",
+      "spriteGuid": "51afff95eb4c45829223ab1f26eccbea",
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+      "prefabGuid": "20b7a49b000b40a3990b3a4aa13284a1",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        220,
+        1143,
+        1062
+      ],
+      "pixelsPerUnit": 1032,
+      "pivot": [
+        0.5,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.31766421047219756,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindMediumLayers.png",
+      "layerGuid": "69f44c37ace7416a8fd8d5b346cc20ea",
+      "layerSha256": "6fc9ed602c3414bc93c3baae5c23eb750ff7ff4b9aee69dbb9f7f7f3fb871b10",
+      "bodyBounds": [
+        887,
+        887,
+        37,
+        112,
+        859,
+        792
+      ],
+      "faceBounds": [
+        887,
+        887,
+        251,
+        380,
+        626,
+        618
+      ],
+      "layerPixelsPerUnit": 822,
+      "layerPivot": [
+        0.5050732807215332,
+        0.10710259301014656
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "faceLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindMediumLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Wind Medium slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Wind ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and the ONE raised eyebrow; no pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Wind",
+      "size": "Large",
+      "name": "SlimeWindLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Wind_Large.png",
+      "sourceSha256": "00aec80c76aab64ed322cc667774f5fe07b5f4836ff623cacc3d17a1de0f069c",
+      "image": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindLarge.png",
+      "spriteGuid": "a1fd8111a8734ddd89fcf4eb060ef192",
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+      "prefabGuid": "2ea4db1df1b3478faecffb4dde15c5c8",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        87,
+        257,
+        1168,
+        1093
+      ],
+      "pixelsPerUnit": 1081,
+      "pivot": [
+        0.5003987240829346,
+        0.1283891547049442
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.541445774619262,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindLargeLayers.png",
+      "layerGuid": "93c9acf4f9054714b91aac5e963a8e94",
+      "layerSha256": "ea6f8a93848e31970c047bffbc6ef8426ee82959a89fdf6f7219dc613cf1f897",
+      "bodyBounds": [
+        887,
+        887,
+        29,
+        138,
+        859,
+        780
+      ],
+      "faceBounds": [
+        887,
+        887,
+        180,
+        411,
+        709,
+        666
+      ],
+      "layerPixelsPerUnit": 830,
+      "layerPivot": [
+        0.5005636978579482,
+        0.12063134160090191
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "faceLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindLargeLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Wind Large slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Wind ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes and the large curled moustache; retain the moustache silhouette, no extra mouth or pink cheeks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Lightning",
+      "size": "Small",
+      "name": "SlimeLightningSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Lightning_Small.png",
+      "sourceSha256": "3f20799a55fcbdb938a7cbd7b9c41333970ae94b6bf4136ec1df21f6b5fe2719",
+      "image": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningSmall.png",
+      "spriteGuid": "65f32ab20a0d4e9c913b53f2d9547672",
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+      "prefabGuid": "0a215889ffd4472aa66bdd6890000301",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        145,
+        1196,
+        1098
+      ],
+      "pixelsPerUnit": 1137,
+      "pivot": [
+        0.5003987240829346,
+        0.12440191387559808
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.2444671735713969,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningSmallLayers.png",
+      "layerGuid": "a569a1a6b6194fd9be87dbaab47e3d9a",
+      "layerSha256": "57847cb496cfd3c2baf7f6bcd8d2c9cec996d4e2f9e9bd7aeaf8f3b6def1e8cd",
+      "bodyBounds": [
+        887,
+        887,
+        36,
+        84,
+        871,
+        797
+      ],
+      "faceBounds": [
+        887,
+        887,
+        208,
+        421,
+        682,
+        592
+      ],
+      "layerPixelsPerUnit": 835,
+      "layerPivot": [
+        0.5112739571589628,
+        0.10146561443066517
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "faceLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningSmallLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Lightning Small slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Lightning ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Lightning",
+      "size": "Medium",
+      "name": "SlimeLightningMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Lightning_Medium.png",
+      "sourceSha256": "9912eed15f6aafb808782f457ba9c12d64ad1783b4dbd23bba89685b3a2cfbcd",
+      "image": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningMedium.png",
+      "spriteGuid": "6d12bd1d979243738dcaff57b70ee05b",
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+      "prefabGuid": "abbb0a23bd5f432fbe850f0e1383d508",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        112,
+        277,
+        1142,
+        1062
+      ],
+      "pixelsPerUnit": 1030,
+      "pivot": [
+        0.5,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.29903176309181156,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningMediumLayers.png",
+      "layerGuid": "08f2c14581514a6a9a535a7ba86c49b1",
+      "layerSha256": "e5188d35893183ae481bc76cd64aca5b2e1148d36bb137eb4e1ea7c884db5646",
+      "bodyBounds": [
+        887,
+        887,
+        41,
+        134,
+        859,
+        771
+      ],
+      "faceBounds": [
+        887,
+        887,
+        244,
+        350,
+        630,
+        599
+      ],
+      "layerPixelsPerUnit": 818,
+      "layerPivot": [
+        0.5073280721533259,
+        0.13077790304396844
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "faceLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningMediumLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Lightning Medium slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Lightning ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes, smiling mouth and the ONE raised eyebrow; no pink cheek marks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    },
+    {
+      "element": "Lightning",
+      "size": "Large",
+      "name": "SlimeLightningLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Lightning_Large.png",
+      "sourceSha256": "7e95356b9d936e0b315a8d37fb2150c3ff0509052a379a0c295fd11295f12117",
+      "image": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningLarge.png",
+      "spriteGuid": "a70c2ef0ef654f39b80730d337e27139",
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+      "prefabGuid": "898a53dcd84e4cecb6e77bd3d498da6c",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        88,
+        257,
+        1166,
+        1089
+      ],
+      "pixelsPerUnit": 1078,
+      "pivot": [
+        0.5,
+        0.13157894736842105
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.569649325988868,
+      "face": "transparent Sprite under VisualRoot/Visual/FaceMotion/Face/FaceFeatures",
+      "spawnConnected": false,
+      "elementGameplayConnected": false,
+      "layerImage": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningLargeLayers.png",
+      "layerGuid": "12a70456bd60485b9f8407c36135e96f",
+      "layerSha256": "60938989d8f5eeabb5f918c61707d477f33e668a0a32d6a0fc8a72a921d3b324",
+      "bodyBounds": [
+        887,
+        887,
+        31,
+        111,
+        858,
+        784
+      ],
+      "faceBounds": [
+        887,
+        887,
+        181,
+        402,
+        708,
+        665
+      ],
+      "layerPixelsPerUnit": 827,
+      "layerPivot": [
+        0.5011273957158963,
+        0.1161217587373168
+      ],
+      "bodySpriteId": 21300000,
+      "faceSpriteId": 21300002,
+      "faceLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "faceLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "activeImage": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningLargeLayers.png",
+      "prompt": "Use case: compositing. Image 1 is the EDIT TARGET: the approved Lightning Large slime. Image 2 is ONLY a technical layout reference for two sprite layers. Preserve Image 1's own exact palette, silhouette, markings, highlight, elemental ornaments and character expression; DO NOT recolor it mint or copy the other character in Image 2. Convert Image 1 into a TWO-LAYER SPRITE ATLAS on genuine transparent alpha. A wide 2:1 canvas with TWO equally sized square cells, left and right. LEFT CELL: complete original body and ALL its Lightning ornamentation, cracks, waves, curls or lightning markings exactly as Image 1, with ALL FACIAL FEATURES REMOVED and the underlying body color reconstructed cleanly. No eyes, mouth, eyebrow, moustache or blush on the body layer. RIGHT CELL: ONLY both eyes and the large curled moustache; retain the moustache silhouette, no extra mouth or pink cheeks floating on transparency, absolutely no body-colored patch, rectangle, body outline or elemental ornament. REGISTRATION IS CRITICAL: use the exact same local coordinate grid and scale for both square cells. If the right cell is placed on top of the left cell with no shift or scaling, its facial parts should sit at their original positions on the slime. Match Image 2's atlas arrangement, not its colors or design. Preserve the approved chunky stepped pixel outline, shading, body proportions, original ornament count and geometry. Fit the complete slime in the left cell with transparent margin, no clipping. This is layer separation, no redesign, no new decorations, no duplicate body, no labels, no text, no visible checkerboard, no background, no floor, no shadows. Entire right cell is fully transparent outside the facial marks.",
+      "tool": "built-in image_gen edit",
+      "unityImportVerified": false
+    }
+  ]
+}

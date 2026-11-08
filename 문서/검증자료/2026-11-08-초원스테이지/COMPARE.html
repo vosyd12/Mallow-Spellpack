@@ -1,0 +1,9 @@
+<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>초원 Stage 적용 비교</title>
+<style>body{font:16px/1.65 system-ui,sans-serif;max-width:1120px;margin:32px auto;padding:0 20px;background:#f5f6f1;color:#253525}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}figure{margin:0;background:white;padding:12px;border:1px solid #ccd4c3;border-radius:10px}img{display:block;width:100%;height:auto}figcaption{padding:8px;font-weight:600}a{color:#275b38}@media(max-width:600px){.pair{grid-template-columns:1fr}}</style>
+<h1>초원 Tilemap과 나무 배치</h1><p>2026-11-08 · MCP에서 캡처한 실제 Unity 화면입니다. 카메라 크기·이동 경계·게임 C#·씬 파일은 유지했습니다.</p>
+<div class="pair"><figure><img src="01-before-meadow.png"><figcaption>변경 전 · 임시 체크무늬</figcaption></figure><figure><img src="04-meadow-landing-effects.png"><figcaption>변경 후 · 초원 위 6속성 착지 확인</figcaption></figure></div>
+<p>오른쪽 6속성은 표시 확인용 통제 배치입니다. 위쪽 무속성·불·물, 아래쪽 땅·바람·번개이며 저장된 씬에 배치한 것은 아닙니다. 나무는 외곽 장식이며 실제 이동 범위는 기존 X ±4.5 / Y ±5.625입니다.</p>
+<div class="pair"><figure><img src="02-after-meadow.png"><figcaption>Prefab 반영 직후</figcaption></figure><figure><img src="03-meadow-play.png"><figcaption>기존 Spawner·이동의 Play Mode 확인</figcaption></figure></div>
+<p>최종 C# 13개 지문·씬 파일 동일 · 벽 4개 설정 동일 · 장식 충돌체 0개 · 오류·경고 0개. 실제 모바일 성능과 전체 전투 검증은 포함하지 않습니다.</p>
+<p><a href="../../2026-11-08-MEADOW-STAGE.md">변경·참고 관찰 기록</a> · <a href="VERIFICATION.json">확인 데이터</a> · <a href="ART_PROMPTS.md">이미지 프롬프트</a></p>
+<h2>학습에 사용한 공식 자료</h2><p><a href="https://play.google.com/store/apps/details?hl=ko&id=com.devsisters.cc">Devsisters Google Play 이미지</a>와 <a href="https://cookieruncrumble.com/ko">공식 소개</a>를 참고했습니다. 내부 기술이 확인된 것은 아니며, 원작 이미지는 게임 에셋으로 사용하지 않았습니다.</p></html>

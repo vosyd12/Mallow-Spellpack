@@ -1,0 +1,170 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "stage": "concept PNG only; no prefab integration",
+  "style_reference": "Assets/Sprites/Characters/SlimeStyleAtlas.png",
+  "small_runtime_scale_proposal": 1.2,
+  "images": [
+    {
+      "element": "Pure",
+      "size": "Small",
+      "file": "Pure_Small.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "6ec74f1adf1e690d8a91710862c536f5a25ee8181c6e830b4decb10b19fc84fe",
+      "prompt": "Use case: compositing / consistent Unity 2D slime concept sprite. The attached four-cell atlas is the CANONICAL STYLE AND PARTS REFERENCE, not the desired output layout. Assemble ONE complete NEUTRAL/NON-ELEMENTAL Small slime from its body, eyes and the appropriate expression parts. a cute baby slime, two simple round dark eyes and tiny happy smile from the reference, two subtle rosy cheek marks. Enlarge the apparent body versus a tiny detailed version: make a generous plump readable silhouette. Body width 70% of canvas; just ONE simple upper-left highlight, no small internal decoration, no eyebrows or moustache. Use a soft pale mint green body, dark charcoal-green eyes and mouth. Preserve the reference's dome silhouette, SAME chunky logical pixel sizes, SAME dark stepped outline, SAME simple shading convention. Very clean readable pixel art, not realistic illustration, no fine texture, no outer glow, no gradients, no brush strokes, no soft focus. Single front-facing character in one square transparent canvas, centered horizontally, feet/base aligned at 84% of canvas height; keep comfortable margin on all sides. No limbs, no floor, no shadow, no background, no UI, no frame, no text, no labels, no extra sprites or repeated views. True transparent alpha. This is one asset in a coherent 18-variant family. Keep the face simple, cute and highly legible when shrunk. Neutral means NO elemental head ornament."
+    },
+    {
+      "element": "Pure",
+      "size": "Medium",
+      "file": "Pure_Medium.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7a8ea76b00fbb9fbbd18e7f539202e06194a3a16839beb1577c242c8747a530a",
+      "prompt": "Use case: compositing / consistent Unity 2D slime concept sprite. The attached four-cell atlas is the CANONICAL STYLE AND PARTS REFERENCE, not the desired output layout. Assemble ONE complete NEUTRAL/NON-ELEMENTAL Medium slime from its body, eyes and the appropriate expression parts. a playful medium slime, the SAME round eyes and tiny happy smile from reference plus ONE subtly raised eyebrow. Body width 76% of canvas. Keep the same basic body shape, the same coarse pixel blocks and simple upper-left highlight. No moustache or cheek clutter. Use a soft pale mint green body, dark charcoal-green eyes and mouth. Preserve the reference's dome silhouette, SAME chunky logical pixel sizes, SAME dark stepped outline, SAME simple shading convention. Very clean readable pixel art, not realistic illustration, no fine texture, no outer glow, no gradients, no brush strokes, no soft focus. Single front-facing character in one square transparent canvas, centered horizontally, feet/base aligned at 84% of canvas height; keep comfortable margin on all sides. No limbs, no floor, no shadow, no background, no UI, no frame, no text, no labels, no extra sprites or repeated views. True transparent alpha. This is one asset in a coherent 18-variant family. Keep the face simple, cute and highly legible when shrunk. Neutral means NO elemental head ornament."
+    },
+    {
+      "element": "Pure",
+      "size": "Large",
+      "file": "Pure_Large.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0d3d0b7755967e15d155c654aba4729b39f78a99d9013425cc107af03fa8d37b",
+      "prompt": "Use case: compositing / consistent Unity 2D slime concept sprite. The attached four-cell atlas is the CANONICAL STYLE AND PARTS REFERENCE, not the desired output layout. Assemble ONE complete NEUTRAL/NON-ELEMENTAL Large slime from its body, eyes and the appropriate expression parts. a friendly large gentleman slime, the SAME round dark eyes and the large black curled handlebar moustache from reference. Body width 84% of canvas; a broad plump body. Keep the same coarse pixel blocks, outline thickness and upper-left highlight. No extra beard, no hat, no extra accessories. Use a soft pale mint green body, dark charcoal-green eyes and mouth. Preserve the reference's dome silhouette, SAME chunky logical pixel sizes, SAME dark stepped outline, SAME simple shading convention. Very clean readable pixel art, not realistic illustration, no fine texture, no outer glow, no gradients, no brush strokes, no soft focus. Single front-facing character in one square transparent canvas, centered horizontally, feet/base aligned at 84% of canvas height; keep comfortable margin on all sides. No limbs, no floor, no shadow, no background, no UI, no frame, no text, no labels, no extra sprites or repeated views. True transparent alpha. This is one asset in a coherent 18-variant family. Keep the face simple, cute and highly legible when shrunk. Neutral means NO elemental head ornament."
+    },
+    {
+      "element": "Fire",
+      "size": "Small",
+      "file": "Fire_Small.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d21c7d283aad6f99f35a216e5fe5e6232656874f09668e1e88e9f3d9dca8d596",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Small slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Fire (불). Palette: warm orange body with red-orange and pale yellow flame accents. Ornament: ONE small rounded flame tuft on the head; no internal pattern or extra sparks. Preserve the EXACT neutral Small body's silhouette, face geometry, eyes, tiny happy smile and rosy cheeks, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Small must remain extra simple and visually plump: ONE bold accent, no fine textures or microscopic sparks. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Fire",
+      "size": "Medium",
+      "file": "Fire_Medium.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "11909c9e71fb2545e3cd3f25a0de2be297c7315a30e7f4260d8b6a4f68c3527c",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Medium slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Fire (불). Palette: warm orange body with red-orange and pale yellow flame accents. Ornament: a clearly split TWO-tip flame forelock on the head; keep face unobstructed. Preserve the EXACT neutral Medium body's silhouette, face geometry, eyes, single raised eyebrow and smile, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Fire",
+      "size": "Large",
+      "file": "Fire_Large.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4950d09218da78b79f9ad0e712417b278241591c283cb237896843485f36f27e",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Large slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Fire (불). Palette: warm orange body with red-orange and pale yellow flame accents. Ornament: a broad THREE-tip flame crest around the upper rim; keep the moustache fully visible and unchanged. Preserve the EXACT neutral Large body's silhouette, face geometry, eyes, curled handlebar moustache, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Water",
+      "size": "Small",
+      "file": "Water_Small.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e61da146273c389afaf2c9a40e703b2b0e275ddd446886a36a5dd6fdcbb846e6",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Small slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Water (물). Palette: bright cyan-blue body with pale blue and white water accents. Ornament: ONE simple water-drop-shaped tuft on the head; no foam or tiny bubbles. Preserve the EXACT neutral Small body's silhouette, face geometry, eyes, tiny happy smile and rosy cheeks, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Small must remain extra simple and visually plump: ONE bold accent, no fine textures or microscopic sparks. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Water",
+      "size": "Medium",
+      "file": "Water_Medium.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "a2c2fdd0fcbe5dfd06dc53ebbe33493940a31f21c1de9bb52cde37bdd368249d",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Medium slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Water (물). Palette: bright cyan-blue body with pale blue and white water accents. Ornament: ONE curved wave-shaped forelock, like a simple curling wave; no clutter. Preserve the EXACT neutral Medium body's silhouette, face geometry, eyes, single raised eyebrow and smile, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Water",
+      "size": "Large",
+      "file": "Water_Large.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "c8157663ccf7b44e894dd4dc863ac4341a6cdc27c341bd36ddc85aafbcc78ac6",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Large slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Water (물). Palette: bright cyan-blue body with pale blue and white water accents. Ornament: a broad THREE-crest wave crown along the upper rim, simple solid shapes, no jewelry; keep moustache visible. Preserve the EXACT neutral Large body's silhouette, face geometry, eyes, curled handlebar moustache, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Earth",
+      "size": "Small",
+      "file": "Earth_Small.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7d82b327187c7b11edd2a624d0e228aa37f260ccab136708c0b87ef45cb39013",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Small slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Earth (땅). Palette: warm sandy tan body with brown and muted olive stone accents. Ornament: ONE small rounded pebble sitting on the head; no cracks or tiny grain details. Preserve the EXACT neutral Small body's silhouette, face geometry, eyes, tiny happy smile and rosy cheeks, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Small must remain extra simple and visually plump: ONE bold accent, no fine textures or microscopic sparks. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Earth",
+      "size": "Medium",
+      "file": "Earth_Medium.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4d04d1e134475fe94533926ad9b09fbf92c9493303999186d8246a3d9b6d217b",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Medium slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Earth (땅). Palette: warm sandy tan body with brown and muted olive stone accents. Ornament: TWO blunt pebble bumps near the upper sides, and at most ONE broad simple crack mark away from the face. Preserve the EXACT neutral Medium body's silhouette, face geometry, eyes, single raised eyebrow and smile, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Earth",
+      "size": "Large",
+      "file": "Earth_Large.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "0f5fd9dcf96333a4aa57497a8814aae1e35971f0ac394b521afe0c6e8896497f",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Large slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Earth (땅). Palette: warm sandy tan body with brown and muted olive stone accents. Ornament: a broad blunt THREE-facet rock crest on the head and at most TWO broad stone seam marks; no armor, keep moustache visible. Preserve the EXACT neutral Large body's silhouette, face geometry, eyes, curled handlebar moustache, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Wind",
+      "size": "Small",
+      "file": "Wind_Small.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ad78449e9c69982cbadf4575653b2b53b645547254fb6a274b9f224b739edf5a",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Small slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Wind (바람). Palette: pale ivory mint body with distinctly readable mint-gray wind accents and a dark outline. Ornament: ONE simple S-curved airy tuft on the head; no floating particles. Preserve the EXACT neutral Small body's silhouette, face geometry, eyes, tiny happy smile and rosy cheeks, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Small must remain extra simple and visually plump: ONE bold accent, no fine textures or microscopic sparks. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Wind",
+      "size": "Medium",
+      "file": "Wind_Medium.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3d2dbea6a0e140ebdfd15e3849fea68330e56f8e2e125573d7fc67894fe6184a",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Medium slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Wind (바람). Palette: pale ivory mint body with distinctly readable mint-gray wind accents and a dark outline. Ornament: a TWO-curl swirling forelock, clean bold S-curves; face fully unobstructed. Preserve the EXACT neutral Medium body's silhouette, face geometry, eyes, single raised eyebrow and smile, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Wind",
+      "size": "Large",
+      "file": "Wind_Large.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "00aec80c76aab64ed322cc667774f5fe07b5f4836ff623cacc3d17a1de0f069c",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Large slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Wind (바람). Palette: pale ivory mint body with distinctly readable mint-gray wind accents and a dark outline. Ornament: a broad soft cloud-like upper rim and TWO bold curved wind marks; no detached clouds, keep moustache visible. Preserve the EXACT neutral Large body's silhouette, face geometry, eyes, curled handlebar moustache, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Lightning",
+      "size": "Small",
+      "file": "Lightning_Small.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "3f20799a55fcbdb938a7cbd7b9c41333970ae94b6bf4136ec1df21f6b5fe2719",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Small slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Lightning (번개). Palette: warm yellow-gold body with contrasting violet and pale yellow lightning accents. Ornament: ONE bold zigzag lightning tuft on the head; no little sparks or internal pattern. Preserve the EXACT neutral Small body's silhouette, face geometry, eyes, tiny happy smile and rosy cheeks, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Small must remain extra simple and visually plump: ONE bold accent, no fine textures or microscopic sparks. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Lightning",
+      "size": "Medium",
+      "file": "Lightning_Medium.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "9912eed15f6aafb808782f457ba9c12d64ad1783b4dbd23bba89685b3a2cfbcd",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Medium slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Lightning (번개). Palette: warm yellow-gold body with contrasting violet and pale yellow lightning accents. Ornament: a TWO-point angular lightning forelock; use zigzag edges rather than flame curves. Preserve the EXACT neutral Medium body's silhouette, face geometry, eyes, single raised eyebrow and smile, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    },
+    {
+      "element": "Lightning",
+      "size": "Large",
+      "file": "Lightning_Large.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "7e95356b9d936e0b315a8d37fb2150c3ff0509052a379a0c295fd11295f12117",
+      "prompt": "Use case: precise-object-edit for one coherent 18-variant Unity 2D pixel-art slime family. IMAGE 1 is the EDIT TARGET, the finished neutral Large slime; IMAGE 2 is the canonical body/eyes/mouth style reference. Change ONLY the target's body COLOR and add the specific elemental ORNAMENT described here. Element: Lightning (번개). Palette: warm yellow-gold body with contrasting violet and pale yellow lightning accents. Ornament: a broad THREE-point angular lightning crest on the head and at most TWO wide lightning marks away from the face; keep moustache visible. Preserve the EXACT neutral Large body's silhouette, face geometry, eyes, curled handlebar moustache, proportions, face placement, logical pixel size, dark stepped outline thickness and upper-left highlight. Keep the same frontal pose and same centered framing and baseline. Recolor all body tones coherently; preserve shading depth. The ornament must use the SAME chunky pixel steps and simple flat shading as the body, have a dark readable outline, fit comfortably inside the canvas, and leave the face unobstructed. Avoid small fussy decorations; clear bold shapes only. No realistic rendering, no brush texture, no outer glow, no blur, no floor, no shadows, no text or labels, no borders, no UI, no repeated views, no other characters. ONE complete slime only on TRUE TRANSPARENT ALPHA, in a square canvas. Do not add limbs, hats, weapons or jewelry. This is a concept PNG for review before making prefabs."
+    }
+  ]
+}

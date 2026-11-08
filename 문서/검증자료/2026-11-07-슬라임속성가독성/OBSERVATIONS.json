@@ -1,0 +1,518 @@
+{
+  "date": "2026-11-07",
+  "method": "MCP 127.0.0.1:8099; live Unity Play Mode camera captures",
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "camera": "Main Camera",
+  "orthographicSize": 7.5,
+  "cameraTransform": {
+    "position": [
+      0,
+      0,
+      -10
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ]
+  },
+  "captureResolution": [
+    648,
+    869
+  ],
+  "cameraSettingsChanged": false,
+  "sampledElements": [
+    "Fire",
+    "Wind",
+    "Earth",
+    "Lightning"
+  ],
+  "notCoveredBySelectedLiveCaptures": [
+    "Water",
+    "Pure"
+  ],
+  "notes": [
+    "Body deformation also deforms the elemental ornaments baked into the same Sprite.",
+    "Full-map Small base width is approximately 17 pixels at this capture resolution.",
+    "Overlapping actors and HP bars make head ornaments harder to read.",
+    "No color-data mutation or renderer-sharing bug was established by this visual review."
+  ],
+  "comparison": {
+    "squashed": {
+      "screenshot": "02-paused-overview.png",
+      "actor": "SlimeFireLarge(Clone)",
+      "instanceId": -128026,
+      "observedVisualRootScale": [
+        1.49320149,
+        0.5735159,
+        1
+      ]
+    },
+    "stretched": {
+      "screenshot": "06-motion-phase.png",
+      "actorsAtPausedCapture": [
+        {
+          "id": -128026,
+          "name": "SlimeFireLarge(Clone)",
+          "position": {
+            "x": -1.54576075,
+            "y": -1.24776256,
+            "z": 0.0
+          },
+          "visualRoot": {
+            "position": {
+              "x": -1.54576075,
+              "y": -0.8777691,
+              "z": 0.0
+            },
+            "localPosition": {
+              "x": 0.0,
+              "y": 1.05712426,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.7320396,
+              "y": 1.4063288,
+              "z": 1.0
+            },
+            "lossyScale": {
+              "x": 0.219611883,
+              "y": 0.492215067,
+              "z": 1.0
+            }
+          },
+          "enemy": {
+            "EnemyState": {
+              "HP": 6,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 2.0,
+              "AttackSpeed": 5.0,
+              "Element": 0,
+              "Size": 2
+            },
+            "Target": {
+              "name": "Player",
+              "instanceID": 83218,
+              "entityID": "568105584918873362"
+            },
+            "MoveSpeed": 2.0,
+            "_traceObject": {
+              "name": "Player",
+              "instanceID": 83208,
+              "entityID": "568105584918873352"
+            },
+            "_useDefaultMovement": false,
+            "_moveSpeed": 2.0,
+            "_healthBar": {
+              "name": "SlimeFireLarge(Clone)",
+              "instanceID": -128042,
+              "entityID": "568105589213629398"
+            },
+            "_maxHP": 50,
+            "_hitReaction": {
+              "name": "SlimeFireLarge(Clone)",
+              "instanceID": -128030,
+              "entityID": "568105589213629410"
+            },
+            "_enemy": {
+              "HP": 6,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 2.0,
+              "AttackSpeed": 5.0,
+              "Element": 0,
+              "Size": 2
+            }
+          }
+        },
+        {
+          "id": -128118,
+          "name": "SlimeWindLarge(Clone)",
+          "position": {
+            "x": -1.806385,
+            "y": -1.642296,
+            "z": 0.0
+          },
+          "visualRoot": {
+            "position": {
+              "x": -1.806385,
+              "y": -1.52728367,
+              "z": 0.0
+            },
+            "localPosition": {
+              "x": 0.0,
+              "y": 0.328606546,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.7526353,
+              "y": 1.29747009,
+              "z": 1.0
+            },
+            "lossyScale": {
+              "x": 0.2257906,
+              "y": 0.454114527,
+              "z": 1.0
+            }
+          },
+          "enemy": {
+            "EnemyState": {
+              "HP": 7,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 2.0,
+              "AttackSpeed": 5.0,
+              "Element": 3,
+              "Size": 2
+            },
+            "Target": {
+              "name": "Player",
+              "instanceID": 83218,
+              "entityID": "568105584918873362"
+            },
+            "MoveSpeed": 2.0,
+            "_traceObject": {
+              "name": "Player",
+              "instanceID": 83208,
+              "entityID": "568105584918873352"
+            },
+            "_useDefaultMovement": false,
+            "_moveSpeed": 2.0,
+            "_healthBar": {
+              "name": "SlimeWindLarge(Clone)",
+              "instanceID": -128134,
+              "entityID": "568105589213629306"
+            },
+            "_maxHP": 50,
+            "_hitReaction": {
+              "name": "SlimeWindLarge(Clone)",
+              "instanceID": -128122,
+              "entityID": "568105589213629318"
+            },
+            "_enemy": {
+              "HP": 7,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 2.0,
+              "AttackSpeed": 5.0,
+              "Element": 3,
+              "Size": 2
+            }
+          }
+        },
+        {
+          "id": -128538,
+          "name": "SlimeFireMedium(Clone)",
+          "position": {
+            "x": -1.23076081,
+            "y": -1.41367292,
+            "z": 0.0
+          },
+          "visualRoot": {
+            "position": {
+              "x": -1.23076081,
+              "y": -1.03748119,
+              "z": 0.0
+            },
+            "localPosition": {
+              "x": 0.0,
+              "y": 1.07483363,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.8392395,
+              "y": 1.19291258,
+              "z": 1.0
+            },
+            "lossyScale": {
+              "x": 0.251771867,
+              "y": 0.4175194,
+              "z": 1.0
+            }
+          },
+          "enemy": {
+            "EnemyState": {
+              "HP": 25,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 2.5,
+              "AttackSpeed": 5.0,
+              "Element": 0,
+              "Size": 1
+            },
+            "Target": {
+              "name": "Player",
+              "instanceID": 83218,
+              "entityID": "568105584918873362"
+            },
+            "MoveSpeed": 2.5,
+            "_traceObject": {
+              "name": "Player",
+              "instanceID": 83208,
+              "entityID": "568105584918873352"
+            },
+            "_useDefaultMovement": false,
+            "_moveSpeed": 2.5,
+            "_healthBar": {
+              "name": "SlimeFireMedium(Clone)",
+              "instanceID": -128554,
+              "entityID": "568105589213628886"
+            },
+            "_maxHP": 50,
+            "_hitReaction": {
+              "name": "SlimeFireMedium(Clone)",
+              "instanceID": -128542,
+              "entityID": "568105589213628898"
+            },
+            "_enemy": {
+              "HP": 25,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 2.5,
+              "AttackSpeed": 5.0,
+              "Element": 0,
+              "Size": 1
+            }
+          }
+        },
+        {
+          "id": -128790,
+          "name": "SlimeEarthSmall(Clone)",
+          "position": {
+            "x": 1.25394809,
+            "y": 0.341635823,
+            "z": 0.0
+          },
+          "visualRoot": {
+            "position": {
+              "x": 1.25394809,
+              "y": 0.6789963,
+              "z": 0.0
+            },
+            "localPosition": {
+              "x": 0.0,
+              "y": 0.9638873,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.7025679,
+              "y": 1.3972609,
+              "z": 1.0
+            },
+            "lossyScale": {
+              "x": 0.210770369,
+              "y": 0.4890413,
+              "z": 1.0
+            }
+          },
+          "enemy": {
+            "EnemyState": {
+              "HP": 50,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 3.0,
+              "AttackSpeed": 5.0,
+              "Element": 2,
+              "Size": 0
+            },
+            "Target": {
+              "name": "Player",
+              "instanceID": 83218,
+              "entityID": "568105584918873362"
+            },
+            "MoveSpeed": 3.0,
+            "_traceObject": {
+              "name": "Player",
+              "instanceID": 83208,
+              "entityID": "568105584918873352"
+            },
+            "_useDefaultMovement": false,
+            "_moveSpeed": 3.0,
+            "_healthBar": {
+              "name": "SlimeEarthSmall(Clone)",
+              "instanceID": -128806,
+              "entityID": "568105589213628634"
+            },
+            "_maxHP": 50,
+            "_hitReaction": {
+              "name": "SlimeEarthSmall(Clone)",
+              "instanceID": -128794,
+              "entityID": "568105589213628646"
+            },
+            "_enemy": {
+              "HP": 50,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 3.0,
+              "AttackSpeed": 5.0,
+              "Element": 2,
+              "Size": 0
+            }
+          }
+        },
+        {
+          "id": -128914,
+          "name": "SlimeLightningSmall(Clone)",
+          "position": {
+            "x": 0.7766137,
+            "y": -4.86973953,
+            "z": 0.0
+          },
+          "visualRoot": {
+            "position": {
+              "x": 0.7766137,
+              "y": -4.256721,
+              "z": 0.0
+            },
+            "localPosition": {
+              "x": 0.0,
+              "y": 1.75148129,
+              "z": 0.0
+            },
+            "rotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "scale": {
+              "x": 0.8798055,
+              "y": 1.14827228,
+              "z": 1.0
+            },
+            "lossyScale": {
+              "x": 0.263941675,
+              "y": 0.401895285,
+              "z": 1.0
+            }
+          },
+          "enemy": {
+            "EnemyState": {
+              "HP": 50,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 3.0,
+              "AttackSpeed": 5.0,
+              "Element": 4,
+              "Size": 0
+            },
+            "Target": {
+              "name": "Player",
+              "instanceID": 83218,
+              "entityID": "568105584918873362"
+            },
+            "MoveSpeed": 3.0,
+            "_traceObject": {
+              "name": "Player",
+              "instanceID": 83208,
+              "entityID": "568105584918873352"
+            },
+            "_useDefaultMovement": false,
+            "_moveSpeed": 3.0,
+            "_healthBar": {
+              "name": "SlimeLightningSmall(Clone)",
+              "instanceID": -128930,
+              "entityID": "568105589213628510"
+            },
+            "_maxHP": 50,
+            "_hitReaction": {
+              "name": "SlimeLightningSmall(Clone)",
+              "instanceID": -128918,
+              "entityID": "568105589213628522"
+            },
+            "_enemy": {
+              "HP": 50,
+              "MP": 50,
+              "Attack": 5,
+              "Defense": 1,
+              "Exp": 10,
+              "MoveSpeed": 3.0,
+              "AttackSpeed": 5.0,
+              "Element": 4,
+              "Size": 0
+            }
+          }
+        }
+      ]
+    },
+    "windSquashed": {
+      "screenshot": "08-motion-phase.png"
+    }
+  },
+  "persistentChanges": [
+    "capture files and review documentation only"
+  ],
+  "gameCodeChanged": false,
+  "prefabsChanged": false,
+  "animationChanged": false,
+  "initialPlayMode": false,
+  "finalPlayMode": false,
+  "limitations": [
+    "Not an exhaustive test of all 18 variants or all six elements.",
+    "Small pixel-width estimate uses the unchanged camera and prefab width; runtime squash varies it.",
+    "Proposed visual fixes are not implemented."
+  ]
+}

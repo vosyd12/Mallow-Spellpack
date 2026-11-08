@@ -1,0 +1,291 @@
+{
+  "date": "2026-11-07",
+  "status": "implemented and MCP rendering/controlled landing calls/reuse verified",
+  "shader": "Assets/Shaders/Effects/ElementLanding.shader",
+  "assets": [
+    {
+      "element": "Fire",
+      "prefab": "Assets/Prefab/Effects/LandingDustFire.prefab",
+      "material": "Assets/Materials/Effects/LandingDustFire.mat",
+      "spriteMeta": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireIndependentLayers.png.meta",
+      "spriteId": 21300004,
+      "customStreams": [
+        "Position",
+        "Color",
+        "UV",
+        "AgePercent"
+      ]
+    },
+    {
+      "element": "Water",
+      "prefab": "Assets/Prefab/Effects/LandingDustWater.prefab",
+      "material": "Assets/Materials/Effects/LandingDustWater.mat",
+      "spriteMeta": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterIndependentLayers.png.meta",
+      "spriteId": 21300004,
+      "customStreams": [
+        "Position",
+        "Color",
+        "UV",
+        "AgePercent"
+      ]
+    },
+    {
+      "element": "Earth",
+      "prefab": "Assets/Prefab/Effects/LandingDustEarth.prefab",
+      "material": "Assets/Materials/Effects/LandingDustEarth.mat",
+      "spriteMeta": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthIndependentLayers.png.meta",
+      "spriteId": 21300004,
+      "customStreams": [
+        "Position",
+        "Color",
+        "UV",
+        "AgePercent"
+      ]
+    },
+    {
+      "element": "Wind",
+      "prefab": "Assets/Prefab/Effects/LandingDustWind.prefab",
+      "material": "Assets/Materials/Effects/LandingDustWind.mat",
+      "spriteMeta": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindIndependentLayers.png.meta",
+      "spriteId": 21300004,
+      "customStreams": [
+        "Position",
+        "Color",
+        "UV",
+        "AgePercent"
+      ]
+    },
+    {
+      "element": "Lightning",
+      "prefab": "Assets/Prefab/Effects/LandingDustLightning.prefab",
+      "material": "Assets/Materials/Effects/LandingDustLightning.mat",
+      "spriteMeta": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningIndependentLayers.png.meta",
+      "spriteId": 21300004,
+      "customStreams": [
+        "Position",
+        "Color",
+        "UV",
+        "AgePercent"
+      ]
+    }
+  ],
+  "codeFilesUnchanged": true,
+  "codeHashes": {
+    "Assets/Scripts/Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets/Scripts/Effects/HitReaction.cs": "bd38940bc81fdc348c7e39500a21d52418af85fac588085e48929494ff621f2c",
+    "Assets/Scripts/Effects/LandingDust.cs": "49a1b4bc5e7dbfbf36a3f19d52c4484c465b22050d7453ecef9af0a5ddc9d5f8",
+    "Assets/Scripts/Effects/LandingDustPool.cs": "d1783cf149f9bfeb3044a96fc78596eb0a4c63d8209a4a1eae3a38072a9872d3",
+    "Assets/Scripts/Enemy/Enemy.cs": "adb3b02b29fd247b44fed6760630af97d8afafc42e43fc74bc5ea08e4a9880b0",
+    "Assets/Scripts/Enemy/EnemySpawner.cs": "7693967d0022cfa645023f48f6b666f070ce9f3ab43936ddf3dfce72818e6341",
+    "Assets/Scripts/Enemy/SlimeMotion.cs": "c081aaca794eeb40de8c72f0e70a99b658463d0ce41681209277e1ae612eff71",
+    "Assets/Scripts/Player/Player.cs": "91cd04e382bed287e76583dba6e4cbe735e6665e08e7115da6ca152f4a9bcedb",
+    "Assets/Scripts/Player/PlayerAttack.cs": "e22f71a855ba9e0e895f476a60edd5e259af394539f52a286e5bba128574ff4e",
+    "Assets/Scripts/Stage/Stage.cs": "6a755dd96304418a19bad8fa37b1e64eaa0a3622bf8f0487b35df73d32cc1458",
+    "Assets/Scripts/StateDTO/EnemyState.cs": "630ddd2d8b3ae589f5b2b1e2f03b845c4c17b80e38e5fbb3c5cb9c9de78ce750",
+    "Assets/Scripts/StateDTO/PlayerState.cs": "303b708221fefe281576e8f823464113a0003bb884df9770956dc2b456d2a988",
+    "Assets/Scripts/UI/HealthBar.cs": "f50a77aed72918925f46db64137469775a01f75eb8339689957b1f11518c6f72"
+  },
+  "sourceSceneUnchanged": true,
+  "verificationScope": "Actual Unity Play Mode. Six controlled effect placements and Small SlimeMotion landing-method calls. Not a complete natural-combat or mobile-performance test.",
+  "normalLandingCalls": [
+    {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": [
+          {
+            "name": "LandingCheck_Wind",
+            "position": "(-2.00, -1.35)"
+          },
+          {
+            "name": "LandingCheck_Earth",
+            "position": "(2.00, 1.65)"
+          },
+          {
+            "name": "LandingCheck_Lightning",
+            "position": "(0.00, -1.35)"
+          },
+          {
+            "name": "LandingCheck_Pure",
+            "position": "(2.00, -1.35)"
+          },
+          {
+            "name": "LandingCheck_Water",
+            "position": "(0.00, 1.65)"
+          },
+          {
+            "name": "LandingCheck_Fire",
+            "position": "(-2.00, 1.65)"
+          }
+        ],
+        "compiler": "codedom"
+      }
+    }
+  ],
+  "attackLandingCalls": [
+    {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": [
+          {
+            "name": "LandingDustFire(Clone)",
+            "particles": 36,
+            "maxParticles": 64,
+            "shaderError": false
+          },
+          {
+            "name": "LandingDustWater(Clone)",
+            "particles": 36,
+            "maxParticles": 64,
+            "shaderError": false
+          },
+          {
+            "name": "LandingDustEarth(Clone)",
+            "particles": 36,
+            "maxParticles": 64,
+            "shaderError": false
+          },
+          {
+            "name": "LandingDustWind(Clone)",
+            "particles": 36,
+            "maxParticles": 64,
+            "shaderError": false
+          },
+          {
+            "name": "LandingDustLightning(Clone)",
+            "particles": 1,
+            "maxParticles": 1,
+            "shaderError": false
+          },
+          {
+            "name": "LandingDustPure(Clone)",
+            "particles": 36,
+            "maxParticles": 64,
+            "shaderError": false
+          }
+        ],
+        "compiler": "codedom"
+      }
+    }
+  ],
+  "console": [
+    {
+      "success": true,
+      "message": "Retrieved 0 log entries.",
+      "data": []
+    }
+  ],
+  "finalEditorState": [
+    {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "shaderFound": true,
+          "hasShaderErrors": false,
+          "messages": [],
+          "playing": false,
+          "sceneDirty": false,
+          "cameraSize": 7.5
+        },
+        "compiler": "codedom"
+      }
+    }
+  ],
+  "repeatPlaybackObserved": {
+    "source": "Two successive MCP replay-effects / pool-counts responses observed during this task",
+    "elements": [
+      "Fire",
+      "Water",
+      "Earth",
+      "Wind",
+      "Lightning",
+      "Pure"
+    ],
+    "firstEntityIds": [
+      "568105589213615434",
+      "568105589213615326",
+      "568105589213615218",
+      "568105589213615110",
+      "568105589213615002",
+      "568105589213614852"
+    ],
+    "secondEntityIds": [
+      "568105589213615434",
+      "568105589213615326",
+      "568105589213615218",
+      "568105589213615110",
+      "568105589213615002",
+      "568105589213614852"
+    ],
+    "startTimeEach": 0,
+    "afterEachPlayback": {
+      "allPerElement": 6,
+      "activePerElement": 0,
+      "inactivePerElement": 6
+    },
+    "totalObjects": 36
+  },
+  "lightningAt0_20Seconds": {
+    "particles": 1,
+    "position": [
+      0,
+      -1.5,
+      0
+    ],
+    "startLifetime": 0.45,
+    "remainingLifetime": 0.25000006
+  },
+  "temporarySettingsRestored": {
+    "runInBackground": false,
+    "playing": false,
+    "paused": false,
+    "sceneDirty": false,
+    "cameraOrthographicSize": 7.5
+  },
+  "captures": [
+    {
+      "file": "01-before-dust.png",
+      "width": 574,
+      "height": 869,
+      "sha256": "8b59d5fdda12f3f26553e979bd362d8b4c5438649ecf1a2795adab65e718c4a0"
+    },
+    {
+      "file": "02-after-dust-early.png",
+      "width": 574,
+      "height": 869,
+      "sha256": "ab90b245c4d2f69f3b83da1fbebfedbf9ca774416c17874ec609aa5713453991"
+    },
+    {
+      "file": "03-after-dust-middle.png",
+      "width": 574,
+      "height": 869,
+      "sha256": "3e1be0b5fde4526d4217d86cb9ea5a299d8005490e3e07a4bb1b11a77e49a316"
+    },
+    {
+      "file": "04-after-dust-later.png",
+      "width": 574,
+      "height": 869,
+      "sha256": "0d914a3b1a81c85f870bef5c71fc2e1de4e8850be0b9d7674a76726148cc9eb0"
+    },
+    {
+      "file": "05-slime-landing-function-1.png",
+      "width": 574,
+      "height": 869,
+      "sha256": "0c3305e5cc645e3bfd7438f03a510d734913a4ddb3a5fe792df74f7dda3cb95d"
+    },
+    {
+      "file": "06-attack-landing-function.png",
+      "width": 574,
+      "height": 869,
+      "sha256": "e01273bb1a4fd5e76232daa5cc0c0a87adeca35886592bcc4ac1e0f51c321152"
+    }
+  ],
+  "excludedCapture": {
+    "file": "05-slime-landing-function.png",
+    "reason": "Paused diagnostic object transforms were not synchronized to Rigidbody2D before the first test. Corrected diagnostic setup is captured in the -1 image. No game code was changed for this."
+  },
+  "mobileVerified": false,
+  "performanceMeasured": false
+}

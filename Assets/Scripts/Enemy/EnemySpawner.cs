@@ -12,6 +12,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private float _playerSafeDistance = 1.5f;
 
     [SerializeField] private Vector2 _stageSize = new Vector2(6f, 7.5f);
+
     private float _edgePadding = 0.3f;
     private readonly List<Enemy> _enemies = new List<Enemy>();
     private float _nextSpawnAttemptTime;
@@ -45,12 +46,16 @@ public class EnemySpawner : MonoBehaviour
             return;
         }
 
-        Enemy prefab = _enemyPrefabs[
-            Random.Range(0, _enemyPrefabs.Length)];
+        // 랜덤한 size하고 element를 추출한다.
+        EnemySize size = (EnemySize)Random.Range(0, (int)EnemySize.Max);
+        Element element = (Element)Random.Range(0, (int)Element.Max);
+
+        Enemy prefab = FindEnemyPrefab(size, element);
 
         if (prefab == null)
         {
-            Debug.LogWarning("Enemy Prefab이 연결되지 않았습니다.");
+            Debug.LogWarning(
+                  $"등록되지 않은 적 조합: {size} / {element}");
             return;
         }
 
@@ -91,7 +96,7 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-          private Vector2 GetRandomEdgePosition(Vector2 halfSize)
+    private Vector2 GetRandomEdgePosition(Vector2 halfSize)
     { 
 
         int edge = Random.Range(0, 4);
@@ -143,5 +148,27 @@ public class EnemySpawner : MonoBehaviour
         }
 
         return nearest;
+    }
+
+    // 매개변수로 받은 size하고 element를 가지고 생성하는 함수
+    private Enemy FindEnemyPrefab(
+        EnemySize size, 
+        Element element)
+    {
+        foreach (Enemy prefab in _enemyPrefabs)
+        {
+            if (prefab == null)
+            {
+                continue;
+            }
+
+            if (prefab.EnemyState.Size == size &&
+                prefab.EnemyState.Element == element)
+            {
+                return prefab;
+            }
+        }
+
+        return null;
     }
 }

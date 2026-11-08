@@ -1,0 +1,780 @@
+{
+  "date": "2026-11-07",
+  "unityImportVerified": false,
+  "variants": [
+    {
+      "element": "Pure",
+      "size": "Small",
+      "name": "SlimePureSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Pure_Small.png",
+      "sourceSha256": "6ec74f1adf1e690d8a91710862c536f5a25ee8181c6e830b4decb10b19fc84fe",
+      "image": "Assets/Sprites/Characters/Slimes/Pure/SlimePureSmall.png",
+      "spriteGuid": "648d1530d18b444abfdd0d948d835d5a",
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+      "prefabGuid": "d283edd84dac460ead1940dc4133ee9b",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        61,
+        230,
+        1193,
+        1099
+      ],
+      "pixelsPerUnit": 1132,
+      "pivot": [
+        0.5,
+        0.12360446570972887
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.21978135503571875,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Pure",
+      "size": "Medium",
+      "name": "SlimePureMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Pure_Medium.png",
+      "sourceSha256": "7a8ea76b00fbb9fbbd18e7f539202e06194a3a16839beb1577c242c8747a530a",
+      "image": "Assets/Sprites/Characters/Slimes/Pure/SlimePureMedium.png",
+      "spriteGuid": "a233f04cdda54645a02f2bd2cd84612e",
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+      "prefabGuid": "69db08c40d2b4be2909414b514881c33",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        113,
+        280,
+        1141,
+        1060
+      ],
+      "pixelsPerUnit": 1028,
+      "pivot": [
+        0.5,
+        0.1547049441786284
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.2913618465128665,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Pure",
+      "size": "Large",
+      "name": "SlimePureLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Pure_Large.png",
+      "sourceSha256": "0d3d0b7755967e15d155c654aba4729b39f78a99d9013425cc107af03fa8d37b",
+      "image": "Assets/Sprites/Characters/Slimes/Pure/SlimePureLarge.png",
+      "spriteGuid": "6f533eb256fb4d4794addfcf3c12263b",
+      "prefab": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+      "prefabGuid": "313e2326ecb34777bb17c3824063c118",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        90,
+        258,
+        1164,
+        1091
+      ],
+      "pixelsPerUnit": 1074,
+      "pivot": [
+        0.5,
+        0.12998405103668262
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5429236413703853,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Fire",
+      "size": "Small",
+      "name": "SlimeFireSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Fire_Small.png",
+      "sourceSha256": "d21c7d283aad6f99f35a216e5fe5e6232656874f09668e1e88e9f3d9dca8d596",
+      "image": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireSmall.png",
+      "spriteGuid": "84c40a7f79c94f998e879e033d0674e6",
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+      "prefabGuid": "4e2b051cec5546ce81ff454f33c32e50",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        90,
+        1194,
+        1099
+      ],
+      "pixelsPerUnit": 1135,
+      "pivot": [
+        0.4996012759170654,
+        0.12360446570972887
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.2545146594602511,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Fire",
+      "size": "Medium",
+      "name": "SlimeFireMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Fire_Medium.png",
+      "sourceSha256": "11909c9e71fb2545e3cd3f25a0de2be297c7315a30e7f4260d8b6a4f68c3527c",
+      "image": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireMedium.png",
+      "spriteGuid": "389325ac52164c02a3c7f9df7774ce77",
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+      "prefabGuid": "491256a5d31146aeac885e23e954d51a",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        223,
+        1144,
+        1062
+      ],
+      "pixelsPerUnit": 1033,
+      "pivot": [
+        0.5003987240829346,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.31188381081065264,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Fire",
+      "size": "Large",
+      "name": "SlimeFireLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Fire_Large.png",
+      "sourceSha256": "4950d09218da78b79f9ad0e712417b278241591c283cb237896843485f36f27e",
+      "image": "Assets/Sprites/Characters/Slimes/Fire/SlimeFireLarge.png",
+      "spriteGuid": "148fa96e6dad4dd39162d0f2245cb651",
+      "prefab": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+      "prefabGuid": "9fd8d7a4b1d140d39926b93090f93873",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        85,
+        119,
+        1169,
+        1137
+      ],
+      "pixelsPerUnit": 1084,
+      "pivot": [
+        0.5,
+        0.09330143540669857
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.6573800634646102,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Water",
+      "size": "Small",
+      "name": "SlimeWaterSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Water_Small.png",
+      "sourceSha256": "e61da146273c389afaf2c9a40e703b2b0e275ddd446886a36a5dd6fdcbb846e6",
+      "image": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterSmall.png",
+      "spriteGuid": "12da66611a5149899671e0657c07bea7",
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+      "prefabGuid": "2487457d95a6440da7695a72e8463980",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        60,
+        85,
+        1194,
+        1097
+      ],
+      "pixelsPerUnit": 1134,
+      "pivot": [
+        0.5,
+        0.1251993620414673
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.25549649988658824,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Water",
+      "size": "Medium",
+      "name": "SlimeWaterMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Water_Medium.png",
+      "sourceSha256": "a2c2fdd0fcbe5dfd06dc53ebbe33493940a31f21c1de9bb52cde37bdd368249d",
+      "image": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterMedium.png",
+      "spriteGuid": "1aea7d11ca104940b2afb6c10bbcf84e",
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+      "prefabGuid": "657a4c4d21ee47e8945a29ac24075bcd",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        279,
+        1146,
+        1062
+      ],
+      "pixelsPerUnit": 1035,
+      "pivot": [
+        0.5011961722488039,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.2905043266970427,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Water",
+      "size": "Large",
+      "name": "SlimeWaterLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Water_Large.png",
+      "sourceSha256": "c8157663ccf7b44e894dd4dc863ac4341a6cdc27c341bd36ddc85aafbcc78ac6",
+      "image": "Assets/Sprites/Characters/Slimes/Water/SlimeWaterLarge.png",
+      "spriteGuid": "f5a2d3d9da0c4716a67af3649460d350",
+      "prefab": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+      "prefabGuid": "568b19b96ff1458495c9766113346cca",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        88,
+        258,
+        1165,
+        1091
+      ],
+      "pixelsPerUnit": 1077,
+      "pivot": [
+        0.4996012759170654,
+        0.12998405103668262
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5414113192495764,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Earth",
+      "size": "Small",
+      "name": "SlimeEarthSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Earth_Small.png",
+      "sourceSha256": "7d82b327187c7b11edd2a624d0e228aa37f260ccab136708c0b87ef45cb39013",
+      "image": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthSmall.png",
+      "spriteGuid": "ddc569b4827944eb894a11d777e9160d",
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+      "prefabGuid": "e7ee916144a6425faee4a024e466e409",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        183,
+        1195,
+        1098
+      ],
+      "pixelsPerUnit": 1136,
+      "pivot": [
+        0.5,
+        0.12440191387559808
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.23060050802980675,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Earth",
+      "size": "Medium",
+      "name": "SlimeEarthMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Earth_Medium.png",
+      "sourceSha256": "4d04d1e134475fe94533926ad9b09fbf92c9493303999186d8246a3d9b6d217b",
+      "image": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthMedium.png",
+      "spriteGuid": "72547e41b54d43488a55909d13783645",
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+      "prefabGuid": "1377a442ea8b4e1783c3c76e5fdb5eb8",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        277,
+        1144,
+        1062
+      ],
+      "pixelsPerUnit": 1033,
+      "pivot": [
+        0.5003987240829346,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.29181024015061063,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Earth",
+      "size": "Large",
+      "name": "SlimeEarthLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Earth_Large.png",
+      "sourceSha256": "0f5fd9dcf96333a4aa57497a8814aae1e35971f0ac394b521afe0c6e8896497f",
+      "image": "Assets/Sprites/Characters/Slimes/Earth/SlimeEarthLarge.png",
+      "spriteGuid": "454885983db24a9686d752226b40fe12",
+      "prefab": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+      "prefabGuid": "691ef2a038a54ebbadfb9d3ca7e16d8c",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        90,
+        256,
+        1164,
+        1093
+      ],
+      "pixelsPerUnit": 1074,
+      "pivot": [
+        0.5,
+        0.1283891547049442
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5455307176794868,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Wind",
+      "size": "Small",
+      "name": "SlimeWindSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Wind_Small.png",
+      "sourceSha256": "ad78449e9c69982cbadf4575653b2b53b645547254fb6a274b9f224b739edf5a",
+      "image": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindSmall.png",
+      "spriteGuid": "05540f468d8740f1b657c98cab89c4ad",
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+      "prefabGuid": "2a7f93c8540f46eea7b51ce42acff39c",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        139,
+        1195,
+        1097
+      ],
+      "pixelsPerUnit": 1136,
+      "pivot": [
+        0.5,
+        0.1251993620414673
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.24143747179514194,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Wind",
+      "size": "Medium",
+      "name": "SlimeWindMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Wind_Medium.png",
+      "sourceSha256": "3d2dbea6a0e140ebdfd15e3849fea68330e56f8e2e125573d7fc67894fe6184a",
+      "image": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindMedium.png",
+      "spriteGuid": "51afff95eb4c45829223ab1f26eccbea",
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+      "prefabGuid": "20b7a49b000b40a3990b3a4aa13284a1",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        111,
+        220,
+        1143,
+        1062
+      ],
+      "pixelsPerUnit": 1032,
+      "pivot": [
+        0.5,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.3133023027942021,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Wind",
+      "size": "Large",
+      "name": "SlimeWindLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Wind_Large.png",
+      "sourceSha256": "00aec80c76aab64ed322cc667774f5fe07b5f4836ff623cacc3d17a1de0f069c",
+      "image": "Assets/Sprites/Characters/Slimes/Wind/SlimeWindLarge.png",
+      "spriteGuid": "a1fd8111a8734ddd89fcf4eb060ef192",
+      "prefab": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+      "prefabGuid": "2ea4db1df1b3478faecffb4dde15c5c8",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        87,
+        257,
+        1168,
+        1093
+      ],
+      "pixelsPerUnit": 1081,
+      "pivot": [
+        0.5003987240829346,
+        0.1283891547049442
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5413505927833256,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Lightning",
+      "size": "Small",
+      "name": "SlimeLightningSmall",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Lightning_Small.png",
+      "sourceSha256": "3f20799a55fcbdb938a7cbd7b9c41333970ae94b6bf4136ec1df21f6b5fe2719",
+      "image": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningSmall.png",
+      "spriteGuid": "65f32ab20a0d4e9c913b53f2d9547672",
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+      "prefabGuid": "0a215889ffd4472aa66bdd6890000301",
+      "basePrefab": "Assets/Prefab/SlimeSmall.prefab",
+      "baseGuid": "0336723cce8141b40a60e0d5aff51336",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        59,
+        145,
+        1196,
+        1098
+      ],
+      "pixelsPerUnit": 1137,
+      "pivot": [
+        0.5003987240829346,
+        0.12440191387559808
+      ],
+      "bodyLocalPosition": [
+        -0.001144164686718751,
+        -0.36384439310171873,
+        0
+      ],
+      "bodyLocalScale": [
+        1.1011441667625,
+        1.1011441455866495,
+        1
+      ],
+      "displayWidthFactor": 1.2,
+      "restWorldWidth": 0.28629746133536665,
+      "restWorldHeight": 0.23996612194600214,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Lightning",
+      "size": "Medium",
+      "name": "SlimeLightningMedium",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Lightning_Medium.png",
+      "sourceSha256": "9912eed15f6aafb808782f457ba9c12d64ad1783b4dbd23bba89685b3a2cfbcd",
+      "image": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningMedium.png",
+      "spriteGuid": "6d12bd1d979243738dcaff57b70ee05b",
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+      "prefabGuid": "abbb0a23bd5f432fbe850f0e1383d508",
+      "basePrefab": "Assets/Prefab/SlimeMedium.prefab",
+      "baseGuid": "01b45733af168f64e86011ccbb054fdf",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        112,
+        277,
+        1142,
+        1062
+      ],
+      "pixelsPerUnit": 1030,
+      "pivot": [
+        0.5,
+        0.15311004784688995
+      ],
+      "bodyLocalPosition": [
+        -0.0021978021898437505,
+        -0.343956044028125,
+        0
+      ],
+      "bodyLocalScale": [
+        0.91428571309375,
+        0.9142857239781047,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.38399997207080355,
+      "restWorldHeight": 0.2926601728889134,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    },
+    {
+      "element": "Lightning",
+      "size": "Large",
+      "name": "SlimeLightningLarge",
+      "source": "문서/아트시안/2026-11-07-속성슬라임/Lightning_Large.png",
+      "sourceSha256": "7e95356b9d936e0b315a8d37fb2150c3ff0509052a379a0c295fd11295f12117",
+      "image": "Assets/Sprites/Characters/Slimes/Lightning/SlimeLightningLarge.png",
+      "spriteGuid": "a70c2ef0ef654f39b80730d337e27139",
+      "prefab": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+      "prefabGuid": "898a53dcd84e4cecb6e77bd3d498da6c",
+      "basePrefab": "Assets/Prefab/SlimeLarge.prefab",
+      "baseGuid": "63fcc1cf8f5cdae4dbf2c19dae3fe987",
+      "alphaThresholdForAlignment": 32,
+      "bounds": [
+        1254,
+        1254,
+        88,
+        257,
+        1166,
+        1089
+      ],
+      "pixelsPerUnit": 1078,
+      "pivot": [
+        0.5,
+        0.13157894736842105
+      ],
+      "bodyLocalPosition": [
+        -3.906249976259879e-11,
+        -0.3483754520921875,
+        0
+      ],
+      "bodyLocalScale": [
+        0.9999999985625,
+        0.9999999842767858,
+        1
+      ],
+      "displayWidthFactor": 1.0,
+      "restWorldWidth": 0.69999998899375,
+      "restWorldHeight": 0.5402597317651205,
+      "face": "baked in PNG; inherited FaceMotion hidden",
+      "spawnConnected": false,
+      "elementGameplayConnected": false
+    }
+  ]
+}

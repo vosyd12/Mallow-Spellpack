@@ -158,6 +158,8 @@ public class SlimeMotion : MonoBehaviour
             _stateTime >= _stateDuration * AttackImpactTime)
         {
             _attackDustSpawned = true;
+
+            TryHitPlayer();
             SpawnLandingDust(true);
         }
 
@@ -253,6 +255,7 @@ public class SlimeMotion : MonoBehaviour
             Mathf.Max(0.01f, duration);
 
         LandingDustPool.Instance.Play(
+            _enemy.EnemyState.Element,
             _rd.position + _dustOffset,
             strength,
             _dustParticleCount * (attack ? _attackDustCountMultiplier : 1),

@@ -1,0 +1,316 @@
+{
+  "date": "2026-11-08",
+  "scope": "Meadow visual Tilemap and scenery only",
+  "gameCsharpUnchanged": true,
+  "gameCsharpCount": 13,
+  "gameCsharpSHA256": {
+    "Assets\\Scripts\\Bullet.cs": "3ddf4909bc9f06bd5dbfce3dfeee4bc4ab6251713361f87dcc300bf0398d9ebe",
+    "Assets\\Scripts\\Effects\\HitReaction.cs": "bd38940bc81fdc348c7e39500a21d52418af85fac588085e48929494ff621f2c",
+    "Assets\\Scripts\\Effects\\LandingDust.cs": "49a1b4bc5e7dbfbf36a3f19d52c4484c465b22050d7453ecef9af0a5ddc9d5f8",
+    "Assets\\Scripts\\Effects\\LandingDustPool.cs": "d1783cf149f9bfeb3044a96fc78596eb0a4c63d8209a4a1eae3a38072a9872d3",
+    "Assets\\Scripts\\Enemy\\Enemy.cs": "adb3b02b29fd247b44fed6760630af97d8afafc42e43fc74bc5ea08e4a9880b0",
+    "Assets\\Scripts\\Enemy\\EnemySpawner.cs": "7693967d0022cfa645023f48f6b666f070ce9f3ab43936ddf3dfce72818e6341",
+    "Assets\\Scripts\\Enemy\\SlimeMotion.cs": "c081aaca794eeb40de8c72f0e70a99b658463d0ce41681209277e1ae612eff71",
+    "Assets\\Scripts\\Player\\Player.cs": "91cd04e382bed287e76583dba6e4cbe735e6665e08e7115da6ca152f4a9bcedb",
+    "Assets\\Scripts\\Player\\PlayerAttack.cs": "e22f71a855ba9e0e895f476a60edd5e259af394539f52a286e5bba128574ff4e",
+    "Assets\\Scripts\\Stage\\Stage.cs": "6a755dd96304418a19bad8fa37b1e64eaa0a3622bf8f0487b35df73d32cc1458",
+    "Assets\\Scripts\\StateDTO\\EnemyState.cs": "630ddd2d8b3ae589f5b2b1e2f03b845c4c17b80e38e5fbb3c5cb9c9de78ce750",
+    "Assets\\Scripts\\StateDTO\\PlayerState.cs": "303b708221fefe281576e8f823464113a0003bb884df9770956dc2b456d2a988",
+    "Assets\\Scripts\\UI\\HealthBar.cs": "f50a77aed72918925f46db64137469775a01f75eb8339689957b1f11518c6f72"
+  },
+  "sceneBytesUnchanged": true,
+  "wallsUnchanged": true,
+  "before": {
+    "playing": false,
+    "paused": false,
+    "dirty": false,
+    "scene": "Assets/Scenes/SampleScene.unity",
+    "stagePrefab": "Assets/Prefab/Stage.prefab",
+    "position": "(0.00, 0.00, 0.00)",
+    "scale": "(1.50, 1.50, 1.00)",
+    "nodes": [
+      {
+        "name": "Backdrop",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(6.40, 7.90, 1.00)",
+        "children": 0,
+        "renderer": true
+      },
+      {
+        "name": "Border",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(6.04, 7.54, 1.00)",
+        "children": 0,
+        "renderer": true
+      },
+      {
+        "name": "Row01",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row02",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row03",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row04",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row05",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row06",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row07",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row08",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row09",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Row10",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 8,
+        "renderer": false
+      },
+      {
+        "name": "Bounds",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 4,
+        "renderer": false
+      }
+    ],
+    "walls": [
+      {
+        "name": "Left",
+        "center": "(-4.65, 0.00, 0.00)",
+        "size": "(0.30, 11.85, 0.00)",
+        "localSize": "(0.20, 7.90)",
+        "localOffset": "(0.00, 0.00)"
+      },
+      {
+        "name": "Right",
+        "center": "(4.65, 0.00, 0.00)",
+        "size": "(0.30, 11.85, 0.00)",
+        "localSize": "(0.20, 7.90)",
+        "localOffset": "(0.00, 0.00)"
+      },
+      {
+        "name": "Top",
+        "center": "(0.00, 5.78, 0.00)",
+        "size": "(9.60, 0.30, 0.00)",
+        "localSize": "(6.40, 0.20)",
+        "localOffset": "(0.00, 0.00)"
+      },
+      {
+        "name": "Bottom",
+        "center": "(0.00, -5.78, 0.00)",
+        "size": "(9.60, 0.30, 0.00)",
+        "localSize": "(6.40, 0.20)",
+        "localOffset": "(0.00, 0.00)"
+      }
+    ],
+    "cameraSize": 7.5,
+    "background": "RGBA(0.192, 0.302, 0.475, 0.000)",
+    "spriteRenderers": 82
+  },
+  "after": {
+    "playing": false,
+    "paused": false,
+    "dirty": false,
+    "scene": "Assets/Scenes/SampleScene.unity",
+    "stagePrefab": "Assets/Prefab/Stage.prefab",
+    "position": "(0.00, 0.00, 0.00)",
+    "scale": "(1.50, 1.50, 1.00)",
+    "nodes": [
+      {
+        "name": "Bounds",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 4,
+        "renderer": false
+      },
+      {
+        "name": "MeadowGrid",
+        "position": "(-3.00, -3.75, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 1,
+        "renderer": false
+      },
+      {
+        "name": "Scenery",
+        "position": "(0.00, 0.00, 0.00)",
+        "scale": "(1.00, 1.00, 1.00)",
+        "children": 14,
+        "renderer": false
+      }
+    ],
+    "walls": [
+      {
+        "name": "Left",
+        "center": "(-4.65, 0.00, 0.00)",
+        "size": "(0.30, 11.85, 0.00)",
+        "localSize": "(0.20, 7.90)",
+        "localOffset": "(0.00, 0.00)"
+      },
+      {
+        "name": "Right",
+        "center": "(4.65, 0.00, 0.00)",
+        "size": "(0.30, 11.85, 0.00)",
+        "localSize": "(0.20, 7.90)",
+        "localOffset": "(0.00, 0.00)"
+      },
+      {
+        "name": "Top",
+        "center": "(0.00, 5.78, 0.00)",
+        "size": "(9.60, 0.30, 0.00)",
+        "localSize": "(6.40, 0.20)",
+        "localOffset": "(0.00, 0.00)"
+      },
+      {
+        "name": "Bottom",
+        "center": "(0.00, -5.78, 0.00)",
+        "size": "(9.60, 0.30, 0.00)",
+        "localSize": "(6.40, 0.20)",
+        "localOffset": "(0.00, 0.00)"
+      }
+    ],
+    "cameraSize": 7.5,
+    "background": "RGBA(0.192, 0.302, 0.475, 0.000)",
+    "spriteRenderers": 28
+  },
+  "build": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Code executed successfully.\",\"data\":{\"result\":{\"tileCount\":224,\"interiorTiles\":80,\"treeCount\":14,\"gridCell\":\"0.75 local / 1.125 world\",\"wallCount\":4,\"tileSize\":\"(0.75, 0.75, 0.20)\"},\"compiler\":\"codedom\"}}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "tileCount": 224,
+          "interiorTiles": 80,
+          "treeCount": 14,
+          "gridCell": "0.75 local / 1.125 world",
+          "wallCount": 4,
+          "tileSize": "(0.75, 0.75, 0.20)"
+        },
+        "compiler": "codedom"
+      }
+    },
+    "isError": false
+  },
+  "play": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Code executed successfully.\",\"data\":{\"result\":{\"playing\":true,\"tiles\":1,\"mapBounds\":\"Center: (3.00, 3.75, 0.50), Extents: (5.25, 6.00, 0.50)\",\"trees\":14,\"walls\":4,\"sceneryColliders\":0,\"enemies\":[{\"name\":\"SlimePureMedium(Clone)\",\"position\":\"(4.05, -1.19, 0.00)\",\"element\":\"Pure\",\"motion\":true},{\"name\":\"SlimePureSmall(Clone)\",\"position\":\"(-0.52, 5.18, 0.00)\",\"element\":\"Pure\",\"motion\":true}],\"cameraSize\":7.5},\"compiler\":\"codedom\"}}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Code executed successfully.",
+      "data": {
+        "result": {
+          "playing": true,
+          "tiles": 1,
+          "mapBounds": "Center: (3.00, 3.75, 0.50), Extents: (5.25, 6.00, 0.50)",
+          "trees": 14,
+          "walls": 4,
+          "sceneryColliders": 0,
+          "enemies": [
+            {
+              "name": "SlimePureMedium(Clone)",
+              "position": "(4.05, -1.19, 0.00)",
+              "element": "Pure",
+              "motion": true
+            },
+            {
+              "name": "SlimePureSmall(Clone)",
+              "position": "(-0.52, 5.18, 0.00)",
+              "element": "Pure",
+              "motion": true
+            }
+          ],
+          "cameraSize": 7.5
+        },
+        "compiler": "codedom"
+      }
+    },
+    "isError": false
+  },
+  "finalConsole": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"success\":true,\"message\":\"Retrieved 0 log entries.\",\"data\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "success": true,
+      "message": "Retrieved 0 log entries.",
+      "data": []
+    },
+    "isError": false
+  },
+  "referenceStudy": {
+    "basis": "Official store screenshots, static visual observation",
+    "officialSite": "https://cookieruncrumble.com/ko",
+    "store": "https://play.google.com/store/apps/details?hl=ko&id=com.devsisters.cc",
+    "notConfirmed": [
+      "Internal render pipeline",
+      "Shader/particle implementation",
+      "Frame timings",
+      "Performance"
+    ]
+  },
+  "limits": [
+    "No mobile device performance or all-aspect-ratio verification",
+    "No full combat regression",
+    "Ground scenery is not an expansion of walkable bounds"
+  ]
+}
