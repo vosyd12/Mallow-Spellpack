@@ -8,6 +8,11 @@ public class Stage : MonoBehaviour
     [SerializeField]
     private StageScenery _stageScenery;
 
+    [SerializeField]
+    private StageInfo _stageInfo;
+
+    private float _bossProgress;
+
     public int StageNumber => _stageNumber;
 
     private void Start()
@@ -30,6 +35,28 @@ public class Stage : MonoBehaviour
         }
 
         _stageNumber = stageNumber;
+        _bossProgress = 0f;
+
         _stageScenery.Rebuild();
+        RefreshStageInfo();
+    }
+
+    public void SetBossProgress(float progress)
+    {
+        _bossProgress = Mathf.Clamp01(progress);
+
+        RefreshStageInfo();
+    }
+
+    private void RefreshStageInfo()
+    {
+        if(_stageInfo == null)
+        {
+            return;
+        }
+
+        _stageInfo.SetInfo(
+            _stageNumber,
+            _bossProgress);
     }
 }

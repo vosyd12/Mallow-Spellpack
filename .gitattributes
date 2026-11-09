@@ -167,5 +167,29 @@ Packages/packages-lock.json linguist-generated
 # Spine export file for Unity
 *.skel.bytes            lfs
 
+# Small HUD/UI assets published through the GitHub Git Data API.
+# Existing LFS files retain their current storage rules.
+"Assets/TextMesh Pro/Fonts/LiberationSans.ttf" -filter -diff -merge -text
+"Assets/UI/TopHUD/Skins/HUDBars.png" -filter -diff -merge -text
+"Assets/UI/TopHUD/Skins/HUDBossBadge.png" -filter -diff -merge -text
+"Assets/UI/TopHUD/Skins/HUDPlayerPanel.png" -filter -diff -merge -text
+"Assets/UI/TopHUD/Skins/HUDStagePanel.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-HUD-STYLE/landscape-compact.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-HUD-STYLE/landscape.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-HUD-STYLE/portrait-compact.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-HUD-STYLE/portrait.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-SLIME-OCCLUSION/after.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-SLIME-OCCLUSION/before.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-SLIME-OCCLUSION/live.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-TOP-HUD/landscape.png" -filter -diff -merge -text
+"문서/검증자료/2026-11-09-TOP-HUD/portrait.png" -filter -diff -merge -text
+"UI시안_배낭_v3.png" -filter -diff -merge -text
+"UI시안_스킬파츠_v3.png" -filter -diff -merge -text
+"UI시안_스탯강화_v3.png" -filter -diff -merge -text
+"UI시안_옵션.png" -filter -diff -merge -text
+"스킬 강화 창 UI배치도.png" -filter -diff -merge -text
+"화면 UI배치도.png" -filter -diff -merge -text
+"화면 UI배치도_AI이해안.png" -filter -diff -merge -text
+
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary

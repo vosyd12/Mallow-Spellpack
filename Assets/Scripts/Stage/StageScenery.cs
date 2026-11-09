@@ -5,53 +5,68 @@ using Random = UnityEngine.Random;
 
 public class StageScenery : MonoBehaviour
 {
-    [SerializeField]
-    private Transform _sceneryRoot;
-
     [Serializable]
     private class SceneryGroup
     {
-        public string Name;
-        public GameObject[] Prefabs;
-        public Transform[] SpawnPoints;
-        public Vector2Int CountRange = new Vector2Int(3, 4);
-        public Vector2 ScaleRange = new Vector2(0.9f, 1.1f);
+        public GameObject[] Prefabs;                // 생성할 오브젝트 후보
+        public Transform[] SpawnPoints;             // 생성할 오브젝트 위치
+        public Vector2 ScaleRange = new Vector2(0.9f, 1.1f);    // Prefab원래 크기에 곱할 최소. 최대 배율 사이즈
     }
 
     [SerializeField]
-    private SceneryGroup[] _groups;
+    private Transform _sceneryRoot;
 
-    [Header("Variation")]
-    [SerializeField, Min(0f)]
+    [SerializeField, Header("나무")]
+    private SceneryGroup _trees;
+
+    // x는 최소 값, y는 최대 값이다.
+    // 같은 값을 넣으면 고정 수량으로 배치된다.
+    [SerializeField]
+    private Vector2Int _treeCountRange = new Vector2Int(3, 4);
+
+    [SerializeField, Header("풀숲")]
+    private SceneryGroup _bushes;
+
+    [SerializeField]
+    private Vector2Int _bushCountRange = new Vector2Int(3, 4);
+
+    [SerializeField, Header("꽃풀숲")]
+    private SceneryGroup _flowerBushes;
+
+    [SerializeField]
+    private Vector2Int _flowerBushCountRange = new Vector2Int(3, 4);
+
+    [SerializeField, Header("꽃")]
+    private SceneryGroup _flowers;
+
+    [SerializeField]
+    private Vector2Int _flowerCountRange = new Vector2Int(3, 4);
+
+    [SerializeField, Min(0f), Header("배치 변화")]
     private float _positionJitter = 0.15f;
 
     [SerializeField, Min(0f)]
     private float _minimumSpacing = 0.65f;
 
     private readonly List<GameObject> _spawnedObjects = new List<GameObject>();
+
     private readonly List<Vector3> _placedPositions = new List<Vector3>();
 
+    // 이전 배경을 지우고 타입별로 다시 배치한다.
     public void Rebuild()
     {
-        if (_sceneryRoot == null || _groups == null || _groups.Length == 0)
+        if (_sceneryRoot == null)
         {
-            Debug.LogError("배경 부모와 타입별 배치 설정을 연결해주세요.", this);
+            Debug.LogError("배경 부모를 연결해주세요.", this);
             return;
         }
 
         ClearSpawnedObjects();
 
-        foreach (SceneryGroup group in _groups)
-        {
-            if (group == null)
-            {
-                continue;
-            }
-
-            int minimum = Mathf.Max(0, group.CountRange.x);
-            int maximum = Mathf.Max(minimum, group.CountRange.y);
-            SpawnGroup(group, Random.Range(minimum, maximum + 1));
-        }
+        SpawnGroup(_trees, _treeCountRange, "나무");
+        SpawnGroup(_bushes, _bushCountRange, "풀숲");
+        SpawnGroup(_flowerBushes, _flowerBushCountRange, "꽃풀숲");
+        SpawnGroup(_flowers, _flowerCountRange, "꽃");
     }
 
     private void ClearSpawnedObjects()
@@ -72,65 +87,64 @@ public class StageScenery : MonoBehaviour
         _placedPositions.Clear();
     }
 
-    private void SpawnGroup(SceneryGroup group, int count)
+    private void SpawnGroup(
+        SceneryGroup group, 
+        Vector2Int countRange,
+        string groupName)
     {
-        if (count <= 0)
+        int minimumCount = Mathf.Max(0, countRange.x);
+        int maximumCount = Mathf.Max(minimumCount, countRange.y);
+        int count = Random.Range(minimumCount, maximumCount + 1);
+
+        if(count == 0)
         {
             return;
         }
 
-        var availablePrefabs = new List<GameObject>();
-        var availablePoints = new List<Transform>();
-
-        if (group.Prefabs != null)
+        if(group == null)
         {
-            foreach (GameObject prefab in group.Prefabs)
-            {
-                if (prefab != null)
-                {
-                    availablePrefabs.Add(prefab);
-                }
-            }
-        }
-
-        if (group.SpawnPoints != null)
-        {
-            foreach (Transform point in group.SpawnPoints)
-            {
-                if (point != null && !availablePoints.Contains(point))
-                {
-                    availablePoints.Add(point);
-                }
-            }
-        }
-
-        if (availablePrefabs.Count == 0 || availablePoints.Count == 0)
-        {
-            Debug.LogWarning($"{group.Name}: Prefab과 배치 지점을 연결해주세요.", this);
+            Debug.LogWarning($"{groupName}: 배치 설정이 없습니다.", this);
             return;
         }
 
-        float minimumScale = Mathf.Max(0.01f, Mathf.Min(group.ScaleRange.x, group.ScaleRange.y));
-        float maximumScale = Mathf.Max(minimumScale, Mathf.Max(group.ScaleRange.x, group.ScaleRange.y));
+        List<GameObject> prefabs = GetAvailablePrefabs(group.Prefabs);
+        List<Transform> points = GetAvailablePoints(group.SpawnPoints);
+
+        if (prefabs.Count == 0 || points.Count == 0)
+        {
+            Debug.LogWarning(
+                $"{groupName}: Prefab과 배치 지점을 연결해주세요.",
+                this);
+            return;
+        }
+
+        float minimumScale = Mathf.Max(
+            0.01f,
+            Mathf.Min(group.ScaleRange.x, group.ScaleRange.y));
+
+        float maximumScale = Mathf.Max(
+            minimumScale,
+            Mathf.Max(group.ScaleRange.x, group.ScaleRange.y));
+
         int placedCount = 0;
 
-        while (placedCount < count && availablePoints.Count > 0)
+        while (placedCount < count)
         {
-            int pointIndex = Random.Range(0, availablePoints.Count);
-            Transform point = availablePoints[pointIndex];
-            availablePoints.RemoveAt(pointIndex);
-
-            Vector2 offset = Random.insideUnitCircle * Mathf.Max(0f, _positionJitter);
-            Vector3 position = point.position + new Vector3(offset.x, offset.y, 0f);
-
-            if (!HasSpace(position))
+            if (!TryGetPosition(points, out Vector3 position))
             {
-                continue;
+                break;
             }
 
-            GameObject prefab = availablePrefabs[Random.Range(0, availablePrefabs.Count)];
-            GameObject scenery = Instantiate(prefab, position, Quaternion.identity, _sceneryRoot);
-            scenery.transform.localScale = prefab.transform.localScale * Random.Range(minimumScale, maximumScale);
+            GameObject prefab = prefabs[Random.Range(0, prefabs.Count)];
+
+            GameObject scenery = Instantiate(
+                prefab,
+                position,
+                Quaternion.identity,
+                _sceneryRoot);
+
+            float scale = Random.Range(minimumScale, maximumScale);
+            scenery.transform.localScale = prefab.transform.localScale * scale;
 
             _spawnedObjects.Add(scenery);
             _placedPositions.Add(position);
@@ -139,17 +153,97 @@ public class StageScenery : MonoBehaviour
 
         if (placedCount < count)
         {
-            Debug.LogWarning($"{group.Name}: 배치 공간이 부족해 {placedCount}/{count}개를 배치했습니다.", this);
+            Debug.LogWarning(
+                $"{groupName}: 배치 공간이 부족해 " +
+                $"{placedCount}/{count}개를 배치했습니다.",
+                this);
         }
     }
 
+    // 연결되지 않은 항목을 제외하고 사용할 Prefab을 모은다.
+    private List<GameObject> GetAvailablePrefabs(GameObject[] prefabs)
+    {
+        List<GameObject> availablePrefabs = new List<GameObject>();
+
+
+        if (prefabs == null)
+        {
+            return availablePrefabs;
+        }
+
+        foreach (GameObject prefab in prefabs)
+        {
+            if (prefab != null)
+            {
+                availablePrefabs.Add(prefab);
+            }
+        }
+
+        return availablePrefabs;
+    }
+
+    private List<Transform> GetAvailablePoints(Transform[] points)
+    {
+        List<Transform> availablePoints = new List<Transform>();
+
+        if (points == null)
+        {
+            return availablePoints;
+        }
+
+        foreach (Transform point in points)
+        {
+            if (point != null && !availablePoints.Contains(point))
+            {
+                availablePoints.Add(point);
+            }
+        }
+
+        return availablePoints;
+    }
+
+    // 후보 지점을 무작위로 선택하고, 기존 배경과 충분히 떨어진 위치를 찾는다.
+    // 검사한 후보는 목록에서 제거하므로 모든 후보를 검사하면 종료
+    private bool TryGetPosition(
+           List<Transform> points,
+           out Vector3 position)
+    {
+        while (points.Count > 0)
+        {
+            int index = Random.Range(0, points.Count);
+            Transform point = points[index];
+
+            // 선택한 후보는 성공 여부와 관계없이 다시 사용하지 않는다.
+            points.RemoveAt(index);
+
+            Vector2 offset =
+                Random.insideUnitCircle * Mathf.Max(0f, _positionJitter);
+
+            Vector3 candidate =
+                point.position + new Vector3(offset.x, offset.y, 0f);
+
+            if (HasSpace(candidate))
+            {
+                position = candidate;
+                return true;
+            }
+        }
+
+        position = default;
+        return false;
+    }
+
+    // 오브젝트 중심 사이의 거리만 검사
+    // 이미지 전체가 서로 겹치지 않는다는 의미는 아님
     private bool HasSpace(Vector3 position)
     {
-        float minimumDistanceSquared = _minimumSpacing * _minimumSpacing;
+        float minimumDistanceSquared =
+            _minimumSpacing * _minimumSpacing;
 
         foreach (Vector3 placedPosition in _placedPositions)
         {
-            if ((position - placedPosition).sqrMagnitude < minimumDistanceSquared)
+            if ((position - placedPosition).sqrMagnitude
+                < minimumDistanceSquared)
             {
                 return false;
             }

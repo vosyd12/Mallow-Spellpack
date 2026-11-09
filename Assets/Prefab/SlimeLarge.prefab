@@ -182,7 +182,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.8, y: 1.8}
   m_EdgeRadius: 0
 --- !u!114 &4119530335923162714
 MonoBehaviour:
@@ -485,6 +485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8000000000000000002}
+  - component: {fileID: 5595179255185858318}
   m_Layer: 0
   m_Name: VisualRoot
   m_TagString: Untagged
@@ -508,6 +509,19 @@ Transform:
   - {fileID: 7500000000000000011}
   m_Father: {fileID: 37974889488971880}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &5595179255185858318
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000000000000000001}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
+  m_Sort3DAs2D: 0
 --- !u!1 &8100000000000000001
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,6 +27,12 @@ public class Player : MonoBehaviour
     [SerializeField]
     private HealthBar _healthBar;
 
+    [SerializeField]
+    private string _playerName;
+
+    [SerializeField]
+    private PlayerInfo _playerInfo;
+
     private Vector2 _avoidVelocity;
  
     private PlayerState _player;
@@ -50,6 +56,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        _player.Name = _playerName;
         _player.Level = 1;
         _player.Exp = 0;
         _player.HP = _maxHP;
@@ -66,22 +73,12 @@ public class Player : MonoBehaviour
         _rd = GetComponent<Rigidbody2D>();
 
         _healthBar.SetHealth(_player.HP, _maxHP);
+        RefreshPlayerInfo();
     }
 
     private void Update()
     {
         UpdateTarget();
-
-        // 레벨업 
-        if(_player.Exp >= _levelExp)
-        {
-            _player.Level++;
-
-            int remainingExp = _player.Exp - _levelExp;
-            _levelExp = (int)(_levelExp * 1.1f);
-            _player.Exp = remainingExp;
-        }
-
         Avoid();
     }
 
@@ -184,13 +181,14 @@ public class Player : MonoBehaviour
 
     public void GainExperience(int amount)
     {
-        if(amount <= 0)
+        if (amount <= 0)
         {
             return;
         }
 
-        print($"유저가 {amount}만큼 경험치를 얻었습니다.");
         _player.Exp += amount;
+
+        RefreshPlayerInfo();
     }
     
     public void TakeDamage(int damage)
@@ -208,5 +206,34 @@ public class Player : MonoBehaviour
         _hitReaction.Play();
 
         print($"플레이어의 남은 HP {_player.HP} / {_maxHP}");
+    }
+
+    private void RefreshPlayerInfo()
+    {
+        if(_playerInfo == null)
+        {
+            return;
+        }
+
+        _playerInfo.SetInfo(
+            _player.Name,
+            _player.Level,
+            _player.Exp,
+            _levelExp);
+    }
+
+    public void TryLevelUp()
+    {
+        if(_player.Exp < _levelExp)
+        {
+            return;
+        }
+
+        _player.Exp -= _levelExp;
+        _player.Level++;
+
+        _levelExp = (int)(_levelExp * 1.1f);
+
+        RefreshPlayerInfo();
     }
 }

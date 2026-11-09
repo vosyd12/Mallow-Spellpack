@@ -510,6 +510,37 @@ Transform:
   - {fileID: 3026838207639242056}
   m_Father: {fileID: 5311666747410058618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2288697284296747112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697662154899377065}
+  m_Layer: 0
+  m_Name: Point14
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1697662154899377065
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2288697284296747112}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5, y: 4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5428971035248543939}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2390251573522876210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3226,6 +3257,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8639797885384496492}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4075361657045558970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4759020425050511533}
+  m_Layer: 0
+  m_Name: Point13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4759020425050511533
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4075361657045558970}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5428971035248543939}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4308737236825915738
 GameObject:
   m_ObjectHideFlags: 0
@@ -3256,6 +3318,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5123728679801389040}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4364763977069663652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4665663259591402558}
+  m_Layer: 0
+  m_Name: Point15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4665663259591402558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4364763977069663652}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5333333, y: -3.0666666, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5428971035248543939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4382738501676570619
 GameObject:
@@ -3454,6 +3547,7 @@ GameObject:
   - component: {fileID: 72820300345489171}
   - component: {fileID: 839210466276944040}
   - component: {fileID: 3899682983021627949}
+  - component: {fileID: 7994714344565436809}
   m_Layer: 0
   m_Name: Stage
   m_TagString: Untagged
@@ -3493,8 +3587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StageScenery
   _sceneryRoot: {fileID: 1425583004733640322}
-  _groups:
-  - Name: Tree
+  _trees:
     Prefabs:
     - {fileID: 4849272663536704326, guid: e29928de360793f44b74507fc69c267f, type: 3}
     - {fileID: 4145683837380421872, guid: b7dac988c6b7fae44a107540702be958, type: 3}
@@ -3513,9 +3606,9 @@ MonoBehaviour:
     - {fileID: 2669916074424774814}
     - {fileID: 5794547126970004026}
     - {fileID: 3026838207639242056}
-    CountRange: {x: 3, y: 4}
     ScaleRange: {x: 0.65, y: 0.8}
-  - Name: GrassClump
+  _treeCountRange: {x: 3, y: 4}
+  _bushes:
     Prefabs:
     - {fileID: 5377262113048700245, guid: 437f09465a86ac040967e8b8780d6d77, type: 3}
     - {fileID: 5460875184015558076, guid: b445ce88f377d2d4ab4bdb1bdb124b14, type: 3}
@@ -3532,9 +3625,9 @@ MonoBehaviour:
     - {fileID: 5308123169990630644}
     - {fileID: 5646498739687893484}
     - {fileID: 8757375233267081844}
-    CountRange: {x: 3, y: 4}
     ScaleRange: {x: 0.9, y: 1.1}
-  - Name: FlowerBush
+  _bushCountRange: {x: 3, y: 4}
+  _flowerBushes:
     Prefabs:
     - {fileID: 4460246174509344939, guid: cc43f28acf5c21a4abd294525a1371bd, type: 3}
     - {fileID: 1182028437543566693, guid: caa00346769878849963cb1195ccc73f, type: 3}
@@ -3551,9 +3644,9 @@ MonoBehaviour:
     - {fileID: 3257712461219485808}
     - {fileID: 745967784535647964}
     - {fileID: 3048801152913932525}
-    CountRange: {x: 3, y: 4}
     ScaleRange: {x: 0.9, y: 1.1}
-  - Name: Flowers
+  _flowerBushCountRange: {x: 3, y: 4}
+  _flowers:
     Prefabs:
     - {fileID: 2218751862259274756, guid: d4fa2d845c98d514b8b4559b99252824, type: 3}
     - {fileID: 2174167053649591743, guid: 50f7c3ca41772354fa6c0cf1c69c0c64, type: 3}
@@ -3570,8 +3663,8 @@ MonoBehaviour:
     - {fileID: 6062480300372091887}
     - {fileID: 8698842854484479903}
     - {fileID: 1482810470422083518}
-    CountRange: {x: 3, y: 4}
     ScaleRange: {x: 0.9, y: 1.1}
+  _flowerCountRange: {x: 3, y: 4}
   _positionJitter: 0.14
   _minimumSpacing: 0.65
 --- !u!114 &3899682983021627949
@@ -3588,6 +3681,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Stage
   _stageNumber: 1
   _stageScenery: {fileID: 839210466276944040}
+--- !u!114 &7994714344565436809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5843861504813927043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0537625f266020f44a8cf6f3ed3d2795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  _enemyPrefabs:
+  - {fileID: 6657811535022214718, guid: 691ef2a038a54ebbadfb9d3ca7e16d8c, type: 3}
+  - {fileID: 6657811535022214718, guid: 1377a442ea8b4e1783c3c76e5fdb5eb8, type: 3}
+  - {fileID: 6657811535022214718, guid: e7ee916144a6425faee4a024e466e409, type: 3}
+  - {fileID: 6657811535022214718, guid: 9fd8d7a4b1d140d39926b93090f93873, type: 3}
+  - {fileID: 6657811535022214718, guid: 491256a5d31146aeac885e23e954d51a, type: 3}
+  - {fileID: 6657811535022214718, guid: 4e2b051cec5546ce81ff454f33c32e50, type: 3}
+  - {fileID: 6657811535022214718, guid: 898a53dcd84e4cecb6e77bd3d498da6c, type: 3}
+  - {fileID: 6657811535022214718, guid: abbb0a23bd5f432fbe850f0e1383d508, type: 3}
+  - {fileID: 6657811535022214718, guid: 0a215889ffd4472aa66bdd6890000301, type: 3}
+  - {fileID: 6657811535022214718, guid: 313e2326ecb34777bb17c3824063c118, type: 3}
+  - {fileID: 6657811535022214718, guid: 69db08c40d2b4be2909414b514881c33, type: 3}
+  - {fileID: 6657811535022214718, guid: d283edd84dac460ead1940dc4133ee9b, type: 3}
+  - {fileID: 6657811535022214718, guid: 568b19b96ff1458495c9766113346cca, type: 3}
+  - {fileID: 6657811535022214718, guid: 657a4c4d21ee47e8945a29ac24075bcd, type: 3}
+  - {fileID: 6657811535022214718, guid: 2487457d95a6440da7695a72e8463980, type: 3}
+  - {fileID: 6657811535022214718, guid: 2ea4db1df1b3478faecffb4dde15c5c8, type: 3}
+  - {fileID: 6657811535022214718, guid: 20b7a49b000b40a3990b3a4aa13284a1, type: 3}
+  - {fileID: 6657811535022214718, guid: 2a7f93c8540f46eea7b51ce42acff39c, type: 3}
+  _player: {fileID: 0}
+  _stage: {fileID: 72820300345489171}
+  _enemyParent: {fileID: 0}
+  _stageSpawnerEnemyCount: 4
+  _playerSafeDistance: 1.5
+  _stageSize: {x: 6, y: 7.5}
 --- !u!1 &5883651321748552226
 GameObject:
   m_ObjectHideFlags: 0
@@ -4199,12 +4329,15 @@ Transform:
   - {fileID: 8078053194495326835}
   - {fileID: 114673189085498635}
   - {fileID: 937180469771421589}
+  - {fileID: 1697662154899377065}
   - {fileID: 557289999315668800}
   - {fileID: 2182319359285778403}
   - {fileID: 5813234634793027360}
   - {fileID: 5308123169990630644}
+  - {fileID: 4665663259591402558}
   - {fileID: 5646498739687893484}
   - {fileID: 8757375233267081844}
+  - {fileID: 4759020425050511533}
   m_Father: {fileID: 5311666747410058618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8546358329941382649

@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: 98577b313b739474295e1ed20eacc32f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3683479737108633377
+    second: HUDBossBadge_0
+  - first:
+      213: -1010573898967807176
+    second: HUDBossBadge_1
+  - first:
+      213: 2892165920861863389
+    second: HUDBossBadge_2
+  - first:
+      213: -8538018379335412533
+    second: HUDBossBadge_3
+  - first:
+      213: 6581426522495149060
+    second: HUDBossBadge_4
+  - first:
+      213: 30474206241364897
+    second: HUDBossBadge_5
+  - first:
+      213: -5968547753256596396
+    second: HUDBossBadge_6
+  - first:
+      213: 8487204163840604925
+    second: HUDBossBadge_7
+  - first:
+      213: -1886731932332955006
+    second: HUDBossBadge_8
+  - first:
+      213: 5495715892990587174
+    second: HUDBossBadge_9
+  - first:
+      213: 3935390063197377180
+    second: HUDBossBadge_10
+  - first:
+      213: 1648913445931885698
+    second: HUDBossBadge_11
+  - first:
+      213: 676189411315305322
+    second: HUDBossBadge_12
+  - first:
+      213: 938475725113616816
+    second: HUDBossBadge_13
+  - first:
+      213: -6477804993390104975
+    second: HUDBossBadge_14
+  - first:
+      213: 9037126045836652295
+    second: HUDBossBadge_15
+  - first:
+      213: 757438246177704649
+    second: HUDBossBadge_16
+  - first:
+      213: -7430444961265093673
+    second: HUDBossBadge_17
+  - first:
+      213: 8262667890639856238
+    second: HUDBossBadge_18
+  - first:
+      213: -2690302190750038903
+    second: HUDBossBadge_19
+  - first:
+      213: 3230455343337229707
+    second: HUDBossBadge_20
+  - first:
+      213: -3308747530956364032
+    second: HUDBossBadge_21
+  - first:
+      213: -7683010908085165478
+    second: HUDBossBadge_22
+  - first:
+      213: -377850353048721895
+    second: HUDBossBadge_23
+  - first:
+      213: 6717220765135900383
+    second: HUDBossBadge_24
+  - first:
+      213: 5959208244268160428
+    second: HUDBossBadge_25
+  - first:
+      213: -6327771695522118342
+    second: HUDBossBadge_26
+  - first:
+      213: -1260772741315455882
+    second: HUDBossBadge_27
+  - first:
+      213: -329895697182771916
+    second: HUDBossBadge_28
+  - first:
+      213: -5315136419154015226
+    second: HUDBossBadge_29
+  - first:
+      213: 6338041939141438065
+    second: HUDBossBadge_30
+  - first:
+      213: -6044235560321030304
+    second: HUDBossBadge
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HUDBossBadge
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 174
+        width: 815
+        height: 638
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 89.32, y: 89.32, z: 89.32, w: 89.32}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067e74818cf8e1ca0800000000000000
+      internalID: -6044235560321030304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HUDBossBadge: -6044235560321030304
+      HUDBossBadge_0: 3683479737108633377
+      HUDBossBadge_1: -1010573898967807176
+      HUDBossBadge_10: 3935390063197377180
+      HUDBossBadge_11: 1648913445931885698
+      HUDBossBadge_12: 676189411315305322
+      HUDBossBadge_13: 938475725113616816
+      HUDBossBadge_14: -6477804993390104975
+      HUDBossBadge_15: 9037126045836652295
+      HUDBossBadge_16: 757438246177704649
+      HUDBossBadge_17: -7430444961265093673
+      HUDBossBadge_18: 8262667890639856238
+      HUDBossBadge_19: -2690302190750038903
+      HUDBossBadge_2: 2892165920861863389
+      HUDBossBadge_20: 3230455343337229707
+      HUDBossBadge_21: -3308747530956364032
+      HUDBossBadge_22: -7683010908085165478
+      HUDBossBadge_23: -377850353048721895
+      HUDBossBadge_24: 6717220765135900383
+      HUDBossBadge_25: 5959208244268160428
+      HUDBossBadge_26: -6327771695522118342
+      HUDBossBadge_27: -1260772741315455882
+      HUDBossBadge_28: -329895697182771916
+      HUDBossBadge_29: -5315136419154015226
+      HUDBossBadge_3: -8538018379335412533
+      HUDBossBadge_30: 6338041939141438065
+      HUDBossBadge_4: 6581426522495149060
+      HUDBossBadge_5: 30474206241364897
+      HUDBossBadge_6: -5968547753256596396
+      HUDBossBadge_7: 8487204163840604925
+      HUDBossBadge_8: -1886731932332955006
+      HUDBossBadge_9: 5495715892990587174
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

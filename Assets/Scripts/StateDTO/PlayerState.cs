@@ -1,5 +1,6 @@
 public struct PlayerState
 {
+    public string Name;
     public int Level;
 
     public int Exp;
