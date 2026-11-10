@@ -1,0 +1,243 @@
+{
+  "canvas": [
+    1145,
+    1374
+  ],
+  "coordinateOrigin": "top-left",
+  "pngCanvas": "full canvas; identical origin",
+  "parts": [
+    {
+      "name": "hat",
+      "cell": 0,
+      "target": [
+        0,
+        68,
+        1131,
+        672
+      ],
+      "source": [
+        16,
+        59,
+        328,
+        252
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 234647
+    },
+    {
+      "name": "head",
+      "cell": 1,
+      "target": [
+        312,
+        406,
+        555,
+        332
+      ],
+      "source": [
+        378,
+        42,
+        331,
+        280
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 116604
+    },
+    {
+      "name": "hair_view_left",
+      "cell": 2,
+      "target": [
+        294,
+        656,
+        162,
+        190
+      ],
+      "source": [
+        800,
+        65,
+        182,
+        254
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 18877
+    },
+    {
+      "name": "hair_view_right",
+      "cell": 3,
+      "target": [
+        734,
+        686,
+        162,
+        175
+      ],
+      "source": [
+        90,
+        422,
+        200,
+        254
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 17442
+    },
+    {
+      "name": "torso",
+      "cell": 4,
+      "target": [
+        282,
+        700,
+        796,
+        438
+      ],
+      "source": [
+        384,
+        387,
+        318,
+        318
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 123901
+    },
+    {
+      "name": "arm_view_left",
+      "cell": 5,
+      "target": [
+        213,
+        632,
+        251,
+        403
+      ],
+      "source": [
+        768,
+        417,
+        259,
+        252
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 24541
+    },
+    {
+      "name": "arm_view_right",
+      "cell": 6,
+      "target": [
+        679,
+        801,
+        144,
+        262
+      ],
+      "source": [
+        62,
+        767,
+        222,
+        270
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 21016
+    },
+    {
+      "name": "leg_view_left",
+      "cell": 7,
+      "target": [
+        243,
+        1138,
+        329,
+        129
+      ],
+      "source": [
+        435,
+        772,
+        166,
+        260
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 14687
+    },
+    {
+      "name": "leg_view_right",
+      "cell": 8,
+      "target": [
+        572,
+        1138,
+        361,
+        236
+      ],
+      "source": [
+        842,
+        772,
+        163,
+        260
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 14243
+    },
+    {
+      "name": "staff",
+      "cell": 9,
+      "target": [
+        171,
+        629,
+        209,
+        441
+      ],
+      "source": [
+        92,
+        1107,
+        150,
+        316
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 26377
+    },
+    {
+      "name": "eyes_open",
+      "cell": 10,
+      "target": [
+        436,
+        538,
+        219,
+        91
+      ],
+      "source": [
+        433,
+        1209,
+        220,
+        105
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 6909
+    },
+    {
+      "name": "mouth_happy",
+      "cell": 11,
+      "target": [
+        503,
+        628,
+        75,
+        54
+      ],
+      "source": [
+        846,
+        1233,
+        112,
+        81
+      ],
+      "extraction": "selection from approved original, no regenerated visible pixels",
+      "nontransparentPixels": 3246
+    }
+  ],
+  "layerOrderBottomToTop": [
+    "leg_view_left",
+    "leg_view_right",
+    "staff",
+    "arm_view_left",
+    "arm_view_right",
+    "torso",
+    "hat",
+    "hair_view_left",
+    "hair_view_right",
+    "head",
+    "eyes_open",
+    "mouth_happy"
+  ],
+  "viewSide": "left/right from viewer perspective",
+  "status": "original-pixel cutout workfile, not animation-ready rig",
+  "method": "Native selection export from approved master; visible RGBA preserved exactly; hidden surfaces require further painting"
+}

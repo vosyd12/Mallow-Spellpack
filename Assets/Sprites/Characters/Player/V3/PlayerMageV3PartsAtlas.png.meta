@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: c2d5c43dc099ba742a9ea5c1dee956f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7516001673873969442
+    second: PlayerMageV3PartsAtlas_0
+  - first:
+      213: 3456489639835606706
+    second: PlayerMageV3PartsAtlas_1
+  - first:
+      213: -4975338124743266801
+    second: PlayerMageV3PartsAtlas_2
+  - first:
+      213: -8391764954817470190
+    second: PlayerMageV3PartsAtlas_3
+  - first:
+      213: -136103717822321917
+    second: PlayerMageV3PartsAtlas_4
+  - first:
+      213: -1692967225370015570
+    second: PlayerMageV3PartsAtlas_5
+  - first:
+      213: -7487482723269710438
+    second: PlayerMageV3PartsAtlas_6
+  - first:
+      213: -7697760922627137639
+    second: PlayerMageV3PartsAtlas_7
+  - first:
+      213: 6185092879369009478
+    second: PlayerMageV3PartsAtlas_8
+  - first:
+      213: 976695758108400321
+    second: PlayerMageV3PartsAtlas_9
+  - first:
+      213: 8858042872014639244
+    second: PlayerMageV3PartsAtlas_10
+  - first:
+      213: 2516087725742735372
+    second: PlayerMageV3PartsAtlas_11
+  - first:
+      213: -7226089918395110304
+    second: PlayerMageV3PartsAtlas_12
+  - first:
+      213: -6724797339375935988
+    second: PlayerMageV3PartsAtlas_13
+  - first:
+      213: 4130164171672308646
+    second: PlayerMageV3PartsAtlas_14
+  - first:
+      213: -9130939764688625417
+    second: PlayerMageV3PartsAtlas_15
+  - first:
+      213: -292050831909100037
+    second: PlayerMageV3PartsAtlas_16
+  - first:
+      213: -1438428857245012808
+    second: PlayerMageV3PartsAtlas_17
+  - first:
+      213: -4642554886427334560
+    second: PlayerMageV3PartsAtlas_18
+  - first:
+      213: 3724829405924213562
+    second: PlayerMageV3PartsAtlas_19
+  - first:
+      213: -8016870935878777062
+    second: PlayerMageV3PartsAtlas_20
+  - first:
+      213: -6180230724273993767
+    second: PlayerMageV3PartsAtlas_21
+  - first:
+      213: 3184099664242638437
+    second: PlayerMageV3PartsAtlas_22
+  - first:
+      213: 1606053782093236075
+    second: PlayerMageV3PartsAtlas_23
+  - first:
+      213: -3913505267412077542
+    second: PlayerMageV3PartsAtlas_24
+  - first:
+      213: 5792024165129499730
+    second: hat
+  - first:
+      213: -1846784345090356148
+    second: head
+  - first:
+      213: -7970885473797337924
+    second: hair_view_left
+  - first:
+      213: -4432486387860929912
+    second: hair_view_right
+  - first:
+      213: -2142246038737991177
+    second: torso
+  - first:
+      213: 7494663969636396734
+    second: arm_view_left
+  - first:
+      213: -1897336976125740109
+    second: arm_view_right
+  - first:
+      213: -6566731289802408699
+    second: leg_view_left
+  - first:
+      213: -13599332688547218
+    second: leg_view_right
+  - first:
+      213: 1185948300060004415
+    second: staff
+  - first:
+      213: -2413935257643217087
+    second: eyes_open
+  - first:
+      213: 4962177451483423382
+    second: mouth_happy
+  - first:
+      213: 3807245383639320230
+    second: face_underlay
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 804
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hat
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 851
+        height: 666
+      alignment: 9
+      pivot: {x: 0.4841363, y: 0.47147146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 254b50d6a47616050800000000000000
+      internalID: 5792024165129499730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: head
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 674
+        width: 534
+        height: 336
+      alignment: 9
+      pivot: {x: 0.46629214, y: 0.083333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c032e3c67ee56e0800000000000000
+      internalID: -1846784345090356148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hair_view_left
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 0
+        width: 166
+        height: 194
+      alignment: 9
+      pivot: {x: 0.59638554, y: 0.81958765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbc0df4a4e9b16190800000000000000
+      internalID: -7970885473797337924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hair_view_right
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 0
+        width: 163
+        height: 178
+      alignment: 9
+      pivot: {x: 0.33128834, y: 0.96067417}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8828bc35d15ac72c0800000000000000
+      internalID: -4432486387860929912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: torso
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 0
+        width: 612
+        height: 442
+      alignment: 9
+      pivot: {x: 0.47549018, y: 0.101809956}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9c88fe3963542e0800000000000000
+      internalID: -2142246038737991177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arm_view_left
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 674
+        width: 228
+        height: 208
+      alignment: 9
+      pivot: {x: 0.78070176, y: 0.84615386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebea8150c25620860800000000000000
+      internalID: 7494663969636396734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arm_view_right
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 0
+        width: 145
+        height: 260
+      alignment: 9
+      pivot: {x: 0.20689656, y: 0.85384613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bbbfce921e4ba5e0800000000000000
+      internalID: -1897336976125740109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leg_view_left
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 202
+        width: 181
+        height: 110
+      alignment: 9
+      pivot: {x: 0.45856354, y: 0.34545454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d72e71fa84ed4a0800000000000000
+      internalID: -6566731289802408699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: leg_view_right
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 320
+        width: 161
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.34545454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62baed9a7fafcff0800000000000000
+      internalID: -13599332688547218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: staff
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 450
+        width: 211
+        height: 444
+      alignment: 9
+      pivot: {x: 0.54028434, y: 0.4301802}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f301e0b02b5557010800000000000000
+      internalID: 1185948300060004415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyes_open
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 890
+        width: 223
+        height: 95
+      alignment: 9
+      pivot: {x: 0.48430493, y: 0.48421052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f82693caaff7ed0800000000000000
+      internalID: -2413935257643217087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mouth_happy
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 268
+        width: 79
+        height: 58
+      alignment: 9
+      pivot: {x: 0.51898736, y: 0.51724136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6926f14f9123dd440800000000000000
+      internalID: 4962177451483423382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: face_underlay
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 674
+        width: 24
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a64198318d06d430800000000000000
+      internalID: 3807245383639320230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerMageV3PartsAtlas_0: 7516001673873969442
+      PlayerMageV3PartsAtlas_1: 3456489639835606706
+      PlayerMageV3PartsAtlas_10: 8858042872014639244
+      PlayerMageV3PartsAtlas_11: 2516087725742735372
+      PlayerMageV3PartsAtlas_12: -7226089918395110304
+      PlayerMageV3PartsAtlas_13: -6724797339375935988
+      PlayerMageV3PartsAtlas_14: 4130164171672308646
+      PlayerMageV3PartsAtlas_15: -9130939764688625417
+      PlayerMageV3PartsAtlas_16: -292050831909100037
+      PlayerMageV3PartsAtlas_17: -1438428857245012808
+      PlayerMageV3PartsAtlas_18: -4642554886427334560
+      PlayerMageV3PartsAtlas_19: 3724829405924213562
+      PlayerMageV3PartsAtlas_2: -4975338124743266801
+      PlayerMageV3PartsAtlas_20: -8016870935878777062
+      PlayerMageV3PartsAtlas_21: -6180230724273993767
+      PlayerMageV3PartsAtlas_22: 3184099664242638437
+      PlayerMageV3PartsAtlas_23: 1606053782093236075
+      PlayerMageV3PartsAtlas_24: -3913505267412077542
+      PlayerMageV3PartsAtlas_3: -8391764954817470190
+      PlayerMageV3PartsAtlas_4: -136103717822321917
+      PlayerMageV3PartsAtlas_5: -1692967225370015570
+      PlayerMageV3PartsAtlas_6: -7487482723269710438
+      PlayerMageV3PartsAtlas_7: -7697760922627137639
+      PlayerMageV3PartsAtlas_8: 6185092879369009478
+      PlayerMageV3PartsAtlas_9: 976695758108400321
+      arm_view_left: 7494663969636396734
+      arm_view_right: -1897336976125740109
+      eyes_open: -2413935257643217087
+      face_underlay: 3807245383639320230
+      hair_view_left: -7970885473797337924
+      hair_view_right: -4432486387860929912
+      hat: 5792024165129499730
+      head: -1846784345090356148
+      leg_view_left: -6566731289802408699
+      leg_view_right: -13599332688547218
+      mouth_happy: 4962177451483423382
+      staff: 1185948300060004415
+      torso: -2142246038737991177
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,20 @@
+Use case: precise-object-edit / animation cutout asset preparation.
+Reference is the APPROVED FINAL PLAYER MASTER. Preserve its simplified shapes, proportions, color palette, plum outline thickness, expression, hair mass shapes, robe hem and small boots. Do not redesign this character. Need actual cutout components to later assemble a layered PSD, NOT an explanatory presentation.
+Output: ONLY a transparent 3-column by 4-row GRID ATLAS, 12 EQUAL square CELLS, ideally 1536 wide x2048 high, no grid lines/text/labels/backdrop/checkerboard/shadows. Every part fully contained within its own cell, centered, with at least 8% clear margin. No piece crosses a cell boundary. Parts as large as possible WITHIN each cell. Exact row-major order:
+ROW1:
+cell1 = full purple floppy hat with gold band ONLY. Preserve asymmetrical tip drooping viewer right, wide brim; no hair or face. Complete lower brim.
+cell2 = head base including complete brown front/back hair mass and ears and peach face with subtle cheek blush. EMPTY face without eyes, eyebrows or mouth. No hat, no pigtails. Fully finish hair crown hidden under hat.
+cell3 = viewer-LEFT short brown pigtail with purple tie ONLY. Keep original curved brown shape and minimal two-tone shading, drawn attachment extension.
+ROW2:
+cell4 = viewer-RIGHT short brown pigtail with purple tie ONLY. Same original orientation.
+cell5 = torso/robe/capelet as ONE sleeveless piece. Purple A-line dress with single gold hem, purple gold-edged shoulder capelet, tiny gold clasp and original simple shadow folds. Include neck at top, rounded hidden shoulders for arms to overlap. NO arms, hands, legs, head, hair or staff.
+cell6 = viewer-LEFT purple sleeve arm with gold cuff AND simple peach gripping hand attached, EMPTY grip, no staff. Rounded hidden shoulder attachment extension.
+ROW3:
+cell7 = viewer-RIGHT purple sleeve arm with gold cuff AND peach simple rounded relaxed hand attached. No torso, no staff. Rounded hidden shoulder attachment extension.
+cell8 = viewer-LEFT brown boot plus short dark stocking leg, include hidden upper leg extension. NO other leg.
+cell9 = viewer-RIGHT brown boot plus short dark stocking leg with hidden upper leg extension. NO other leg.
+ROW4:
+cell10 = complete short wooden staff with mint diamond crystal, reference orientation angled slightly viewer-left at top, no hand.
+cell11 = ONLY the pair of two simple dark oval open eyes from reference, one tiny highlight per eye, fixed relative spacing. NO skin, hair, eyebrows, face plate, head or mouth. Floating eyes on transparent alpha.
+cell12 = ONLY the tiny happy open mouth from reference, dark plum border, coral interior. NO face, eyes or skin. Floating mouth on transparent alpha.
+Important: each cell's component must be an actual separate visible cutout surrounded by real transparency. Output consists solely of the 12 parts, no assembled full character anywhere. Empty facial areas must be plain matching skin shading not empty holes. Complete obscured contours for animation overlap. Keep the exact compact, simple 2D sprite aesthetic, do not elaborate into anime eyes, fabric textures or many shading steps. No baked ground shadows. Natural alpha edges, no white matte.

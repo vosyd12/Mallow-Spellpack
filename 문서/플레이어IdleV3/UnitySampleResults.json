@@ -1,0 +1,143 @@
+{
+  "frames": [
+    {
+      "time": 0.0,
+      "file": "문서/플레이어IdleV3/UnityIdle_00.png",
+      "breathY": 1.0,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.0
+    },
+    {
+      "time": 0.3,
+      "file": "문서/플레이어IdleV3/UnityIdle_01.png",
+      "breathY": 1.00155556,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.0311136264
+    },
+    {
+      "time": 0.6,
+      "file": "문서/플레이어IdleV3/UnityIdle_02.png",
+      "breathY": 1.00444448,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.08888841
+    },
+    {
+      "time": 0.9,
+      "file": "문서/플레이어IdleV3/UnityIdle_03.png",
+      "breathY": 1.006,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.120002024
+    },
+    {
+      "time": 1.2,
+      "file": "문서/플레이어IdleV3/UnityIdle_04.png",
+      "breathY": 1.0075556,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.08888841
+    },
+    {
+      "time": 1.5,
+      "file": "문서/플레이어IdleV3/UnityIdle_05.png",
+      "breathY": 1.0104444,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.0311136264
+    },
+    {
+      "time": 1.8,
+      "file": "문서/플레이어IdleV3/UnityIdle_06.png",
+      "breathY": 1.012,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.0
+    },
+    {
+      "time": 2.1,
+      "file": "문서/플레이어IdleV3/UnityIdle_07.png",
+      "breathY": 1.0104444,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.968872
+    },
+    {
+      "time": 2.4,
+      "file": "문서/플레이어IdleV3/UnityIdle_08.png",
+      "breathY": 1.0075556,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.9111
+    },
+    {
+      "time": 2.54,
+      "file": "문서/플레이어IdleV3/UnityIdle_09.png",
+      "breathY": 1.00650156,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.89
+    },
+    {
+      "time": 2.6,
+      "file": "문서/플레이어IdleV3/UnityIdle_10.png",
+      "breathY": 1.0062058,
+      "eyeY": 0.35,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.8841
+    },
+    {
+      "time": 2.67,
+      "file": "문서/플레이어IdleV3/UnityIdle_11.png",
+      "breathY": 1.00601959,
+      "eyeY": 0.045,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.8804
+    },
+    {
+      "time": 2.74,
+      "file": "문서/플레이어IdleV3/UnityIdle_12.png",
+      "breathY": 1.00596559,
+      "eyeY": 0.35,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.8807
+    },
+    {
+      "time": 2.82,
+      "file": "문서/플레이어IdleV3/UnityIdle_13.png",
+      "breathY": 1.00570846,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.885834
+    },
+    {
+      "time": 3.0,
+      "file": "문서/플레이어IdleV3/UnityIdle_14.png",
+      "breathY": 1.00444448,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.9111
+    },
+    {
+      "time": 3.3,
+      "file": "문서/플레이어IdleV3/UnityIdle_15.png",
+      "breathY": 1.00155556,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 359.968872
+    },
+    {
+      "time": 3.6,
+      "file": "문서/플레이어IdleV3/UnityIdle_16.png",
+      "breathY": 1.0,
+      "eyeY": 1.0,
+      "foot": "(0.820872, -1.550177, 0.000000)",
+      "hat": 0.0
+    }
+  ],
+  "timeScaleRestored": 1.0,
+  "cameraSizeRestored": 7.5,
+  "animatorEnabledRestored": true
+}

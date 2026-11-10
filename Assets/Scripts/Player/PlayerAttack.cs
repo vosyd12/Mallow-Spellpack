@@ -6,6 +6,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float _attackRange = 5f;
     [SerializeField] private float _attackInterval = 1f;
     [SerializeField] private Player _player;
+
+    [SerializeField] private Transform _firePos;
     private Enemy _target;
 
     private float _attackTimer;
@@ -52,6 +54,11 @@ public class PlayerAttack : MonoBehaviour
 
     private void MagicAttack()
     {
+        if(_firePos == null)
+        {
+            return;
+        }
+
         int statBonus = _player.PlayerState.INT;
 
         int minDamage = Mathf.Max(1, _baseMinDamage + statBonus);
@@ -60,7 +67,7 @@ public class PlayerAttack : MonoBehaviour
         int damage = Random.Range(minDamage, maxDamage + 1);
 
         Bullet bullet = Instantiate(
-            _bulletPrefab, transform.position, Quaternion.identity);
+            _bulletPrefab, _firePos.position, Quaternion.identity);
 
         bullet.Initialize(_target, damage);
     }

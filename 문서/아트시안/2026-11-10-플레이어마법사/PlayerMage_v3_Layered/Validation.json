@@ -1,0 +1,67 @@
+{
+  "format": "PSD v1 RGB8 RGBA",
+  "canvas": [
+    1145,
+    1374
+  ],
+  "layerCount": 13,
+  "visiblePartLayers": 12,
+  "hiddenReference": true,
+  "pixelValidation": "all layer and merged channel bytes match export buffers",
+  "reference": "approved PNG preserved byte-for-byte",
+  "editorOpenValidation": "not performed",
+  "layers": [
+    {
+      "name": "REFERENCE_Approved_v3_HIDDEN",
+      "hidden": true
+    },
+    {
+      "name": "mouth_happy",
+      "hidden": false
+    },
+    {
+      "name": "eyes_open",
+      "hidden": false
+    },
+    {
+      "name": "head",
+      "hidden": false
+    },
+    {
+      "name": "hair_view_right",
+      "hidden": false
+    },
+    {
+      "name": "hair_view_left",
+      "hidden": false
+    },
+    {
+      "name": "hat",
+      "hidden": false
+    },
+    {
+      "name": "torso",
+      "hidden": false
+    },
+    {
+      "name": "arm_view_right",
+      "hidden": false
+    },
+    {
+      "name": "arm_view_left",
+      "hidden": false
+    },
+    {
+      "name": "staff",
+      "hidden": false
+    },
+    {
+      "name": "leg_view_right",
+      "hidden": false
+    },
+    {
+      "name": "leg_view_left",
+      "hidden": false
+    }
+  ]
+}
