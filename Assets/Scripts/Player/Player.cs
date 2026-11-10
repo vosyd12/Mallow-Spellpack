@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -49,6 +50,13 @@ public class Player : MonoBehaviour
     private float _targetSearchTimer;
     private bool _isAvoiding;
 
+    public bool IsDead { get; private set; }
+
+    public bool IsMoving =>
+        !IsDead && _avoidVelocity.sqrMagnitude > 0.0001f;
+
+    public event Action Damaged; // 살아있는 상태에서 피해를 받을때 알림
+    public event Action Died;    // 사망 알림
 
     private Vector3 _pos;
 
@@ -78,12 +86,22 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if(IsDead)
+        {
+            return;
+        }
+
         UpdateTarget();
         Avoid();
     }
 
     private void FixedUpdate()
     {
+        if (IsDead)
+        {
+            return;
+        }
+
         Vector2 nextPosition =
             _rd.position + _avoidVelocity * Time.fixedDeltaTime;
 
@@ -115,7 +133,8 @@ public class Player : MonoBehaviour
         _avoidVelocity = Vector2.zero;
 
         if (_target == null ||
-            !_target.isActiveAndEnabled)
+            !_target.isActiveAndEnabled ||
+            _target.IsDead)
         {
             _isAvoiding = false;
             return;
@@ -190,10 +209,10 @@ public class Player : MonoBehaviour
 
         RefreshPlayerInfo();
     }
-    
+
     public void TakeDamage(int damage)
     {
-        if(_player.HP <= 0 || damage <= 0)
+        if (IsDead || _player.HP <= 0 || damage <= 0)
         {
             return;
         }
@@ -206,6 +225,37 @@ public class Player : MonoBehaviour
         _hitReaction.Play();
 
         print($"플레이어의 남은 HP {_player.HP} / {_maxHP}");
+
+        // HP가 소진됐는지 검사하는 위치
+        if (_player.HP <= 0)
+        {
+            Die();
+            return;
+        }
+
+        Damaged?.Invoke();
+    }
+
+    private void Die()
+    {
+        // 사망 처리를 이미 시작했는지 검사하는 위치
+        if (IsDead)
+        {
+            return;
+        }
+
+        IsDead = true;
+
+        _avoidVelocity = Vector2.zero;
+        _isAvoiding = false;
+        _target = null;
+
+        _rd.linearVelocity = Vector2.zero;
+        _rd.simulated = false;
+
+        _healthBar.gameObject.SetActive(false);
+
+        Died?.Invoke();
     }
 
     private void RefreshPlayerInfo()

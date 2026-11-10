@@ -27,7 +27,9 @@ public class Bullet : MonoBehaviour
     {
         if (_hasHit) return;
 
-        if(_target == null || !_target.isActiveAndEnabled)
+        if(_target == null || 
+            !_target.isActiveAndEnabled ||
+            _target.IsDead)
         {
             Destroy(gameObject);
             return;

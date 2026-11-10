@@ -1,0 +1,37 @@
+{
+  "sizes": {
+    "Small": {
+      "clipGuid": "86f14f9fb69f4bed968725c0c4cdfc51",
+      "shadowLocalId": 9200000000000000031,
+      "animatorState": "Base Layer.Death",
+      "playbackSpeed": 1
+    },
+    "Medium": {
+      "clipGuid": "cf9b41ee9795436fa4aee03f4e9af98e",
+      "shadowLocalId": 9200000000000000031,
+      "animatorState": "Base Layer.Death",
+      "playbackSpeed": 1
+    },
+    "Large": {
+      "clipGuid": "32d949767b4e44c4a86b433e3294c527",
+      "shadowLocalId": 9200000000000000031,
+      "animatorState": "Base Layer.Death",
+      "playbackSpeed": 1
+    }
+  },
+  "variantInheritanceCount": 18,
+  "existingStatesPreserved": true,
+  "sourceAndSceneUnchanged": true,
+  "nativeImportVerified": true,
+  "playModeVerified": false,
+  "playerStates": [
+    "Idle",
+    "Walk",
+    "Attack",
+    "Hit",
+    "Death"
+  ],
+  "playerDefaultStateUnchanged": true,
+  "playerAutomaticPlaybackConnected": false,
+  "nativeImportScope": "Controllers, override controllers and referenced clips imported in isolated Unity project; original scene and C# Play Mode not tested."
+}

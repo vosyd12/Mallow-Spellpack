@@ -1,0 +1,34 @@
+{
+  "Attack": {
+    "duration": 0.7,
+    "loop": false,
+    "bindings": 45,
+    "gripErrorLocal": 6.704885454300216e-05,
+    "restorationError": 5.000000004307115e-09,
+    "preview": "Offline sprite rendering from serialized Unity curves; not a Unity/Game recording",
+    "sha256": "8db272d699208ba70d23a8e04d699f4bd5a5330c45f495c233e1ec67bfbef887"
+  },
+  "Hit": {
+    "duration": 0.42,
+    "loop": false,
+    "bindings": 45,
+    "gripErrorLocal": 0,
+    "restorationError": 5.000000004307115e-09,
+    "preview": "Offline sprite rendering from serialized Unity curves; not a Unity/Game recording",
+    "sha256": "b2d14212458fd31880462bc8024960b76e1f35da5ca4aa044426b55af65e6865"
+  },
+  "Death": {
+    "duration": 1.1,
+    "loop": false,
+    "bindings": 45,
+    "gripErrorLocal": 0,
+    "restorationError": null,
+    "preview": "Offline sprite rendering from serialized Unity curves; not a Unity/Game recording",
+    "sha256": "f3025bfd43009bc3febedacc7de7014c1437792883cf9dc0b8ced03afac3a410"
+  },
+  "existingFilesUnchanged": true,
+  "nativeUnityImportVerified": true,
+  "nativeUnityVersion": "6000.5.10f1",
+  "nativeUnityImportScope": "Isolated project: NativeFormatImporter completed for all 3 clips. No Game playback or native pose sampling.",
+  "constantCurvesCompacted": true
+}

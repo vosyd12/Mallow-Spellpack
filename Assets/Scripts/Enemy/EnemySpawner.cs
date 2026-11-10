@@ -134,14 +134,20 @@ public class EnemySpawner : MonoBehaviour
 
         foreach (Enemy enemy in _enemies)
         {
-            if (enemy == null || !enemy.isActiveAndEnabled)
+            if (enemy == null || 
+                !enemy.isActiveAndEnabled ||
+                enemy.IsDead)
+            {
                 continue;
+            }
 
             float distance =
                 ((Vector2)enemy.transform.position - position).sqrMagnitude;
 
             if (distance >= nearestDistance)
+            {
                 continue;
+            }
 
             nearestDistance = distance;
             nearest = enemy;

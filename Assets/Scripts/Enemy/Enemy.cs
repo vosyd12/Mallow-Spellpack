@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -23,6 +24,10 @@ public class Enemy : MonoBehaviour
 
     private Vector3 _pos;
 
+    public bool IsDead { get; private set; }
+
+    public event Action Died;
+
     private void Awake()
     {
         _enemy.HP = _maxHP;
@@ -39,6 +44,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if(IsDead)
+        {
+            return;
+        }
+
         // 추적대상이 없을 경우 가만히
         if(_traceObject == null)
         {
@@ -52,7 +62,15 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!_useDefaultMovement) return;
+        if (IsDead)
+        {
+            return;
+        }
+
+        if (!_useDefaultMovement)
+        {
+            return;
+        }
 
         Vector2 nextPosition = _rd.position + (Vector2)_pos * _enemy.MoveSpeed * Time.fixedDeltaTime;
 
@@ -83,7 +101,32 @@ public class Enemy : MonoBehaviour
             player.GainExperience(_enemy.Exp);
         }
 
-        Destroy(gameObject);
+        Die();
+    }
+
+    private void Die()
+    {
+        if(IsDead)
+        {
+            return;
+        }
+
+        IsDead = true;
+
+        _pos = Vector3.zero;
+        _rd.linearVelocity = Vector2.zero;
+        _rd.simulated = false;
+
+        _healthBar.gameObject.SetActive(false);
+
+        // 사망 연출을 처리하는 컴포넌트가 없으면 바로 제거
+        if(Died == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Died.Invoke();
     }
 
     public void Initialize(GameObject player)

@@ -1,0 +1,33 @@
+{
+  "Small": {
+    "duration": 0.9,
+    "rotation": 1080,
+    "loop": false,
+    "nativeImportVerified": true,
+    "firstPoseMatrixError": 5.551115123125783e-17,
+    "sha256": "1dfe639016bdac07e9a797987d32311e9f68e28a93bbec7ca02d1f4bc596b2eb"
+  },
+  "Medium": {
+    "duration": 0.9,
+    "rotation": 1080,
+    "loop": false,
+    "nativeImportVerified": true,
+    "firstPoseMatrixError": 1.1102230246251565e-16,
+    "sha256": "f63b96d635a7e25d43c9bc897ae820464ce02d9f2747948741f5ad6358122769"
+  },
+  "Large": {
+    "duration": 0.9,
+    "rotation": 1080,
+    "loop": false,
+    "nativeImportVerified": true,
+    "firstPoseMatrixError": 2.220446049250313e-16,
+    "sha256": "ce8d59136f2e56ee0aaf6ee21ca00675adaa5f170116f022b3ca1d2c256318ad"
+  },
+  "scope": "Offline rendering from prefab transforms, Sprite rects and serialized curves; not Game/Unity pose sampling.",
+  "rigidityCheck": {
+    "combinations": 18,
+    "samplesPerCombination": 31,
+    "maxGramMatrixError": 7.559545545099411e-09,
+    "shadowAndHpBarNotAnimated": true
+  }
+}

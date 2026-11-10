@@ -1,0 +1,535 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.10f1 (3bd4f66ad299) revision 3921142'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PC" at "2026-11-10T13:28:48.9800036Z"
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 32692 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-10T13:28:48Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.10f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject
+-logFile
+C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/import-wiring.log
+Successfully changed project path to: C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject
+C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 1724, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              d49068e7020c403dadd4238e8434e7a6
+  Correlation Id:          463ab6ea5133f593212c7c23eb712800
+  External correlation Id: 747521128353191736
+  Machine Id:              RWrURSof3DWd2wn2O9dABhUK6l4=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-PC" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PC-notifications" at "2026-11-10T13:28:49.0043715Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569773668310-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+Player connection [31392]  Target information:
+
+Player connection [31392]  * "[IP] 192.168.219.122 [Port] 55505 [Flags] 2 [Guid] 3203400967 [EditorId] 3203400967 [Version] 1048832 [Id] WindowsEditor(7,vosyd) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [31392]  * "[IP] 192.168.219.196 [Port] 55505 [Flags] 2 [Guid] 3203400967 [EditorId] 3203400967 [Version] 1048832 [Id] WindowsEditor(7,vosyd) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+Player connection [31392] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [31392] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.03s
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-6520" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Artifact Garbage Collection - Removed 3 unused hashed content files
+Initialize engine version: 6000.5.10f1 (3bd4f66ad299)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002308 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.425 seconds
+Domain Reload Profiling: 868ms
+	BeginReloadAssembly (118ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (114ms)
+		AnalyzeDomain (174ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (161ms)
+	FinalizeReload (426ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (77ms)
+			ProcessInitializeOnLoadAttributes (84ms)
+			ProcessInitializeOnLoadMethodAttributes (206ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Package Manager] Registered 0 packages:
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.410 seconds
+Domain Reload Profiling: 806ms
+	BeginReloadAssembly (261ms)
+		DisableScriptedObjects (83ms)
+		CreateAndSetChildDomain (45ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (77ms)
+		LoadAssemblies (92ms)
+		AnalyzeDomain (5ms)
+			TypeCache.Refresh (3ms)
+	FinalizeReload (412ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (25ms)
+Importing 'GUID: 611f794c4d834502b301e04e21f3f1cb - Path: Assets/SlimeAttackSmall.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 611f794c4d834502b301e04e21f3f1cb' -> (Import Result ID: 'fbe8dab4a7f45f6024bb98ec994d3c1d') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=5934d74eae7cbd163715334f341c8d4f DependenciesID=5313c4a2b462af33cef8db431b0523d8 StaticDependenciesID=bae4d0509c44fffcb5024b91253ddd78 
+Importing 'GUID: 62a76449cb264a3b858abd052a773399 - Path: Assets/SlimeJumpLarge.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 62a76449cb264a3b858abd052a773399' -> (Import Result ID: 'b524b5b88e67753e9d4d119e62e400b7') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=7f70444edf297a1bbd952bfe884a4cd5 DependenciesID=da326b5abf9e625b259ffb8783e3784c StaticDependenciesID=5b0c54da00c9795b6bc8560e0d196663 
+Importing 'GUID: 054fee10717f481c9b00d8591a2491a6 - Path: Assets/SlimeJumpMedium.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 054fee10717f481c9b00d8591a2491a6' -> (Import Result ID: 'b8c4190def4db6e39bc02891ee3891c7') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=b0d95105a01b666499f72a099bb09f9d DependenciesID=18c0d40cab0f7c32d7a69642b2c7ec0a StaticDependenciesID=8cc41fd4803d232801574702c6a60aa4 
+Importing 'GUID: 661e347d51a64797aa7978f36bd3204d - Path: Assets/SlimePrepare.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 661e347d51a64797aa7978f36bd3204d' -> (Import Result ID: '341286e2571549e943cc09efe2a7f696') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=378f5db0c8019b1ed51ad17afd15803e DependenciesID=eca6803ac163f81fe4883d223c688d19 StaticDependenciesID=a8b47bea4a1360a7bf0d543ce67ef40f 
+Importing 'GUID: 8690ea90b8a646f68199baa0b3db7e2a - Path: Assets/SlimeAttackLarge.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 8690ea90b8a646f68199baa0b3db7e2a' -> (Import Result ID: '19f9de28cd09bb1474b8fb11ad358ed3') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=54ea51b41b209e5d6186e7eae6a6ee98 DependenciesID=0eff431af31450975a0e40a79bbe20a6 StaticDependenciesID=7d6324d9a2a65ebfe109b5aace3ae735 
+Importing 'GUID: 5afc478a97e84ad3861943df593530ee - Path: Assets/SlimeJumpSmall.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 5afc478a97e84ad3861943df593530ee' -> (Import Result ID: 'e43d69087583970dcbc210b76c95e6e1') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=d432620203aadd12dbd4c8d852f4873f DependenciesID=6326bce9e18ee2c3ddc8d81f20bb739f StaticDependenciesID=ea6feedde580b6d9883ee409a956ea24 
+Importing 'GUID: aa652f23ff5943469b47867f8b76d23c - Path: Assets/SlimeIdle.anim' with importer (NativeFormatImporter)
+Imported 'GUID: aa652f23ff5943469b47867f8b76d23c' -> (Import Result ID: '543b5ae2f0b4cd7dd0f09f0cadd26722') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=15c5f5b94c3333747365ea898d9cde5d DependenciesID=8b7455b23bef6a4bd67f6657efe07914 StaticDependenciesID=6e125d0d49e8c8968c42b660cdc16dfc 
+Importing 'GUID: eb133933e36c4a9cb8363966c366388b - Path: Assets/SlimeLand.anim' with importer (NativeFormatImporter)
+Imported 'GUID: eb133933e36c4a9cb8363966c366388b' -> (Import Result ID: 'a8825817277ebc31e31ad15c8a8dfbdf') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=b69411d50db7e05dbf543aa0dd50afd4 DependenciesID=61a343b544cf04a084f5e86316b5045a StaticDependenciesID=7fad181d3954fa46e67d31d244aff177 
+Importing 'GUID: 0d4990f8255b475399a90e0cd44f1944 - Path: Assets/SlimeAttackMedium.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 0d4990f8255b475399a90e0cd44f1944' -> (Import Result ID: '38c32ad6b01d5a2a974bc39261489d05') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=f320842485ecd7aae6c39331a60e17c6 DependenciesID=e8d18688c1b04886aa88585643084188 StaticDependenciesID=5813fe67a2a1d614cf33c712f5b4d49c 
+Importing 'GUID: 8deb619e23724695a5520bdde81acb2f - Path: Assets/SlimeMedium.overrideController' with importer (NativeFormatImporter)
+Imported 'GUID: 8deb619e23724695a5520bdde81acb2f' -> (Import Result ID: '05011e67b9efa3b5da9310845e20907d') in 0.005 seconds [static dependencies only]. Details - ImportResultOutputID=e57bd676fffe5a21cad695c94dd8578b DependenciesID=f2338cbfde3b8c8da7b6463d13521bd2 StaticDependenciesID=565c91aa0f9348e0beff4905efc85f57 
+Importing 'GUID: fdfb240b07944152b5a7cd86d119a74e - Path: Assets/SlimeLarge.overrideController' with importer (NativeFormatImporter)
+Imported 'GUID: fdfb240b07944152b5a7cd86d119a74e' -> (Import Result ID: '2a75b3cc4b5549f2ba5198ef43e0eeb6') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=24f8c9504f86a57c52704080a518e857 DependenciesID=7b7f71bbb9cd4dbfcbf4093677d077c0 StaticDependenciesID=d85bb156d93056682b4cc8e81a820f8a 
+Importing 'GUID: 45b4723e9bc647a9899b466a01320670 - Path: Assets/Slime.controller' with importer (NativeFormatImporter)
+Imported 'GUID: 45b4723e9bc647a9899b466a01320670' -> (Import Result ID: '2b49def5f241b73eac83d503a77d6a93') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=a951aae1e2b14e3d710e28984e1a01f6 DependenciesID=4dde080c349cab65560bc131299bf4a1 StaticDependenciesID=d5248f32904536b930788a6d6d51827e 
+Starting new worker id: 0 with log in C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=7459aa0f142997c4db6321bb861ac5d6): Total: 1.001 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=12 (actual=12, local cache=0, cache server=0)
+		Asset DB Process Time: managed=1 ms, native=516 ms
+		Asset DB Callback time: managed=48 ms, native=3 ms
+		Scripting: domain reloads=1, domain reload time=421 ms, compile time=3 ms, other=6 ms
+		Project Asset Count: scripts=22, non-scripts=17
+		Asset File Changes: new=12, changed=12, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 2.190ms
+	ApplyChangesToAssetFolders: 0.111ms
+	Scan: 31.859ms
+	Collect global state as custom dependencies: 9.182ms
+	OnSourceAssetsModified: 0.627ms
+	CategorizeAssets: 0.214ms
+	CompileScripts: 3.072ms
+	ImportOutOfDateAssets: 446.349ms (415.430ms without children)
+		ImportManagerImport: 23.457ms (1.484ms without children)
+		UnloadImportedAssets: 0.116ms
+		ImportSchedulerStart: 7.331ms
+	PostProcessAllAssets: 49.377ms
+		VCAutoAddAssetPostprocess 0.897ms
+		VersionControlSettings.HiddenFilePostprocess 0.300ms
+		MonoPostProcessAllAssets: 47.454ms
+			AssetPostprocessor.OnPostprocessAllAssets 10.070ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 7.794ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 7.385ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 6.491ms
+			AssetChangedListener.OnPostprocessAllAssets 1.920ms
+			SyncVS.PostprocessSyncProject 1.559ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.147ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.803ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.787ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.543ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.423ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.266ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.246ms
+			AssetEvents.OnPostprocessAllAssets 0.199ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.171ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.156ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.127ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.126ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.122ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.076ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.073ms
+	PostAssetChangesProfiler: 0.780ms
+	UnloadStreamsBegin: 1.186ms
+	Untracked: 452.115ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 6.872ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-ImportProject
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.5 MB). Loaded Objects now: 793.
+Memory consumption went from 192.3 MB to 191.8 MB.
+Total: 4.077900 ms (FindLiveObjects: 0.043700 ms CreateObjectMapping: 0.006600 ms MarkObjects: 3.837200 ms  DeleteObjects: 0.188500 ms)
+
+Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-PC-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-PC channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0
+FINAL PLAYER STATE IMPORT
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.5/staging' branch; Version is '6000.5.10f1 (3bd4f66ad299) revision 3921142'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 32692 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PC" at "2026-11-10T13:33:43.3823449Z"
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-10T13:33:43Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 1724, path: "C:/Program Files/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              6c5b7eb2743e4242841672b6cfa21daa
+  Correlation Id:          463ab6ea5133f593212c7c23eb712800
+  External correlation Id: 6284367466786633117
+  Machine Id:              RWrURSof3DWd2wn2O9dABhUK6l4=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-PC" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-PC-notifications" at "2026-11-10T13:33:43.4062512Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 14569773668310-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.03s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.5.10f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject
+-logFile
+C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/import-wiring-final.log
+Successfully changed project path to: C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject
+C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=0"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.Player connection [25012]  Target information:
+
+Player connection [25012]  * "[IP] 192.168.219.122 [Port] 55505 [Flags] 2 [Guid] 2294881182 [EditorId] 2294881182 [Version] 1048832 [Id] WindowsEditor(7,vosyd) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25012]  * "[IP] 192.168.219.196 [Port] 55505 [Flags] 2 [Guid] 2294881182 [EditorId] 2294881182 [Version] 1048832 [Id] WindowsEditor(7,vosyd) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25012] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25012] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-32380" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.5.10f1 (3bd4f66ad299)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56380
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.5.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002018 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.420 seconds
+Domain Reload Profiling: 865ms
+	BeginReloadAssembly (125ms)
+		CreateAndSetChildDomain (5ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (242ms)
+		LoadAssemblies (118ms)
+		AnalyzeDomain (171ms)
+			TypeCache.Refresh (170ms)
+				TypeCache.ScanAssembly (158ms)
+	FinalizeReload (421ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (83ms)
+			ProcessInitializeOnLoadMethodAttributes (204ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Package Manager] Registered 0 packages:
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.395 seconds
+Domain Reload Profiling: 736ms
+	BeginReloadAssembly (208ms)
+		DisableScriptedObjects (38ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (7ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (76ms)
+		LoadAssemblies (91ms)
+		AnalyzeDomain (5ms)
+			TypeCache.Refresh (3ms)
+	FinalizeReload (397ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (61ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Importing 'GUID: d12f6817d197480aa7211ce121a64205 - Path: Assets/PlayerMageV3Death.anim' with importer (NativeFormatImporter)
+Imported 'GUID: d12f6817d197480aa7211ce121a64205' -> (Import Result ID: '58f082db88a2e7e10fcfb3512b489e70') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=6e3d95423907f986389eaa18cf145de0 DependenciesID=494fa46d9b4df855f0175392dff11b1d StaticDependenciesID=d95e502a81525ed415b7a70713233df1 
+Importing 'GUID: 3a1fd5137f0472944ae925dcbdaed00c - Path: Assets/PlayerMageV3Idle.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 3a1fd5137f0472944ae925dcbdaed00c' -> (Import Result ID: '9f113063c8c797f8d858f71ac67cd3f0') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=493b32857536cea1ba950287ba4f20c8 DependenciesID=5b808f3d3be6de59bb08ecb68236c8fa StaticDependenciesID=d5c9f0dfa2886c89e725521cb1b3248b 
+Importing 'GUID: 7b6fcda489dd71940bbee39b7f352b56 - Path: Assets/PlayerMageV3Walk.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 7b6fcda489dd71940bbee39b7f352b56' -> (Import Result ID: '860f7b673fb8c38a1a5b9794fc586813') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=a855f4165fa7a90f57cc22f34a61f1ba DependenciesID=296f5a6aa53ab46b23e82856849773fe StaticDependenciesID=2de5dbab097915ce7bfd0aa55a3433f2 
+Importing 'GUID: 4f6d567bd1fe4e6b85438c59357e4b07 - Path: Assets/PlayerMageV3Attack.anim' with importer (NativeFormatImporter)
+Imported 'GUID: 4f6d567bd1fe4e6b85438c59357e4b07' -> (Import Result ID: '6323d0e534cccb5221a9b1ec0242f906') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=83641a81f76362fbf5ef1eee8bc51f3d DependenciesID=52e901b81960a86255b0d4929d3f1393 StaticDependenciesID=70e09b0278e8292ac8a9a7c6aa40e065 
+Importing 'GUID: ff99aea126c44e20b6ae40091f88ae30 - Path: Assets/PlayerMageV3Hit.anim' with importer (NativeFormatImporter)
+Imported 'GUID: ff99aea126c44e20b6ae40091f88ae30' -> (Import Result ID: 'd7631d72d67081ccd8acdf206ac04890') in 0.003 seconds [static dependencies only]. Details - ImportResultOutputID=e7aef38973425c18be4df493b61ee2ed DependenciesID=53ed107878b5cfbb293087d92a41cacc StaticDependenciesID=5b414577b4060a51c558876de1d24218 
+Importing 'GUID: 09bbf4761317dee41857c1c74bdbf7a4 - Path: Assets/PlayerMageV3Idle.controller' with importer (NativeFormatImporter)
+Imported 'GUID: 09bbf4761317dee41857c1c74bdbf7a4' -> (Import Result ID: '1c42e10ee865f9fcb4e2d1a077a2172e') in 0.001 seconds [static dependencies only]. Details - ImportResultOutputID=5bb56cd9c7a083efb1b42fa50606e1c8 DependenciesID=05e57a01309aaeaf9690bdfc0eb49442 StaticDependenciesID=a0a3b144ab2d5530d6c962bfa17293f6 
+Starting new worker id: 0 with log in C:/Users/PC/Mallow Spellpack/.utmp/SlimeStyleV3/ImportProject/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=ef1c322128212614ebf2fc8ae46f700e): Total: 0.924 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=6 (actual=6, local cache=0, cache server=0)
+		Asset DB Process Time: managed=1 ms, native=498 ms
+		Asset DB Callback time: managed=46 ms, native=2 ms
+		Scripting: domain reloads=1, domain reload time=365 ms, compile time=3 ms, other=6 ms
+		Project Asset Count: scripts=22, non-scripts=23
+		Asset File Changes: new=6, changed=6, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 2.115ms
+	ApplyChangesToAssetFolders: 0.112ms
+	Scan: 28.277ms
+	Collect global state as custom dependencies: 8.724ms
+	OnSourceAssetsModified: 0.571ms
+	CategorizeAssets: 0.227ms
+	CompileScripts: 3.098ms
+	ImportOutOfDateAssets: 426.503ms (400.115ms without children)
+		ImportManagerImport: 19.010ms (1.317ms without children)
+		UnloadImportedAssets: 0.108ms
+		ImportSchedulerStart: 7.256ms
+	PostProcessAllAssets: 47.108ms
+		VCAutoAddAssetPostprocess 0.843ms
+		VersionControlSettings.HiddenFilePostprocess 0.164ms
+		MonoPostProcessAllAssets: 45.588ms
+			AssetPostprocessor.OnPostprocessAllAssets 9.986ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 7.411ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.945ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 6.075ms
+			AssetChangedListener.OnPostprocessAllAssets 1.859ms
+			SyncVS.PostprocessSyncProject 1.560ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.053ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.799ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.698ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.522ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.422ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.261ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.242ms
+			AssetEvents.OnPostprocessAllAssets 0.184ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.174ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.150ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.126ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.125ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.119ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.081ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.076ms
+	PostAssetChangesProfiler: 0.768ms
+	UnloadStreamsBegin: 1.233ms
+	Untracked: 401.096ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 6.306ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-ImportProject
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 14 unused Assets / (0.5 MB). Loaded Objects now: 793.
+Memory consumption went from 192.7 MB to 192.2 MB.
+Total: 4.124100 ms (FindLiveObjects: 0.044600 ms CreateObjectMapping: 0.006500 ms MarkObjects: 3.876400 ms  DeleteObjects: 0.194800 ms)
+
+Batchmode quit successfully invoked - shutting down!
+Curl error 42: Callback aborted
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-PC-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-PC channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

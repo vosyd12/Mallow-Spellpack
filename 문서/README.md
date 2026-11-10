@@ -1,5 +1,13 @@
 # 프로젝트 현황과 문서 안내
 
+2026-11-10 최신: [플레이어 행동 코드 검토](2026-11-10-PLAYER-MOTION-CODE-REVIEW.md). 사용자 작성 Player·PlayerAttack·PlayerMotion에 사망·이벤트·발사·상태 전환 코드가 준비됐다. **PlayerMotion 부착과 Attack/Hit 이벤트 연결은 미완료**이며 자동 공격도 연결 완료로 보지 않는다. 코드 수정·새 실행 검증 없이 관련 문서를 최신화했다.
+
+2026-11-10 이전 연결: [슬라임 Death 연결·플레이어 상태 등록](2026-11-10-ANIMATION-WIRING.md)을 완료했다. 사용자 코드에 맞춰 3크기 Death 상태·Override·클립·그림자 참조를 연결했다. 당시 플레이어는 상태 등록만 완료했으며 이후 작성한 코드와 남은 연결은 위 최신 검토를 따른다. 원본 게임 Play 검증은 미실시다.
+
+2026-11-10 이전 제작: [슬라임 새 스타일 적용·Death 클립](2026-11-10-SLIME-STYLE-V3-APPLIED.md)으로 3크기·6속성 파츠와 기본 3종/Variant 18종 연결을 교체했다. [새 외형·Jump·Death 미리보기](슬라임StyleV3/Preview.html)를 제공한다. 이후 Death 연결은 위 연결 기록을 따른다.
+
+2026-11-10 최신: [Attack·피격·사망 단독 클립 3종](2026-11-10-PLAYER-ACTION-CLIPS.md)을 제작했다. 기존 파츠·코드·씬·Controller·Idle/Walk는 유지했고 게임 연결은 하지 않았다. [GIF 모아보기](플레이어ActionV3/Preview.html)는 클립 곡선을 오프라인 합성한 미리보기이며, 별도 Unity 프로젝트에서는 임포트를 확인했다.
+
 2026-11-10 최신 정리: [플레이어 작업 현황·기본 행동 5종](2026-11-10-PLAYER-WORK-SUMMARY.md)에 표준 원화·PSD/PNG·실제 파츠 적용, Idle/Walk 제작·연결 상태, FirePos 발사 위치, 피격 개선안과 확정한 사망 방향을 통합했다. Attack·피격·사망과 상태 연결의 남은 작업을 구분했다. 이번 정리는 문서만 변경했으며 새 실행 검증은 하지 않았다.
 
 2026-11-10 최신: [Walk 단독 클립·실제 Unity 프리뷰 GIF](2026-11-10-PLAYER-WALK-CLIP.md)를 추가했다. C#·씬·기존 Idle은 유지하고 자동 전환은 연결하지 않았다. [전체 피격 그라데이션·Bloom](2026-11-10-PLAYER-HIT-GLOW-TODO.md)은 후속 개선 항목으로만 등록했다.

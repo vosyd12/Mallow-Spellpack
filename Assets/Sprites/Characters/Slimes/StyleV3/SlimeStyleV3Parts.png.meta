@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: f303f9da5e1d4231aa22f7ac880d5537
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Small_PureBody
+  - first:
+      213: 21300002
+    second: Small_FireBody
+  - first:
+      213: 21300004
+    second: Small_WaterBody
+  - first:
+      213: 21300006
+    second: Small_EarthBody
+  - first:
+      213: 21300008
+    second: Small_WindBody
+  - first:
+      213: 21300010
+    second: Small_LightningBody
+  - first:
+      213: 21300012
+    second: Small_Eyes
+  - first:
+      213: 21300014
+    second: Small_Mouth
+  - first:
+      213: 21300016
+    second: Medium_PureBody
+  - first:
+      213: 21300018
+    second: Medium_FireBody
+  - first:
+      213: 21300020
+    second: Medium_WaterBody
+  - first:
+      213: 21300022
+    second: Medium_EarthBody
+  - first:
+      213: 21300024
+    second: Medium_WindBody
+  - first:
+      213: 21300026
+    second: Medium_LightningBody
+  - first:
+      213: 21300028
+    second: Medium_Eyes
+  - first:
+      213: 21300030
+    second: Medium_Mouth
+  - first:
+      213: 21300032
+    second: Large_PureBody
+  - first:
+      213: 21300034
+    second: Large_FireBody
+  - first:
+      213: 21300036
+    second: Large_WaterBody
+  - first:
+      213: 21300038
+    second: Large_EarthBody
+  - first:
+      213: 21300040
+    second: Large_WindBody
+  - first:
+      213: 21300042
+    second: Large_LightningBody
+  - first:
+      213: 21300044
+    second: Large_Eyes
+  - first:
+      213: 21300046
+    second: Large_Mouth
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+  isReadable: 0
+  streamingMipmaps: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot:
+    x: 0.5
+    y: 0.5
+  spritePixelsToUnits: 128
+  spriteBorder:
+    x: 0
+    y: 0
+    z: 0
+    w: 0
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Small_PureBody
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 627
+        width: 156
+        height: 118
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f805cdf4115408191bfd1cdfe5655be
+      internalID: 21300000
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_FireBody
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 627
+        width: 157
+        height: 118
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6e8b239320745d0a2609e515e488d04
+      internalID: 21300002
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_WaterBody
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 627
+        width: 156
+        height: 118
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad387fa97226401c80b1adbfed511bde
+      internalID: 21300004
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_EarthBody
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 627
+        width: 156
+        height: 118
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063e7ff42ebb47f495cc6cb03ef88f67
+      internalID: 21300006
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_WindBody
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 627
+        width: 157
+        height: 118
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d000bd70d56d408bbdda93b097cf5677
+      internalID: 21300008
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_LightningBody
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 627
+        width: 156
+        height: 118
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b5e37c5435497a8baeda8c150833fa
+      internalID: 21300010
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_Eyes
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 673
+        width: 147
+        height: 51
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0.5
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0241b7522a42298fdbdd084bbcee9e
+      internalID: 21300012
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small_Mouth
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 658
+        width: 60
+        height: 47
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0.5
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1892701cfe0e464c9756cf96e4344321
+      internalID: 21300014
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_PureBody
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 383
+        width: 185
+        height: 154
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c064e2b2b14b18bd90a942a30ddcec
+      internalID: 21300016
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_FireBody
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 384
+        width: 186
+        height: 154
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d945b3f3c440508979337cfbaf7d86
+      internalID: 21300018
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_WaterBody
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 382
+        width: 188
+        height: 157
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0a765d72e24574b3f4b494bdaad100
+      internalID: 21300020
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_EarthBody
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 382
+        width: 188
+        height: 157
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b19f487676f49efade428289480cecd
+      internalID: 21300022
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_WindBody
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 382
+        width: 187
+        height: 157
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d528a8639d8f4722ab662472e5c10990
+      internalID: 21300024
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_LightningBody
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 382
+        width: 190
+        height: 157
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbccaf8fc0f141119be1b52bea70b229
+      internalID: 21300026
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_Eyes
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 443
+        width: 161
+        height: 59
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0.5
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcfb08fa97d4fe0891a2ed6ddd5c810
+      internalID: 21300028
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medium_Mouth
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 429
+        width: 69
+        height: 52
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0.5
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63ae2e415e9449f8c983d7a045df947
+      internalID: 21300030
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_PureBody
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 148
+        width: 173
+        height: 152
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5de5dc8946b439bb2fdf13324ca750a
+      internalID: 21300032
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_FireBody
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 148
+        width: 174
+        height: 152
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f766c888e424e5d93d1c4fa3cc62d80
+      internalID: 21300034
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_WaterBody
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 148
+        width: 172
+        height: 152
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded73b0fe79f4b248fa9f37ff33513e8
+      internalID: 21300036
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_EarthBody
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 148
+        width: 172
+        height: 152
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d5389126157476680d9650e2fcfe638
+      internalID: 21300038
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_WindBody
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 148
+        width: 172
+        height: 152
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3535b021716494eb886488325bbc9d8
+      internalID: 21300040
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_LightningBody
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 148
+        width: 173
+        height: 152
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8bf0e57e3b41c2a487674e9ae46b4c
+      internalID: 21300042
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_Eyes
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 206
+        width: 116
+        height: 49
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0.5
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb7aed4620240cf8190a9638582745d
+      internalID: 21300044
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large_Mouth
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 173
+        width: 174
+        height: 76
+      alignment: 9
+      pivot:
+        x: 0.5
+        y: 0.5
+      border:
+        x: 0
+        y: 0
+        z: 0
+        w: 0
+      customData: null
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbe6c0991c3443ab2f5efa0f278ebd5
+      internalID: 21300046
+      vertices: []
+      indices: null
+      edges: []
+      weights: []
+    outline: []
+    customData: null
+    physicsShape: []
+    bones: []
+    spriteID: 3ac8954f647845f4bf763eda19f1a6bc
+    internalID: 0
+    vertices: []
+    indices: null
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Small_PureBody: 21300000
+      Small_FireBody: 21300002
+      Small_WaterBody: 21300004
+      Small_EarthBody: 21300006
+      Small_WindBody: 21300008
+      Small_LightningBody: 21300010
+      Small_Eyes: 21300012
+      Small_Mouth: 21300014
+      Medium_PureBody: 21300016
+      Medium_FireBody: 21300018
+      Medium_WaterBody: 21300020
+      Medium_EarthBody: 21300022
+      Medium_WindBody: 21300024
+      Medium_LightningBody: 21300026
+      Medium_Eyes: 21300028
+      Medium_Mouth: 21300030
+      Large_PureBody: 21300032
+      Large_FireBody: 21300034
+      Large_WaterBody: 21300036
+      Large_EarthBody: 21300038
+      Large_WindBody: 21300040
+      Large_LightningBody: 21300042
+      Large_Eyes: 21300044
+      Large_Mouth: 21300046
+  mipmapLimitGroupName: null
+  userData: null
+  assetBundleName: null
+  assetBundleVariant: null

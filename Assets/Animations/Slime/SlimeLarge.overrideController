@@ -3,13 +3,39 @@
 --- !u!221 &22100000
 AnimatorOverrideController:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
   m_Name: SlimeLarge
-  m_Controller: {fileID: 9100000, guid: 45b4723e9bc647a9899b466a01320670, type: 2}
+  m_Controller:
+    fileID: 9100000
+    guid: 45b4723e9bc647a9899b466a01320670
+    type: 2
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 5afc478a97e84ad3861943df593530ee, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 62a76449cb264a3b858abd052a773399, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 611f794c4d834502b301e04e21f3f1cb, type: 2}
-    m_OverrideClip: {fileID: 7400000, guid: 8690ea90b8a646f68199baa0b3db7e2a, type: 2}
+  - m_OriginalClip:
+      fileID: 7400000
+      guid: 5afc478a97e84ad3861943df593530ee
+      type: 2
+    m_OverrideClip:
+      fileID: 7400000
+      guid: 62a76449cb264a3b858abd052a773399
+      type: 2
+  - m_OriginalClip:
+      fileID: 7400000
+      guid: 611f794c4d834502b301e04e21f3f1cb
+      type: 2
+    m_OverrideClip:
+      fileID: 7400000
+      guid: 8690ea90b8a646f68199baa0b3db7e2a
+      type: 2
+  - m_OriginalClip:
+      fileID: 7400000
+      guid: 86f14f9fb69f4bed968725c0c4cdfc51
+      type: 2
+    m_OverrideClip:
+      fileID: 7400000
+      guid: 32d949767b4e44c4a86b433e3294c527
+      type: 2

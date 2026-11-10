@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Enemy), typeof(Rigidbody2D))]
 public class SlimeMotion : MonoBehaviour
@@ -65,6 +66,12 @@ public class SlimeMotion : MonoBehaviour
     [SerializeField]
     private float _attackHitRange = 0.6f;
 
+    [SerializeField]
+    private AnimationClip _deathClip;
+
+    [SerializeField]
+    private GameObject _groundShadow;
+
     private Enemy _enemy;
     private Rigidbody2D _rd;
 
@@ -76,6 +83,9 @@ public class SlimeMotion : MonoBehaviour
     private float _jumpSpeed;
     private float _attackCooldownRemaining;
     private bool _attackDustSpawned;
+
+    private static readonly int DeathState =
+        Animator.StringToHash("Base Layer.Death");
 
     private void Awake()
     {
@@ -95,18 +105,32 @@ public class SlimeMotion : MonoBehaviour
 
     private void OnEnable()
     {
+        _enemy.Died += PlayDeath;
+
         ChangeState(MotionState.Idle);
         _attackCooldownRemaining = Random.Range(0f, _attackCooldown);
     }
 
     private void OnDisable()
     {
+        if(_enemy != null)
+        {
+            _enemy.Died -= PlayDeath;
+        }
+
         if (_rd != null)
+        {
             _rd.linearVelocity = Vector2.zero;
+        }
     }
 
     private void FixedUpdate()
     {
+        if(_enemy.IsDead)
+        {
+            return;
+        }
+
         _rd.linearVelocity = Vector2.zero;
         _attackCooldownRemaining = Mathf.Max(
             0f, _attackCooldownRemaining - Time.fixedDeltaTime);
@@ -283,5 +307,40 @@ public class SlimeMotion : MonoBehaviour
         {
             player.TakeDamage(_enemy.EnemyState.Attack);
         }
+    }
+
+    private void PlayDeath()
+    {
+        StartCoroutine(DeathRoutine());
+    }
+
+    // Death 재생 → 클립 길이만큼 대기 → 제거를 순서대로 표현하기 쉬워
+    // 코루틴을 사용한다. 기다리는 동안 다른 게임 동작은 계속 진행된다.
+    // 실제 종료를 감지하는 방식은 아니므로 재생 클립과 _deathClip이 같고,
+    // Animator 재생 속도가 1이라는 전제가 필요하다.
+
+    // 대안:
+    // - Animation Event: 클립의 지정 시점에서 제거 함수를 호출한다.
+    // - 상태 타이머: Death 상태에서 시간을 누적하고 종료 시 제거한다.
+    // - Awaitable: Unity 6의 async/await로 대기 흐름을 표현한다.
+    private IEnumerator DeathRoutine()
+    {
+        if (_groundShadow != null)
+        {
+            _groundShadow.SetActive(false);
+        }
+
+        if (_deathClip == null)
+        {
+            Destroy(gameObject);
+            yield break;
+        }
+
+        _animator.speed = 1f;
+        _animator.Play(DeathState, 0, 0f);
+
+        yield return new WaitForSeconds(_deathClip.length);
+
+        Destroy(gameObject);
     }
 }
