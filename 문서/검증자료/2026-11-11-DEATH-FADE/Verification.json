@@ -1,0 +1,209 @@
+{
+  "verification": "Offline serialized runtime/editor alpha curves, CRC32 bindings and Hermite evaluation; not a Unity Play or native import test",
+  "unityValidation": "Attempted isolated Unity 6000.5.10f1 batch validation; stopped because LicensingClient connection was refused before project import",
+  "clips": [
+    {
+      "source": "Assets/Animations/Player/PlayerDeath.anim",
+      "prefab": "Assets/Prefab/Player/PlayerVisual.prefab",
+      "alphaBindings": 14,
+      "paths": [
+        "IdleMotion/ArmLeft",
+        "IdleMotion/ArmRight",
+        "IdleMotion/Head",
+        "IdleMotion/Head/Eyes",
+        "IdleMotion/Head/EyeUnderlayRight",
+        "IdleMotion/Head/FaceUnderlay",
+        "IdleMotion/Head/HairLeft",
+        "IdleMotion/Head/HairRight",
+        "IdleMotion/Head/Hat",
+        "IdleMotion/Head/Mouth",
+        "IdleMotion/LegLeft",
+        "IdleMotion/LegRight",
+        "IdleMotion/Staff",
+        "IdleMotion/Torso"
+      ],
+      "length": 0.9,
+      "fadeStart": 0.18,
+      "originalDataUnchanged": true,
+      "rgbCurvesAdded": false,
+      "samples": [
+        {
+          "time": 0,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.18,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.36,
+          "alpha": 0.84375,
+          "multiplier": 0.84375
+        },
+        {
+          "time": 0.54,
+          "alpha": 0.5,
+          "multiplier": 0.5
+        },
+        {
+          "time": 0.72,
+          "alpha": 0.15625,
+          "multiplier": 0.15625
+        },
+        {
+          "time": 0.9,
+          "alpha": 0,
+          "multiplier": 0
+        }
+      ],
+      "originalSha256": "4a90d229bd13109a0300a7a3619e69192bf92996f49ab756d96016cd8f2d1daa",
+      "resultSha256": "35501d41c1711e5ec3a51d7f06fbc6c0b07d8f05e9ea34b9d6fe7f9041317faf"
+    },
+    {
+      "source": "Assets/Animations/Slime/SlimeDeathSmall.anim",
+      "prefab": "Assets/Prefab/SlimeSmall.prefab",
+      "alphaBindings": 3,
+      "paths": [
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/Body",
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Eyes",
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Smile"
+      ],
+      "length": 0.9,
+      "fadeStart": 0.18,
+      "originalDataUnchanged": true,
+      "rgbCurvesAdded": false,
+      "samples": [
+        {
+          "time": 0,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.18,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.36,
+          "alpha": 0.84375,
+          "multiplier": 0.84375
+        },
+        {
+          "time": 0.54,
+          "alpha": 0.5,
+          "multiplier": 0.5
+        },
+        {
+          "time": 0.72,
+          "alpha": 0.15625,
+          "multiplier": 0.15625
+        },
+        {
+          "time": 0.9,
+          "alpha": 0,
+          "multiplier": 0
+        }
+      ],
+      "originalSha256": "427780ebb6a1a50aba643194e7ba81c919bf29961bb4cb8873b769d22ae1a69f",
+      "resultSha256": "3e595778f1ebf729e32e7c8d653f1e3325a4f5d41a5cead85b6c951150b4747e"
+    },
+    {
+      "source": "Assets/Animations/Slime/SlimeDeathMedium.anim",
+      "prefab": "Assets/Prefab/SlimeMedium.prefab",
+      "alphaBindings": 3,
+      "paths": [
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/Body",
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Eyes",
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Smile"
+      ],
+      "length": 0.9,
+      "fadeStart": 0.18,
+      "originalDataUnchanged": true,
+      "rgbCurvesAdded": false,
+      "samples": [
+        {
+          "time": 0,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.18,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.36,
+          "alpha": 0.84375,
+          "multiplier": 0.84375
+        },
+        {
+          "time": 0.54,
+          "alpha": 0.5,
+          "multiplier": 0.5
+        },
+        {
+          "time": 0.72,
+          "alpha": 0.15625,
+          "multiplier": 0.15625
+        },
+        {
+          "time": 0.9,
+          "alpha": 0,
+          "multiplier": 0
+        }
+      ],
+      "originalSha256": "2bba0fcecedd78980c6b1ed16cf42abd224ea81cbcdbbb480e8492bed60e70fc",
+      "resultSha256": "77c7b2117adee4679d20d13d8c17a858d886209142fb45c738e0347df7792c0b"
+    },
+    {
+      "source": "Assets/Animations/Slime/SlimeDeathLarge.anim",
+      "prefab": "Assets/Prefab/SlimeLarge.prefab",
+      "alphaBindings": 3,
+      "paths": [
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/Body",
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Eyes",
+        "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Moustache"
+      ],
+      "length": 0.9,
+      "fadeStart": 0.18,
+      "originalDataUnchanged": true,
+      "rgbCurvesAdded": false,
+      "samples": [
+        {
+          "time": 0,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.18,
+          "alpha": 1,
+          "multiplier": 1
+        },
+        {
+          "time": 0.36,
+          "alpha": 0.84375,
+          "multiplier": 0.84375
+        },
+        {
+          "time": 0.54,
+          "alpha": 0.5,
+          "multiplier": 0.5
+        },
+        {
+          "time": 0.72,
+          "alpha": 0.15625,
+          "multiplier": 0.15625
+        },
+        {
+          "time": 0.9,
+          "alpha": 0,
+          "multiplier": 0
+        }
+      ],
+      "originalSha256": "a2a4e5ec24bd94b7b27aa4e0ee0f550741ea28e03642947b0365c20db83472e9",
+      "resultSha256": "c0289c45650ab7208ec0501bdc3ccbeaf0eef161c6f4a2134fe8c1ddf998453e"
+    }
+  ]
+}

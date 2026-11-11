@@ -912,7 +912,7 @@ MonoBehaviour:
   _maxHP: 100
   _maxMP: 50
   _healthBar: {fileID: 741759337}
-  _playerName: "\uCE90\uB9AD\uD130\uBA85"
+  _playerName: vvvv
   _playerInfo: {fileID: 1434674416}
 --- !u!61 &741759332
 BoxCollider2D:
@@ -1096,6 +1096,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthBar
   _fill: {fileID: 1800000003}
   _damageFill: {fileID: 7400000000000000101}
+  _visualRoot: {fileID: 1800000004}
   _damageDelay: 0.2
   _damageSpeed: 1
 --- !u!1 &743493487
@@ -3103,6 +3104,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!1 &1800000004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 82523c5aa5e04bb390d1d15b380153a1, type: 3}
+  m_PrefabInstance: {fileID: 1800000001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1800460048
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,6 +3580,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
+--- !u!95 &6200000000000000101 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8200000000000001002, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+  m_PrefabInstance: {fileID: 6796659043211209505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6200000000000000102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8200000000000001003, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+  m_PrefabInstance: {fileID: 6796659043211209505}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b2c989160ea6a4ebfc7b7da9dcf7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitEffectVisual
 --- !u!1001 &6796659043211209505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3622,6 +3644,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2799553797494269093, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.223
+      objectReference: {fileID: 0}
+    - target: {fileID: 2799553797494269093, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.032
+      objectReference: {fileID: 0}
+    - target: {fileID: 2909453986681470792, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1f65decb9f5546f9a724d701b73ad86c, type: 2}
+    - target: {fileID: 4420121502782796213, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420121502782796213, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.665
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206217103869170830, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.183
+      objectReference: {fileID: 0}
+    - target: {fileID: 5206217103869170830, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487382028074745683, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.177
+      objectReference: {fileID: 0}
+    - target: {fileID: 6487382028074745683, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678069231292196278, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678069231292196278, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.457
+      objectReference: {fileID: 0}
     - target: {fileID: 9221175527499035980, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
       propertyPath: m_Name
       value: Visual
@@ -3632,13 +3698,37 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8678069231292196278, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 769203030}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9221175527499035980, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6796659043211209512}
   m_SourcePrefab: {fileID: 100100000, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
---- !u!212 &6796659043211209506 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4722652164411245386, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+--- !u!1 &6796659043211209510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9221175527499035980, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
   m_PrefabInstance: {fileID: 6796659043211209505}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &6796659043211209511 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2909453986681470792, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
+  m_PrefabInstance: {fileID: 6796659043211209505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6796659043211209512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6796659043211209510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 925c1c5b5ba03f549aa8d838162c8368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMotion
+  _player: {fileID: 741759331}
+  _playerAttack: {fileID: 741759336}
+  _animator: {fileID: 6796659043211209511}
+  _groundShadow: {fileID: 1858815676}
 --- !u!114 &7400000000000000100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3651,9 +3741,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5333306bfff12d84f8908aa07732fefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitReaction
-  _bodyRenderer: {fileID: 6796659043211209506}
-  _hitColor: {r: 1, g: 0.4, b: 0.4, a: 1}
-  _duration: 0.2
+  _effectAnimator: {fileID: 6200000000000000101}
+  _effectVisual: {fileID: 6200000000000000102}
 --- !u!114 &7400000000000000101 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11400002, guid: 82523c5aa5e04bb390d1d15b380153a1, type: 3}

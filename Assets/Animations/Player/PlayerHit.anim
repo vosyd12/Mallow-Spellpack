@@ -9,7 +9,7 @@ AnimationClip:
     fileID: 0
   m_PrefabAsset:
     fileID: 0
-  m_Name: PlayerMageV3Hit
+  m_Name: PlayerHit
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -14715,4 +14715,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.42
+    functionName: FinishAction
+    data:
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

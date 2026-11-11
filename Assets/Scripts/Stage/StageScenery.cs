@@ -8,8 +8,8 @@ public class StageScenery : MonoBehaviour
     [Serializable]
     private class SceneryGroup
     {
-        public GameObject[] Prefabs;                // 생성할 오브젝트 후보
-        public Transform[] SpawnPoints;             // 생성할 오브젝트 위치
+        public GameObject[] Prefabs;                            // 생성할 오브젝트 후보
+        public Transform[] SpawnPoints;                         // 생성할 오브젝트 위치
         public Vector2 ScaleRange = new Vector2(0.9f, 1.1f);    // Prefab원래 크기에 곱할 최소. 최대 배율 사이즈
     }
 

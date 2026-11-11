@@ -117,7 +117,7 @@ public class Enemy : MonoBehaviour
         _rd.linearVelocity = Vector2.zero;
         _rd.simulated = false;
 
-        _healthBar.gameObject.SetActive(false);
+        _healthBar.Hide();
 
         // 사망 연출을 처리하는 컴포넌트가 없으면 바로 제거
         if(Died == null)

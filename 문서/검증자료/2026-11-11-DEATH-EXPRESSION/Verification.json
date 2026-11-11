@@ -1,0 +1,1341 @@
+{
+  "atlas": "Assets/Sprites/Characters/Expressions/DeathFaceParts.png",
+  "atlasGuid": "77ace7d5a959bc886b8be1df8a6f9ac7",
+  "width": 887,
+  "height": 1774,
+  "sprites": [
+    {
+      "name": "Player_DeathEyes",
+      "id": 21300000,
+      "x": 108,
+      "y": 1500,
+      "width": 229,
+      "height": 87,
+      "top": 187,
+      "pixels": 8526
+    },
+    {
+      "name": "Player_DeathMouth",
+      "id": 21300002,
+      "x": 586,
+      "y": 1487,
+      "width": 157,
+      "height": 94,
+      "top": 193,
+      "pixels": 10843
+    },
+    {
+      "name": "Small_DeathEyes",
+      "id": 21300004,
+      "x": 88,
+      "y": 1056,
+      "width": 268,
+      "height": 101,
+      "top": 617,
+      "pixels": 7195
+    },
+    {
+      "name": "Small_DeathMouth",
+      "id": 21300006,
+      "x": 647,
+      "y": 1090,
+      "width": 35,
+      "height": 34,
+      "top": 650,
+      "pixels": 727
+    },
+    {
+      "name": "Medium_DeathEyes",
+      "id": 21300008,
+      "x": 59,
+      "y": 592,
+      "width": 326,
+      "height": 130,
+      "top": 1052,
+      "pixels": 12058
+    },
+    {
+      "name": "Medium_DeathMouth",
+      "id": 21300010,
+      "x": 644,
+      "y": 642,
+      "width": 42,
+      "height": 41,
+      "top": 1091,
+      "pixels": 1086
+    },
+    {
+      "name": "Large_DeathEyes",
+      "id": 21300012,
+      "x": 95,
+      "y": 171,
+      "width": 256,
+      "height": 99,
+      "top": 1504,
+      "pixels": 11237
+    },
+    {
+      "name": "Large_DeathMouth",
+      "id": 21300014,
+      "x": 497,
+      "y": 155,
+      "width": 334,
+      "height": 112,
+      "top": 1507,
+      "pixels": 22426
+    }
+  ],
+  "plans": [
+    {
+      "kind": "Player",
+      "prefab": "Assets/Prefab/Player/PlayerVisual.prefab",
+      "clip": "Assets/Animations/Player/PlayerDeath.anim",
+      "parts": [
+        {
+          "name": "Eyes",
+          "path": "IdleMotion/Head/Eyes",
+          "sprite": {
+            "name": "Player_DeathEyes",
+            "id": 21300000,
+            "x": 108,
+            "y": 1500,
+            "width": 229,
+            "height": 87,
+            "top": 187,
+            "pixels": 8526
+          },
+          "oldSprite": {
+            "guid": "c2d5c43dc099ba742a9ea5c1dee956f2",
+            "id": "-2413935257643217087",
+            "width": 223,
+            "height": 95,
+            "ppu": 804,
+            "pivot": {
+              "x": 0.48430493,
+              "y": 0.48421052
+            }
+          },
+          "baseScale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "factor": 0.15503269677811812,
+          "scale": {
+            "x": 0.15503269677811812,
+            "y": 0.15503269677811812,
+            "z": 1
+          },
+          "coverage": null
+        },
+        {
+          "name": "Mouth",
+          "path": "IdleMotion/Head/Mouth",
+          "sprite": {
+            "name": "Player_DeathMouth",
+            "id": 21300002,
+            "x": 586,
+            "y": 1487,
+            "width": 157,
+            "height": 94,
+            "top": 193,
+            "pixels": 10843
+          },
+          "oldSprite": {
+            "guid": "c2d5c43dc099ba742a9ea5c1dee956f2",
+            "id": "4962177451483423382",
+            "width": 79,
+            "height": 58,
+            "ppu": 804,
+            "pivot": {
+              "x": 0.51898736,
+              "y": 0.51724136
+            }
+          },
+          "baseScale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "factor": 0.12189533112322619,
+          "scale": {
+            "x": 0.12189533112322619,
+            "y": 0.12189533112322619,
+            "z": 1
+          },
+          "coverage": {
+            "oldOpaquePixels": 3246,
+            "uncoveredPixels": 0,
+            "iterations": 18
+          }
+        }
+      ]
+    },
+    {
+      "kind": "Small",
+      "prefab": "Assets/Prefab/SlimeSmall.prefab",
+      "clip": "Assets/Animations/Slime/SlimeDeathSmall.anim",
+      "parts": [
+        {
+          "name": "Eyes",
+          "path": "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Eyes",
+          "sprite": {
+            "name": "Small_DeathEyes",
+            "id": 21300004,
+            "x": 88,
+            "y": 1056,
+            "width": 268,
+            "height": 101,
+            "top": 617,
+            "pixels": 7195
+          },
+          "oldSprite": {
+            "guid": "f303f9da5e1d4231aa22f7ac880d5537",
+            "id": "21300012",
+            "width": 147,
+            "height": 51,
+            "ppu": 128,
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "baseScale": {
+            "x": 0.594468052462585,
+            "y": 0.5944680410305064,
+            "z": 1
+          },
+          "factor": 0.5485074626865671,
+          "scale": {
+            "x": 0.3260701631044776,
+            "y": 0.3260701568338972,
+            "z": 1
+          },
+          "coverage": null
+        },
+        {
+          "name": "Smile",
+          "path": "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Smile",
+          "sprite": {
+            "name": "Small_DeathMouth",
+            "id": 21300006,
+            "x": 647,
+            "y": 1090,
+            "width": 35,
+            "height": 34,
+            "top": 650,
+            "pixels": 727
+          },
+          "oldSprite": {
+            "guid": "f303f9da5e1d4231aa22f7ac880d5537",
+            "id": "21300014",
+            "width": 60,
+            "height": 47,
+            "ppu": 128,
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "baseScale": {
+            "x": 0.5872769066666667,
+            "y": 0.5872768953728793,
+            "z": 1
+          },
+          "factor": 0.42857142857142855,
+          "scale": {
+            "x": 0.25169010285714283,
+            "y": 0.25169009801694825,
+            "z": 1
+          },
+          "coverage": null
+        }
+      ]
+    },
+    {
+      "kind": "Medium",
+      "prefab": "Assets/Prefab/SlimeMedium.prefab",
+      "clip": "Assets/Animations/Slime/SlimeDeathMedium.anim",
+      "parts": [
+        {
+          "name": "Eyes",
+          "path": "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Eyes",
+          "sprite": {
+            "name": "Medium_DeathEyes",
+            "id": 21300008,
+            "x": 59,
+            "y": 592,
+            "width": 326,
+            "height": 130,
+            "top": 1052,
+            "pixels": 12058
+          },
+          "oldSprite": {
+            "guid": "f303f9da5e1d4231aa22f7ac880d5537",
+            "id": "21300028",
+            "width": 161,
+            "height": 59,
+            "ppu": 128,
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "baseScale": {
+            "x": 0.45066902578881984,
+            "y": 0.45066903115392776,
+            "z": 1
+          },
+          "factor": 0.4938650306748466,
+          "scale": {
+            "x": 0.22256967224539875,
+            "y": 0.22256967489503793,
+            "z": 1
+          },
+          "coverage": null
+        },
+        {
+          "name": "Smile",
+          "path": "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Smile",
+          "sprite": {
+            "name": "Medium_DeathMouth",
+            "id": 21300010,
+            "x": 644,
+            "y": 642,
+            "width": 42,
+            "height": 41,
+            "top": 1091,
+            "pixels": 1086
+          },
+          "oldSprite": {
+            "guid": "f303f9da5e1d4231aa22f7ac880d5537",
+            "id": "21300030",
+            "width": 69,
+            "height": 52,
+            "ppu": 128,
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "baseScale": {
+            "x": 0.42401655652173914,
+            "y": 0.42401656156955575,
+            "z": 1
+          },
+          "factor": 0.4107142857142857,
+          "scale": {
+            "x": 0.17414965714285713,
+            "y": 0.17414965921606754,
+            "z": 1
+          },
+          "coverage": null
+        }
+      ]
+    },
+    {
+      "kind": "Large",
+      "prefab": "Assets/Prefab/SlimeLarge.prefab",
+      "clip": "Assets/Animations/Slime/SlimeDeathLarge.anim",
+      "parts": [
+        {
+          "name": "Eyes",
+          "path": "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Eyes",
+          "sprite": {
+            "name": "Large_DeathEyes",
+            "id": 21300012,
+            "x": 95,
+            "y": 171,
+            "width": 256,
+            "height": 99,
+            "top": 1504,
+            "pixels": 11237
+          },
+          "oldSprite": {
+            "guid": "f303f9da5e1d4231aa22f7ac880d5537",
+            "id": "21300044",
+            "width": 116,
+            "height": 49,
+            "ppu": 128,
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "baseScale": {
+            "x": 0.47448275862068967,
+            "y": 0.4744827518423646,
+            "z": 1
+          },
+          "factor": 0.453125,
+          "scale": {
+            "x": 0.215,
+            "y": 0.21499999692857147,
+            "z": 1
+          },
+          "coverage": null
+        },
+        {
+          "name": "Moustache",
+          "path": "VisualRoot/ReadabilityScale/BodyMotion/Visual/FaceMotion/Face/Moustache",
+          "sprite": {
+            "name": "Large_DeathMouth",
+            "id": 21300014,
+            "x": 497,
+            "y": 155,
+            "width": 334,
+            "height": 112,
+            "top": 1507,
+            "pixels": 22426
+          },
+          "oldSprite": {
+            "guid": "f303f9da5e1d4231aa22f7ac880d5537",
+            "id": "21300046",
+            "width": 174,
+            "height": 76,
+            "ppu": 128,
+            "pivot": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          },
+          "baseScale": {
+            "x": 0.5002298850574713,
+            "y": 0.5002298779113302,
+            "z": 1
+          },
+          "factor": 0.5209580838323353,
+          "scale": {
+            "x": 0.2605988023952096,
+            "y": 0.2605987986723696,
+            "z": 1
+          },
+          "coverage": null
+        }
+      ]
+    }
+  ],
+  "protectedHashes": [
+    {
+      "file": "Assets/Scripts/Bullet.cs",
+      "hash": "a08423eec398d121e1094967f4367a5a1b3a5f9b8fe75d4d561df0fbd4427683"
+    },
+    {
+      "file": "Assets/Scripts/Bullet.cs.meta",
+      "hash": "4c31fc1c4319715238c3ad24a30a4473bc86d531d25103bbf6bf53d3251e5d44"
+    },
+    {
+      "file": "Assets/Scripts/Effects/HitEffectVisual.cs",
+      "hash": "cffa27dc67225287ef00c308f602fd0849d7a3073831931a916227573885ec7f"
+    },
+    {
+      "file": "Assets/Scripts/Effects/HitEffectVisual.cs.meta",
+      "hash": "61f06577bfa33b2142a482afd0c1192c88eaf21f99b7df39660644befd9da1d5"
+    },
+    {
+      "file": "Assets/Scripts/Effects/HitReaction.cs",
+      "hash": "3439a1fdebfceb536d07bb08e4a074ddae10002c7e767ec7d40a30d20b8e6f02"
+    },
+    {
+      "file": "Assets/Scripts/Effects/HitReaction.cs.meta",
+      "hash": "aed64cdced755e37d9020c99747ec495169da1c2c34683ceba8f3bfeaa4fa975"
+    },
+    {
+      "file": "Assets/Scripts/Effects/LandingDust.cs",
+      "hash": "6de72eb3de6b6372c24d8ff769fceb8ac5425fd3d77b6354a16a449d12ed6c82"
+    },
+    {
+      "file": "Assets/Scripts/Effects/LandingDust.cs.meta",
+      "hash": "95f4b57a59288a72852a0994419d81e33941e7c2e2d5d90104d80e4113089335"
+    },
+    {
+      "file": "Assets/Scripts/Effects/LandingDustPool.cs",
+      "hash": "5c154d4caa47a722350ab3ef4d8510760081d8353c2e551e56f6071669aebc41"
+    },
+    {
+      "file": "Assets/Scripts/Effects/LandingDustPool.cs.meta",
+      "hash": "5ee8d4c93b9085b826dd5835262564ce34d71f5719242f83f03e4d0c4e5c256c"
+    },
+    {
+      "file": "Assets/Scripts/Effects.meta",
+      "hash": "d110563d6ef410c0ebc5b3a62836abbf5687789dcc55ee931a0c74c7829a5ac3"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/Enemy.cs",
+      "hash": "0cafcd860509b354f990e0f5f378fe3e36fc396907b63604329d425b529ea1a7"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/Enemy.cs.meta",
+      "hash": "6c245741b1277bba0c3063375002fb59c9e5b5952ceb59b4ef330a01d3966bb8"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+      "hash": "c45ea7855ce166e46fa1f843778f11cc9ded4bad5838ac9c2c0c2b4e0b7ab6c4"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/EnemySpawner.cs.meta",
+      "hash": "f918b5e36905b70a40f1c80a29391d388178635f37a62a43fe8136fe5e0f6aa4"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/SlimeMotion.cs",
+      "hash": "f91f4699ca52f4a3bcc09dec78182ea9a3a7c32217d5d685157d51529f360855"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/SlimeMotion.cs.meta",
+      "hash": "7a630eb9d6c5c638af3ca5bef1b8b6e1469d245dcba5c0160c7ab4d3743a1291"
+    },
+    {
+      "file": "Assets/Scripts/Enemy.meta",
+      "hash": "b4d6e6c3302874db2287eab3afd14f74e8ccec431d09e4bbbb980873a65ef4b7"
+    },
+    {
+      "file": "Assets/Scripts/Player/Player.cs",
+      "hash": "d4a69081019a31f788a450a96695afcb7d907d8913bc9636c88939ed7d68f49e"
+    },
+    {
+      "file": "Assets/Scripts/Player/Player.cs.meta",
+      "hash": "80898023a6469f5312ec77a9c785270573e66cda871eefdcc2864529af9f5afb"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerAttack.cs",
+      "hash": "2c40644ba9e0e3421bbb69a3a6f51da76693b6cc8ff3d3573c302bcc14ea4eda"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerAttack.cs.meta",
+      "hash": "80712f6c989e972b223c1f952120942819f53fc8f237da6ba173768b42da8c3d"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerMotion.cs",
+      "hash": "8a511d8a85b7d428a8f875ac4cb9cd181f92411d3702d0ddf36ff44f43c973c3"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerMotion.cs.meta",
+      "hash": "40b85d59045e30ab31a6987205ae91bbb91ddc2bda6ffea9e8ef287cdb6b607d"
+    },
+    {
+      "file": "Assets/Scripts/Player.meta",
+      "hash": "8cc86859e6a1953c478fb2ed39f8aabebe4d6394fd4402fa6f7b25f528d8da3a"
+    },
+    {
+      "file": "Assets/Scripts/Stage/Stage.cs",
+      "hash": "849a8eb1cee978def6fa993ad74f2f58fb661b752543f8f9618e68f8f8111e23"
+    },
+    {
+      "file": "Assets/Scripts/Stage/Stage.cs.meta",
+      "hash": "6fc53c22c2b87653fe35aa4c6852ea6f1a49179be83b8857e0b0abc2c1fddfb7"
+    },
+    {
+      "file": "Assets/Scripts/Stage/StageScenery.cs",
+      "hash": "b47764802a98d6005a060b53b5aab1152d75e049e241aa18b50bf62a3658fbe4"
+    },
+    {
+      "file": "Assets/Scripts/Stage/StageScenery.cs.meta",
+      "hash": "e1a1e4acb7f2fb61db55ad7409417d2a86d81d4c8cf8bc00902e72b06623c94a"
+    },
+    {
+      "file": "Assets/Scripts/Stage.meta",
+      "hash": "457f7d78dc5d99672b255b06bbcaf956c3a42d2f92b28af75d57b3076f38d8c9"
+    },
+    {
+      "file": "Assets/Scripts/StateDTO/EnemyState.cs",
+      "hash": "caf8821af122db91545f195da0edd706a6112e6a4199d58aa18f13a53fc2c910"
+    },
+    {
+      "file": "Assets/Scripts/StateDTO/EnemyState.cs.meta",
+      "hash": "5f82a36089ec0967e3b9f16989327c284356985e40ee5634b8ac50aeacd82db1"
+    },
+    {
+      "file": "Assets/Scripts/StateDTO/PlayerState.cs",
+      "hash": "949e31fd5f63139161f17e828fce7fb8d7bc22c58b1cea345c10166c0b25e5ce"
+    },
+    {
+      "file": "Assets/Scripts/StateDTO/PlayerState.cs.meta",
+      "hash": "bf428cb6fe0e88f05640fa3e2db34c89bed600fbdb547cbde9afe8bdf9800da7"
+    },
+    {
+      "file": "Assets/Scripts/StateDTO.meta",
+      "hash": "b0664d3ed0ec4382022c3e08f7861cc8a481ba3054df3aa6dd514555f97170a9"
+    },
+    {
+      "file": "Assets/Scripts/UI/HealthBar.cs",
+      "hash": "833fe96293addbbb6b4f5c13c50b66a4f01b83458ead90ea28c50f158f1567a8"
+    },
+    {
+      "file": "Assets/Scripts/UI/HealthBar.cs.meta",
+      "hash": "9fd80e589cc39d3f0b345ebe2f9abb6ef871020df722ee2889807dce461fad9d"
+    },
+    {
+      "file": "Assets/Scripts/UI/PlayerInfo.cs",
+      "hash": "97769522e65817f84684ad2fdcfc5d2811f85a803484794d154dc7df29c40f32"
+    },
+    {
+      "file": "Assets/Scripts/UI/PlayerInfo.cs.meta",
+      "hash": "d70a65da1c64d21ac360f3be4854cdf2f92caf9a7116f54cca584689ae5ae883"
+    },
+    {
+      "file": "Assets/Scripts/UI/StageInfo.cs",
+      "hash": "932bb663831c1e962702ec5bf64b7a995b294837bcd1d6755ed62d38d929aa32"
+    },
+    {
+      "file": "Assets/Scripts/UI/StageInfo.cs.meta",
+      "hash": "c468e596c5f157692f69a32238e7d10def2e033711ddfb5bfc55bca87c609da5"
+    },
+    {
+      "file": "Assets/Scripts/UI.meta",
+      "hash": "6d31769bcc677e4503995651e29ba01a9e10decd07eb5dedb2261297de0d2474"
+    },
+    {
+      "file": "Assets/Prefab/Bullet.prefab",
+      "hash": "d3e07aee0efd8e2d5fa3c84e4803dbbb3933f82fe77ceaacbc68fc8e8a4402b3"
+    },
+    {
+      "file": "Assets/Prefab/Bullet.prefab.meta",
+      "hash": "a1ca96680ece62a276ae95d275f5bc892d874394673062dbb01be177549eac33"
+    },
+    {
+      "file": "Assets/Prefab/Effects/CameraGroundShadow.prefab",
+      "hash": "92e0cdde51fc7a9f225f9009f206fbaa61375a504097829a91d7da217fb2f668"
+    },
+    {
+      "file": "Assets/Prefab/Effects/CameraGroundShadow.prefab.meta",
+      "hash": "8235de6e05d1cdad3f966e036354eb0f2e4cc56858de4e7a4ba9143c7a965f10"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDust.prefab",
+      "hash": "9e19662969ecb246cf543817eda65e2f896aea24aa815a4dd1ade820aa095a13"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDust.prefab.meta",
+      "hash": "2a797b71c8b5459a21a79fb4a68e0e20431df7efcb8b4737f61df622f542e646"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustEarth.prefab",
+      "hash": "ca95d806564396b64d563b9d4c4d4e38537f915d232fbcce93f5aed64b4a1537"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustEarth.prefab.meta",
+      "hash": "cbd04c8e8eda113cc5be4006ce7c2c4cb619e3c38bcc59d58686f8cf1cf46bea"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustFire.prefab",
+      "hash": "e99417af1e0f8f1fefc354a3fac94f6105344b71bf8695c638e6c93c8bb1b98e"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustFire.prefab.meta",
+      "hash": "8b6cfb3ccae6171e08d6ec37dde5ed87d13ba64c5adb718a9f357c1b1b1a0699"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustLightning.prefab",
+      "hash": "83dd123b1b6454f532dc7de4d7f2c69c571737599f9c03d02e2d38b58ca7ec67"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustLightning.prefab.meta",
+      "hash": "d8b8831dc3340fc8576ec7557f656bedcf9f51aa9629c33358c697407a8ab3ec"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustPure.prefab",
+      "hash": "8c8db4432f6822821ebd78352b3c77181908f02e39106a7e7683c061c9b7da90"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustPure.prefab.meta",
+      "hash": "1067fca0fd4005523fe824d7c28106da46c91dddfbb07b642bc2506ba4996ad6"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustWater.prefab",
+      "hash": "0a1725a85b84509427ac27e32924988de3bfd26453a664ffd58230d236d6059b"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustWater.prefab.meta",
+      "hash": "5b53826dc1bfb7545c56ac2226943221ae6a412dd46b91fc98d237678f624f1b"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustWind.prefab",
+      "hash": "35e31b6f736bd5afe5405bfbf3b79f608d86e95a325f6028ae0ac09fe8c804ef"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingDustWind.prefab.meta",
+      "hash": "64368dd5a11039742e9595e7b212917c87b4700fa2a98d0e27bb5dcd96978413"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingRipple.prefab",
+      "hash": "9b98249afb0c8ce181119ea1c8147c84b53edbd34bc35dcaf7a27e6f2d094209"
+    },
+    {
+      "file": "Assets/Prefab/Effects/LandingRipple.prefab.meta",
+      "hash": "6e04d7e155a4a25eb41a23f223b37a06256fb00344d38519c99d9d55c415031a"
+    },
+    {
+      "file": "Assets/Prefab/Effects.meta",
+      "hash": "4ecb65b614a9bd19cc2b8d07c19893c9f283bf3f4c0d16f72491cdcf1b28970f"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowerBushA.prefab",
+      "hash": "be56f9b0466adb6f9322447a3bef744feb6f3c9f866a5c1d688b3a09dd0749e0"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowerBushA.prefab.meta",
+      "hash": "6d36f5bb924d968b7dafa916fff232b68420d25042cbb70120ad8e03b90bda4d"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowerBushB.prefab",
+      "hash": "9a9eb30472ae91f7a5506c3d1917b2fb90950582bad1b4858ccea5d38fafb9ca"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowerBushB.prefab.meta",
+      "hash": "2f035019d2805604e8d25ca4d2958dccc7ce1ec67a1cb42e5676c4ac567d7eb1"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowersA.prefab",
+      "hash": "a9de23bd39c82a6a23028f3f7aa9eded71e2e3da597a31f284f79240c8f8f6e5"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowersA.prefab.meta",
+      "hash": "0e925837c56e0341e6264591fc279cb9eabe9cf1a348e2c42def31f2ba88446a"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowersB.prefab",
+      "hash": "2f96ec71fe3893460e3a731c58435ab26e9893d8aa7e012f8780e1aa09a5582d"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowFlowersB.prefab.meta",
+      "hash": "a0ae42d7b79ec5144f581fb4582640f5976589b14203c3a9dd95cf24234cad91"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowGrassClumpA.prefab",
+      "hash": "4a1c8a73ede8dd2409e5c47b20d9428c2f4afc116bbeb9083ae827f2f29ae484"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowGrassClumpA.prefab.meta",
+      "hash": "9bd6418acf6e6f52575935bb405cc59ec984df86b654e4a98d67110c1da051c9"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowGrassClumpB.prefab",
+      "hash": "58286d632556d639bbfffc93e6ea4d89746d10cb4e03d01ba933fbe2d7916f51"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowGrassClumpB.prefab.meta",
+      "hash": "06cc969330a9032c2deb54f25bb9fa8f2b7526d23fbec6cedda89637ddd632f6"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowOakRound.prefab",
+      "hash": "a025a8400452310a71565cbb0afba9b7d612365421644ea05f53b3bafecc05da"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowOakRound.prefab.meta",
+      "hash": "7d6de3d36cebd6386d3560e0a4b591436170cf2b9c12da0a69e56f42988e6d56"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowOakTall.prefab",
+      "hash": "447633dcbdfb2bb209a8085a3be036e3be4c8311f41a5447791167d62012b080"
+    },
+    {
+      "file": "Assets/Prefab/Environment/MeadowOakTall.prefab.meta",
+      "hash": "d26ea46ff38d405fd3b4a9635fc7d50f8ca0468b36433d47073b594bdf14b7bd"
+    },
+    {
+      "file": "Assets/Prefab/Environment.meta",
+      "hash": "703b131d4183cfaa09dfdacf6324fd32c124bcb988fe04612e0c15e7652a6db9"
+    },
+    {
+      "file": "Assets/Prefab/Player/PlayerVisual.prefab",
+      "hash": "795dc01741b37c1c3fff0848a4fa20e5bf4f9de613bd272fa56d9d5f7ffa0425"
+    },
+    {
+      "file": "Assets/Prefab/Player/PlayerVisual.prefab.meta",
+      "hash": "3d65eac990af7f3e99f51b1afa73866c188c782ef8cb7b8b300a6b1f6582b91b"
+    },
+    {
+      "file": "Assets/Prefab/Player.meta",
+      "hash": "cfa397f868538e8ba78c3afee08a6a00d6e4393400c46992dbb57fe68c96934b"
+    },
+    {
+      "file": "Assets/Prefab/SlimeLarge.prefab",
+      "hash": "693f568f8b1be1c56f6b27ce4d5a33cbb6eda3945b96146e7693b8816b810316"
+    },
+    {
+      "file": "Assets/Prefab/SlimeLarge.prefab.meta",
+      "hash": "5ee9dcfaf4ce0cbe31be23f1266dff9d7416f2dd72597ac6a3274ec8d0508525"
+    },
+    {
+      "file": "Assets/Prefab/SlimeMedium.prefab",
+      "hash": "2d89b0071ecea3aabcdb73dc264b98dd027c3089ef79e0a02075df5077d381d9"
+    },
+    {
+      "file": "Assets/Prefab/SlimeMedium.prefab.meta",
+      "hash": "b678e1b47ec1dd70f997ac6db31f17210f40fcb74113ed09facb9fb6debb34a5"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab",
+      "hash": "5900f38c29e5df2cd5581459b519274ccc078d842ba764f19d5d7455acbbfd20"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Earth/SlimeEarthLarge.prefab.meta",
+      "hash": "516603e74c47d552fea80e61d68a243a66b049f8cfd6457f22d2e0786f2166f8"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab",
+      "hash": "94d2c2e8d409dc20a5f78f5629f2780e271f279eef0467ec1d54c109626e1623"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Earth/SlimeEarthMedium.prefab.meta",
+      "hash": "bba309dfc4aab09fe9bc08864bd711f5343f81092b72af58da04f375966c78cc"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab",
+      "hash": "7248a8382db50be764c16f3d073d5bda02d8549d2e5e1e0bc3eff89ce8439c07"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Earth/SlimeEarthSmall.prefab.meta",
+      "hash": "698704a32013a9b5844b2f4744ff55a8233c2a8ea234aeb2bf14599922dc37b0"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Earth.meta",
+      "hash": "a9d8ebc06a849b721c06db8b6b7ce916985387db32ff6628b78d1e328c131f41"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab",
+      "hash": "9385f2e5ef89308448781c9ace9cf99ce3d16e060661ef36b29d6473c32d9aaf"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Fire/SlimeFireLarge.prefab.meta",
+      "hash": "9287bdfdadd24545712e5bfa6bd92443aa7b4a7f3eed72b00e8b9f44f5debfb5"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab",
+      "hash": "1115cc8782432418c900dad57187dc4ef23d2dd1de7321f925ec8d0e96ddcbe0"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Fire/SlimeFireMedium.prefab.meta",
+      "hash": "9cc5eff9ae853715ac313cf68bb5a61f04b8370bcb604eecccc01a461a9e6098"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab",
+      "hash": "4a33198b50c29804e06499234b03ddf58fba17d10baa0d289b8f2accd85eadd8"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Fire/SlimeFireSmall.prefab.meta",
+      "hash": "7d2d7dbada068378342de09b556866342690e36609f95bd668535929384f14ba"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Fire.meta",
+      "hash": "7155b2b5e8368d99aa471922f8b90d18525020dec5c08bfda55f989879a834d9"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab",
+      "hash": "21add397f2033c42640ba3d107a88196292cc728b18da6ebe2e9640a52a32e35"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Lightning/SlimeLightningLarge.prefab.meta",
+      "hash": "d3cdb5ce83b8e9c8716161b8b4019b4cfcc880ebad2a15cabfa55d90f1aec2a8"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab",
+      "hash": "eeeff649835c8ca0f159e0cfb99016de9d34da71866e389edb7a35400f684488"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Lightning/SlimeLightningMedium.prefab.meta",
+      "hash": "70f7262217e76d7fb3adaeb0168cd738751112ac4cf4787c776bb10f4cf05acc"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab",
+      "hash": "eedcd952313532175e22d246d9454ef79e0ac239ccda36f1af83f0360f33d885"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Lightning/SlimeLightningSmall.prefab.meta",
+      "hash": "27ecc0d1c4091d23bbebc541e4ca8a423f3d39309b05f4c5aca3db1882b6245f"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Lightning.meta",
+      "hash": "bfa66702dd10d3d185f1efb237808ec4267479c807c051618420064324a33756"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab",
+      "hash": "70817d1471f52715212ff1cd4f3a3ca7eabdcad6f197b500398b7335e30906a2"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Pure/SlimePureLarge.prefab.meta",
+      "hash": "77076d0eb5588d5774fe06de539eb93814a77a2696f3b788b7f6051b98cb2813"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab",
+      "hash": "f1656b694a1d2b6279ca5dbfdf5fbc8ff5c00dae6cd04e2fc5c7fbda44c77515"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Pure/SlimePureMedium.prefab.meta",
+      "hash": "17b5e78cfeeb5529c4c98fef8d49d00478bc0e79ffae387f29effa06da43534c"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab",
+      "hash": "51723428fe1936c12422bc14956bf688a33de300bea07c41ecc1ae5d5a091347"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Pure/SlimePureSmall.prefab.meta",
+      "hash": "725486247e0d3057627bca3add1d190a791e00a430370b3b7b17fa2cf169f34f"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Pure.meta",
+      "hash": "9e030bd8b0382af593a80bd3dda7fc5a2fd82f1f69b9e1cd9428f0d577b9c4eb"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab",
+      "hash": "6bf007cbc8f7f9d6aac0ea1a69cadf153fbcca452115b991eceed1056db493cb"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Water/SlimeWaterLarge.prefab.meta",
+      "hash": "d911ce25ab4bc5b5257522eb09c191d835bf73ce39dd6873e11dcb942b1234e9"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab",
+      "hash": "2bac5a5c1faf93dc813338f0bef86c4a5e428d1c4465f36151a07b5d64b01010"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Water/SlimeWaterMedium.prefab.meta",
+      "hash": "0f2dadf41d5eb644750f17504b837cd8b0a2520d1bd5535de04d9f4cc8c06160"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab",
+      "hash": "eb8fea08f1703daa2cd292c0ba8acb00c30eb1b9e5f0b9763e3604474cfaaeb1"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Water/SlimeWaterSmall.prefab.meta",
+      "hash": "ebaa4d666fdcc8c270ed10d2cbea1a1b5c1e21859ede391163bb6557fe4a72ae"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Water.meta",
+      "hash": "88141a521772d0d7f6f2d1ee3e4d0549f12703e520ef9569789733045c5574ed"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab",
+      "hash": "2c1204898384e7f89d0a57434b7be611f2a0b9773f3649a60b7f7f1f03b6873c"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Wind/SlimeWindLarge.prefab.meta",
+      "hash": "03596366fa171ac132dbbefb49312b2cd37254fa4ddd6ba5c47f4308e6266db0"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab",
+      "hash": "b9cbf5bff9221265eda75b520c545a8769120079a90143f19e4d33118b0fb668"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Wind/SlimeWindMedium.prefab.meta",
+      "hash": "49b33d190fe9d89618efd42ebff2d68591cee75659f487fdac86bb9d5a9f37e8"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab",
+      "hash": "0d8298de738ba18c9cbcec23b7a642e70646b5357eaebc2c08c91935d5666b4f"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Wind/SlimeWindSmall.prefab.meta",
+      "hash": "4dddefa687a131288ff9b8e724089e76587b69f8c7bd69474f221498ec68f34d"
+    },
+    {
+      "file": "Assets/Prefab/Slimes/Wind.meta",
+      "hash": "f1f7fbea9068990e5533db392e103baa5cefd6231118ec3475ea3697f882fa89"
+    },
+    {
+      "file": "Assets/Prefab/Slimes.meta",
+      "hash": "d76b3c725ec5f6e8dfe7c3d4bb6623f9a0934bd1d5741e5daca3594cee822dcf"
+    },
+    {
+      "file": "Assets/Prefab/SlimeSmall.prefab",
+      "hash": "f7a9fd37ac21c42c61e310f71885bf9d5c4fa7806f2bd4135ef7c98e09078ce7"
+    },
+    {
+      "file": "Assets/Prefab/SlimeSmall.prefab.meta",
+      "hash": "96d31460f55d809af9b35c0a70eb0d6a9c0315b62734463e732cca172f73682c"
+    },
+    {
+      "file": "Assets/Prefab/Stage.prefab",
+      "hash": "ed84144ba5945a0005b2a461bb6363187f1ed81cac35e1ce197ea921b22b9f94"
+    },
+    {
+      "file": "Assets/Prefab/Stage.prefab.meta",
+      "hash": "b0820d0650085362f07b894f3f51d6cf4368ecc58b5818a78de4127a37ff9e00"
+    },
+    {
+      "file": "Assets/Prefab/UI/HealthBar.prefab",
+      "hash": "b7ea8ffe9c239934a97dceb1299b23928dd9060627a9c591c08f92ee062ca47e"
+    },
+    {
+      "file": "Assets/Prefab/UI/HealthBar.prefab.meta",
+      "hash": "4abc17069ef9f98520c7b603a4f0d0dc6e18df725145cec691bf7419bc14f93a"
+    },
+    {
+      "file": "Assets/Prefab/UI.meta",
+      "hash": "7a8be9211cfc72e078fc734a3347b8c163639f5d5048cd6ad2008a0c84b0f2ff"
+    },
+    {
+      "file": "Assets/Scenes/SampleScene.unity",
+      "hash": "4b153e6d546574104f7673da02e2277de0557b277874e97dc45bd7baf3ecaf3f"
+    },
+    {
+      "file": "Assets/Scenes/SampleScene.unity.meta",
+      "hash": "204f446bc13539151c15af875550a7fa6f791662e967572a1b4b06fd0005dad1"
+    },
+    {
+      "file": "Assets/Shaders/Characters/SlimeHitFlash.shadergraph",
+      "hash": "84452cb6fd0049b7e5ba1164521f267945ddb56f89d48d43e65096943ced15ab"
+    },
+    {
+      "file": "Assets/Shaders/Characters/SlimeHitFlash.shadergraph.meta",
+      "hash": "9c6ba283f024d6dc3a9ff7cfb74f32ce69d27ea31a36e6269b4906e7d8a5d7ac"
+    },
+    {
+      "file": "Assets/Shaders/Characters.meta",
+      "hash": "d619398c338a0a09c4efaa22ce6740a575335f1f64c91e36b018895033fdc3df"
+    },
+    {
+      "file": "Assets/Shaders/Effects/ElementLanding.shader",
+      "hash": "cca7e0ac426efe240a5749569d530f63fffb50936068d860174466a01e9f3d83"
+    },
+    {
+      "file": "Assets/Shaders/Effects/ElementLanding.shader.meta",
+      "hash": "d91129f5ad69fa4c6335b0e806a1a8e5076d1eb37757bbf32f04d5cb6f1dff0b"
+    },
+    {
+      "file": "Assets/Shaders/Effects.meta",
+      "hash": "2b8f7bd6f90f007a615bbd9504870b1615aaa614fa2827175b6c2f4f6cd33ea0"
+    },
+    {
+      "file": "Assets/Materials/Characters/SlimeHitFlash.mat",
+      "hash": "c865e92e5cbd60f1b5ddd249a049a333a00d96f58b1e769f57f0fdececfb1107"
+    },
+    {
+      "file": "Assets/Materials/Characters/SlimeHitFlash.mat.meta",
+      "hash": "ffa833d47c89c946c5387aca8bd1d5c51a16ee1aa1a640b64a7ed7f6c655ed67"
+    },
+    {
+      "file": "Assets/Materials/Characters.meta",
+      "hash": "bb82c98a5df64e03f9c7e35022483dad417cf5b8d72b53d7a42000b74d1491e7"
+    },
+    {
+      "file": "Assets/Materials/Effects/ElementLandingParticles.mat",
+      "hash": "4035a3775ebaf16049fb9ecfc7a5a7ce439be0d155371aa93d5e9318c8288740"
+    },
+    {
+      "file": "Assets/Materials/Effects/ElementLandingParticles.mat.meta",
+      "hash": "5b9fda5a7c42b1c2828bfeb265272bec8e2d218ab2504cb7e5b2bc1348d61fde"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDust.mat",
+      "hash": "d7a6b4c640e45fcd45c11e72a79a75e15e886861ce40828fb57418a15310232d"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDust.mat.meta",
+      "hash": "1debbed3c6ab603ede64e64aa287d31f48cc19e74d79daf1be786b38528d4197"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustEarth.mat",
+      "hash": "bbb52914ef47ae1a54d489a97047394860f14add1724f3448197581eed4cede5"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustEarth.mat.meta",
+      "hash": "d2deb979096c6a0970750e365a6df5d7b62a703c671d9fb5cc41ddb59c66aa3b"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustFire.mat",
+      "hash": "f9efc36631248657d41309f8578cf09ad9457e69fb459adf02d97fde10d4a33e"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustFire.mat.meta",
+      "hash": "096de0a0c73a2d3bb88737e4ce1483a397b10d1b90e7a7e2bc1d57f93961857f"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustLightning.mat",
+      "hash": "f27ec85ecc2fa8ef79963bafd9f0a5d9cfd630d495a4071203bd5c64a95d9e8b"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustLightning.mat.meta",
+      "hash": "8ce8ce198e695dfaa3b5159b45711f83774b2cf6e70640d042162396992743fa"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustWater.mat",
+      "hash": "bea63d4260580fdec103ca86a8dce4ece8384a6ce3b9f4fbf78af9f4cdcd9294"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustWater.mat.meta",
+      "hash": "df911959e77b27d1c6587b027207e0b4a07000fc95da198307d0d0eafdcef4d7"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustWind.mat",
+      "hash": "3cca4c336a285606c3bbb6237c7671b81c536550cadd6e40e6b688ac6845accb"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingDustWind.mat.meta",
+      "hash": "8018ddace7d26f9467760bdba56aae61a641471853ba6e1abf2f70442485eac6"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingRipple.mat",
+      "hash": "4fdc8996dc776d7c64825970a19aa5b589c22d6e7d14192be0d7c6ca43a9cbac"
+    },
+    {
+      "file": "Assets/Materials/Effects/LandingRipple.mat.meta",
+      "hash": "4bb513670f3821d6561b6d1bd84e2f6603c5db2103119e0c8ea5a11dbb584e72"
+    },
+    {
+      "file": "Assets/Materials/Effects.meta",
+      "hash": "b921e5e42cec08fe58d6069fec3d764d9fc0f21567a6821080138fde3672ad7f"
+    },
+    {
+      "file": "Assets/Animations/Effects/HitEffect.controller",
+      "hash": "dac1c854c7bb617a26fdcf3f8b69163c36e9ebc7a0b540deb1bbbb235b06a8db"
+    },
+    {
+      "file": "Assets/Animations/Effects/HitEffect.controller.meta",
+      "hash": "bb7ca6b9e426a27e2d303201908fb6c7e7708ca28754c346e76fce28fde88aac"
+    },
+    {
+      "file": "Assets/Animations/Effects/HitEffectHit.anim",
+      "hash": "65c967135ba6623165502c77d7bf49bfe19f1f7a960b87cdc88bd484b1854bd2"
+    },
+    {
+      "file": "Assets/Animations/Effects/HitEffectHit.anim.meta",
+      "hash": "a636cca5a01c6830e9a3237fb7453140ae2c5d5ca02c44f9d1d66b08e3cdb046"
+    },
+    {
+      "file": "Assets/Animations/Effects/HitEffectIdle.anim",
+      "hash": "33e42ef2c85a8ed7bbaebd22f220d9e42a2ded0da5f61672eb51524bf21aa376"
+    },
+    {
+      "file": "Assets/Animations/Effects/HitEffectIdle.anim.meta",
+      "hash": "5ec5eb94e394e1dc2757e213bc41802b090d2a2dfb9f8e394e24ee4b523842c1"
+    },
+    {
+      "file": "Assets/Animations/Effects.meta",
+      "hash": "17c5ab24dd8fdb15178612205bfaa349c139525d726dc73be35322205204bf4e"
+    },
+    {
+      "file": "Assets/Animations/Player/Player.controller",
+      "hash": "7248763d73d5b09e402ef238ced6f177dab80266ebdcff6af98f162ebe7315bc"
+    },
+    {
+      "file": "Assets/Animations/Player/Player.controller.meta",
+      "hash": "14259fa4d046197361b98598b8527bad31b65e3450752c63d664caeba0551d21"
+    },
+    {
+      "file": "Assets/Animations/Player/Player3Idle.anim",
+      "hash": "c26897bda736a0041d961442cb669490201dd507bbbc8477315f5e965aee6ade"
+    },
+    {
+      "file": "Assets/Animations/Player/Player3Idle.anim.meta",
+      "hash": "363620a24ebd3cd6ea0fda62f388be73b32ba0841573010defa2a6b4d7186bad"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerAttack.anim",
+      "hash": "e9a749106331078d8c7fcdb312b60cabde1f5be58fa6714ebd7c68a5509bcd9b"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerAttack.anim.meta",
+      "hash": "e1044fbbf0e5f416119360e4d4da36daca4c3ac2da095ecdae03043b5eb70a2f"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerDeath.anim.meta",
+      "hash": "9971eebaa221f51499433ec70f01bdcc4ee089d8bd7885a041009a5d78bf29b0"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerHit.anim",
+      "hash": "1b9c2aab46c8667e0a174e85a3787cb6b1c24ae259f2dc7d60174f06a055abca"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerHit.anim.meta",
+      "hash": "340fe2153c79aaf735dd393799ce3bca20c39224ad163aed0649fd4fcf712fd2"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerIdle.anim",
+      "hash": "8e604b82b5f4a5edd581920242ded919a4f2eea9ee1d1feb3bb3d7d9c5e5b442"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerIdle.anim.meta",
+      "hash": "82f2025cfcbe87661c1f4c645090a74d071f3bc6c36c5ee12ef90f8b5982ea30"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerWalk.anim",
+      "hash": "e9eee56509249e764b5be24aaf91a919a1eb42373c72f5745c35419c906d86c7"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerWalk.anim.meta",
+      "hash": "4238843d18d67bdfd0541b08885ca308de6e2f113ce7af298bb08be47a36a689"
+    },
+    {
+      "file": "Assets/Animations/Player.meta",
+      "hash": "7a0e3a17f18a83a0a8a458b2d34fc1c182765314d1f4f0e9f9c4669919fc98a5"
+    },
+    {
+      "file": "Assets/Animations/Slime/Slime.controller",
+      "hash": "6ca74a31cce9d020b48389228643474e2c427229f166d55f348c302965e2e777"
+    },
+    {
+      "file": "Assets/Animations/Slime/Slime.controller.meta",
+      "hash": "84d68f99f972201671c07b1a529a86eb713c683dd9f68bfbf630cbd854ace761"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackLarge.anim",
+      "hash": "9a975f24be097e3d649a4f66b53a874612fb806171f640b7bc5b33029d4f3e78"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackLarge.anim.meta",
+      "hash": "3aa18dadfed76443e835d4d274d068106ddeee9dae2faee07ca16f6298fa7ab7"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackMedium.anim",
+      "hash": "8febffa9ce9514280e82a40afa7613ffd632e761ff1fcc7d24d9d9d69f7081db"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackMedium.anim.meta",
+      "hash": "617cc9c08bab495f795aca1ff2c8063ba904c81770ad0da6f410a93e7168c007"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackSmall.anim",
+      "hash": "bcd0d5494a8ec290d9c1c34435a66c34443e1de781711774dcce5154f12bbeb7"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackSmall.anim.meta",
+      "hash": "5f3488119f13c14583a6c38e823fd1940237d49c44c0b4540092f0f30d1cc925"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeDeathLarge.anim.meta",
+      "hash": "8dc54670ab229425f517afe0eb26d7246c4e6684cef5aad9eda58fa8243df1e0"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeDeathMedium.anim.meta",
+      "hash": "4825cc3dfc4e1142234130859e9c01df639baa4e36688e686e66dbc64befa28c"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeDeathSmall.anim.meta",
+      "hash": "97e1092d75d7e7aa5bc55b7b6485834cd2f81539d628512c61476cab01802891"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeIdle.anim",
+      "hash": "1346f2bda4904e57db86882fbe21c6b9b6db7a2ebfd40f2df1e3f222386cd54e"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeIdle.anim.meta",
+      "hash": "bc55d282f02edc4f5f8827c2775d22f7c6eaa45506d879178198a76329a532d4"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpLarge.anim",
+      "hash": "385f1c055324f4b256009a1210bb7be3e8cad7cee80112bdabd4219e13d138b0"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpLarge.anim.meta",
+      "hash": "b176cf171393abc229c74f10d3ac1d51eebfd2bb570549c56747d66525f0c9e9"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpMedium.anim",
+      "hash": "6caf8190cfc5cefbe349ef88cd9fe2667e831c5592892a6aada3533609397c54"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpMedium.anim.meta",
+      "hash": "09ca0e22b85d6768f2c0d8dbc8c1037a89c46689127c8b1b6cab4c04c77672d1"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpSmall.anim",
+      "hash": "42d91255d43da5fe97e68a702f52fb19da0762953b9076316d6f2014b419a3bb"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpSmall.anim.meta",
+      "hash": "e78f181de617115f24c0bff26256d8da1adca1a93492af09d6ba8fa047e92f6d"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeLand.anim",
+      "hash": "7ac83bbfd89185a2b55f4227ef242a64a408daeb1860bef907bf444962c83c79"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeLand.anim.meta",
+      "hash": "e04f3a74c8a137ac8da6855a0034b51477235254f3fc365f7301d0223746d20c"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeLarge.overrideController",
+      "hash": "9cb343e1f038bde5a397cba6a0cabf83517c47b76a3388c980d08513c863e7c8"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeLarge.overrideController.meta",
+      "hash": "c8126f06cf9b057e5fa4000e226a43e530fa97e6f0588fa1885e9c4eda911fe7"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeMedium.overrideController",
+      "hash": "09292529209b632b076eeafb302c88d3eb6b4ed8c3c428b62bdd9e7f55782472"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeMedium.overrideController.meta",
+      "hash": "a06dc01e11527fdfb11bd4dc27744c3d911b24c812d453e9e8c345d9b6c921f5"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimePrepare.anim",
+      "hash": "558bd6a8b6dc580216d7bf59bd38f568611767ad33d17c0ef694f213b38670d9"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimePrepare.anim.meta",
+      "hash": "8d50091c2ace4f5f03928ae141876eda530bcc277f154498f81a91544a4136ab"
+    },
+    {
+      "file": "Assets/Animations/Slime.meta",
+      "hash": "7c8ccdb5f8ceadfceef4883b0adc39398fada021f9e7f10cd757e37d98eaf81d"
+    },
+    {
+      "file": "Assets/Sprites/Characters/Player/V3/PlayerPartsAtlas.png",
+      "hash": "5a34c876ce8e28ad40736eba43cb7d02c9ad3c19495916eb5fc12227d6436bdd"
+    },
+    {
+      "file": "Assets/Sprites/Characters/Player/V3/PlayerPartsAtlas.png.meta",
+      "hash": "9d9a3dd8e91e57605fea513f06a99fa4e21bfa50f2064fc83ba9773743de34bf"
+    },
+    {
+      "file": "Assets/Sprites/Characters/Slimes/StyleV3/SlimeStyleV3Parts.png",
+      "hash": "ee47852dcb875fd010d14f13704744b2c4f749e429406198b8df07e8825e22c7"
+    },
+    {
+      "file": "Assets/Sprites/Characters/Slimes/StyleV3/SlimeStyleV3Parts.png.meta",
+      "hash": "b7b29a7797fea0a09418e7424b4b20abb01634bba39133b07ba08f2d079fc690"
+    }
+  ],
+  "verification": "Offline Sprite/curve/binding comparison, not native Unity Play or import",
+  "fadePreserved": true,
+  "flightAndRotationPreserved": true,
+  "prefabsAndCodeUnchanged": true,
+  "normalAnimationClipsUnchanged": true,
+  "validation": {
+    "clips": [
+      {
+        "clip": "Assets/Animations/Player/PlayerDeath.anim",
+        "expressionBindings": 2,
+        "originalFadeSha256": "452ebb87bd7fc26e24a1967b910fa66c4af48226f56fcd4b7ada0de3d31d99d8",
+        "currentFadeSha256": "452ebb87bd7fc26e24a1967b910fa66c4af48226f56fcd4b7ada0de3d31d99d8",
+        "nonExpressionDataIdentical": true,
+        "length": 0.9
+      },
+      {
+        "clip": "Assets/Animations/Slime/SlimeDeathSmall.anim",
+        "expressionBindings": 2,
+        "originalFadeSha256": "e105827d3fb97dba610e0ea0e92446b9f681e28fe617cdb01dd019c67fc43ea7",
+        "currentFadeSha256": "e105827d3fb97dba610e0ea0e92446b9f681e28fe617cdb01dd019c67fc43ea7",
+        "nonExpressionDataIdentical": true,
+        "length": 0.9
+      },
+      {
+        "clip": "Assets/Animations/Slime/SlimeDeathMedium.anim",
+        "expressionBindings": 2,
+        "originalFadeSha256": "e105827d3fb97dba610e0ea0e92446b9f681e28fe617cdb01dd019c67fc43ea7",
+        "currentFadeSha256": "e105827d3fb97dba610e0ea0e92446b9f681e28fe617cdb01dd019c67fc43ea7",
+        "nonExpressionDataIdentical": true,
+        "length": 0.9
+      },
+      {
+        "clip": "Assets/Animations/Slime/SlimeDeathLarge.anim",
+        "expressionBindings": 2,
+        "originalFadeSha256": "97764ff3c29f01564f8d35cad90b1bed0b76e5abb9755be7316fb2099b97bef0",
+        "currentFadeSha256": "97764ff3c29f01564f8d35cad90b1bed0b76e5abb9755be7316fb2099b97bef0",
+        "nonExpressionDataIdentical": true,
+        "length": 0.9
+      }
+    ],
+    "protectedFilesUnchanged": 217,
+    "externallyChangedFiles": [
+      "Assets/Scripts/Stage/Stage.cs"
+    ],
+    "allOriginalFadeDataIdentical": true,
+    "allNonExpressionAnimationDataIdentical": true,
+    "normalPrefabsAndClipsUnchanged": true,
+    "nativeUnityValidation": false
+  }
+}

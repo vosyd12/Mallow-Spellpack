@@ -212,7 +212,9 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (IsDead || _player.HP <= 0 || damage <= 0)
+        if (IsDead || 
+            _player.HP <= 0 || 
+            damage <= 0)
         {
             return;
         }
@@ -251,9 +253,10 @@ public class Player : MonoBehaviour
         _target = null;
 
         _rd.linearVelocity = Vector2.zero;
-        _rd.simulated = false;
+        _rd.simulated
+            = false;
 
-        _healthBar.gameObject.SetActive(false);
+        _healthBar.Hide();
 
         Died?.Invoke();
     }

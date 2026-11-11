@@ -2,80 +2,69 @@ using UnityEngine;
 
 public class HitReaction : MonoBehaviour
 {
-    // 셰이더 프로퍼티 공통 피격 색상
-    private static readonly int HitColorId =
-        Shader.PropertyToID("_HitColor");
+    private static readonly int IdleState =
+        Animator.StringToHash("Base Layer.Idle");
 
-    // 셰이더 프로퍼티 피격 색으로 덮는 강도
-    private static readonly int HitAmountId =
-        Shader.PropertyToID("_HitAmount");
+    private static readonly int HitState =
+        Animator.StringToHash("Base Layer.Hit");
 
     [SerializeField]
-    private SpriteRenderer _bodyRenderer;
+    private Animator _effectAnimator;
 
     [SerializeField]
-    private Color _hitColor = new Color(1f, 0.4f, 0.4f, 1f);
+    private HitEffectVisual _effectVisual;
 
-    [SerializeField, Min(0.01f)]
-    private float _duration = 0.12f;
-
-    private MaterialPropertyBlock _propertyBlock;
-    private float _remainingTime;
+    private bool _isReady;
 
     private void Awake()
     {
-        _propertyBlock = new MaterialPropertyBlock();
+        if (_effectAnimator == null ||
+            _effectVisual == null ||
+            _effectAnimator.runtimeAnimatorController == null)
+        {
+            Debug.LogError(
+                "HitReaction의 효과용 Animator와 Visual을 연결해주세요.",
+                this);
 
-        SetHitAmount(0f);
+            enabled = false;
+            return;
+        }
+
+        _isReady = true;
     }
 
-    private void Update()
+    private void OnEnable()
     {
-        if(_remainingTime <= 0f)
+        if (!_isReady)
         {
             return;
         }
 
-        _remainingTime = Mathf.Max(
-            0f,
-            _remainingTime - Time.deltaTime);
+        _effectAnimator.enabled = true;
+        _effectAnimator.Play(IdleState, 0, 0f);
 
-        if(_remainingTime <= 0f)
-        {
-            SetHitAmount(0f);
-        }
+        _effectVisual.ResetEffect();
     }
 
     public void Play()
     {
-        // 연속으로 맞으면 피격 표시 시간을 다시 시작
-        _remainingTime = _duration;
-        SetHitAmount(1f);
-    }
-
-    private void SetHitAmount(float amount)
-    {
-        if (_bodyRenderer == null ||
-            _propertyBlock == null)
+        if (!_isReady || !isActiveAndEnabled)
         {
             return;
         }
 
-        // 다른 곳에서 설정한 프로퍼티는 유지
-        _bodyRenderer.GetPropertyBlock(_propertyBlock);
-
-        // 뒤에 있는 값을 앞에 변수에 복사한다.
-        _propertyBlock.SetColor(HitColorId, _hitColor);
-        _propertyBlock.SetFloat(HitAmountId, amount);
-
-        // 공유 Material 대신 Renderer에만 적용
-        _bodyRenderer.SetPropertyBlock(_propertyBlock);
+        // 연속 피격도 처음부터 다시 재생한다.
+        _effectAnimator.Play(HitState, 0, 0f);
     }
 
     private void OnDisable()
     {
-        _remainingTime = 0f;
-
-        SetHitAmount(0f);
+        // Animation이 초기화한 값을 다시 덮어쓰지 않도록
+        // 효과용 Animator를 먼저 중지한다.
+        if (_isReady)
+        {
+            _effectAnimator.enabled = false;
+            _effectVisual.ResetEffect();
+        }
     }
 }

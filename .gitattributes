@@ -192,4 +192,6 @@ Packages/packages-lock.json linguist-generated
 "화면 UI배치도_AI이해안.png" -filter -diff -merge -text
 
 # Exceptions for .asset files such as lightning pre-baking
+"Assets/Sprites/Characters/Expressions/DeathFaceParts.png" -filter -diff -merge -text
+"문서/아트시안/플레이어 및 슬라임 사망 표정.png" -filter -diff -merge -text
 LightingData.asset     binary
