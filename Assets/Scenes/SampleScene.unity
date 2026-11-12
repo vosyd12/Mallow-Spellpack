@@ -877,13 +877,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 741759335}
-  - component: {fileID: 7400000000000000100}
   - component: {fileID: 741759334}
   - component: {fileID: 741759333}
   - component: {fileID: 741759332}
   - component: {fileID: 741759331}
   - component: {fileID: 741759336}
   - component: {fileID: 741759337}
+  - component: {fileID: 7400000000000000100}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -910,7 +910,7 @@ MonoBehaviour:
   _orbitSpeed: 1.2
   _avoidStopMargin: 0.3
   _hitReaction: {fileID: 7400000000000000100}
-  _maxHP: 100
+  _maxHP: 10
   _maxMP: 50
   _healthBar: {fileID: 741759337}
   _playerName: vvvv
@@ -3559,9 +3559,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 741759331}
+    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
       propertyPath: _stageInfo
       value: 
       objectReference: {fileID: 2115568890}
+    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
+      propertyPath: _enemySpawner
+      value: 
+      objectReference: {fileID: 1238217183}
+    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
+      propertyPath: _playerSpawnPoint
+      value: 
+      objectReference: {fileID: 7700000000000000002}
+    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
+      propertyPath: _screenTransition
+      value: 
+      objectReference: {fileID: 7600000000000000003}
+    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
+      propertyPath: _blackHoldDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5843861504813927043, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
       propertyPath: m_Name
       value: Stage
@@ -3578,47 +3598,11 @@ PrefabInstance:
       propertyPath: _enemyParent
       value: 
       objectReference: {fileID: 298884788}
-    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
-      propertyPath: _player
-      value: 
-      objectReference: {fileID: 741759331}
-    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
-      propertyPath: _screenTransition
-      value: 
-      objectReference: {fileID: 7600000000000000003}
-    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
-      propertyPath: _blackHoldDuration
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
-      propertyPath: _enemySpawner
-      value: 
-      objectReference: {fileID: 1238217183}
-    - target: {fileID: 3899682983021627949, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
-      propertyPath: _playerSpawnPoint
-      value: 
-      objectReference: {fileID: 7700000000000000002}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed8b47ae089bbd74cb9885d3fbbc88f8, type: 3}
---- !u!95 &6200000000000000101 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 8200000000000001002, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
-  m_PrefabInstance: {fileID: 6796659043211209505}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6200000000000000102 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8200000000000001003, guid: 7d9b8be171907ac498b8cbeca3a962b4, type: 3}
-  m_PrefabInstance: {fileID: 6796659043211209505}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30b2c989160ea6a4ebfc7b7da9dcf7a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HitEffectVisual
 --- !u!1001 &6796659043211209505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3764,8 +3748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5333306bfff12d84f8908aa07732fefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitReaction
-  _effectAnimator: {fileID: 6200000000000000101}
-  _effectVisual: {fileID: 6200000000000000102}
+  _effectAnimator: {fileID: 0}
+  _effectVisual: {fileID: 0}
 --- !u!114 &7400000000000000101 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11400002, guid: 82523c5aa5e04bb390d1d15b380153a1, type: 3}
@@ -3784,7 +3768,39 @@ PrefabInstance:
   m_Modification:
     serializedVersion: 3
     m_TransformParent: {fileID: 2092480129}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 10002, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10002, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10002, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10002, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10002, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10002, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10002, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10007, guid: ccf9e7e9969d40b1877f8d38533fcf2b, type: 3}
+      propertyPath: m_WarningMessage
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3804,7 +3820,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c7078538c4d27b4ea6c2e950b0fd15b, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenTransition
 --- !u!114 &7600000000000000004 stripped
 MonoBehaviour:
@@ -3815,7 +3831,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5173bbe76dc57ac41844e54c1fe8f4ed, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stage
 --- !u!1 &7700000000000000001
 GameObject:
