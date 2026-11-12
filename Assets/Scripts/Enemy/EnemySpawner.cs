@@ -3,15 +3,29 @@ using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] private Enemy[] _enemyPrefabs;
-    [SerializeField] private GameObject _player;
-    [SerializeField] private Transform _stage;
-    [SerializeField] private Transform _enemyParent;
-    [SerializeField] private int _stageSpawnerEnemyCount;
+    [SerializeField] 
+    private Enemy[] _enemyPrefabs;
 
-    [SerializeField] private float _playerSafeDistance = 1.5f;
+    [SerializeField] 
+    private GameObject _player;
 
-    [SerializeField] private Vector2 _stageSize = new Vector2(6f, 7.5f);
+    [SerializeField] 
+    private Transform _stage;
+
+    [SerializeField] 
+    private Transform _enemyParent;
+
+    [SerializeField] 
+    private int _stageSpawnerEnemyCount;
+
+    [SerializeField] 
+    private float _playerSafeDistance = 1.5f;
+
+    [SerializeField] 
+    private Vector2 _stageSize = new Vector2(6f, 7.5f);
+
+    [SerializeField]
+    private Stage _stageController;
 
     private float _edgePadding = 0.3f;
     private readonly List<Enemy> _enemies = new List<Enemy>();
@@ -21,13 +35,21 @@ public class EnemySpawner : MonoBehaviour
     {
         _enemies.RemoveAll(enemy => enemy == null);
 
-        if(_enemies.Count > _stageSpawnerEnemyCount || 
+        if (_stageController == null ||
+            _stageController.IsRestarting)
+        {
+            return;
+        }
+
+        // 목표 수량보다 초과해서 생산 X
+        if (_enemies.Count >= _stageSpawnerEnemyCount ||
             Time.time < _nextSpawnAttemptTime)
         {
             return;
         }
 
-        _nextSpawnAttemptTime = Time.time - 0.5f;
+        // 현재부터 0.5초 후에 다시 생성 딜레이
+        _nextSpawnAttemptTime = Time.time + 0.5f;
         Spawn();
     }
 
@@ -89,7 +111,7 @@ public class EnemySpawner : MonoBehaviour
                 Quaternion.identity,
                 _enemyParent);
 
-            enemy.Initialize(_player);
+            enemy.Initialize(_player, _stageController);
             _enemies.Add(enemy);
 
             return;

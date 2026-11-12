@@ -67,4 +67,16 @@ public class HitReaction : MonoBehaviour
             _effectVisual.ResetEffect();
         }
     }
+
+    public void ResetEffect()
+    {
+        if (!_isReady)
+        {
+            return;
+        }
+
+        _effectAnimator.Play(IdleState, 0, 0f);
+        _effectAnimator.Update(0f);
+        _effectVisual.ResetEffect();
+    }
 }

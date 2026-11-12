@@ -74,4 +74,13 @@ public class HealthBar : MonoBehaviour
         _isInitialized = false;
         _delayTimer = 0f;
     }
+
+    public void Show()
+    {
+        _isInitialized = false;
+        _delayTimer = 0f;
+
+        _visualRoot.SetActive(true);
+        enabled = true;
+    }
 }

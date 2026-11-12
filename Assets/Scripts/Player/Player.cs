@@ -34,6 +34,16 @@ public class Player : MonoBehaviour
     [SerializeField]
     private PlayerInfo _playerInfo;
 
+    [SerializeField]
+    private Stage _stage;
+
+    public event Action Revived;
+
+    public bool CanAct =>
+        !IsDead &&
+        _stage != null &&
+        !_stage.IsRestarting;
+
     private Vector2 _avoidVelocity;
  
     private PlayerState _player;
@@ -86,7 +96,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if(IsDead)
+        if(!CanAct)
         {
             return;
         }
@@ -97,7 +107,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (IsDead)
+        if (!CanAct)
         {
             return;
         }
@@ -212,7 +222,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if (IsDead || 
+        if (!CanAct || 
             _player.HP <= 0 || 
             damage <= 0)
         {
@@ -288,5 +298,31 @@ public class Player : MonoBehaviour
         _levelExp = (int)(_levelExp * 1.1f);
 
         RefreshPlayerInfo();
+    }
+
+    public void Revive()
+    {
+        if(!IsDead)
+        {
+            return;
+        }
+
+        _player.HP = _maxHP;
+
+        _avoidVelocity = Vector2.zero;
+        _isAvoiding = false;
+        _target = null;
+        _targetSearchTimer = 0f;
+
+        _rd.linearVelocity = Vector2.zero;
+        _rd.simulated = true;
+
+        IsDead = false;
+
+        _hitReaction.ResetEffect();
+        _healthBar.Show();
+        _healthBar.SetHealth(_player.HP, _maxHP);
+
+        Revived?.Invoke();
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Stage : MonoBehaviour
@@ -11,7 +12,25 @@ public class Stage : MonoBehaviour
     [SerializeField]
     private StageInfo _stageInfo;
 
+    [SerializeField, Min(1)]
+    private int _killsForBoss = 30;
+
+    [SerializeField]
     private Player _player;
+
+    [SerializeField]
+    private ScreenTransition _screenTransition;
+
+    [SerializeField, Min(0f)]
+    private float _blackHoldDuration = 0.5f;
+
+    private bool _isRestarting;
+
+    public bool IsRestarting => _isRestarting;
+
+    private int _killCount;
+
+    private int _stageMaxKill = 100;
 
     private float _bossProgress;
 
@@ -42,6 +61,7 @@ public class Stage : MonoBehaviour
         }
 
         _stageNumber = stageNumber;
+        _killCount = 0;
         _bossProgress = 0f;
 
         _stageScenery.Rebuild();
@@ -67,24 +87,76 @@ public class Stage : MonoBehaviour
             _bossProgress);
     }
 
-    public void BossGauge()
-    {
-        // 적이 죽을때 Boss게이지가 조금씩 쌓이는 로직
-    }
-
-    private void GameOver()
+    public void GameOver()
     {
         // 플레이어가 죽었는지 감지한다.
-        if(_player.IsDead)
+        if(_isRestarting ||
+           _player == null || 
+           !_player.IsDead)
         {
-
+            return;
         }
 
-        // 기본적으로 방치형과 같이 죽었다고 끝인 게임이 아닌
-        // 해당 스테이지를 다시 도는 방법으로 처리한다.
-        // 단 플레이어의 HP는 리셋
-        // 해당 스테이지의 보스게이지 리셋
-        // 몬스터 위치도 리셋
-        // 즉 플레이어가 죽으면 해당 InGame화면상에 존재하는 수치중 StageNumber를 제외하고 초기화하면된다.
+        if (_screenTransition == null)
+        {
+            return;   
+        }
+
+        _isRestarting = true;
+        StartCoroutine(RestartRoutine());
+    }
+
+    public void BossGauge()
+    {
+        if( _isRestarting || 
+            _killCount >= _killsForBoss)
+        {
+             return;
+        }
+
+        _killCount++;
+        SetBossProgress((float)_killCount / _killsForBoss);
+    }
+
+    public void CompleteStage()
+    {
+        _killsForBoss = Mathf.Min(_killsForBoss + 1, _stageMaxKill);
+
+        EnterStage(_stageNumber + 1);
+    }
+
+    private IEnumerator RestartRoutine()
+    {
+        // 위에서 아래로 완전히 덮을 때까지 대기
+        yield return _screenTransition.Cover();
+
+        if(!_screenTransition.Succeeded)
+        {
+            yield break;
+        }
+
+        ResetBossGauge();
+
+        // HP·사망 상태·물리·체력바·외형 복구
+        // 전투 행동은 IsRestarting이 false가 된 뒤 재개
+        _player.Revive();
+
+        yield return new WaitForSecondsRealtime(_blackHoldDuration);
+
+        // 위에서부터 화면을 완전히 드러낼 때까지 대기
+        yield return _screenTransition.Reveal();
+
+        if(!_screenTransition.Succeeded)
+        {
+            yield break;
+        }
+
+        _isRestarting = false;
+    }
+
+    private void ResetBossGauge()
+    {
+        _killCount = 0;
+        SetBossProgress(0f);
     }
 }
