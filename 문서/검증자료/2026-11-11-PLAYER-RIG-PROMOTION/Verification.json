@@ -1,0 +1,83 @@
+{
+  "verification": "Offline prefab/Sprite metadata validation, not native Unity import or Play",
+  "canonicalAtlas": "Assets/Sprites/Characters/Player/V3/PlayerPartsAtlas.png",
+  "canonicalPrefab": "Assets/Prefab/Player/PlayerVisual.prefab",
+  "atlasGuidPreserved": "c2d5c43dc099ba742a9ea5c1dee956f2",
+  "prefabGuidPreserved": "7d9b8be171907ac498b8cbeca3a962b4",
+  "spriteIdsPreserved": true,
+  "pixelsPerUnit": 804,
+  "rig": [
+    {
+      "part": "Torso",
+      "bones": [
+        "상체",
+        "허리",
+        "Root"
+      ],
+      "vertices": 30
+    },
+    {
+      "part": "ArmLeft",
+      "bones": [
+        "좌측어깨",
+        "좌측팔꿈치",
+        "좌측손목"
+      ],
+      "vertices": 32
+    },
+    {
+      "part": "ArmRight",
+      "bones": [
+        "우측어깨",
+        "우측팔꿈치",
+        "우측손목"
+      ],
+      "vertices": 26
+    },
+    {
+      "part": "LegLeft",
+      "bones": [
+        "좌측발목"
+      ],
+      "vertices": 28
+    },
+    {
+      "part": "LegRight",
+      "bones": [
+        "우측발목"
+      ],
+      "vertices": 28
+    },
+    {
+      "part": "Head",
+      "bones": [
+        "목",
+        "머리  중심점"
+      ],
+      "vertices": 33
+    }
+  ],
+  "deleted": [
+    "Assets/Sprites/Characters/Player/V3/PlayerPartsAtlas_RigTest.png",
+    "Assets/Sprites/Characters/Player/V3/PlayerPartsAtlas_RigTest.png.meta",
+    "Assets/Prefab/Player/PlayerVisual_RigTest.prefab",
+    "Assets/Prefab/Player/PlayerVisual_RigTest.prefab.meta"
+  ],
+  "originalPrefabSha256": "c1f8a9d9532e87af96e03994424846417bf548e05c22bba5de5127d9dd568afb",
+  "resultPrefabSha256": "86108fda622569fd7f2699975f2a60707fb74f224314f1ef6f49e3e283e5e1e8",
+  "originalAtlasMetaSha256": "8cc032907a1545523d1d89166282106f909d3cc683c4ef5d7f5a35398f515b9f",
+  "resultAtlasMetaSha256": "7197734a70accc361b1e9dba0b0ae7d5804aa47ffbe8275ff0a30c4e439983dd",
+  "notes": "SkinningEditor bones and weights preserved; SpriteSkin and bone Transforms connected using installed 2D Animation 15.1 importer/CreateBoneHierarchy rules. Existing part paths, controller, scene overrides and animations preserved. Hat and Staff hierarchy unchanged; bone animation authoring remains separate.",
+  "validation": {
+    "uniqueLocalIds": true,
+    "reciprocalTransformHierarchy": true,
+    "sixSpriteSkins": true,
+    "allBoneReferencesAssigned": true,
+    "totalBones": 13,
+    "sceneSourceObjectIdsPreserved": true,
+    "animationPathsChecked": 614,
+    "duplicatesRemovedFromAssets": true,
+    "retiredLocation": "Temp/PlayerRigPromotion/Retired",
+    "nativeUnityVerification": false
+  }
+}

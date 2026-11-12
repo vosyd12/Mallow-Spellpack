@@ -3681,6 +3681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Stage
   _stageNumber: 1
   _stageScenery: {fileID: 839210466276944040}
+  _killsForBoss: 30
 --- !u!114 &7994714344565436809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3718,6 +3719,7 @@ MonoBehaviour:
   _stageSpawnerEnemyCount: 4
   _playerSafeDistance: 1.5
   _stageSize: {x: 6, y: 7.5}
+  _stageController: {fileID: 3899682983021627949}
 --- !u!1 &5883651321748552226
 GameObject:
   m_ObjectHideFlags: 0

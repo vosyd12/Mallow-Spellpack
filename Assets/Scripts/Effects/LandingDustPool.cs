@@ -134,4 +134,15 @@ public class LandingDustPool : MonoBehaviour
 
         _pools.Clear();
     }
+
+    public void ClearActiveEffects()
+    {
+        LandingDust[] effects =
+            GetComponentsInChildren<LandingDust>(true);
+
+        foreach (LandingDust effect in effects)
+        {
+            effect.StopAndReturn();
+        }
+    }
 }

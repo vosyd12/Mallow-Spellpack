@@ -1,0 +1,12 @@
+{
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "stageEnemySpawner": 1238217183,
+  "stagePlayerSpawnPoint": 7700000000000000002,
+  "spawnLocalPosition": "{x: -0.1, y: 0.04, z: 0}",
+  "spawnParent": 373699877,
+  "sameInitialPositionAsPlayer": true,
+  "markerDoesNotFollowPlayer": true,
+  "uniqueSceneIDs": true,
+  "unchangedCSharpCount": 19,
+  "playModeVerified": false
+}

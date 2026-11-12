@@ -105,4 +105,21 @@ public class LandingDust : MonoBehaviour
         _isInUse = false;
         _pool.Release(this);
     }
+
+    public void StopAndReturn()
+    {
+        if (!_isInUse)
+        {
+            return;
+        }
+
+        // Stop 콜백에서 중복 반환하지 않도록 먼저 변경한다.
+        _isInUse = false;
+
+        _particles.Stop(
+            true,
+            ParticleSystemStopBehavior.StopEmittingAndClear);
+
+        _pool.Release(this);
+    }
 }

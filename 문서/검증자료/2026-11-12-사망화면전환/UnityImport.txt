@@ -1,0 +1,7 @@
+﻿Importing 'GUID: 59e2d827cbee4503a5de4355089e95fc - Path: Assets/ScreenTransition/Clear.anim' with importer (NativeFormatImporter)
+Importing 'GUID: 7d584537181d4d46bb0a771e1bd35098 - Path: Assets/ScreenTransition/Cover.anim' with importer (NativeFormatImporter)
+Importing 'GUID: 8fd362bf7f9a490286b45e56cfb97b21 - Path: Assets/ScreenTransition/Reveal.anim' with importer (NativeFormatImporter)
+Importing 'GUID: 578e7d6fef18469e83b3785c73f7366e - Path: Assets/ScreenTransition/ScreenTransition.controller' with importer (NativeFormatImporter)
+Importing 'GUID: ccf9e7e9969d40b1877f8d38533fcf2b - Path: Assets/ScreenTransition.prefab' with importer (PrefabImporter)
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

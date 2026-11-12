@@ -20,6 +20,12 @@ public class Enemy : MonoBehaviour
     public Transform Target => _traceObject != null ? _traceObject.transform : null;
     public float MoveSpeed => _enemy.MoveSpeed;
 
+    private Stage _stage;
+    public bool CanAct =>
+        !IsDead &&
+        _stage != null &&
+        !_stage.IsRestarting;
+
     private Rigidbody2D _rd;
 
     private Vector3 _pos;
@@ -44,8 +50,9 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if(IsDead)
+        if(!CanAct)
         {
+            _pos = Vector3.zero;
             return;
         }
 
@@ -62,8 +69,9 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (IsDead)
+        if (!CanAct)
         {
+            _rd.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -80,7 +88,9 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        if(_enemy.HP <= 0 || damage <= 0)
+        if(!CanAct ||
+            _enemy.HP <= 0 || 
+            damage <= 0)
         {
             return;
         }
@@ -117,7 +127,8 @@ public class Enemy : MonoBehaviour
         _rd.linearVelocity = Vector2.zero;
         _rd.simulated = false;
 
-        _healthBar.gameObject.SetActive(false);
+        _healthBar.Hide();
+        _stage?.BossGauge();
 
         // 사망 연출을 처리하는 컴포넌트가 없으면 바로 제거
         if(Died == null)
@@ -129,8 +140,9 @@ public class Enemy : MonoBehaviour
         Died.Invoke();
     }
 
-    public void Initialize(GameObject player)
+    public void Initialize(GameObject player, Stage stage)
     {
         _traceObject = player;
+        _stage = stage;
     }
 }

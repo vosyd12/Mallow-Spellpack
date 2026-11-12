@@ -44,7 +44,8 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if(_player.IsDead)
+        if(_player.IsDead ||
+            !_player.CanAct)
         {
             return;
         }
@@ -72,11 +73,6 @@ public class PlayerAttack : MonoBehaviour
             return;
         }
 
-        if (_attackTimer > 0f)
-        {
-            return;
-        }
-
         Vector2 direction = 
             target.transform.position - transform.position;
 
@@ -97,7 +93,10 @@ public class PlayerAttack : MonoBehaviour
     // PlayerMotion이 애니메이션 발사 시점에 호출
     public void MagicAttack()
     {
-        if (_player.IsDead || !IsAttacking || _hasFired)
+        if (_player.IsDead || 
+            !_player.CanAct ||
+            !IsAttacking || 
+            _hasFired)
         {
             return;
         }
@@ -139,4 +138,11 @@ public class PlayerAttack : MonoBehaviour
         _hasFired = false;
         _target = null;
     }
+
+    public void ResetAttack()
+    {
+        FinishAttack();
+        _attackTimer = 0f;
+    }
+
 }

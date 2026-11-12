@@ -1,0 +1,404 @@
+{
+  "mode": "shared HitArea center gradient, not actual combined silhouette distance",
+  "verification": "Offline asset structure, graph and numerical checks; no MCP or native Unity execution",
+  "graph": "Assets/Shaders/Characters/SlimeHitFlash.shadergraph",
+  "material": "Assets/Materials/Characters/SlimeHitFlash.mat",
+  "controllerGuid": "5a36bf069dff0f45883cffd1ebd6428d",
+  "idleGuid": "d049b893d754eed963b0165c4047ba61",
+  "hitGuid": "9348ffebeec42c4f9d9d9d2aa17527e2",
+  "effectScript": "30b2c989160ea6a4ebfc7b7da9dcf7a6",
+  "targets": [
+    {
+      "file": "Assets/Prefab/Player/PlayerVisual.prefab",
+      "root": "1921220242997067318",
+      "animator": "8200000000000001002",
+      "effectVisual": "8200000000000001003",
+      "areaTransform": "8200000000000001005",
+      "center": {
+        "x": 0.019900508164184205,
+        "y": -0.06121137453482589,
+        "z": 0
+      },
+      "size": {
+        "x": 1.143134328358209,
+        "y": 1.5716418105116416,
+        "z": 1
+      },
+      "visibleRenderers": [
+        "ArmLeft",
+        "Eyes",
+        "Hat",
+        "Torso",
+        "HairLeft",
+        "ArmRight",
+        "HairRight",
+        "LegLeft",
+        "EyeUnderlayRight",
+        "Staff",
+        "LegRight",
+        "FaceUnderlay",
+        "Head",
+        "Mouth"
+      ],
+      "materialsAssigned": 14
+    },
+    {
+      "file": "Assets/Prefab/SlimeSmall.prefab",
+      "root": "8000000000000000002",
+      "animator": "8200000000000001008",
+      "effectVisual": "8200000000000001009",
+      "areaTransform": "8200000000000001011",
+      "center": {
+        "x": -0.0015865749286224085,
+        "y": 0.06253546427451284,
+        "z": 0
+      },
+      "size": {
+        "x": 1.6490734270681882,
+        "y": 1.0691794746925616,
+        "z": 1
+      },
+      "visibleRenderers": [
+        "Eyes",
+        "Smile",
+        "Body"
+      ],
+      "materialsAssigned": 3
+    },
+    {
+      "file": "Assets/Prefab/SlimeMedium.prefab",
+      "root": "8000000000000000002",
+      "animator": "8200000000000001014",
+      "effectVisual": "8200000000000001015",
+      "areaTransform": "8200000000000001017",
+      "center": {
+        "x": -0.0046153845872421995,
+        "y": 0.06585207488231348,
+        "z": 0
+      },
+      "size": {
+        "x": 2.073599819485717,
+        "y": 1.4795414928222408,
+        "z": 1
+      },
+      "visibleRenderers": [
+        "Eyes",
+        "Smile",
+        "Body"
+      ],
+      "materialsAssigned": 3
+    },
+    {
+      "file": "Assets/Prefab/SlimeLarge.prefab",
+      "root": "8000000000000000002",
+      "animator": "8200000000000001020",
+      "effectVisual": "8200000000000001021",
+      "areaTransform": "8200000000000001023",
+      "center": {
+        "x": -1.367187474343723e-10,
+        "y": 0.2727927363711442,
+        "z": 0
+      },
+      "size": {
+        "x": 3.7799999460000007,
+        "y": 2.8467051616449215,
+        "z": 1
+      },
+      "visibleRenderers": [
+        "Eyes",
+        "Moustache",
+        "Body"
+      ],
+      "materialsAssigned": 3
+    }
+  ],
+  "animation": {
+    "idleLength": 0.1,
+    "hitLength": 0.2,
+    "keys": [
+      [
+        0,
+        0
+      ],
+      [
+        0.03,
+        1
+      ],
+      [
+        0.2,
+        0
+      ]
+    ],
+    "transition": "Hit -> Idle, exit time 1, duration 0"
+  },
+  "alphaOutputUnchanged": true,
+  "originalAlphaEdges": [
+    {
+      "m_OutputSlot": {
+        "m_SlotId": 4,
+        "m_Node": {
+          "m_Id": "783a0abb41794e3ca19146271dbb01c9"
+        }
+      },
+      "m_InputSlot": {
+        "m_SlotId": 0,
+        "m_Node": {
+          "m_Id": "deeb0e7bee0a466b937ecbd25df67a72"
+        }
+      }
+    }
+  ],
+  "newNodes": 18,
+  "changedFiles": [
+    "Assets/Shaders/Characters/SlimeHitFlash.shadergraph",
+    "Assets/Materials/Characters/SlimeHitFlash.mat",
+    "Assets/Animations/Effects.meta",
+    "Assets/Animations/Effects/HitEffectIdle.anim",
+    "Assets/Animations/Effects/HitEffectIdle.anim.meta",
+    "Assets/Animations/Effects/HitEffectHit.anim",
+    "Assets/Animations/Effects/HitEffectHit.anim.meta",
+    "Assets/Animations/Effects/HitEffect.controller",
+    "Assets/Animations/Effects/HitEffect.controller.meta",
+    "Assets/Prefab/Player/PlayerVisual.prefab",
+    "Assets/Prefab/SlimeSmall.prefab",
+    "Assets/Prefab/SlimeMedium.prefab",
+    "Assets/Prefab/SlimeLarge.prefab",
+    "Assets/Scenes/SampleScene.unity"
+  ],
+  "preserved": [
+    {
+      "file": "Assets/Scripts/Bullet.cs",
+      "hash": "a08423eec398d121e1094967f4367a5a1b3a5f9b8fe75d4d561df0fbd4427683"
+    },
+    {
+      "file": "Assets/Scripts/Effects/HitEffectVisual.cs",
+      "hash": "cffa27dc67225287ef00c308f602fd0849d7a3073831931a916227573885ec7f"
+    },
+    {
+      "file": "Assets/Scripts/Effects/HitReaction.cs",
+      "hash": "3439a1fdebfceb536d07bb08e4a074ddae10002c7e767ec7d40a30d20b8e6f02"
+    },
+    {
+      "file": "Assets/Scripts/Effects/LandingDust.cs",
+      "hash": "6de72eb3de6b6372c24d8ff769fceb8ac5425fd3d77b6354a16a449d12ed6c82"
+    },
+    {
+      "file": "Assets/Scripts/Effects/LandingDustPool.cs",
+      "hash": "5c154d4caa47a722350ab3ef4d8510760081d8353c2e551e56f6071669aebc41"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/Enemy.cs",
+      "hash": "0cafcd860509b354f990e0f5f378fe3e36fc396907b63604329d425b529ea1a7"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/EnemySpawner.cs",
+      "hash": "c45ea7855ce166e46fa1f843778f11cc9ded4bad5838ac9c2c0c2b4e0b7ab6c4"
+    },
+    {
+      "file": "Assets/Scripts/Enemy/SlimeMotion.cs",
+      "hash": "f91f4699ca52f4a3bcc09dec78182ea9a3a7c32217d5d685157d51529f360855"
+    },
+    {
+      "file": "Assets/Scripts/Player/Player.cs",
+      "hash": "93815bdbb77d287e90ce1f0ddec32f7ad03f8037ab3770d5df87263e6bc27f41"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerAttack.cs",
+      "hash": "2c40644ba9e0e3421bbb69a3a6f51da76693b6cc8ff3d3573c302bcc14ea4eda"
+    },
+    {
+      "file": "Assets/Scripts/Player/PlayerMotion.cs",
+      "hash": "8a511d8a85b7d428a8f875ac4cb9cd181f92411d3702d0ddf36ff44f43c973c3"
+    },
+    {
+      "file": "Assets/Scripts/Stage/Stage.cs",
+      "hash": "8f0a54d0adaebefd14cef4ff745d4fb1665a3d8fc0d57582e5c8b5ee1f787155"
+    },
+    {
+      "file": "Assets/Scripts/Stage/StageScenery.cs",
+      "hash": "9455fd3d1962283da30894bab3604b5f9f8d80907526955c9be35b4b530893c5"
+    },
+    {
+      "file": "Assets/Scripts/StateDTO/EnemyState.cs",
+      "hash": "caf8821af122db91545f195da0edd706a6112e6a4199d58aa18f13a53fc2c910"
+    },
+    {
+      "file": "Assets/Scripts/StateDTO/PlayerState.cs",
+      "hash": "949e31fd5f63139161f17e828fce7fb8d7bc22c58b1cea345c10166c0b25e5ce"
+    },
+    {
+      "file": "Assets/Scripts/UI/HealthBar.cs",
+      "hash": "833fe96293addbbb6b4f5c13c50b66a4f01b83458ead90ea28c50f158f1567a8"
+    },
+    {
+      "file": "Assets/Scripts/UI/PlayerInfo.cs",
+      "hash": "97769522e65817f84684ad2fdcfc5d2811f85a803484794d154dc7df29c40f32"
+    },
+    {
+      "file": "Assets/Scripts/UI/StageInfo.cs",
+      "hash": "932bb663831c1e962702ec5bf64b7a995b294837bcd1d6755ed62d38d929aa32"
+    },
+    {
+      "file": "Assets/Animations/Player/Player.controller",
+      "hash": "7248763d73d5b09e402ef238ced6f177dab80266ebdcff6af98f162ebe7315bc"
+    },
+    {
+      "file": "Assets/Animations/Player/Player3Idle.anim",
+      "hash": "c26897bda736a0041d961442cb669490201dd507bbbc8477315f5e965aee6ade"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerAttack.anim",
+      "hash": "e9a749106331078d8c7fcdb312b60cabde1f5be58fa6714ebd7c68a5509bcd9b"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerDeath.anim",
+      "hash": "35501d41c1711e5ec3a51d7f06fbc6c0b07d8f05e9ea34b9d6fe7f9041317faf"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerHit.anim",
+      "hash": "1b9c2aab46c8667e0a174e85a3787cb6b1c24ae259f2dc7d60174f06a055abca"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerIdle.anim",
+      "hash": "8e604b82b5f4a5edd581920242ded919a4f2eea9ee1d1feb3bb3d7d9c5e5b442"
+    },
+    {
+      "file": "Assets/Animations/Player/PlayerWalk.anim",
+      "hash": "e9eee56509249e764b5be24aaf91a919a1eb42373c72f5745c35419c906d86c7"
+    },
+    {
+      "file": "Assets/Animations/Slime/Slime.controller",
+      "hash": "6ca74a31cce9d020b48389228643474e2c427229f166d55f348c302965e2e777"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackLarge.anim",
+      "hash": "9a975f24be097e3d649a4f66b53a874612fb806171f640b7bc5b33029d4f3e78"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackMedium.anim",
+      "hash": "8febffa9ce9514280e82a40afa7613ffd632e761ff1fcc7d24d9d9d69f7081db"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeAttackSmall.anim",
+      "hash": "bcd0d5494a8ec290d9c1c34435a66c34443e1de781711774dcce5154f12bbeb7"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeDeathLarge.anim",
+      "hash": "c0289c45650ab7208ec0501bdc3ccbeaf0eef161c6f4a2134fe8c1ddf998453e"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeDeathMedium.anim",
+      "hash": "77c7b2117adee4679d20d13d8c17a858d886209142fb45c738e0347df7792c0b"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeDeathSmall.anim",
+      "hash": "3e595778f1ebf729e32e7c8d653f1e3325a4f5d41a5cead85b6c951150b4747e"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeIdle.anim",
+      "hash": "1346f2bda4904e57db86882fbe21c6b9b6db7a2ebfd40f2df1e3f222386cd54e"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpLarge.anim",
+      "hash": "385f1c055324f4b256009a1210bb7be3e8cad7cee80112bdabd4219e13d138b0"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpMedium.anim",
+      "hash": "6caf8190cfc5cefbe349ef88cd9fe2667e831c5592892a6aada3533609397c54"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeJumpSmall.anim",
+      "hash": "42d91255d43da5fe97e68a702f52fb19da0762953b9076316d6f2014b419a3bb"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeLand.anim",
+      "hash": "7ac83bbfd89185a2b55f4227ef242a64a408daeb1860bef907bf444962c83c79"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeLarge.overrideController",
+      "hash": "9cb343e1f038bde5a397cba6a0cabf83517c47b76a3388c980d08513c863e7c8"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimeMedium.overrideController",
+      "hash": "09292529209b632b076eeafb302c88d3eb6b4ed8c3c428b62bdd9e7f55782472"
+    },
+    {
+      "file": "Assets/Animations/Slime/SlimePrepare.anim",
+      "hash": "558bd6a8b6dc580216d7bf59bd38f568611767ad33d17c0ef694f213b38670d9"
+    }
+  ],
+  "validation": {
+    "graphObjects": 133,
+    "graphNodes": 33,
+    "graphEdges": 31,
+    "shaderNumericalCases": 90,
+    "alphaOutputUnchanged": true,
+    "targets": [
+      {
+        "file": "Assets/Prefab/Player/PlayerVisual.prefab",
+        "visibleRendererCount": 14,
+        "areaCenter": {
+          "x": 0.019900508164184205,
+          "y": -0.06121137453482589,
+          "z": 0
+        },
+        "areaSize": {
+          "x": 1.143134328358209,
+          "y": 1.5716418105116416,
+          "z": 1
+        },
+        "bindingsValid": true
+      },
+      {
+        "file": "Assets/Prefab/SlimeSmall.prefab",
+        "visibleRendererCount": 3,
+        "areaCenter": {
+          "x": -0.0015865749286224085,
+          "y": 0.06253546427451284,
+          "z": 0
+        },
+        "areaSize": {
+          "x": 1.6490734270681882,
+          "y": 1.0691794746925616,
+          "z": 1
+        },
+        "bindingsValid": true
+      },
+      {
+        "file": "Assets/Prefab/SlimeMedium.prefab",
+        "visibleRendererCount": 3,
+        "areaCenter": {
+          "x": -0.0046153845872421995,
+          "y": 0.06585207488231348,
+          "z": 0
+        },
+        "areaSize": {
+          "x": 2.073599819485717,
+          "y": 1.4795414928222408,
+          "z": 1
+        },
+        "bindingsValid": true
+      },
+      {
+        "file": "Assets/Prefab/SlimeLarge.prefab",
+        "visibleRendererCount": 3,
+        "areaCenter": {
+          "x": -1.367187474343723e-10,
+          "y": 0.2727927363711442,
+          "z": 0
+        },
+        "areaSize": {
+          "x": 3.7799999460000007,
+          "y": 2.8467051616449215,
+          "z": 1
+        },
+        "bindingsValid": true
+      }
+    ],
+    "sceneReferencesValid": true,
+    "sharedControllerAndClipsValid": true,
+    "slimeVariantsInherited": 18,
+    "gameCSharpAndExistingAnimationsUnchanged": true,
+    "nativeUnityValidation": false
+  }
+}

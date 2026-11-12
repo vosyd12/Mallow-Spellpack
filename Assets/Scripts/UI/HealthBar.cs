@@ -7,6 +7,9 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private Image _damageFill; // 잔상에 대한 바게이지
 
     [SerializeField]
+    private GameObject _visualRoot;
+
+    [SerializeField]
     private float _damageDelay = 0.2f;
 
     [SerializeField]    // 데미지 잔상바가 사라지는 속도
@@ -60,9 +63,24 @@ public class HealthBar : MonoBehaviour
         }
     }
 
+    public void Hide()
+    {
+        _visualRoot.SetActive(false);
+        enabled = false;
+    }
+
     private void OnDisable()
     {
         _isInitialized = false;
         _delayTimer = 0f;
+    }
+
+    public void Show()
+    {
+        _isInitialized = false;
+        _delayTimer = 0f;
+
+        _visualRoot.SetActive(true);
+        enabled = true;
     }
 }

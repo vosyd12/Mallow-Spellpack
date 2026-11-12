@@ -1,0 +1,42 @@
+﻿{
+    "sourceFilesUnchanged":  19,
+    "prefabAndSceneReferencesChecked":  true,
+    "unscaledAnimator":  true,
+    "geometry":  {
+                     "Clear":  {
+                                   "startY":  [
+                                                  1,
+                                                  1
+                                              ],
+                                   "endY":  [
+                                                1,
+                                                1
+                                            ],
+                                   "duration":  0.016666666666666666
+                               },
+                     "Cover":  {
+                                   "startY":  [
+                                                  1,
+                                                  1
+                                              ],
+                                   "endY":  [
+                                                0,
+                                                1
+                                            ],
+                                   "duration":  0.4
+                               },
+                     "Reveal":  {
+                                    "startY":  [
+                                                   0,
+                                                   1
+                                               ],
+                                    "endY":  [
+                                                 0,
+                                                 0
+                                             ],
+                                    "duration":  0.4
+                                }
+                 },
+    "runtimeVerified":  false,
+    "isolatedUnityImportSucceeded":  true
+}

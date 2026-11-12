@@ -25,6 +25,10 @@ public class PlayerMotion : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject _groundShadow;
 
+    private SpriteRenderer[] _renderers;
+    private Sprite[] _originalSprites;
+    private Color[] _originalColors;
+
     private MotionState _state;
     private bool _hasState;
 
@@ -35,7 +39,8 @@ public class PlayerMotion : MonoBehaviour
             _player = GetComponentInParent<Player>();
         }
 
-        if (_playerAttack == null && _player != null)
+        if (_playerAttack == null && 
+            _player != null)
         {
             _playerAttack = _player.GetComponent<PlayerAttack>();
         }
@@ -56,10 +61,21 @@ public class PlayerMotion : MonoBehaviour
 
             enabled = false;
         }
+
+        _renderers = GetComponentsInChildren<SpriteRenderer>(true);
+        _originalSprites = new Sprite[_renderers.Length];
+        _originalColors = new Color[_renderers.Length];
+
+        for (int i = 0; i < _renderers.Length; i++)
+        {
+            _originalSprites[i] = _renderers[i].sprite;
+            _originalColors[i] = _renderers[i].color;
+        }
     }
 
     private void OnEnable()
     {
+        _player.Revived += RestoreMotion;
         _player.Damaged += PlayHit;
         _player.Died += PlayDeath;
         _playerAttack.AttackStarted += PlayAttack;
@@ -79,6 +95,7 @@ public class PlayerMotion : MonoBehaviour
     {
         if (_player != null)
         {
+            _player.Revived -= RestoreMotion;
             _player.Damaged -= PlayHit;
             _player.Died -= PlayDeath;
         }
@@ -191,5 +208,29 @@ public class PlayerMotion : MonoBehaviour
         }
 
         PlayLocomotion();
+    }
+
+    private void RestoreMotion()
+    {
+        _playerAttack.ResetAttack();
+
+        // 사망 클립의 이동·회전·배율 등 바인딩 상태 초기화
+        _animator.Rebind();
+
+        _hasState = false;
+        ChangeState(MotionState.Idle);
+        _animator.Update(0f);
+
+        // 사망 표정과 페이드 잔여 값 복구
+        for (int i = 0; i < _renderers.Length; i++)
+        {
+            _renderers[i].sprite = _originalSprites[i];
+            _renderers[i].color = _originalColors[i];
+        }
+
+        if (_groundShadow != null)
+        {
+            _groundShadow.SetActive(true);
+        }
     }
 }

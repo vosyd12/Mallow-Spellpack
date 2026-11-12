@@ -68,6 +68,8 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     - _HitAmount: 0
+    - _HitRimWidth: 0.6
+    - _HitCenterStrength: 0.12
     - _ZWrite: 0
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
