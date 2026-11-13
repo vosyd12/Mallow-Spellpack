@@ -131,13 +131,13 @@ public class PlayerAttack : MonoBehaviour
         bullet.Initialize(_target, damage);
     }
 
-    // 공격 종료 또는 취소 시 호출한다.
     public void FinishAttack()
     {
         IsAttacking = false;
         _hasFired = false;
         _target = null;
     }
+
 
     public void ResetAttack()
     {

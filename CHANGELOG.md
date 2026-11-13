@@ -2,6 +2,15 @@
 해당 변경된 이력이 존재한 경우에만 날짜별로 구분해서 관리한다.
 간단한 이력만 남기고 자세한 이력은 문서 폴더에 yyyy-mm-dd 짤막한 변경 이력을 파일명으로 작성해서 관리한다.
 
+## 2026-11-13
+
+- 플레이어 에셋 단일 기준과 이동 중 상체 공격의 확정 방향·사용자 코드 반영 상태를 문서화했다. Motion 이름 통일을 관리 규칙에 반영하고 클립 경로·빈 마스크 Transform 목록·이전 종료 이벤트의 미완료 상태를 마일스톤에 구분했다. 현재 FinishAttack 복구와 레이어 제어는 파일로 확인했으며 문서만 수정하고 C#·에셋 변경·새 컴파일/실행·MCP 검증은 하지 않았다. [통합 현황·원인·남은 연결](문서/2026-11-13-WORK-SUMMARY.md)
+- 사용자 리깅 PlayerPartsAtlas를 기준으로 PlayerVisual의 삭제된 아틀라스 참조를 복구했다. PNG·메타·6개 Skin의 뼈 13개를 보존·대조하고 조건 없는 Death/Hit 전환만 제거했다. Base/Attack 레이어는 유지했으며 C#의 상태 경로·레이어 불일치는 후속으로 기록했다. MCP·실제 Unity 재생 확인은 없다. [원인·연결·리깅 보존·남은 문제](문서/2026-11-13-PLAYER-ATLAS-RECONNECT.md)
+
+- 플레이어 모션을 Player Controller와 Idle·Walk·Attack·Hit·Death 5개로 통합했다. 버전별 클립 대신 발사·종료 이벤트와 사망 효과가 있는 기준 클립을 연결하고 Prefab 모션 루트 이름을 IdleMotion으로 맞췄다. 중복은 Assets 밖으로 이동하고 관리 규칙을 추가했다. 616개 경로·이벤트·GUID·기존 곡선 보존을 파일로 확인했으며 C# 수정·MCP·Unity 재생 검증은 없다. [통합·연결·남은 확인](문서/2026-11-13-PLAYER-ANIMATION-UNIFICATION.md)
+
+- 플레이어 외형을 PlayerVisual Prefab 하나로 통합하고 SampleScene의 잘못된 외형 참조와 HitReaction의 효과 Animator·Visual 참조를 교정했다. 기존 객체 ID·모션·FirePos·씬 보정을 유지하고 중복 PlayerMageV3Visual은 Assets에서 제거했다. AGENTS에 단일 기준·모션 복제 금지·참조 검증 규칙을 추가했다. C# 수정·MCP·Unity 재생 검증은 없다. [원인·변경·재발 방지·검증](문서/2026-11-13-PLAYER-PREFAB-UNIFICATION.md)
+
 ## 2026-11-12
 
 - 현재 씬의 플레이어 최대 HP 10·전환 Canvas 설정과 슬라임 Controller 편집 상태를 반영했다. 원격 이력은 현재 프로젝트 파일·GUID를 유지하는 병합으로 통합하며 C# 수정·새 실행 검증은 없다.

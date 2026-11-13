@@ -4,21 +4,17 @@ public class PlayerMotion : MonoBehaviour
 {
     private enum MotionState
     {
-        Idle,
-        Walk,
-        Attack,
+        Locomotion,
         Hit,
         Death
     }
 
     private static readonly int[] AnimationStates =
-    {
-        Animator.StringToHash("Base Layer.Idle"),
-        Animator.StringToHash("Base Layer.Walk"),
-        Animator.StringToHash("Base Layer.Attack"),
-        Animator.StringToHash("Base Layer.Hit"),
-        Animator.StringToHash("Base Layer.Death")
-    };
+  {
+    Animator.StringToHash("Base.Locomotion"),
+    Animator.StringToHash("Base.Hit"),
+    Animator.StringToHash("Base.Death")
+};
 
     [SerializeField] private Player _player;
     [SerializeField] private PlayerAttack _playerAttack;
@@ -31,6 +27,19 @@ public class PlayerMotion : MonoBehaviour
 
     private MotionState _state;
     private bool _hasState;
+
+    // Attack 레이어만 관리
+    private static readonly int BlendParameter =
+    Animator.StringToHash("Blend");
+
+    private static readonly int AttackState =
+        Animator.StringToHash("Attack.Attack");
+
+    private static readonly int EmptyState =
+        Animator.StringToHash("Attack.Empty");
+
+    private int _attackLayer;
+    private bool _isReady;
 
     private void Awake()
     {
@@ -60,6 +69,7 @@ public class PlayerMotion : MonoBehaviour
                 this);
 
             enabled = false;
+            return;
         }
 
         _renderers = GetComponentsInChildren<SpriteRenderer>(true);
@@ -71,16 +81,44 @@ public class PlayerMotion : MonoBehaviour
             _originalSprites[i] = _renderers[i].sprite;
             _originalColors[i] = _renderers[i].color;
         }
+
+        _attackLayer = _animator.GetLayerIndex("Attack");
+
+        bool hasStates =
+            _attackLayer >= 0 &&
+            _animator.HasState(0, AnimationStates[0]) &&
+            _animator.HasState(0, AnimationStates[1]) &&
+            _animator.HasState(0, AnimationStates[2]);
+
+        if (!hasStates ||
+            !_animator.HasState(_attackLayer, AttackState) ||
+            !_animator.HasState(_attackLayer, EmptyState))
+        {
+            Debug.LogError(
+                "Player Animator의 레이어와 상태를 확인해주세요.",
+                this);
+
+            enabled = false;
+            return;
+        }
+
+        _isReady = true;
     }
 
     private void OnEnable()
     {
+        if (!_isReady)
+        {
+            return;
+        }
+
         _player.Revived += RestoreMotion;
         _player.Damaged += PlayHit;
         _player.Died += PlayDeath;
         _playerAttack.AttackStarted += PlayAttack;
 
         _hasState = false;
+        StopAttackMotion();
 
         if (_player.IsDead)
         {
@@ -103,15 +141,36 @@ public class PlayerMotion : MonoBehaviour
         if (_playerAttack != null)
         {
             _playerAttack.AttackStarted -= PlayAttack;
-            _playerAttack.FinishAttack();
+
+            if (!_isReady)
+            {
+                _playerAttack.FinishAttack();
+            }
+        }
+
+        if (_isReady)
+        {
+            StopAttackMotion();
+            _animator.speed = 1f;
         }
     }
 
     private void Update()
     {
-        if (_player.IsDead ||
-            _state == MotionState.Attack ||
-            _state == MotionState.Hit ||
+        if (_player.IsDead)
+        {
+            return;
+        }
+
+        if (!_player.CanAct)
+        {
+            _animator.speed = 0f;
+            return;
+        }
+
+        _animator.speed = 1f;
+
+        if (_state == MotionState.Hit ||
             _state == MotionState.Death)
         {
             return;
@@ -122,31 +181,43 @@ public class PlayerMotion : MonoBehaviour
 
     private void PlayLocomotion()
     {
-        ChangeState(
-            _player.IsMoving
-                ? MotionState.Walk
-                : MotionState.Idle);
+        ChangeState(MotionState.Locomotion);
+
+        _animator.SetFloat(
+            BlendParameter,
+            _player.IsMoving ? 0.5f : 0f);
     }
 
     private void PlayAttack()
     {
-        if (_player.IsDead)
+        if (!_player.CanAct ||
+            _state == MotionState.Death)
         {
             _playerAttack.FinishAttack();
             return;
         }
 
-        ChangeState(MotionState.Attack, true);
+        PlayLocomotion();
+
+        _animator.SetLayerWeight(_attackLayer, 1f);
+        _animator.Play(AttackState, _attackLayer, 0f);
+    }
+
+    private void StopAttackMotion()
+    {
+        _playerAttack.FinishAttack();
+
+        _animator.Play(EmptyState, _attackLayer, 0f);
+        _animator.SetLayerWeight(_attackLayer, 0f);
     }
 
     private void PlayHit()
     {
-        if (_player.IsDead || _state == MotionState.Attack)
+        if (!_player.CanAct || _playerAttack.IsAttacking)
         {
             return;
         }
 
-        // 연속 피격이면 Hit 동작을 처음부터 다시 재생한다.
         ChangeState(MotionState.Hit, true);
     }
 
@@ -156,6 +227,8 @@ public class PlayerMotion : MonoBehaviour
         {
             return;
         }
+
+        StopAttackMotion();
 
         if (_groundShadow != null)
         {
@@ -181,33 +254,14 @@ public class PlayerMotion : MonoBehaviour
         _animator.Play(AnimationStates[(int)state], 0, 0f);
     }
 
-    // Attack 클립의 발사 시점에 Animation Event로 호출한다.
     public void FireProjectile()
     {
-        if (_player.IsDead || _state != MotionState.Attack)
+        if (!_player.CanAct || !_playerAttack.IsAttacking)
         {
             return;
         }
 
         _playerAttack.MagicAttack();
-    }
-
-    // Attack과 Hit 클립의 종료 시점에 호출한다.
-    public void FinishAction()
-    {
-        if (_player.IsDead ||
-            (_state != MotionState.Attack &&
-             _state != MotionState.Hit))
-        {
-            return;
-        }
-
-        if (_state == MotionState.Attack)
-        {
-            _playerAttack.FinishAttack();
-        }
-
-        PlayLocomotion();
     }
 
     private void RestoreMotion()
@@ -218,7 +272,10 @@ public class PlayerMotion : MonoBehaviour
         _animator.Rebind();
 
         _hasState = false;
-        ChangeState(MotionState.Idle);
+
+        StopAttackMotion();
+        PlayLocomotion();
+
         _animator.Update(0f);
 
         // 사망 표정과 페이드 잔여 값 복구
@@ -232,5 +289,26 @@ public class PlayerMotion : MonoBehaviour
         {
             _groundShadow.SetActive(true);
         }
+    }
+
+    // Attack과 Hit 클립의 종료 시점에 호출한다.
+    public void FinishAttackMotion()
+    {
+        if (_player.IsDead || !_playerAttack.IsAttacking)
+        {
+            return;
+        }
+
+        StopAttackMotion();
+    }
+
+    public void FinishHitMotion()
+    {
+        if (_player.IsDead || _state != MotionState.Hit)
+        {
+            return;
+        }
+
+        PlayLocomotion();
     }
 }
