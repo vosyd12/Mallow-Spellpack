@@ -1,0 +1,9 @@
+﻿Importing 'GUID: a0445750a6c3130448f523953cb73b97 - Path: Assets/Player/PlayerIdle.anim' with importer (NativeFormatImporter)
+Importing 'GUID: 7297ac739cd000a4188e460914e492a4 - Path: Assets/Player/PlayerHit.anim' with importer (NativeFormatImporter)
+Importing 'GUID: 65d6ded45f8a54748aa38002ab61a594 - Path: Assets/Player/PlayerDeath.anim' with importer (NativeFormatImporter)
+Importing 'GUID: 980578723fbf36b419f15281b955548d - Path: Assets/Player/PlayerWalk.anim' with importer (NativeFormatImporter)
+Importing 'GUID: e886b14875f071943acde527c1ebf4d1 - Path: Assets/Player/PlayerAttack.anim' with importer (NativeFormatImporter)
+Importing 'GUID: 1d3811fbdcdaea34d8b0b0d8eb26d346 - Path: Assets/Player/PlayerUpperBody.mask' with importer (NativeFormatImporter)
+Importing 'GUID: 1f65decb9f5546f9a724d701b73ad86c - Path: Assets/Player/Player.controller' with importer (NativeFormatImporter)
+Exiting batchmode successfully now!
+Exiting without the bug reporter. Application will terminate with return code 0

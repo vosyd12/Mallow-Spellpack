@@ -1,0 +1,39 @@
+{
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "rootName": "IngameScene",
+  "rootComponents": [
+    "RectTransform",
+    "Canvas",
+    "CanvasScaler",
+    "GraphicRaycaster"
+  ],
+  "referenceResolution": {
+    "x": 1980,
+    "y": 1080
+  },
+  "rootMatch": 0.5,
+  "rootChildren": [
+    "Stage",
+    "SceneSetup",
+    "Characters",
+    "UI",
+    "Effects"
+  ],
+  "nestedHUDReference": {
+    "x": 1080,
+    "y": 1920
+  },
+  "nestedHUDMatch": 0,
+  "namedPanels": [
+    "PlayerInfoPanel",
+    "StageInfoPanel"
+  ],
+  "playerPanelLocalScale": {
+    "x": 1,
+    "y": 0.43747,
+    "z": 1
+  },
+  "gameViewOutputResolutionVerified": false,
+  "runtimeVerified": false,
+  "sceneSHA256": "83d89b330c6123bc56b3e58553208badbf0b5662cedade7b2e2db481fd4e4077"
+}

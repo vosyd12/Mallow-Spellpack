@@ -1,0 +1,73 @@
+{
+  "canonical": {
+    "Idle": {
+      "file": "Assets/Animations/Player/PlayerIdle.anim",
+      "guid": "1fa2f9fca2915314ab08e8cac2960e0b"
+    },
+    "Walk": {
+      "file": "Assets/Animations/Player/PlayerWalk.anim",
+      "guid": "980578723fbf36b419f15281b955548d"
+    },
+    "Attack": {
+      "file": "Assets/Animations/Player/PlayerAttack.anim",
+      "guid": "e886b14875f071943acde527c1ebf4d1"
+    },
+    "Hit": {
+      "file": "Assets/Animations/Player/PlayerHit.anim",
+      "guid": "7297ac739cd000a4188e460914e492a4"
+    },
+    "Death": {
+      "file": "Assets/Animations/Player/PlayerDeath.anim",
+      "guid": "65d6ded45f8a54748aa38002ab61a594"
+    }
+  },
+  "controllerGuid": "1f65decb9f5546f9a724d701b73ad86c",
+  "states": [
+    {
+      "name": "Idle",
+      "guid": "1fa2f9fca2915314ab08e8cac2960e0b"
+    },
+    {
+      "name": "Walk",
+      "guid": "980578723fbf36b419f15281b955548d"
+    },
+    {
+      "name": "Attack",
+      "guid": "e886b14875f071943acde527c1ebf4d1"
+    },
+    {
+      "name": "Hit",
+      "guid": "7297ac739cd000a4188e460914e492a4"
+    },
+    {
+      "name": "Death",
+      "guid": "65d6ded45f8a54748aa38002ab61a594"
+    }
+  ],
+  "changedReferenceFiles": [
+    "Assets/Animations/Player/Player.controller"
+  ],
+  "retiredFiles": [
+    "Assets/Animations/Player/PlayerIdle.anim",
+    "Assets/Animations/Player/PlayerMageV3Idle.anim",
+    "Assets/Animations/Player/PlayerMageV3Walk.anim",
+    "Assets/Animations/Player/PlayerMageV3Attack.anim",
+    "Assets/Animations/Player/PlayerMageV3Hit.anim",
+    "Assets/Animations/Player/PlayerMageV3Death.anim",
+    "Assets/Animations/Player/PlayerMageV3Idle.controller"
+  ],
+  "attackEvents": {
+    "FireProjectile": 0.3,
+    "FinishAction": 0.7
+  },
+  "hitFinishEvent": 0.42,
+  "actionClipsUnchanged": true,
+  "deathFadeAndExpressionPreserved": true,
+  "idleOnlyRenamed": true,
+  "retiredGuidReferences": 0,
+  "protectedFilesUnchanged": 216,
+  "nativeUnityValidation": false,
+  "animationPathsValid": 616,
+  "sceneBulletFirePosAndSeparateAnimatorReferencesValid": true,
+  "prefabOnlyMotionRootRenamed": true
+}

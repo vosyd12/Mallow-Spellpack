@@ -1,0 +1,112 @@
+﻿{
+    "clips":  [
+                  {
+                      "clip":  "PlayerIdle",
+                      "pathEntriesMigrated":  11,
+                      "bindingCount":  5,
+                      "staffRestPoseRebased":  false,
+                      "duration":  3.6,
+                      "events":  [
+
+                                 ]
+                  },
+                  {
+                      "clip":  "PlayerWalk",
+                      "pathEntriesMigrated":  35,
+                      "bindingCount":  15,
+                      "staffRestPoseRebased":  true,
+                      "duration":  0.98,
+                      "events":  [
+
+                                 ]
+                  },
+                  {
+                      "clip":  "PlayerAttack",
+                      "pathEntriesMigrated":  180,
+                      "bindingCount":  45,
+                      "staffRestPoseRebased":  true,
+                      "duration":  0.7,
+                      "events":  [
+                                     {
+                                         "time":  0.3,
+                                         "functionName":  "FireProjectile",
+                                         "data":  null,
+                                         "objectReferenceParameter":  {
+                                                                          "fileID":  0
+                                                                      },
+                                         "floatParameter":  0,
+                                         "intParameter":  0,
+                                         "messageOptions":  0
+                                     },
+                                     {
+                                         "time":  0.7,
+                                         "functionName":  "FinishAttackMotion",
+                                         "data":  null,
+                                         "objectReferenceParameter":  {
+                                                                          "fileID":  0
+                                                                      },
+                                         "floatParameter":  0,
+                                         "intParameter":  0,
+                                         "messageOptions":  0
+                                     }
+                                 ]
+                  },
+                  {
+                      "clip":  "PlayerHit",
+                      "pathEntriesMigrated":  180,
+                      "bindingCount":  45,
+                      "staffRestPoseRebased":  true,
+                      "duration":  0.42,
+                      "events":  [
+                                     {
+                                         "time":  0.42,
+                                         "functionName":  "FinishHitMotion",
+                                         "data":  null,
+                                         "objectReferenceParameter":  {
+                                                                          "fileID":  0
+                                                                      },
+                                         "floatParameter":  0,
+                                         "intParameter":  0,
+                                         "messageOptions":  0
+                                     }
+                                 ]
+                  },
+                  {
+                      "clip":  "PlayerDeath",
+                      "pathEntriesMigrated":  210,
+                      "bindingCount":  61,
+                      "staffRestPoseRebased":  true,
+                      "duration":  0.9,
+                      "events":  [
+
+                                 ]
+                  }
+              ],
+    "maskEntries":  32,
+    "enabledMaskPaths":  [
+                             "Motion/ArmLeft",
+                             "Motion/ArmLeft/좌측어깨",
+                             "Motion/ArmLeft/좌측어깨/좌측팔꿈치",
+                             "Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목",
+                             "Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff",
+                             "Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff/FirePos",
+                             "Motion/ArmRight",
+                             "Motion/ArmRight/우측어깨",
+                             "Motion/ArmRight/우측어깨/우측팔꿈치",
+                             "Motion/ArmRight/우측어깨/우측팔꿈치/우측손목"
+                         ],
+    "excludedMotionRootAndLegs":  true,
+    "staffPath":  "Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff",
+    "controllerIdleGuid":  "a0445750a6c3130448f523953cb73b97",
+    "legacyAssetsRetired":  8,
+    "protectedFilesUnchanged":  368,
+    "nativeImportVerified":  true,
+    "originalPlayVerified":  false,
+    "canonicalScenePrefabVerified":  true,
+    "controllerUsesFiveCanonicalClips":  true,
+    "firePosVerified":  true,
+    "independentHitAnimatorVerified":  true,
+    "spriteSkinCount":  6,
+    "boneCount":  13,
+    "animationReceiversVerified":  true
+}

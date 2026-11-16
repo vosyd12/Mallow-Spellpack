@@ -1,0 +1,16 @@
+{
+  "canonicalPrefab": "Assets/Prefab/Player/PlayerVisual.prefab",
+  "canonicalGuid": "360b288df2cc6974b92dca49d2c5b4da",
+  "retiredPrefab": "Assets/Prefab/Player/PlayerMageV3Visual.prefab",
+  "retiredGuid": "7d9b8be171907ac498b8cbeca3a962b4",
+  "scene": "Assets/Scenes/SampleScene.unity",
+  "sourceObjectIdsPreserved": true,
+  "otherSceneDataIdentical": true,
+  "canonicalPrefabUnchanged": true,
+  "separateEffectAnimator": "8800000000000000101",
+  "effectVisual": "8800000000000000102",
+  "spriteSkinCount": 6,
+  "protectedFileCount": 290,
+  "protectedFilesUnchanged": true,
+  "nativeUnityValidation": false
+}

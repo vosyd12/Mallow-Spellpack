@@ -1,0 +1,52 @@
+{
+  "atlas": "Assets/Sprites/Characters/Player/V3/PlayerPartsAtlas.png",
+  "atlasGuid": "5412993dcc56fcb4098bdbfff14b744d",
+  "atlasPngAndMetaUnchanged": true,
+  "editedSpriteReferenceFiles": [
+    "Assets/Prefab/Player/PlayerVisual.prefab"
+  ],
+  "missingSpriteGuidsResolved": true,
+  "allReplacementSpriteIdsValid": true,
+  "skins": [
+    {
+      "component": "9100000000000100013",
+      "sprite": "arm_view_left",
+      "boneCount": 3,
+      "boneReferencesAndBindTransformsValid": true
+    },
+    {
+      "component": "9100000000000100006",
+      "sprite": "torso",
+      "boneCount": 3,
+      "boneReferencesAndBindTransformsValid": true
+    },
+    {
+      "component": "9100000000000100020",
+      "sprite": "arm_view_right",
+      "boneCount": 3,
+      "boneReferencesAndBindTransformsValid": true
+    },
+    {
+      "component": "9100000000000100023",
+      "sprite": "leg_view_left",
+      "boneCount": 1,
+      "boneReferencesAndBindTransformsValid": true
+    },
+    {
+      "component": "9100000000000100026",
+      "sprite": "leg_view_right",
+      "boneCount": 1,
+      "boneReferencesAndBindTransformsValid": true
+    },
+    {
+      "component": "9100000000000100031",
+      "sprite": "head",
+      "boneCount": 2,
+      "boneReferencesAndBindTransformsValid": true
+    }
+  ],
+  "removedUnconditionalDeathAndHitTransitions": true,
+  "controllerLayersAndBlendTreePreserved": true,
+  "protectedFilesUnchanged": 273,
+  "nativeUnityValidation": false
+}

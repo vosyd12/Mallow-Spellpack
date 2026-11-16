@@ -1,0 +1,106 @@
+{
+  "basis": [
+    1080,
+    1920
+  ],
+  "scaleMode": "ScaleWithScreenSize / Expand",
+  "topHUDReferenceSize": [
+    1080,
+    220
+  ],
+  "placeholderSkillObjectsRemoved": 2,
+  "cameraSettingsUnchanged": true,
+  "worldFramingAcrossAspectsImplemented": false,
+  "actualUnityPlayCapture": [
+    690,
+    869
+  ],
+  "consoleErrorsObserved": 0,
+  "otherResolutions": "layout calculations only; not native Unity captures",
+  "calculatedLayouts": [
+    {
+      "resolution": [
+        690,
+        869
+      ],
+      "scale": 0.452604,
+      "headerPixels": {
+        "x": 100.594,
+        "y": 0,
+        "width": 488.812,
+        "height": 99.573
+      },
+      "panelBoundsInsideScreen": true
+    },
+    {
+      "resolution": [
+        1080,
+        1920
+      ],
+      "scale": 1.0,
+      "headerPixels": {
+        "x": 0.0,
+        "y": 0,
+        "width": 1080.0,
+        "height": 220.0
+      },
+      "panelBoundsInsideScreen": true
+    },
+    {
+      "resolution": [
+        1080,
+        2340
+      ],
+      "scale": 1.0,
+      "headerPixels": {
+        "x": 0.0,
+        "y": 0,
+        "width": 1080.0,
+        "height": 220.0
+      },
+      "panelBoundsInsideScreen": true
+    },
+    {
+      "resolution": [
+        1080,
+        2400
+      ],
+      "scale": 1.0,
+      "headerPixels": {
+        "x": 0.0,
+        "y": 0,
+        "width": 1080.0,
+        "height": 220.0
+      },
+      "panelBoundsInsideScreen": true
+    },
+    {
+      "resolution": [
+        1536,
+        2048
+      ],
+      "scale": 1.066667,
+      "headerPixels": {
+        "x": 192.0,
+        "y": 0,
+        "width": 1152.0,
+        "height": 234.667
+      },
+      "panelBoundsInsideScreen": true
+    },
+    {
+      "resolution": [
+        1920,
+        1080
+      ],
+      "scale": 0.5625,
+      "headerPixels": {
+        "x": 656.25,
+        "y": 0,
+        "width": 607.5,
+        "height": 123.75
+      },
+      "panelBoundsInsideScreen": true
+    }
+  ]
+}

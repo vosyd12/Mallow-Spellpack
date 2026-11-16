@@ -1,0 +1,1608 @@
+{
+  "mode": "ScaleWithScreenSize / MatchWidthOrHeight / Match=0",
+  "referenceResolution": [
+    1080,
+    1920
+  ],
+  "headerStretchesToCanvas": true,
+  "fixedWidthHeaderContainerRemoved": true,
+  "protectedFilesUnchanged": 310,
+  "hudRectanglesChecked": 21,
+  "nativeUnityVerification": false,
+  "mcpUsed": false,
+  "cameraAndWorldSpaceUnchanged": true,
+  "checks": [
+    {
+      "label": "small",
+      "resolution": [
+        360,
+        640
+      ],
+      "scale": 0.333333,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            235.6,
+            611.74,
+            3.78,
+            5.327
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            238.085,
+            609.199,
+            1.62,
+            1.457
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            243.16,
+            611.74,
+            3.78,
+            5.327
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            122.191,
+            594.584,
+            119.218,
+            7.992
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            12.852,
+            615.287,
+            63.756,
+            16.167
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            234.97,
+            606.447,
+            12.46,
+            8.092
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            234.2,
+            605.733,
+            14.0,
+            11.333
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            12.852,
+            598.473,
+            32.292,
+            16.167
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            11.196,
+            575.84,
+            71.208,
+            20.047
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            127.8,
+            611.16,
+            104.4,
+            21.213
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            234.2,
+            605.733,
+            14.0,
+            9.52
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            45.972,
+            599.12,
+            34.776,
+            13.58
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            127.8,
+            603.76,
+            100.8,
+            8.88
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            360.0,
+            640.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            5.4,
+            570.667,
+            82.8,
+            64.667
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            242.695,
+            609.199,
+            1.62,
+            1.457
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            120.6,
+            591.92,
+            122.4,
+            13.32
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            15.468,
+            578.847,
+            62.663,
+            14.033
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            12.976,
+            579.448,
+            67.648,
+            12.83
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            45.972,
+            599.12,
+            34.776,
+            13.58
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            91.8,
+            586.0,
+            180.0,
+            49.333
+          ]
+        }
+      ]
+    },
+    {
+      "label": "phone",
+      "resolution": [
+        1080,
+        1920
+      ],
+      "scale": 1.0,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            706.8,
+            1835.22,
+            11.34,
+            15.98
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            714.255,
+            1827.596,
+            4.859,
+            4.37
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            729.48,
+            1835.22,
+            11.34,
+            15.98
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            366.574,
+            1783.752,
+            357.653,
+            23.976
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            38.556,
+            1845.86,
+            191.268,
+            48.5
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            704.91,
+            1819.342,
+            37.38,
+            24.276
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            702.6,
+            1817.2,
+            42.0,
+            34.0
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            38.556,
+            1795.42,
+            96.876,
+            48.5
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            33.588,
+            1727.52,
+            213.624,
+            60.14
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            383.4,
+            1833.48,
+            313.2,
+            63.64
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            702.6,
+            1817.2,
+            42.0,
+            28.56
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            137.916,
+            1797.36,
+            104.328,
+            40.74
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            383.4,
+            1811.28,
+            302.4,
+            26.64
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            1080.0,
+            1920.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            16.2,
+            1712.0,
+            248.4,
+            194.0
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            728.086,
+            1827.596,
+            4.859,
+            4.37
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            361.8,
+            1775.76,
+            367.2,
+            39.96
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            46.405,
+            1736.541,
+            187.989,
+            42.098
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            38.929,
+            1738.345,
+            202.943,
+            38.49
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            137.916,
+            1797.36,
+            104.328,
+            40.74
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            275.4,
+            1758.0,
+            540.0,
+            148.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tall",
+      "resolution": [
+        1080,
+        2400
+      ],
+      "scale": 1.0,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            706.8,
+            2315.22,
+            11.34,
+            15.98
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            714.255,
+            2307.596,
+            4.859,
+            4.37
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            729.48,
+            2315.22,
+            11.34,
+            15.98
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            366.574,
+            2263.752,
+            357.653,
+            23.976
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            38.556,
+            2325.86,
+            191.268,
+            48.5
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            704.91,
+            2299.342,
+            37.38,
+            24.276
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            702.6,
+            2297.2,
+            42.0,
+            34.0
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            38.556,
+            2275.42,
+            96.876,
+            48.5
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            33.588,
+            2207.52,
+            213.624,
+            60.14
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            383.4,
+            2313.48,
+            313.2,
+            63.64
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            702.6,
+            2297.2,
+            42.0,
+            28.56
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            137.916,
+            2277.36,
+            104.328,
+            40.74
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            383.4,
+            2291.28,
+            302.4,
+            26.64
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            1080.0,
+            2400.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            16.2,
+            2192.0,
+            248.4,
+            194.0
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            728.086,
+            2307.596,
+            4.859,
+            4.37
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            361.8,
+            2255.76,
+            367.2,
+            39.96
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            46.405,
+            2216.541,
+            187.989,
+            42.098
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            38.929,
+            2218.345,
+            202.943,
+            38.49
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            137.916,
+            2277.36,
+            104.328,
+            40.74
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            275.4,
+            2238.0,
+            540.0,
+            148.0
+          ]
+        }
+      ]
+    },
+    {
+      "label": "narrow-cover",
+      "resolution": [
+        904,
+        2316
+      ],
+      "scale": 0.837037,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            591.618,
+            2245.036,
+            9.492,
+            13.376
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            597.858,
+            2238.654,
+            4.067,
+            3.658
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            610.602,
+            2245.036,
+            9.492,
+            13.376
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            306.836,
+            2201.955,
+            299.369,
+            20.069
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            32.273,
+            2253.942,
+            160.098,
+            40.596
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            590.036,
+            2231.746,
+            31.288,
+            20.32
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            588.102,
+            2229.953,
+            35.156,
+            28.459
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            32.273,
+            2211.722,
+            81.089,
+            40.596
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            28.114,
+            2154.887,
+            178.811,
+            50.339
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            320.92,
+            2243.58,
+            262.16,
+            53.269
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            588.102,
+            2229.953,
+            35.156,
+            23.906
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            115.441,
+            2213.346,
+            87.326,
+            34.101
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            320.92,
+            2224.997,
+            253.12,
+            22.299
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            904.0,
+            2316.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            13.56,
+            2141.896,
+            207.92,
+            162.385
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            609.435,
+            2238.654,
+            4.067,
+            3.658
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            302.84,
+            2195.266,
+            307.36,
+            33.448
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            38.843,
+            2162.438,
+            157.354,
+            35.238
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            32.585,
+            2163.948,
+            169.871,
+            32.217
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            115.441,
+            2213.346,
+            87.326,
+            34.101
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            230.52,
+            2180.4,
+            452.0,
+            123.881
+          ]
+        }
+      ]
+    },
+    {
+      "label": "fold-example",
+      "resolution": [
+        1840,
+        2208
+      ],
+      "scale": 1.703704,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            1204.178,
+            2063.56,
+            19.32,
+            27.225
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            1216.879,
+            2050.571,
+            8.279,
+            7.445
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            1242.818,
+            2063.56,
+            19.32,
+            27.225
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            624.533,
+            1975.874,
+            609.334,
+            40.848
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            65.688,
+            2081.687,
+            325.864,
+            82.63
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            1200.958,
+            2036.509,
+            63.684,
+            41.359
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            1197.022,
+            2032.859,
+            71.556,
+            57.926
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            65.688,
+            1995.753,
+            165.048,
+            82.63
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            57.224,
+            1880.071,
+            363.952,
+            102.461
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            653.2,
+            2060.596,
+            533.6,
+            108.424
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            1197.022,
+            2032.859,
+            71.556,
+            48.658
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            234.968,
+            1999.058,
+            177.744,
+            69.409
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            653.2,
+            2022.773,
+            515.2,
+            45.387
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            1840.0,
+            2208.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            27.6,
+            1853.63,
+            423.2,
+            330.519
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            1240.442,
+            2050.571,
+            8.279,
+            7.445
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            616.4,
+            1962.258,
+            625.6,
+            68.08
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            79.061,
+            1895.44,
+            320.278,
+            71.723
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            66.323,
+            1898.514,
+            345.754,
+            65.575
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            234.968,
+            1999.058,
+            177.744,
+            69.409
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            469.2,
+            1932.0,
+            920.0,
+            252.148
+          ]
+        }
+      ]
+    },
+    {
+      "label": "square",
+      "resolution": [
+        1800,
+        1800
+      ],
+      "scale": 1.666667,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            1178.0,
+            1658.7,
+            18.9,
+            26.633
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            1190.425,
+            1645.993,
+            8.099,
+            7.283
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            1215.8,
+            1658.7,
+            18.9,
+            26.633
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            610.956,
+            1572.92,
+            596.088,
+            39.96
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            64.26,
+            1676.433,
+            318.78,
+            80.833
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            1174.85,
+            1632.237,
+            62.3,
+            40.46
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            1171.0,
+            1628.667,
+            70.0,
+            56.667
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            64.26,
+            1592.367,
+            161.46,
+            80.833
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            55.98,
+            1479.2,
+            356.04,
+            100.233
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            639.0,
+            1655.8,
+            522.0,
+            106.067
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            1171.0,
+            1628.667,
+            70.0,
+            47.6
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            229.86,
+            1595.6,
+            173.88,
+            67.9
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            639.0,
+            1618.8,
+            504.0,
+            44.4
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            1800.0,
+            1800.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            27.0,
+            1453.333,
+            414.0,
+            323.333
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            1213.476,
+            1645.993,
+            8.099,
+            7.283
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            603.0,
+            1559.6,
+            612.0,
+            66.6
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            77.342,
+            1494.235,
+            313.315,
+            70.163
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            64.881,
+            1497.242,
+            338.238,
+            64.149
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            229.86,
+            1595.6,
+            173.88,
+            67.9
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            459.0,
+            1530.0,
+            900.0,
+            246.667
+          ]
+        }
+      ]
+    },
+    {
+      "label": "tablet",
+      "resolution": [
+        1536,
+        2048
+      ],
+      "scale": 1.422222,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            1005.227,
+            1927.424,
+            16.128,
+            22.727
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            1015.829,
+            1916.581,
+            6.911,
+            6.215
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            1037.483,
+            1927.424,
+            16.128,
+            22.727
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            521.349,
+            1854.225,
+            508.662,
+            34.099
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            54.835,
+            1942.556,
+            272.026,
+            68.978
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            1002.539,
+            1904.842,
+            53.163,
+            34.526
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            999.253,
+            1901.796,
+            59.733,
+            48.356
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            54.835,
+            1870.82,
+            137.779,
+            68.978
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            47.77,
+            1774.251,
+            303.821,
+            85.532
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            545.28,
+            1924.949,
+            445.44,
+            90.51
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            999.253,
+            1901.796,
+            59.733,
+            40.619
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            196.147,
+            1873.579,
+            148.378,
+            57.941
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            545.28,
+            1893.376,
+            430.08,
+            37.888
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            1536.0,
+            2048.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            23.04,
+            1752.178,
+            353.28,
+            275.911
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            1035.5,
+            1916.581,
+            6.911,
+            6.215
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            514.56,
+            1842.859,
+            522.24,
+            56.832
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            65.999,
+            1787.081,
+            267.362,
+            59.873
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            55.365,
+            1789.647,
+            288.63,
+            54.741
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            196.147,
+            1873.579,
+            148.378,
+            57.941
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            391.68,
+            1817.6,
+            768.0,
+            210.489
+          ]
+        }
+      ]
+    },
+    {
+      "label": "landscape",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "scale": 1.777778,
+      "hud": [
+        {
+          "name": "LeftHorn",
+          "rectPixels": [
+            1256.533,
+            929.28,
+            20.16,
+            28.409
+          ]
+        },
+        {
+          "name": "LeftEye",
+          "rectPixels": [
+            1269.787,
+            915.726,
+            8.639,
+            7.768
+          ]
+        },
+        {
+          "name": "RightHorn",
+          "rectPixels": [
+            1296.853,
+            929.28,
+            20.16,
+            28.409
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            651.686,
+            837.781,
+            635.827,
+            42.624
+          ]
+        },
+        {
+          "name": "NameText",
+          "rectPixels": [
+            68.544,
+            948.196,
+            340.032,
+            86.222
+          ]
+        },
+        {
+          "name": "Face",
+          "rectPixels": [
+            1253.173,
+            901.052,
+            66.453,
+            43.157
+          ]
+        },
+        {
+          "name": "BossIcon",
+          "rectPixels": [
+            1249.067,
+            897.244,
+            74.667,
+            60.444
+          ]
+        },
+        {
+          "name": "LevelText",
+          "rectPixels": [
+            68.544,
+            858.524,
+            172.224,
+            86.222
+          ]
+        },
+        {
+          "name": "ExpBar",
+          "rectPixels": [
+            59.712,
+            737.813,
+            379.776,
+            106.916
+          ]
+        },
+        {
+          "name": "StageNumberText",
+          "rectPixels": [
+            681.6,
+            926.187,
+            556.8,
+            113.138
+          ]
+        },
+        {
+          "name": "Head",
+          "rectPixels": [
+            1249.067,
+            897.244,
+            74.667,
+            50.773
+          ]
+        },
+        {
+          "name": "LevelUpButton",
+          "rectPixels": [
+            245.184,
+            861.973,
+            185.472,
+            72.427
+          ]
+        },
+        {
+          "name": "BossAppearText",
+          "rectPixels": [
+            681.6,
+            886.72,
+            537.6,
+            47.36
+          ]
+        },
+        {
+          "name": "TopHUD",
+          "rectPixels": [
+            0.0,
+            0.0,
+            1920.0,
+            1080.0
+          ]
+        },
+        {
+          "name": "PlayerInfoPanel",
+          "rectPixels": [
+            28.8,
+            710.222,
+            441.6,
+            344.889
+          ]
+        },
+        {
+          "name": "RightEye",
+          "rectPixels": [
+            1294.374,
+            915.726,
+            8.639,
+            7.768
+          ]
+        },
+        {
+          "name": "BossBar",
+          "rectPixels": [
+            643.2,
+            823.573,
+            652.8,
+            71.04
+          ]
+        },
+        {
+          "name": "ExpText",
+          "rectPixels": [
+            82.499,
+            753.851,
+            334.203,
+            74.841
+          ]
+        },
+        {
+          "name": "Fill",
+          "rectPixels": [
+            69.206,
+            757.058,
+            360.787,
+            68.426
+          ]
+        },
+        {
+          "name": "Label",
+          "rectPixels": [
+            245.184,
+            861.973,
+            185.472,
+            72.427
+          ]
+        },
+        {
+          "name": "StageInfoPanel",
+          "rectPixels": [
+            489.6,
+            792.0,
+            960.0,
+            263.111
+          ]
+        }
+      ]
+    }
+  ]
+}

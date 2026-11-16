@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject:
+    fileID: 0
+  m_PrefabInstance:
+    fileID: 0
+  m_PrefabAsset:
+    fileID: 0
+  m_Name: PlayerUpperBody
+  m_Mask: 7770675568902916283677847627392155347031050792467103967559608757572348523264314703872
+  m_Elements:
+  - m_Path: ''
+    m_Weight: 0
+  - m_Path: HitEffect
+    m_Weight: 0
+  - m_Path: HitEffect/HitArea
+    m_Weight: 0
+  - m_Path: Motion
+    m_Weight: 0
+  - m_Path: Motion/ArmLeft
+    m_Weight: 1
+  - m_Path: Motion/ArmLeft/좌측어깨
+    m_Weight: 1
+  - m_Path: Motion/ArmLeft/좌측어깨/좌측팔꿈치
+    m_Weight: 1
+  - m_Path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목
+    m_Weight: 1
+  - m_Path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
+    m_Weight: 1
+  - m_Path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff/FirePos
+    m_Weight: 1
+  - m_Path: Motion/ArmRight
+    m_Weight: 1
+  - m_Path: Motion/ArmRight/우측어깨
+    m_Weight: 1
+  - m_Path: Motion/ArmRight/우측어깨/우측팔꿈치
+    m_Weight: 1
+  - m_Path: Motion/ArmRight/우측어깨/우측팔꿈치/우측손목
+    m_Weight: 1
+  - m_Path: Motion/Head
+    m_Weight: 0
+  - m_Path: Motion/Head/EyeUnderlayRight
+    m_Weight: 0
+  - m_Path: Motion/Head/Eyes
+    m_Weight: 0
+  - m_Path: Motion/Head/FaceUnderlay
+    m_Weight: 0
+  - m_Path: Motion/Head/HairLeft
+    m_Weight: 0
+  - m_Path: Motion/Head/HairRight
+    m_Weight: 0
+  - m_Path: Motion/Head/Hat
+    m_Weight: 0
+  - m_Path: Motion/Head/Mouth
+    m_Weight: 0
+  - m_Path: Motion/Head/목
+    m_Weight: 0
+  - m_Path: Motion/Head/목/머리  중심점
+    m_Weight: 0
+  - m_Path: Motion/LegLeft
+    m_Weight: 0
+  - m_Path: Motion/LegLeft/좌측발목
+    m_Weight: 0
+  - m_Path: Motion/LegRight
+    m_Weight: 0
+  - m_Path: Motion/LegRight/우측발목
+    m_Weight: 0
+  - m_Path: Motion/Torso
+    m_Weight: 0
+  - m_Path: Motion/Torso/Root
+    m_Weight: 0
+  - m_Path: Motion/Torso/Root/허리
+    m_Weight: 0
+  - m_Path: Motion/Torso/Root/허리/상체
+    m_Weight: 0

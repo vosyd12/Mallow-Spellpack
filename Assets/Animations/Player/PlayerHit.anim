@@ -71,7 +71,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -126,7 +126,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -781,7 +781,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -836,7 +836,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Torso
+    path: Motion/Torso
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1491,7 +1491,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -1546,7 +1546,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2201,7 +2201,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2256,7 +2256,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2311,7 +2311,62 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.0
+        value:
+          x: 0.0
+          y: 0.0
+          z: 173.11427934376516
+        inSlope:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        outSlope:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        outWeight:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      - serializedVersion: 3
+        time: 0.42
+        value:
+          x: 0.0
+          y: 0.0
+          z: 173.11427934376516
+        inSlope:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        outSlope:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+        outWeight:
+          x: 0.0
+          y: 0.0
+          z: 0.0
+      m_PreInfinity: 1
+      m_PostInfinity: 1
+      m_RotationOrder: 4
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -2366,62 +2421,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Staff
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.0
-        value:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        inSlope:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        outSlope:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        outWeight:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-      - serializedVersion: 3
-        time: 0.42
-        value:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        inSlope:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        outSlope:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-        outWeight:
-          x: 0.0
-          y: 0.0
-          z: 0.0
-      m_PreInfinity: 1
-      m_PostInfinity: 1
-      m_RotationOrder: 4
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3076,7 +3076,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion
+    path: Motion
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3131,7 +3131,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3186,7 +3186,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head
+    path: Motion/Head
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3241,7 +3241,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
   m_PositionCurves:
   - curve:
       serializedVersion: 2
@@ -3297,7 +3297,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3352,7 +3352,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3407,7 +3407,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3462,7 +3462,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Torso
+    path: Motion/Torso
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3517,7 +3517,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3572,7 +3572,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3627,7 +3627,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3682,7 +3682,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3737,15 +3737,15 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
   - curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0.0
         value:
-          x: -0.35758707
-          y: 0.45895523
+          x: 0.06641231999999997
+          y: 0.004717417499999987
           z: 0.0
         inSlope:
           x: 0.0
@@ -3768,8 +3768,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.42
         value:
-          x: -0.35758707
-          y: 0.45895523
+          x: 0.06641231999999997
+          y: 0.004717417499999987
           z: 0.0
         inSlope:
           x: 0.0
@@ -3792,7 +3792,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -3847,7 +3847,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4502,7 +4502,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion
+    path: Motion
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4557,7 +4557,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4612,7 +4612,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head
+    path: Motion/Head
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -4667,7 +4667,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -4723,7 +4723,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5378,7 +5378,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5433,7 +5433,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5488,7 +5488,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Torso
+    path: Motion/Torso
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5543,7 +5543,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5598,7 +5598,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5653,7 +5653,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5708,7 +5708,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5763,7 +5763,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5818,7 +5818,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -5873,7 +5873,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6528,7 +6528,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion
+    path: Motion
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6583,7 +6583,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -6638,7 +6638,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head
+    path: Motion/Head
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -7293,7 +7293,7 @@ AnimationClip:
       m_PreInfinity: 1
       m_PostInfinity: 1
       m_RotationOrder: 4
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
   m_FloatCurves: []
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -7310,7 +7310,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3012127569
+      path: 2828034224
       attribute: 1
       script:
         fileID: 0
@@ -7321,7 +7321,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3070327546
+      path: 1740012230
       attribute: 1
       script:
         fileID: 0
@@ -7332,7 +7332,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1396677331
+      path: 2217300278
       attribute: 1
       script:
         fileID: 0
@@ -7343,7 +7343,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 76444821
+      path: 492000834
       attribute: 1
       script:
         fileID: 0
@@ -7354,7 +7354,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2741005006
+      path: 885704572
       attribute: 1
       script:
         fileID: 0
@@ -7365,7 +7365,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3943043984
+      path: 1007736949
       attribute: 1
       script:
         fileID: 0
@@ -7376,7 +7376,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2342941764
+      path: 2925399113
       attribute: 1
       script:
         fileID: 0
@@ -7387,7 +7387,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2252152851
+      path: 2636393458
       attribute: 1
       script:
         fileID: 0
@@ -7398,7 +7398,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3838502213
+      path: 2378452921
       attribute: 1
       script:
         fileID: 0
@@ -7409,7 +7409,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1639922562
+      path: 2355279897
       attribute: 1
       script:
         fileID: 0
@@ -7420,7 +7420,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1944160103
+      path: 2767670402
       attribute: 1
       script:
         fileID: 0
@@ -7431,7 +7431,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2649769855
+      path: 4065502430
       attribute: 1
       script:
         fileID: 0
@@ -7442,7 +7442,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1249465771
+      path: 371281677
       attribute: 1
       script:
         fileID: 0
@@ -7453,7 +7453,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2942065003
+      path: 508100605
       attribute: 1
       script:
         fileID: 0
@@ -7464,7 +7464,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3671157418
+      path: 4117668141
       attribute: 1
       script:
         fileID: 0
@@ -7475,7 +7475,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3012127569
+      path: 2828034224
       attribute: 3
       script:
         fileID: 0
@@ -7486,7 +7486,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3070327546
+      path: 1740012230
       attribute: 3
       script:
         fileID: 0
@@ -7497,7 +7497,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1396677331
+      path: 2217300278
       attribute: 3
       script:
         fileID: 0
@@ -7508,7 +7508,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 76444821
+      path: 492000834
       attribute: 3
       script:
         fileID: 0
@@ -7519,7 +7519,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2741005006
+      path: 885704572
       attribute: 3
       script:
         fileID: 0
@@ -7530,7 +7530,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3943043984
+      path: 1007736949
       attribute: 3
       script:
         fileID: 0
@@ -7541,7 +7541,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2342941764
+      path: 2925399113
       attribute: 3
       script:
         fileID: 0
@@ -7552,7 +7552,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2252152851
+      path: 2636393458
       attribute: 3
       script:
         fileID: 0
@@ -7563,7 +7563,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3838502213
+      path: 2378452921
       attribute: 3
       script:
         fileID: 0
@@ -7574,7 +7574,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1639922562
+      path: 2355279897
       attribute: 3
       script:
         fileID: 0
@@ -7585,7 +7585,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1944160103
+      path: 2767670402
       attribute: 3
       script:
         fileID: 0
@@ -7596,7 +7596,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2649769855
+      path: 4065502430
       attribute: 3
       script:
         fileID: 0
@@ -7607,7 +7607,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1249465771
+      path: 371281677
       attribute: 3
       script:
         fileID: 0
@@ -7618,7 +7618,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2942065003
+      path: 508100605
       attribute: 3
       script:
         fileID: 0
@@ -7629,7 +7629,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3671157418
+      path: 4117668141
       attribute: 3
       script:
         fileID: 0
@@ -7640,7 +7640,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3012127569
+      path: 2828034224
       attribute: 4
       script:
         fileID: 0
@@ -7651,7 +7651,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3070327546
+      path: 1740012230
       attribute: 4
       script:
         fileID: 0
@@ -7662,7 +7662,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1396677331
+      path: 2217300278
       attribute: 4
       script:
         fileID: 0
@@ -7673,7 +7673,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 76444821
+      path: 492000834
       attribute: 4
       script:
         fileID: 0
@@ -7684,7 +7684,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2741005006
+      path: 885704572
       attribute: 4
       script:
         fileID: 0
@@ -7695,7 +7695,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3943043984
+      path: 1007736949
       attribute: 4
       script:
         fileID: 0
@@ -7706,7 +7706,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2342941764
+      path: 2925399113
       attribute: 4
       script:
         fileID: 0
@@ -7717,7 +7717,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2252152851
+      path: 2636393458
       attribute: 4
       script:
         fileID: 0
@@ -7728,7 +7728,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3838502213
+      path: 2378452921
       attribute: 4
       script:
         fileID: 0
@@ -7739,7 +7739,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1639922562
+      path: 2355279897
       attribute: 4
       script:
         fileID: 0
@@ -7750,7 +7750,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1944160103
+      path: 2767670402
       attribute: 4
       script:
         fileID: 0
@@ -7761,7 +7761,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2649769855
+      path: 4065502430
       attribute: 4
       script:
         fileID: 0
@@ -7772,7 +7772,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 1249465771
+      path: 371281677
       attribute: 4
       script:
         fileID: 0
@@ -7783,7 +7783,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 2942065003
+      path: 508100605
       attribute: 4
       script:
         fileID: 0
@@ -7794,7 +7794,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     - serializedVersion: 2
-      path: 3671157418
+      path: 4117668141
       attribute: 4
       script:
         fileID: 0
@@ -7853,7 +7853,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -7884,7 +7884,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -7915,7 +7915,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -7946,7 +7946,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -7977,7 +7977,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -8008,7 +8008,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -8039,7 +8039,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -8070,7 +8070,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -8101,7 +8101,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -8132,7 +8132,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -8163,7 +8163,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -8194,7 +8194,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -8225,7 +8225,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -8256,7 +8256,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -8287,7 +8287,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -8318,7 +8318,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -8349,7 +8349,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -8380,7 +8380,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -8411,7 +8411,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -8442,7 +8442,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -8473,7 +8473,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -8504,7 +8504,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -8535,7 +8535,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -8566,7 +8566,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -8597,7 +8597,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -8628,7 +8628,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -8659,7 +8659,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -8670,7 +8670,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0.0
-        value: -0.35758707
+        value: 0.06641231999999997
         inSlope: 0.0
         outSlope: 0.0
         tangentMode: 0
@@ -8679,7 +8679,7 @@ AnimationClip:
         outWeight: 0.0
       - serializedVersion: 3
         time: 0.42
-        value: -0.35758707
+        value: 0.06641231999999997
         inSlope: 0.0
         outSlope: 0.0
         tangentMode: 0
@@ -8690,7 +8690,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
     classID: 4
     script:
       fileID: 0
@@ -8701,7 +8701,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0.0
-        value: 0.45895523
+        value: 0.004717417499999987
         inSlope: 0.0
         outSlope: 0.0
         tangentMode: 0
@@ -8710,7 +8710,7 @@ AnimationClip:
         outWeight: 0.0
       - serializedVersion: 3
         time: 0.42
-        value: 0.45895523
+        value: 0.004717417499999987
         inSlope: 0.0
         outSlope: 0.0
         tangentMode: 0
@@ -8721,7 +8721,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
     classID: 4
     script:
       fileID: 0
@@ -8752,7 +8752,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
     classID: 4
     script:
       fileID: 0
@@ -8783,7 +8783,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -8814,7 +8814,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -8845,7 +8845,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -9101,7 +9101,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -9357,7 +9357,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -9388,7 +9388,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -9419,7 +9419,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -9450,7 +9450,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -9481,7 +9481,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -9512,7 +9512,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -9543,7 +9543,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -9574,7 +9574,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -9605,7 +9605,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -9636,7 +9636,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -9667,7 +9667,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -9698,7 +9698,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -9729,7 +9729,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -9760,7 +9760,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -10016,7 +10016,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -10272,7 +10272,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -10303,7 +10303,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -10334,7 +10334,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -10365,7 +10365,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -10396,7 +10396,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -10427,7 +10427,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -10458,7 +10458,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -10489,7 +10489,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -10520,7 +10520,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -10551,7 +10551,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -10582,7 +10582,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -10613,7 +10613,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -10644,7 +10644,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -10675,7 +10675,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -10706,7 +10706,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -10737,7 +10737,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -10768,7 +10768,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -10799,7 +10799,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -10830,7 +10830,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -10861,7 +10861,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -10892,7 +10892,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -10923,7 +10923,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -10954,7 +10954,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -10985,7 +10985,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
     classID: 4
     script:
       fileID: 0
@@ -11016,7 +11016,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
     classID: 4
     script:
       fileID: 0
@@ -11047,7 +11047,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
     classID: 4
     script:
       fileID: 0
@@ -11078,7 +11078,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -11109,7 +11109,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -11140,7 +11140,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/LegRight
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -11396,7 +11396,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -11652,7 +11652,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -11683,7 +11683,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -11714,7 +11714,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -11745,7 +11745,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -11776,7 +11776,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -11807,7 +11807,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -11838,7 +11838,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -11869,7 +11869,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -12125,7 +12125,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -12381,7 +12381,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -12412,7 +12412,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -12443,7 +12443,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -12474,7 +12474,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -12505,7 +12505,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/ArmLeft
+    path: Motion/ArmLeft
     classID: 4
     script:
       fileID: 0
@@ -12536,7 +12536,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -12567,7 +12567,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -12598,7 +12598,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head/Eyes
+    path: Motion/Head/Eyes
     classID: 4
     script:
       fileID: 0
@@ -12629,7 +12629,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -12660,7 +12660,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -12916,7 +12916,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head/Hat
+    path: Motion/Head/Hat
     classID: 4
     script:
       fileID: 0
@@ -12947,7 +12947,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -12978,7 +12978,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -13009,7 +13009,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Torso
+    path: Motion/Torso
     classID: 4
     script:
       fileID: 0
@@ -13040,7 +13040,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -13071,7 +13071,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -13327,7 +13327,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head/HairLeft
+    path: Motion/Head/HairLeft
     classID: 4
     script:
       fileID: 0
@@ -13358,7 +13358,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -13389,7 +13389,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -13420,7 +13420,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/ArmRight
+    path: Motion/ArmRight
     classID: 4
     script:
       fileID: 0
@@ -13451,7 +13451,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -13482,7 +13482,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -13738,7 +13738,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head/HairRight
+    path: Motion/Head/HairRight
     classID: 4
     script:
       fileID: 0
@@ -13769,7 +13769,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -13800,7 +13800,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -13831,7 +13831,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/LegLeft
+    path: Motion/LegLeft
     classID: 4
     script:
       fileID: 0
@@ -13862,7 +13862,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -13893,7 +13893,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -13924,7 +13924,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head/EyeUnderlayRight
+    path: Motion/Head/EyeUnderlayRight
     classID: 4
     script:
       fileID: 0
@@ -13955,7 +13955,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
     classID: 4
     script:
       fileID: 0
@@ -13986,7 +13986,100 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Staff
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
+    classID: 4
+    script:
+      fileID: 0
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.0
+        value: 173.11427934376516
+        inSlope: 0.0
+        outSlope: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0
+        outWeight: 0.0
+      - serializedVersion: 3
+        time: 0.42
+        value: 173.11427934376516
+        inSlope: 0.0
+        outSlope: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0
+        outWeight: 0.0
+      m_PreInfinity: 1
+      m_PostInfinity: 1
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: Motion/ArmLeft/좌측어깨/좌측팔꿈치/좌측손목/Staff
+    classID: 4
+    script:
+      fileID: 0
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.0
+        value: 0.0
+        inSlope: 0.0
+        outSlope: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0
+        outWeight: 0.0
+      - serializedVersion: 3
+        time: 0.42
+        value: 0.0
+        inSlope: 0.0
+        outSlope: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0
+        outWeight: 0.0
+      m_PreInfinity: 1
+      m_PostInfinity: 1
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: Motion/LegRight
+    classID: 4
+    script:
+      fileID: 0
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0.0
+        value: 0.0
+        inSlope: 0.0
+        outSlope: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0
+        outWeight: 0.0
+      - serializedVersion: 3
+        time: 0.42
+        value: 0.0
+        inSlope: 0.0
+        outSlope: 0.0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.0
+        outWeight: 0.0
+      m_PreInfinity: 1
+      m_PostInfinity: 1
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -14017,7 +14110,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Staff
+    path: Motion/LegRight
     classID: 4
     script:
       fileID: 0
@@ -14048,7 +14141,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/LegRight
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -14079,100 +14172,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/LegRight
-    classID: 4
-    script:
-      fileID: 0
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.0
-        value: 0.0
-        inSlope: 0.0
-        outSlope: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0
-        outWeight: 0.0
-      - serializedVersion: 3
-        time: 0.42
-        value: 0.0
-        inSlope: 0.0
-        outSlope: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0
-        outWeight: 0.0
-      m_PreInfinity: 1
-      m_PostInfinity: 1
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: IdleMotion/LegRight
-    classID: 4
-    script:
-      fileID: 0
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.0
-        value: 0.0
-        inSlope: 0.0
-        outSlope: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0
-        outWeight: 0.0
-      - serializedVersion: 3
-        time: 0.42
-        value: 0.0
-        inSlope: 0.0
-        outSlope: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0
-        outWeight: 0.0
-      m_PreInfinity: 1
-      m_PostInfinity: 1
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: IdleMotion
-    classID: 4
-    script:
-      fileID: 0
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0.0
-        value: 0.0
-        inSlope: 0.0
-        outSlope: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0
-        outWeight: 0.0
-      - serializedVersion: 3
-        time: 0.42
-        value: 0.0
-        inSlope: 0.0
-        outSlope: 0.0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.0
-        outWeight: 0.0
-      m_PreInfinity: 1
-      m_PostInfinity: 1
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -14428,7 +14428,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion
+    path: Motion
     classID: 4
     script:
       fileID: 0
@@ -14459,7 +14459,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -14490,7 +14490,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -14521,7 +14521,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head/FaceUnderlay
+    path: Motion/Head/FaceUnderlay
     classID: 4
     script:
       fileID: 0
@@ -14552,7 +14552,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -14583,7 +14583,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -14614,7 +14614,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head
+    path: Motion/Head
     classID: 4
     script:
       fileID: 0
@@ -14645,7 +14645,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -14676,7 +14676,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -14707,7 +14707,7 @@ AnimationClip:
       m_PostInfinity: 1
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: IdleMotion/Head/Mouth
+    path: Motion/Head/Mouth
     classID: 4
     script:
       fileID: 0
@@ -14717,9 +14717,10 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.42
-    functionName: FinishAction
-    data:
-    objectReferenceParameter: {fileID: 0}
+    functionName: FinishHitMotion
+    data: null
+    objectReferenceParameter:
+      fileID: 0
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
