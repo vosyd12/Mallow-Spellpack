@@ -1,0 +1,153 @@
+{
+  "nativeUnityPlayResolutions": [
+    {
+      "width": 1080,
+      "height": 1920,
+      "worldHeight": 15.0,
+      "scalerMatch": 1.0,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "min": [
+            16.2000275,
+            1823.75659
+          ],
+          "max": [
+            264.600037,
+            1920.0
+          ],
+          "inside": true,
+          "heightFraction": 0.0501267761,
+          "scale": "(1.00000, 0.43747, 1.00000)",
+          "size": "(0.00000, 220.00000)"
+        },
+        {
+          "name": "StageInfoPanel",
+          "min": [
+            305.775024,
+            1844.06653
+          ],
+          "max": [
+            785.025,
+            1920.0
+          ],
+          "inside": true,
+          "heightFraction": 0.0395486839,
+          "scale": "(0.88750, 0.56247, 1.00000)",
+          "size": "(0.00000, 135.00000)"
+        }
+      ]
+    },
+    {
+      "width": 1980,
+      "height": 1080,
+      "worldHeight": 15.0,
+      "scalerMatch": 1.0,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "min": [
+            29.7000313,
+            1025.863
+          ],
+          "max": [
+            485.1,
+            1080.0
+          ],
+          "inside": true,
+          "heightFraction": 0.0501268171,
+          "scale": "(1.00000, 0.43747, 1.00000)",
+          "size": "(0.00000, 220.00000)"
+        },
+        {
+          "name": "StageInfoPanel",
+          "min": [
+            560.5875,
+            1037.28748
+          ],
+          "max": [
+            1439.21252,
+            1080.0
+          ],
+          "inside": true,
+          "heightFraction": 0.0395486355,
+          "scale": "(0.88750, 0.56247, 1.00000)",
+          "size": "(0.00000, 135.00000)"
+        }
+      ]
+    },
+    {
+      "width": 1080,
+      "height": 1080,
+      "worldHeight": 15.0,
+      "scalerMatch": 1.0,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "min": [
+            16.1999836,
+            1025.863
+          ],
+          "max": [
+            264.6,
+            1080.0
+          ],
+          "inside": true,
+          "heightFraction": 0.0501268171,
+          "scale": "(1.00000, 0.43747, 1.00000)",
+          "size": "(0.00000, 220.00000)"
+        },
+        {
+          "name": "StageInfoPanel",
+          "min": [
+            305.774963,
+            1037.28748
+          ],
+          "max": [
+            785.024963,
+            1080.0
+          ],
+          "inside": true,
+          "heightFraction": 0.0395486355,
+          "scale": "(0.88750, 0.56247, 1.00000)",
+          "size": "(0.00000, 135.00000)"
+        }
+      ]
+    }
+  ],
+  "finalEditorState": {
+    "playing": false,
+    "dirty": false,
+    "missingScripts": 0,
+    "roots": [
+      "UI ====================",
+      "EventSystem",
+      "ScreenTransition",
+      "HUDCanvas",
+      "Ingame ====================",
+      "World"
+    ],
+    "customResolutions": 0,
+    "originalCustomResolutions": 0,
+    "stagePrefab": "Assets/Prefab/Stage.prefab",
+    "playerPrefab": "Assets/Prefab/Player/PlayerVisual.prefab"
+  },
+  "panelAnchorSizeScalePreserved": true,
+  "existingSceneComponentsPreservedExceptCanvasScaler": true,
+  "playerVisualInstanceOverridesUnchanged": true,
+  "sceneLocalReferencesResolved": true,
+  "protectedFilesChecked": 379,
+  "protectedFilesChanged": [
+    "Assets\\Prefab\\Stage.prefab"
+  ],
+  "stageNonTilemapObjectsUnchanged": true,
+  "existingGrassCellsPreserved": 224,
+  "decorativeGrassCellsAdded": 160,
+  "playableBoundaryComponentsUnchanged": true,
+  "consoleNotes": [
+    "Play exit warning: PlayerMotion.OnDisable -> StopAttackMotion, inactive Animator; C# unchanged.",
+    "Temporary Game View resolution cleanup initially used custom indexes; corrected to total indexes; no temporary entries remain.",
+    "Paused resize captures were stale; final captures were taken after unpausing and rendering."
+  ],
+  "limits": "Viewport shows more horizontal world at wider aspects. Camera follow, safe area and final panel typography were not redesigned."
+}

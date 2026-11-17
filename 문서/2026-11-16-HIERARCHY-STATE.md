@@ -1,5 +1,7 @@
 # 현재 Hierarchy 구조와 화면 비율 작업 상태
 
+**2026-11-17 후속:** 사용자가 IngameScene을 삭제한 뒤 요청한 독립 UI Canvas·World 계층으로 정리하고 화면 높이 기준 배율과 잔디 바닥을 보완했다. 아래는 11월 16일 당시 기록이다. [현재 계층·실제 재생 확인](2026-11-17-HIERARCHY-AND-SCREEN-SCALE.md)을 따른다.
+
 작성일: 2026-11-16. 저장된 `Assets/Scenes/SampleScene.unity`를 읽어 현재 상태를 기록했다. 이번 문서화에서는 C#·씬·Prefab·이미지·설정을 수정하지 않았고 MCP·새 Unity 실행 검증을 하지 않았다.
 
 ## 현재 주요 계층

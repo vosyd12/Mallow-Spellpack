@@ -1,0 +1,447 @@
+{
+  "nativeGameView": {
+    "320x720": {
+      "width": 320,
+      "height": 720,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 80.0,
+          "height": 53.333313,
+          "aspect": 1.5,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "PlayerInfoArea"
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 153.333344,
+          "height": 46.666687,
+          "aspect": 3.28571439,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "StageInfoArea"
+        }
+      ],
+      "texts": [
+        {
+          "name": "NameText",
+          "fontSize": 30.05,
+          "overflow": false,
+          "scale": "(0.33, 0.33, 0.33)",
+          "text": "vvvv"
+        },
+        {
+          "name": "LevelText",
+          "fontSize": 30.0,
+          "overflow": false,
+          "scale": "(0.33, 0.33, 0.33)",
+          "text": "Lv. 1"
+        },
+        {
+          "name": "ExpText",
+          "fontSize": 26.1,
+          "overflow": false,
+          "scale": "(0.33, 0.33, 0.33)",
+          "text": "90 / 100"
+        },
+        {
+          "name": "Label",
+          "fontSize": 22.0,
+          "overflow": false,
+          "scale": "(0.33, 0.33, 0.33)",
+          "text": "레벨업"
+        },
+        {
+          "name": "StageNumberText",
+          "fontSize": 38.0,
+          "overflow": false,
+          "scale": "(0.33, 0.33, 0.33)",
+          "text": "STAGE 01"
+        },
+        {
+          "name": "BossAppearText",
+          "fontSize": 24.0,
+          "overflow": false,
+          "scale": "(0.33, 0.33, 0.33)",
+          "text": "보스 등장"
+        }
+      ]
+    },
+    "1080x1920": {
+      "width": 1080,
+      "height": 1920,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 240.0,
+          "height": 160.0,
+          "aspect": 1.5,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "PlayerInfoArea"
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 460.0,
+          "height": 140.0,
+          "aspect": 3.28571439,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "StageInfoArea"
+        }
+      ],
+      "texts": [
+        {
+          "name": "NameText",
+          "fontSize": 30.05,
+          "overflow": false,
+          "scale": "(1.00, 1.00, 1.00)",
+          "text": "vvvv"
+        },
+        {
+          "name": "LevelText",
+          "fontSize": 30.0,
+          "overflow": false,
+          "scale": "(1.00, 1.00, 1.00)",
+          "text": "Lv. 1"
+        },
+        {
+          "name": "ExpText",
+          "fontSize": 26.1,
+          "overflow": false,
+          "scale": "(1.00, 1.00, 1.00)",
+          "text": "10 / 100"
+        },
+        {
+          "name": "Label",
+          "fontSize": 22.0,
+          "overflow": false,
+          "scale": "(1.00, 1.00, 1.00)",
+          "text": "레벨업"
+        },
+        {
+          "name": "StageNumberText",
+          "fontSize": 38.0,
+          "overflow": false,
+          "scale": "(1.00, 1.00, 1.00)",
+          "text": "STAGE 01"
+        },
+        {
+          "name": "BossAppearText",
+          "fontSize": 24.0,
+          "overflow": false,
+          "scale": "(1.00, 1.00, 1.00)",
+          "text": "보스 등장"
+        }
+      ]
+    },
+    "1080x2400": {
+      "width": 1080,
+      "height": 2400,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 268.3282,
+          "height": 178.8855,
+          "aspect": 1.5,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "PlayerInfoArea"
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 514.295654,
+          "height": 156.524658,
+          "aspect": 3.28571439,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "StageInfoArea"
+        }
+      ],
+      "texts": [
+        {
+          "name": "NameText",
+          "fontSize": 30.05,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "vvvv"
+        },
+        {
+          "name": "LevelText",
+          "fontSize": 30.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "Lv. 1"
+        },
+        {
+          "name": "ExpText",
+          "fontSize": 26.1,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "50 / 100"
+        },
+        {
+          "name": "Label",
+          "fontSize": 22.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "레벨업"
+        },
+        {
+          "name": "StageNumberText",
+          "fontSize": 38.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "STAGE 01"
+        },
+        {
+          "name": "BossAppearText",
+          "fontSize": 24.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "보스 등장"
+        }
+      ]
+    },
+    "1536x2048": {
+      "width": 1536,
+      "height": 2048,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 295.603333,
+          "height": 197.068848,
+          "aspect": 1.5,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "PlayerInfoArea"
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 566.573059,
+          "height": 172.4353,
+          "aspect": 3.28571439,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "StageInfoArea"
+        }
+      ],
+      "texts": [
+        {
+          "name": "NameText",
+          "fontSize": 30.05,
+          "overflow": false,
+          "scale": "(1.23, 1.23, 1.23)",
+          "text": "vvvv"
+        },
+        {
+          "name": "LevelText",
+          "fontSize": 30.0,
+          "overflow": false,
+          "scale": "(1.23, 1.23, 1.23)",
+          "text": "Lv. 1"
+        },
+        {
+          "name": "ExpText",
+          "fontSize": 26.1,
+          "overflow": false,
+          "scale": "(1.23, 1.23, 1.23)",
+          "text": "50 / 100"
+        },
+        {
+          "name": "Label",
+          "fontSize": 22.0,
+          "overflow": false,
+          "scale": "(1.23, 1.23, 1.23)",
+          "text": "레벨업"
+        },
+        {
+          "name": "StageNumberText",
+          "fontSize": 38.0,
+          "overflow": false,
+          "scale": "(1.23, 1.23, 1.23)",
+          "text": "STAGE 01"
+        },
+        {
+          "name": "BossAppearText",
+          "fontSize": 24.0,
+          "overflow": false,
+          "scale": "(1.23, 1.23, 1.23)",
+          "text": "보스 등장"
+        }
+      ]
+    },
+    "2400x1080": {
+      "width": 2400,
+      "height": 1080,
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 268.328156,
+          "height": 178.885437,
+          "aspect": 1.5,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "PlayerInfoArea"
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 514.295654,
+          "height": 156.52478,
+          "aspect": 3.28571439,
+          "scale": "(1.00, 1.00, 1.00)",
+          "insideScreen": true,
+          "insideArea": true,
+          "area": "StageInfoArea"
+        }
+      ],
+      "texts": [
+        {
+          "name": "NameText",
+          "fontSize": 30.05,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "vvvv"
+        },
+        {
+          "name": "LevelText",
+          "fontSize": 30.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "Lv. 1"
+        },
+        {
+          "name": "ExpText",
+          "fontSize": 26.1,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "70 / 100"
+        },
+        {
+          "name": "Label",
+          "fontSize": 22.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "레벨업"
+        },
+        {
+          "name": "StageNumberText",
+          "fontSize": 38.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "STAGE 01"
+        },
+        {
+          "name": "BossAppearText",
+          "fontSize": 24.0,
+          "overflow": false,
+          "scale": "(1.12, 1.12, 1.12)",
+          "text": "보스 등장"
+        }
+      ]
+    }
+  },
+  "deviceSimulator": {
+    "iPhone12": {
+      "width": 1170,
+      "height": 2532,
+      "safeArea": "(x:0.00, y:102.00, width:1170.00, height:2289.00)",
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 286.862366,
+          "height": 191.241455,
+          "aspect": 1.5,
+          "insideSafeArea": true
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 549.8196,
+          "height": 167.336426,
+          "aspect": 3.28571439,
+          "insideSafeArea": true
+        }
+      ]
+    },
+    "Fold2": {
+      "width": 960,
+      "height": 2658,
+      "safeArea": "(x:0.00, y:0.00, width:960.00, height:2566.00)",
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 266.232971,
+          "height": 177.48877,
+          "aspect": 1.5,
+          "insideSafeArea": true
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 510.279877,
+          "height": 155.30249,
+          "aspect": 3.28571439,
+          "insideSafeArea": true
+        }
+      ]
+    },
+    "iPad": {
+      "width": 1536,
+      "height": 2048,
+      "safeArea": "(x:0.00, y:0.00, width:1536.00, height:2048.00)",
+      "panels": [
+        {
+          "name": "PlayerInfoPanel",
+          "width": 295.603333,
+          "height": 197.068848,
+          "aspect": 1.5,
+          "insideSafeArea": true
+        },
+        {
+          "name": "StageInfoPanel",
+          "width": 566.573059,
+          "height": 172.4353,
+          "aspect": 3.28571439,
+          "insideSafeArea": true
+        }
+      ]
+    }
+  },
+  "existingAssetFilesUnchanged": 506,
+  "customSceneComponentsPreserved": 11,
+  "playerAndWorldReferencesUnchanged": true,
+  "finalEditorState": {
+    "playing": false,
+    "dirty": false,
+    "missingScripts": 0,
+    "roots": [
+      "UI ====================",
+      "EventSystem",
+      "ScreenTransition",
+      "HUDCanvas",
+      "Ingame ====================",
+      "World"
+    ],
+    "customResolutions": 0,
+    "originalCustomResolutions": 0,
+    "stagePrefab": "Assets/Prefab/Stage.prefab",
+    "playerPrefab": "Assets/Prefab/Player/PlayerVisual.prefab"
+  },
+  "safeAreaMode": "fixed 4% horizontal / 6% vertical margins; not runtime safeArea binding",
+  "scaleMode": "1080x1920; MatchWidthOrHeight 0.5; fixed panel design sizes and uniform scaling",
+  "console": "No errors in final console query; existing inactive Animator warning on Play exit",
+  "limits": [
+    "Physical size equality and all device cutouts are not guaranteed.",
+    "Minimum and maximum runtime scale clamps and automatic Safe Area need user-owned code.",
+    "Very long names and large localized numbers need separate content checks."
+  ]
+}

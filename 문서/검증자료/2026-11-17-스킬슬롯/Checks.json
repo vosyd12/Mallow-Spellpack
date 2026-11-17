@@ -1,0 +1,202 @@
+{
+  "nativePlayChecks": {
+    "320x720": {
+      "width": 320,
+      "height": 720,
+      "count": 5,
+      "slots": [
+        {
+          "name": "SkillSlot01",
+          "width": 44.0,
+          "height": 44.0,
+          "inside": true,
+          "hit": "SkillSlot01",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot02",
+          "width": 44.0,
+          "height": 44.0,
+          "inside": true,
+          "hit": "SkillSlot02",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot03",
+          "width": 44.0,
+          "height": 44.0,
+          "inside": true,
+          "hit": "SkillSlot03",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot04",
+          "width": 44.0,
+          "height": 44.0,
+          "inside": true,
+          "hit": "SkillSlot04",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot05",
+          "width": 44.0,
+          "height": 44.0,
+          "inside": true,
+          "hit": "SkillSlot05",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        }
+      ]
+    },
+    "1080x2400": {
+      "width": 1080,
+      "height": 2400,
+      "count": 5,
+      "slots": [
+        {
+          "name": "SkillSlot01",
+          "width": 147.58049,
+          "height": 147.58049,
+          "inside": true,
+          "hit": "SkillSlot01",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot02",
+          "width": 147.5805,
+          "height": 147.58049,
+          "inside": true,
+          "hit": "SkillSlot02",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot03",
+          "width": 147.580475,
+          "height": 147.58049,
+          "inside": true,
+          "hit": "SkillSlot03",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot04",
+          "width": 147.580444,
+          "height": 147.58049,
+          "inside": true,
+          "hit": "SkillSlot04",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot05",
+          "width": 147.580444,
+          "height": 147.58049,
+          "inside": true,
+          "hit": "SkillSlot05",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        }
+      ]
+    },
+    "1536x2048": {
+      "width": 1536,
+      "height": 2048,
+      "count": 5,
+      "slots": [
+        {
+          "name": "SkillSlot01",
+          "width": 162.581848,
+          "height": 162.581848,
+          "inside": true,
+          "hit": "SkillSlot01",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot02",
+          "width": 162.581818,
+          "height": 162.581848,
+          "inside": true,
+          "hit": "SkillSlot02",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot03",
+          "width": 162.581787,
+          "height": 162.581848,
+          "inside": true,
+          "hit": "SkillSlot03",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot04",
+          "width": 162.581787,
+          "height": 162.581848,
+          "inside": true,
+          "hit": "SkillSlot04",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        },
+        {
+          "name": "SkillSlot05",
+          "width": 162.581787,
+          "height": 162.581848,
+          "inside": true,
+          "hit": "SkillSlot05",
+          "interactable": true,
+          "clickListeners": 0,
+          "cooldownSprite": true
+        }
+      ]
+    }
+  },
+  "finalState": {
+    "playing": false,
+    "dirty": false,
+    "missingScripts": 0,
+    "roots": [
+      "UI ====================",
+      "EventSystem",
+      "ScreenTransition",
+      "HUDCanvas",
+      "Ingame ====================",
+      "World"
+    ],
+    "customResolutions": 0,
+    "originalCustomResolutions": 0,
+    "stagePrefab": "Assets/Prefab/Stage.prefab",
+    "playerPrefab": "Assets/Prefab/Player/PlayerVisual.prefab"
+  },
+  "existingAssetFilesUnchanged": 506,
+  "existingUserCodeAndSceneReferencesUnchanged": true,
+  "existingTopHUDRectTransformsUnchanged": true,
+  "newAssets": [
+    "Assets/Prefab/UI/SkillSlot.prefab",
+    "Assets/Prefab/UI/SkillSlot.prefab.meta"
+  ],
+  "skillLogicAdded": false,
+  "manualAutoLogicAdded": false,
+  "safeArea": "fixed 6% bottom margin, no automatic safeArea code"
+}
