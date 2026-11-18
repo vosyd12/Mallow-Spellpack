@@ -5,6 +5,9 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float _speed = 8f;
     [SerializeField] private float _lifeTime = 5f;
 
+    [SerializeField]
+    private ParticleSystem _hitEffectPrefab;
+
     private Enemy _target;
     private Rigidbody2D _rd;
     private int _damage;
@@ -50,6 +53,16 @@ public class Bullet : MonoBehaviour
 
         _hasHit = true;
         _rd.linearVelocity = Vector2.zero;
+
+        if (_hitEffectPrefab != null && 
+            enemy.CanAct && 
+            _damage > 0)
+        {
+            Instantiate(
+                _hitEffectPrefab, 
+                transform.position, 
+                Quaternion.identity);
+        }
 
         enemy.TakeDamage(_damage);
         Destroy(gameObject);

@@ -6,11 +6,15 @@ Unity 6000.5.10f1로 작업 중인 2D 전투 프로토타입이다. 사용자가
 
 1. 이 저장소를 내려받고 Unity Hub에서 프로젝트 폴더를 추가한다.
 2. `ProjectSettings/ProjectVersion.txt`의 Unity 버전을 사용한다. Git LFS를 사용하는 환경에서는 이미지 원본도 내려받는다.
-3. Package Manager 복원이 끝나면 `Assets/Scenes/SampleScene.unity`를 연다.
+3. Package Manager 복원이 끝나면 `Assets/Scenes/IngameScene.unity`를 연다. 과거 문서의 SampleScene은 현재 씬 경로와 구분한다.
 
 `Assets`와 `.meta`, `Packages/manifest.json`·`packages-lock.json`, `ProjectSettings`를 함께 유지한다. Library·Temp·Logs·IDE 캐시는 다시 생성되는 로컬 파일이다.
 
 ## 현재 상태
+
+워터볼은 기본 공격과 별개로 자동 발사한다. 첫 슬롯에서 3초 쿨다운을 표시하며, 실제 명중 시 물보라와 물결 고리를 재생한다. 씬 구성·Shuriken·Bloom 설정과 Unity 재생 결과는 [워터볼 작업 기록](문서/2026-11-18-WATERBALL-INTEGRATION.md)을 따른다.
+
+최근 UI 구성은 [11월 17일 작업 요약](문서/2026-11-17-WORK-SUMMARY.md), 다음 작업에 앞서 확인할 요청·미정·이월과 과거 완료 보고의 불일치는 [수정·개선 목록](문서/2026-11-18-IMPROVEMENT-BACKLOG.md)을 따른다. 아래는 이전 기반 기능의 연결 기록이다.
 
 플레이어·슬라임 전체의 [공통 중심 림 틴트](문서/2026-11-11-CHARACTER-RIM-TINT.md)를 연결했다. HitEffect의 전용 Animator·Animation과 HitArea에서 피격 강도·색상·범위를 조절하며 기존 캐릭터 모션과 사망 페이드를 유지한다. 파일·수치 검증 완료이며 실제 화면 검증은 남았다.
 

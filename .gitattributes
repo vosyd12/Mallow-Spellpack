@@ -195,3 +195,7 @@ Packages/packages-lock.json linguist-generated
 "Assets/Sprites/Characters/Expressions/DeathFaceParts.png" -filter -diff -merge -text
 "문서/아트시안/플레이어 및 슬라임 사망 표정.png" -filter -diff -merge -text
 LightingData.asset     binary
+
+# Waterball textures published through the GitHub Git Data API.
+Assets/Sprites/Effects/Waterball/WaterballBody.png -filter -diff -merge -text
+Assets/Sprites/Effects/Waterball/WaterballTrailMask.png -filter -diff -merge -text

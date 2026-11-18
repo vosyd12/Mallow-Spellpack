@@ -1,0 +1,45 @@
+﻿{
+    "images":  [
+                   {
+                       "path":  "Assets/Sprites/Effects/Waterball/WaterballBody.png",
+                       "guid":  "b7678535727b476e9f933cba6f6ff49a",
+                       "width":  1254,
+                       "height":  1254,
+                       "cornerAlpha":  0,
+                       "centerAlpha":  254,
+                       "sourceCopyHash":  "C23B58DAADC38EFB5BF4942D0A7D7AD06B03074B90C8255AC1EF28FF146B8473"
+                   },
+                   {
+                       "path":  "Assets/Sprites/Effects/Waterball/WaterballTrailMask.png",
+                       "guid":  "fab3a6ea383d4f3c9d7dc5e89547762b",
+                       "width":  1774,
+                       "height":  887,
+                       "cornerAlpha":  0,
+                       "centerAlpha":  253,
+                       "sourceCopyHash":  "3B37463616DCA09F5BE726CEC00D422B9906608D3B316E8511386FF45C19EBDD"
+                   }
+               ],
+    "materials":  [
+                      {
+                          "path":  "Assets/Materials/Effects/Waterball/WaterballBody.mat",
+                          "guid":  "7e739667793945cba42f76881b0e49f7",
+                          "textureGuid":  "b7678535727b476e9f933cba6f6ff49a"
+                      },
+                      {
+                          "path":  "Assets/Materials/Effects/Waterball/WaterballTrail.mat",
+                          "guid":  "e098f3dd022f4ce6ab80a9a8e3d3992e",
+                          "textureGuid":  "fab3a6ea383d4f3c9d7dc5e89547762b"
+                      },
+                      {
+                          "path":  "Assets/Materials/Effects/Waterball/WaterballDroplets.mat",
+                          "guid":  "3fe11ff3a6384ae498640a8bda87c4d9",
+                          "textureGuid":  "b7678535727b476e9f933cba6f6ff49a"
+                      }
+                  ],
+    "prefabModified":  false,
+    "gameCodeModified":  false,
+    "unityImportOrPlayVerified":  false,
+    "originalAssetCount":  226,
+    "changedOriginalAssets":  0,
+    "userWaterTrailFound":  false
+}

@@ -1,0 +1,51 @@
+﻿[
+    {
+        "path":  "Assets/Materials/Effects/Waterball.meta",
+        "guid":  "d07c0b0dac044fb48f1f161b634db333",
+        "guidPreserved":  true,
+        "missingFinalNewlineBefore":  true,
+        "finalNewlineAfter":  true
+    },
+    {
+        "path":  "Assets/Sprites/Effects/Waterball.meta",
+        "guid":  "1cb690ed20364622abc5070abd6fd2f7",
+        "guidPreserved":  true,
+        "missingFinalNewlineBefore":  true,
+        "finalNewlineAfter":  true
+    },
+    {
+        "path":  "Assets\\Materials\\Effects\\Waterball\\WaterballBody.mat.meta",
+        "guid":  "7e739667793945cba42f76881b0e49f7",
+        "guidPreserved":  true,
+        "missingFinalNewlineBefore":  true,
+        "finalNewlineAfter":  true
+    },
+    {
+        "path":  "Assets\\Materials\\Effects\\Waterball\\WaterballDroplets.mat.meta",
+        "guid":  "3fe11ff3a6384ae498640a8bda87c4d9",
+        "guidPreserved":  true,
+        "missingFinalNewlineBefore":  true,
+        "finalNewlineAfter":  true
+    },
+    {
+        "path":  "Assets\\Materials\\Effects\\Waterball\\WaterballTrail.mat.meta",
+        "guid":  "e098f3dd022f4ce6ab80a9a8e3d3992e",
+        "guidPreserved":  true,
+        "missingFinalNewlineBefore":  true,
+        "finalNewlineAfter":  true
+    },
+    {
+        "path":  "Assets\\Sprites\\Effects\\Waterball\\WaterballBody.png.meta",
+        "guid":  "b7678535727b476e9f933cba6f6ff49a",
+        "guidPreserved":  true,
+        "missingFinalNewlineBefore":  true,
+        "finalNewlineAfter":  true
+    },
+    {
+        "path":  "Assets\\Sprites\\Effects\\Waterball\\WaterballTrailMask.png.meta",
+        "guid":  "fab3a6ea383d4f3c9d7dc5e89547762b",
+        "guidPreserved":  true,
+        "missingFinalNewlineBefore":  true,
+        "finalNewlineAfter":  true
+    }
+]
