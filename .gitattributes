@@ -199,3 +199,9 @@ LightingData.asset     binary
 # Waterball textures published through the GitHub Git Data API.
 Assets/Sprites/Effects/Waterball/WaterballBody.png -filter -diff -merge -text
 Assets/Sprites/Effects/Waterball/WaterballTrailMask.png -filter -diff -merge -text
+
+# Fire Area assets and animation reference published through the GitHub Git Data API.
+Assets/Sprites/Effects/FireAreaIcon.png -filter -diff -merge -text
+Assets/Sprites/Effects/FireAreaOutline.png -filter -diff -merge -text
+Assets/Sprites/Effects/FireAreaVortexFlipbook.png -filter -diff -merge -text
+"귀여운 불꽃 소용돌이 애니메이션.gif" -filter -diff -merge -text

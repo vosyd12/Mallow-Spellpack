@@ -17,6 +17,9 @@ public class PlayerSkill : MonoBehaviour
     [SerializeField]
     private bool _autoWaterBall = true;
 
+    [SerializeField]
+    private bool _autoFireArea = true;
+
     private Player _player;
 
     private float _waterBallNextUseTime;
@@ -56,14 +59,22 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-        if(!_autoWaterBall ||
-            Time.time < _nextAutoCastCheckTime)
+        if(Time.time < _nextAutoCastCheckTime)
         {
             return;
         }
 
         _nextAutoCastCheckTime = Time.time + AutoCastCheckInterval;
-        TryUseWaterBall();
+        
+        if(_autoWaterBall)
+        {
+            TryUseWaterBall();
+        }
+
+        if (_autoFireArea)
+        {
+            UseFireArea();
+        }
     }
 
     public void UseWaterBall()
