@@ -38,6 +38,7 @@ public class Player : MonoBehaviour
     private Stage _stage;
 
     public event Action Revived;
+    public event Action LeveledUp;
 
     public bool CanAct =>
         !IsDead &&
@@ -298,6 +299,7 @@ public class Player : MonoBehaviour
         _levelExp = (int)(_levelExp * 1.1f);
 
         RefreshPlayerInfo();
+        LeveledUp?.Invoke();
     }
 
     public void Revive(Vector2 spawnPosition)
