@@ -15,6 +15,9 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] 
     private Transform _enemyParent;
 
+    [SerializeField]
+    private Enemy _bossPrefab;
+
     [SerializeField] 
     private int _stageSpawnerEnemyCount;
 
@@ -35,8 +38,9 @@ public class EnemySpawner : MonoBehaviour
     {
         _enemies.RemoveAll(enemy => enemy == null);
 
-        if (_stageController == null ||
-            _stageController.IsRestarting)
+        // 재시작과 보스전 중에는 일반 적을 생성하지 않는다.
+        if (_stageController == null || 
+            !_stageController.CanSpawnNormalEnemies)
         {
             return;
         }
@@ -52,7 +56,6 @@ public class EnemySpawner : MonoBehaviour
         _nextSpawnAttemptTime = Time.time + 0.5f;
         Spawn();
     }
-
 
     private void Spawn()
     {
@@ -215,5 +218,38 @@ public class EnemySpawner : MonoBehaviour
 
         _enemies.Clear();
         _nextSpawnAttemptTime = 0f;
+    }
+
+    public bool TrySpawnBoss(out Enemy boss)
+    {
+        boss = null;
+
+        if (_bossPrefab == null || _player == null ||
+            _stage == null || _stageController == null)
+        {
+            return false;
+        }
+
+        Vector3 playerPosition = _player.transform.position;
+        Vector3 localPlayer = _stage.InverseTransformPoint(playerPosition);
+        Vector2 spawnRange = _stageSize * 0.25f;
+
+        Vector3 spawnPosition = _stage.TransformPoint(new Vector3(
+            localPlayer.x < 0f ? spawnRange.x : -spawnRange.x,
+            localPlayer.y < 0f ? spawnRange.y : -spawnRange.y,
+            0f));
+
+        Vector2 offset = spawnPosition - playerPosition;
+        if (offset.sqrMagnitude < _playerSafeDistance * _playerSafeDistance)
+        {
+            return false;
+        }
+
+        ClearEnemies();
+
+        boss = Instantiate(_bossPrefab, spawnPosition, Quaternion.identity, _enemyParent);
+        boss.Initialize(_player, _stageController);
+        _enemies.Add(boss);
+        return true;
     }
 }

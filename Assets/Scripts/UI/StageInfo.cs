@@ -19,15 +19,15 @@ public class StageInfo : MonoBehaviour
 
     public void SetInfo(
         int stageNumber,
-        float bossProgress)
+        float gaugeRatio,
+        bool showingBossHealth = false)
     {
         _stageNumberText.text = $"STAGE {stageNumber:00}";
 
-        float ratio = Mathf.Clamp01(bossProgress);
-
+        float ratio = Mathf.Clamp01(gaugeRatio);
         _bossFill.fillAmount = ratio;
 
-        // 게이지가 가득 차면 등장 안내 문구를 표시한다.
-        _bossAppearText.gameObject.SetActive(ratio >= 1f);
+        // 처치 게이지가 가득 찼을 때만 등장 안내를 표시한다.
+        _bossAppearText.gameObject.SetActive(!showingBossHealth && ratio >= 1f);
     }
 }

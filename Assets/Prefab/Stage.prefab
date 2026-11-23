@@ -5239,7 +5239,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Stage
   _stageNumber: 1
   _stageScenery: {fileID: 839210466276944040}
+  _stageInfo: {fileID: 0}
   _killsForBoss: 30
+  _player: {fileID: 0}
+  _screenTransition: {fileID: 0}
+  _blackHoldDuration: 0.5
+  _enemySpawner: {fileID: 0}
+  _playerSpawnPoint: {fileID: 0}
+  _bossIntroDuration: 2
+  _bossZoomFactor: 0.65
 --- !u!114 &7994714344565436809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5274,6 +5282,7 @@ MonoBehaviour:
   _player: {fileID: 0}
   _stage: {fileID: 72820300345489171}
   _enemyParent: {fileID: 0}
+  _bossPrefab: {fileID: 6657811535022214718, guid: e150b54637ec4941b5aa1a2abee9dbf4, type: 3}
   _stageSpawnerEnemyCount: 4
   _playerSafeDistance: 1.5
   _stageSize: {x: 6, y: 7.5}

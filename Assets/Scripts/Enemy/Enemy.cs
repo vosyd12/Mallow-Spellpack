@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     public bool CanAct =>
         !IsDead &&
         _stage != null &&
-        !_stage.IsRestarting;
+        _stage.CanFight;
 
     private Rigidbody2D _rd;
 
@@ -33,6 +33,11 @@ public class Enemy : MonoBehaviour
     public bool IsDead { get; private set; }
 
     public event Action Died;
+
+    public float HealthRatio =>
+    _maxHP > 0 ? (float)_enemy.HP / _maxHP : 0f;
+
+    public event Action HealthChanged;
 
     private void Awake()
     {
@@ -99,6 +104,7 @@ public class Enemy : MonoBehaviour
 
         _healthBar.SetHealth(_enemy.HP, _maxHP);
         _hitReaction.Play();
+        HealthChanged?.Invoke();
 
         if (_enemy.HP > 0)
         {
@@ -144,5 +150,10 @@ public class Enemy : MonoBehaviour
     {
         _traceObject = player;
         _stage = stage;
+    }
+
+    public void NotifyDeathMotionFinished()
+    {
+        _stage?.OnBossDeathMotionFinished(this);
     }
 }

@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     public bool CanAct =>
         !IsDead &&
         _stage != null &&
-        !_stage.IsRestarting;
+        _stage.CanFight;
 
     private Vector2 _avoidVelocity;
  

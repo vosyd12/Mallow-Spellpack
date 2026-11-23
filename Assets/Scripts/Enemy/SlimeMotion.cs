@@ -126,7 +126,7 @@ public class SlimeMotion : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(_enemy.IsDead)
+        if (!_enemy.CanAct)
         {
             return;
         }
@@ -330,17 +330,16 @@ public class SlimeMotion : MonoBehaviour
             _groundShadow.SetActive(false);
         }
 
-        if (_deathClip == null)
+        if (_deathClip != null)
         {
-            Destroy(gameObject);
-            yield break;
+            _animator.speed = 1f;
+            _animator.Play(DeathState, 0, 0f);
+
+            yield return new WaitForSeconds(_deathClip.length);
         }
 
-        _animator.speed = 1f;
-        _animator.Play(DeathState, 0, 0f);
-
-        yield return new WaitForSeconds(_deathClip.length);
-
+        // 오브젝트를 제거하기 전에 사망 모션 종료를 전달한다.
+        _enemy.NotifyDeathMotionFinished();
         Destroy(gameObject);
     }
 }
