@@ -205,3 +205,9 @@ Assets/Sprites/Effects/FireAreaIcon.png -filter -diff -merge -text
 Assets/Sprites/Effects/FireAreaOutline.png -filter -diff -merge -text
 Assets/Sprites/Effects/FireAreaVortexFlipbook.png -filter -diff -merge -text
 "귀여운 불꽃 소용돌이 애니메이션.gif" -filter -diff -merge -text
+
+# Card art and boss preview published through the GitHub Git Data API.
+Assets/UI/LevelUpCards/*.png -filter -diff -merge -text
+Assets/Sprites/Characters/Slimes/StyleV3/StageBossSlimeBody.png -filter -diff -merge -text
+Assets/Sprites/Characters/Slimes/StyleV3/StageBossCrownMask.png -filter -diff -merge -text
+"문서/검증자료/StageBoss-Encounter-Preview-v2.gif" -filter -diff -merge -text
