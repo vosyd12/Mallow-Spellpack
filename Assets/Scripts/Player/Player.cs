@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -7,15 +8,6 @@ public class Player : MonoBehaviour
     private EnemySpawner _enemySpawner;
     [SerializeField] 
     private float _moveSpeed = 1f;
-    [SerializeField] 
-    private float _avoidDistance = 2f;  // 유지할 목표 거리
-    [SerializeField] 
-    private float _distanceGain = 2f;  // 거리가 어긋났을 때 보정하는 강도
-    [SerializeField] 
-    private float _orbitSpeed = 2f;    // 적 주위를 도는 속도
-
-    [SerializeField, Min(0f)]
-    private float _avoidStopMargin = 0.3f;
 
     [SerializeField]
     private HitReaction _hitReaction;
@@ -53,8 +45,6 @@ public class Player : MonoBehaviour
         _stage != null &&
         _stage.CanFight;
 
-    private Vector2 _avoidVelocity;
- 
     private PlayerState _player;
     public PlayerState PlayerState => _player;
 
@@ -67,12 +57,11 @@ public class Player : MonoBehaviour
     public Enemy Target => _target;
 
     private float _targetSearchTimer;
-    private bool _isAvoiding;
 
     public bool IsDead { get; private set; }
 
     public bool IsMoving =>
-        !IsDead && _avoidVelocity.sqrMagnitude > 0.0001f;
+        CanAct && _moveVelocity.sqrMagnitude > 0.0001f;
 
     public event Action Damaged; // 살아있는 상태에서 피해를 받을때 알림
     public event Action Died;    // 사망 알림
@@ -80,6 +69,9 @@ public class Player : MonoBehaviour
     private Vector3 _pos;
 
     private int _levelExp = 100;
+
+    private InputAction _moveAction;
+    private Vector2 _moveVelocity;
 
     private void Awake()
     {
@@ -100,19 +92,33 @@ public class Player : MonoBehaviour
 
         _rd = GetComponent<Rigidbody2D>();
 
+        _moveAction = InputSystem.actions?.FindAction("Player/Move");
+
+        if (_moveAction == null)
+        {
+            Debug.LogError("프로젝트 입력 에셋의 Player/Move를 확인하세요.", this);
+        }
+
         _healthBar.SetHealth(_player.HP, _maxHP);
         RefreshPlayerInfo();
     }
 
     private void Update()
     {
-        if(!CanAct)
+        if (!CanAct)
         {
+            // 사망, 재시작, 보스 등장 중에는 이동 입력을 비운다.
+            _moveVelocity = Vector2.zero;
             return;
         }
 
         UpdateTarget();
-        Avoid();
+
+        Vector2 input = _moveAction?.ReadValue<Vector2>() ?? Vector2.zero;
+        float speed = Mathf.Max(0f, _moveSpeed + _player.DEX);
+
+        // 대각선 속도를 제한하면서 스틱을 조금 밀었을 때의 입력 세기는 유지한다.
+        _moveVelocity = Vector2.ClampMagnitude(input, 1f) * speed;
     }
 
     private void FixedUpdate()
@@ -122,9 +128,7 @@ public class Player : MonoBehaviour
             return;
         }
 
-        Vector2 nextPosition =
-            _rd.position + _avoidVelocity * Time.fixedDeltaTime;
-
+        Vector2 nextPosition = _rd.position + _moveVelocity * Time.fixedDeltaTime;
         _rd.MovePosition(nextPosition);
     }
 
@@ -145,77 +149,6 @@ public class Player : MonoBehaviour
 
         _target = _enemySpawner.FindNearestEnemy(_rd.position);
         _targetSearchTimer = 0.2f;
-    }
-
-    private void Avoid()
-    {
-        // 대상이 없을 때 이전 이동이 남지 않도록 초기화한다.
-        _avoidVelocity = Vector2.zero;
-
-        if (_target == null ||
-            !_target.isActiveAndEnabled ||
-            _target.IsDead)
-        {
-            _isAvoiding = false;
-            return;
-        }
-
-        Vector2 toEnemy =
-            (Vector2)_target.transform.position - _rd.position;
-
-        float distance = toEnemy.magnitude;
-
-        if (_isAvoiding)
-        {
-            if(distance >= _avoidDistance + _avoidStopMargin)
-            {
-                _isAvoiding = false;
-                return;
-            }
-        }
-
-        else
-        {
-            // 적과의 목표하는 거리보다 적과의 거리가 멀다면 무시
-            if(distance >= _avoidDistance)
-            {
-                return;
-            }
-
-            _isAvoiding = true;
-        }
-
-        float maxSpeed = 
-            Mathf.Max(0f, _moveSpeed + _player.DEX);
-
-        // 안전거리 이상이면 이동하지 않는다.
-        if (distance >= _avoidDistance)
-        {
-            return;
-        }
-
-        if (distance <= 0.0001f)
-        {
-            _avoidVelocity = Vector2.right * maxSpeed;
-            return;
-        }
-
-        Vector2 forward = toEnemy / distance;
-        Vector2 right = new Vector2(forward.y, -forward.x);
-
-        float distanceError = 
-            distance - _avoidDistance;
-
-        Vector2 correction = 
-            forward * distanceError * _distanceGain;
-
-        Vector2 desiredVelocity = 
-            right * _orbitSpeed + correction;
-
-        _avoidVelocity = 
-            Vector2.ClampMagnitude(
-                desiredVelocity, 
-                maxSpeed);
     }
 
     public void GainExperience(int amount)
@@ -337,24 +270,19 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        // 사망 처리를 이미 시작했는지 검사하는 위치
         if (IsDead)
         {
             return;
         }
 
         IsDead = true;
-
-        _avoidVelocity = Vector2.zero;
-        _isAvoiding = false;
+        _moveVelocity = Vector2.zero;
         _target = null;
 
         _rd.linearVelocity = Vector2.zero;
-        _rd.simulated
-            = false;
+        _rd.simulated = false;
 
         _healthBar.Hide();
-
         Died?.Invoke();
     }
 
@@ -396,13 +324,11 @@ public class Player : MonoBehaviour
         }
 
         _player.HP = _maxHP;
-
-        _avoidVelocity = Vector2.zero;
-        _isAvoiding = false;
+        _moveVelocity = Vector2.zero;
         _target = null;
         _targetSearchTimer = 0f;
 
-        // 사망할 때 꺼둔 물리 상태에서 먼저 위치를 복구한다.
+        // 물리 시뮬레이션을 다시 켜기 전에 위치와 속도를 복구한다.
         _rd.position = spawnPosition;
         _rd.linearVelocity = Vector2.zero;
         _rd.angularVelocity = 0f;
@@ -411,7 +337,6 @@ public class Player : MonoBehaviour
         IsDead = false;
 
         _hitReaction.ResetEffect();
-
         _healthBar.Show();
         _healthBar.SetHealth(_player.HP, _maxHP);
 
