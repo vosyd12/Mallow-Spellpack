@@ -37,6 +37,14 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Stage _stage;
 
+    [SerializeField, Min(0)] private int _statUpgradeCost;
+    [SerializeField, Min(0)] private int _statUpgradeIncrease;
+
+    public int MaxHP => _maxHP;
+    public int MaxMP => _maxMP;
+
+    public event Action ProgressionChanged;
+
     public event Action Revived;
     public event Action LeveledUp;
 
@@ -78,6 +86,7 @@ public class Player : MonoBehaviour
         _player.Name = _playerName;
         _player.Level = 1;
         _player.Exp = 0;
+        _player.Gold = 0;
         _player.HP = _maxHP;
         _player.MP = _maxMP;
         _player.STR = 5;
@@ -219,6 +228,83 @@ public class Player : MonoBehaviour
         _player.Exp += amount;
 
         RefreshPlayerInfo();
+    }
+
+    public void GainGold(int amount)
+    {
+        if (amount <= 0)
+        {
+            return;
+        }
+
+        _player.Gold += amount;
+        ProgressionChanged?.Invoke();
+    }
+
+    public int GetStatUpgradeCost(PlayerStat stat)
+    {
+        return Enum.IsDefined(typeof(PlayerStat), stat) ? _statUpgradeCost : 0;
+    }
+
+    public bool CanUpgradeStat(PlayerStat stat)
+    {
+        int cost = GetStatUpgradeCost(stat);
+        return cost > 0 && _statUpgradeIncrease > 0 && _player.Gold >= cost;
+    }
+
+    public bool TryUpgradeStat(PlayerStat stat)
+    {
+        if (!CanUpgradeStat(stat))
+        {
+            return false;
+        }
+
+        int cost = GetStatUpgradeCost(stat);
+        int increase = _statUpgradeIncrease;
+
+        switch (stat)
+        {
+            case PlayerStat.MaxHP:
+                _maxHP += increase;
+                break;
+            case PlayerStat.MaxMP:
+                _maxMP += increase;
+                break;
+            case PlayerStat.STR:
+                _player.STR += increase;
+                break;
+            case PlayerStat.DEX:
+                _player.DEX += increase;
+                break;
+            case PlayerStat.CON:
+                _player.CON += increase;
+                break;
+            case PlayerStat.INT:
+                _player.INT += increase;
+                break;
+            case PlayerStat.WIS:
+                _player.WIS += increase;
+                break;
+            case PlayerStat.LUK:
+                _player.LUK += increase;
+                break;
+            case PlayerStat.AFF:
+                _player.AFF += increase;
+                break;
+            default:
+                return false;
+        }
+
+        _player.Gold -= cost;
+
+        // 최대 HP가 바뀌면 현재 HP 기준으로 체력바 비율을 다시 계산한다.
+        if (stat == PlayerStat.MaxHP)
+        {
+            _healthBar.SetHealth(_player.HP, _maxHP);
+        }
+
+        ProgressionChanged?.Invoke();
+        return true;
     }
 
     public void TakeDamage(int damage)

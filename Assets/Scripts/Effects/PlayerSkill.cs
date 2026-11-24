@@ -3,6 +3,12 @@ using UnityEngine;
 [RequireComponent(typeof(Player))]
 public class PlayerSkill : MonoBehaviour
 {
+    public enum UpgradeTarget
+    {
+        WaterBall,
+        FireArea
+    }
+
     private const float AutoCastCheckInterval = 0.1f;
 
     [SerializeField]
@@ -51,6 +57,7 @@ public class PlayerSkill : MonoBehaviour
         _fireAreaSkill != null &&
         _fireAreaSkill.isActiveAndEnabled &&
         FireAreaCooldownRemaining <= 0f;
+
 
     private void Awake()
     {
@@ -120,5 +127,26 @@ public class PlayerSkill : MonoBehaviour
 
         _fireAreaNextUseTime =
             Time.time + FireAreaCooldownDuration;
+    }
+
+    // 카드 선택 가능 여부는 스킬의 강화 가능 레벨을 기준으로 판단한다.
+    public bool CanUpgrade(UpgradeTarget target)
+    {
+        return target switch
+        {
+            UpgradeTarget.WaterBall => _waterBall != null && _waterBall.CanLevelUp,
+            UpgradeTarget.FireArea => _fireAreaSkill != null && _fireAreaSkill.CanLevelUp,
+            _ => false
+        };
+    }
+
+    public bool TryUpgrade(UpgradeTarget target)
+    {
+        return target switch
+        {
+            UpgradeTarget.WaterBall => _waterBall != null && _waterBall.TryLevelUp(),
+            UpgradeTarget.FireArea => _fireAreaSkill != null && _fireAreaSkill.TryLevelUp(),
+            _ => false
+        };
     }
 }

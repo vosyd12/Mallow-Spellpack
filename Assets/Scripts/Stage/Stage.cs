@@ -35,7 +35,15 @@ public class Stage : MonoBehaviour
     private float _bossIntroDuration = 1f;
 
     [SerializeField, Range(0.2f, 1f)]
-    private float _bossZoomFactor = 0.65f;
+    private float _bossZoomFactor = 0.5f;
+
+    [SerializeField]
+    private AnimationCurve _bossIntroCurve;
+
+    [SerializeField]
+    private float _bossFightDuration = 15f;
+
+    private float _bossFightEndsAt = -1f;
 
     private bool _isRestarting;
 
@@ -72,6 +80,7 @@ public class Stage : MonoBehaviour
     {
         // 게이지 만충과 플레이어 사망이 겹치면 재시작을 우선한다.
         GameOver();
+        UpdateBossTimer();
 
         if (_killCount >= _killsForBoss && 
             CanSpawnNormalEnemies)
@@ -96,6 +105,8 @@ public class Stage : MonoBehaviour
         RefreshStageInfo();
 
         ClearBullets();
+        _stageInfo?.ShowBossIntro(Mathf.CeilToInt(_bossFightDuration));
+
         StartCoroutine(BossIntroRoutine(camera, boss.transform.position));
     }
 
@@ -114,8 +125,9 @@ public class Stage : MonoBehaviour
                 float progress = 
                     elapsed / _bossIntroDuration;
 
-                float weight = Mathf.SmoothStep(
-                    0f, 1f, Mathf.PingPong(progress * 2f, 1f));
+                float weight = _bossIntroCurve != null && _bossIntroCurve.length > 0
+                    ? Mathf.Clamp01(_bossIntroCurve.Evaluate(progress))
+                    : Mathf.SmoothStep(0f, 1f, Mathf.PingPong(progress * 2f, 1f));
 
                 camera.transform.position =
                     Vector3.Lerp(originalPosition, bossPosition, weight);
@@ -134,6 +146,13 @@ public class Stage : MonoBehaviour
             camera.transform.position = originalPosition;
             camera.orthographicSize = originalSize;
             _isBossIntroPlaying = false;
+
+            // 카메라 복귀 후 숫자 카운트다운과 모래시계를 함께 시작한다.
+            if (CanFight && _activeBoss != null)
+            {
+                _bossFightEndsAt = Time.time + _bossFightDuration;
+                _stageInfo?.StartBossTimerAnimation();
+            }
         }
     }
 
@@ -158,6 +177,8 @@ public class Stage : MonoBehaviour
 
         _stageNumber = stageNumber;
         _activeBoss = null;
+        ResetBossPresentation();
+
         _killCount = 0;
         _bossProgress = 0f;
 
@@ -182,7 +203,7 @@ public class Stage : MonoBehaviour
         bool showingBossHealth = _activeBoss != null;
         float gaugeRatio = showingBossHealth ? _activeBoss.HealthRatio : _bossProgress;
 
-        _stageInfo.SetInfo(_stageNumber, gaugeRatio, showingBossHealth);
+        _stageInfo.SetInfo(_stageNumber, gaugeRatio);
     }
 
     public void GameOver()
@@ -204,6 +225,7 @@ public class Stage : MonoBehaviour
         }
 
         _isRestarting = true;
+        ResetBossPresentation();
         StartCoroutine(RestartRoutine());
     }
 
@@ -291,5 +313,27 @@ public class Stage : MonoBehaviour
 
         ClearBullets();
         CompleteStage();
+    }
+
+
+    private void UpdateBossTimer()
+    {
+        if (_bossFightEndsAt < 0f)
+            return;
+
+        if (!CanFight || _activeBoss == null)
+        {
+            ResetBossPresentation();
+            return;
+        }
+
+        float remaining = Mathf.Max(0f, _bossFightEndsAt - Time.time);
+        _stageInfo?.SetBossTimerSeconds(Mathf.CeilToInt(remaining));
+    }
+
+    private void ResetBossPresentation()
+    {
+        _bossFightEndsAt = -1f;
+        _stageInfo?.HideBossPresentation();
     }
 }

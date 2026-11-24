@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4119530335923162714, guid: 63fcc1cf8f5cdae4dbf2c19dae3fe987, type: 3}
+      propertyPath: _enemy.IsBoss
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7245382254649993918, guid: 63fcc1cf8f5cdae4dbf2c19dae3fe987, type: 3}
       propertyPath: m_Name
       value: StageBossSlime

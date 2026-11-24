@@ -435,7 +435,6 @@ MonoBehaviour:
   _moveSpeed: 3
   _healthBar:
     fileID: 3441239441603555928
-  _maxHP: 50
   _hitReaction:
     fileID: 7400000000000000100
   _enemy:
@@ -448,6 +447,7 @@ MonoBehaviour:
     AttackSpeed: 0
     Element: 0
     Size: 0
+    IsBoss: 0
 --- !u!114 &-4993196219718046879
 MonoBehaviour:
   m_ObjectHideFlags: 0

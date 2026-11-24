@@ -211,3 +211,7 @@ Assets/UI/LevelUpCards/*.png -filter -diff -merge -text
 Assets/Sprites/Characters/Slimes/StyleV3/StageBossSlimeBody.png -filter -diff -merge -text
 Assets/Sprites/Characters/Slimes/StyleV3/StageBossCrownMask.png -filter -diff -merge -text
 "문서/검증자료/StageBoss-Encounter-Preview-v2.gif" -filter -diff -merge -text
+
+# Boss UI textures and preview published through the GitHub Git Data API.
+Assets/UI/TopHUD/BossEncounter/*.png -filter -diff -merge -text
+"문서/검증자료/StageBoss-Encounter-Preview-v4.gif" -filter -diff -merge -text

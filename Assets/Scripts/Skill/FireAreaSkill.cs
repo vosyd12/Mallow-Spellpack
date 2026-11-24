@@ -32,6 +32,10 @@ public class FireAreaSkill : MonoBehaviour
             ? Mathf.Max(0f, _data._coolDown)
             : 0f;
 
+    public bool CanLevelUp => _data?.CanLevelUp ?? false;
+
+    public bool TryLevelUp() => _data?.TryLevelUp() ?? false;
+
     public bool TryCast(Player player)
     {
         if (!isActiveAndEnabled ||

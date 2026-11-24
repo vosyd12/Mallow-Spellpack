@@ -2,10 +2,11 @@ public struct PlayerState
 {
     public string Name;
     public int Level;
-
     public int Exp;
+    public int Gold;
 
     public int HP;
+
     public int MP;
 
     public int STR;    // 힘 - 물리공격에 영향
@@ -22,7 +23,7 @@ public struct PlayerState
 
     public int AFF;    // 애정 - 펫 수용량에 영향
 
-    int MAX;
+    public PlayerStat Stats;
 }
 
 public enum EPlayerJob
@@ -30,4 +31,18 @@ public enum EPlayerJob
     ESward,
     EArcher,
     EWizard
+}
+
+// 스탯창의 각 강화 버튼이 전달하는 대상
+public enum PlayerStat
+{
+    MaxHP,
+    MaxMP,
+    STR,
+    DEX,
+    CON,
+    INT,
+    WIS,
+    LUK,
+    AFF
 }

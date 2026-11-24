@@ -20,6 +20,9 @@ public class LevelUpCardPanel : MonoBehaviour
     [SerializeField] private Button[] _cardButtons;
     [SerializeField] private CanvasGroup _levelUpButtonGroup;
 
+    [SerializeField]
+    private PlayerSkill _playerSkill;
+
     private Animator _animator;
     private PanelState _state;
 
@@ -46,10 +49,12 @@ public class LevelUpCardPanel : MonoBehaviour
 
     private void Open()
     {
-        if (_state != PanelState.Closed)
+        if (_state != PanelState.Closed ||
+            (!CanSelectCard(0) && !CanSelectCard(1)))
         {
             return;
         }
+
 
         _state = PanelState.Opening;
         _levelUpButtonGroup.interactable = false;
@@ -74,7 +79,16 @@ public class LevelUpCardPanel : MonoBehaviour
     public void ConfirmSelection(int cardIndex)
     {
         if (_state != PanelState.Choosing ||
-            cardIndex < 0 || cardIndex >= _cardButtons.Length)
+            cardIndex < 0 || 
+            cardIndex >= _cardButtons.Length)
+        {
+            return;
+        }
+
+        var target = GetUpgradeTarget(cardIndex);
+
+        if (!target.HasValue || 
+            !_playerSkill.TryUpgrade(target.Value))
         {
             return;
         }
@@ -105,9 +119,25 @@ public class LevelUpCardPanel : MonoBehaviour
 
     private void SetCardButtonsInteractable(bool interactable)
     {
-        foreach (Button cardButton in _cardButtons)
+        for (int i = 0; i < _cardButtons.Length; i++)
         {
-            cardButton.interactable = interactable;
+            _cardButtons[i].interactable = interactable && CanSelectCard(i);
         }
+    }
+
+    private PlayerSkill.UpgradeTarget? GetUpgradeTarget(int cardIndex)
+    {
+        return cardIndex switch
+        {
+            0 => PlayerSkill.UpgradeTarget.WaterBall,
+            1 => PlayerSkill.UpgradeTarget.FireArea,
+            _ => null
+        };
+    }
+
+    private bool CanSelectCard(int cardIndex)
+    {
+        var target = GetUpgradeTarget(cardIndex);
+        return target.HasValue && _playerSkill.CanUpgrade(target.Value);
     }
 }

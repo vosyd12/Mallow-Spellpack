@@ -15,6 +15,7 @@ public struct EnemyState
 
     public Element Element;
     public EnemySize Size;
+    public bool IsBoss;
 }
 
 // 적들의 속성

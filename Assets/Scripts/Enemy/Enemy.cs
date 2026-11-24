@@ -3,12 +3,29 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private GameObject _traceObject;
-    [SerializeField] private bool _useDefaultMovement = true;
-    [SerializeField] private float _moveSpeed;
-    [SerializeField] private HealthBar _healthBar;
+    [SerializeField] 
+    private GameObject _traceObject;
 
-    [SerializeField] private int _maxHP;
+    [SerializeField] 
+    private bool _useDefaultMovement = true;
+
+    [SerializeField]
+    private float _moveSpeed;
+
+    [SerializeField]
+    private HealthBar _healthBar;
+
+    [SerializeField]
+    private int _smallMaxHP = 30;
+
+    [SerializeField]
+    private int _mediumMaxHP = 50;
+
+    [SerializeField]
+    private int _largeMaxHP = 100;
+
+    [SerializeField]
+    private int _bossMaxHP = 500;
 
     [SerializeField]
     private HitReaction _hitReaction;
@@ -19,6 +36,8 @@ public class Enemy : MonoBehaviour
 
     public Transform Target => _traceObject != null ? _traceObject.transform : null;
     public float MoveSpeed => _enemy.MoveSpeed;
+
+    private int _maxHP;
 
     private Stage _stage;
     public bool CanAct =>
@@ -41,6 +60,17 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
+        // 보스는 대형 외형을 사용해도 별도의 체력 기준을 적용한다.
+        _maxHP = _enemy.IsBoss
+            ? _bossMaxHP
+            : (_enemy.Size switch
+            {
+                EnemySize.Small => _smallMaxHP,
+                EnemySize.Medium => _mediumMaxHP,
+                EnemySize.Large => _largeMaxHP,
+                _ => _smallMaxHP
+            });
+
         _enemy.HP = _maxHP;
         _enemy.MP = 50;
         _enemy.Attack = 5;
@@ -111,12 +141,6 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        if(_traceObject != null &&
-           _traceObject.TryGetComponent<Player>(out var player))
-        {
-            player.GainExperience(_enemy.Exp);
-        }
-
         Die();
     }
 
@@ -128,6 +152,13 @@ public class Enemy : MonoBehaviour
         }
 
         IsDead = true;
+
+        if (_traceObject != null &&
+            _traceObject.TryGetComponent<Player>(out var player))
+        {
+            player.GainExperience(_enemy.Exp);
+            player.GainGold(_enemy.IsBoss ? 100 : 10);
+        }
 
         _pos = Vector3.zero;
         _rd.linearVelocity = Vector2.zero;

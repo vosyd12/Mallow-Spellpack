@@ -48,4 +48,17 @@ public class SkillData
         return Mathf.RoundToInt(
             baseDamage * GetDamageMultiplier());
     }
+
+    public bool CanLevelUp => Mathf.Max(1, _level) < Mathf.Max(1, _maxLevel);
+
+    public bool TryLevelUp()
+    {
+        if (!CanLevelUp)
+        {
+            return false;
+        }
+
+        _level = Mathf.Max(1, _level) + 1;
+        return true;
+    }
 }
