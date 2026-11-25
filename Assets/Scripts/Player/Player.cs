@@ -21,16 +21,19 @@ public class Player : MonoBehaviour
     private HealthBar _healthBar;
 
     [SerializeField]
-    private string _playerName;
-
-    [SerializeField]
     private PlayerInfo _playerInfo;
 
     [SerializeField]
     private Stage _stage;
 
-    [SerializeField, Min(0)] private int _statUpgradeCost;
-    [SerializeField, Min(0)] private int _statUpgradeIncrease;
+    [SerializeField, Min(0)] 
+    private int _statUpgradeCost;
+
+    [SerializeField, Min(0)] 
+    private int _statUpgradeIncrease;
+
+    [SerializeField]
+    private float _playerMoveSpeed;
 
     public int MaxHP => _maxHP;
     public int MaxMP => _maxMP;
@@ -59,6 +62,7 @@ public class Player : MonoBehaviour
     private float _targetSearchTimer;
 
     public bool IsDead { get; private set; }
+    public bool IsLevelUpCardOpen { get; private set; }
 
     public bool IsMoving =>
         CanAct && _moveVelocity.sqrMagnitude > 0.0001f;
@@ -75,7 +79,6 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        _player.Name = _playerName;
         _player.Level = 1;
         _player.Exp = 0;
         _player.Gold = 0;
@@ -105,10 +108,19 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (!CanAct)
+        if (!CanAct ||
+            IsLevelUpCardOpen)
         {
             // 사망, 재시작, 보스 등장 중에는 이동 입력을 비운다.
             _moveVelocity = Vector2.zero;
+            return;
+        }
+
+        TryLevelUp();
+
+        // LeveledUp 이벤트로 카드가 열렸다면 이번 프레임의 이동 입력을 무시한다.
+        if(IsLevelUpCardOpen)
+        {
             return;
         }
 
@@ -294,7 +306,6 @@ public class Player : MonoBehaviour
         }
 
         _playerInfo.SetInfo(
-            _player.Name,
             _player.Level,
             _player.Exp,
             _levelExp);
@@ -302,7 +313,9 @@ public class Player : MonoBehaviour
 
     public void TryLevelUp()
     {
-        if(_player.Exp < _levelExp)
+        if (!CanAct || 
+            IsLevelUpCardOpen || 
+            _player.Exp < _levelExp)
         {
             return;
         }
@@ -341,5 +354,15 @@ public class Player : MonoBehaviour
         _healthBar.SetHealth(_player.HP, _maxHP);
 
         Revived?.Invoke();
+    }
+
+    public void SetLevelUpCardOpen(bool isOpen)
+    {
+        IsLevelUpCardOpen = isOpen;
+
+        if(isOpen)
+        {
+            _moveVelocity = Vector2.zero;
+        }
     }
 }

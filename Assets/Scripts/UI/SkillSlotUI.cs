@@ -2,7 +2,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
 public class SkillSlotUI : MonoBehaviour
 {
     private enum SlotSkill
@@ -12,45 +11,32 @@ public class SkillSlotUI : MonoBehaviour
         FireArea
     }
 
-    [SerializeField] private PlayerSkill _playerSkill;
-    [SerializeField] private SlotSkill _skill;
+    [SerializeField] 
+    private PlayerSkill _playerSkill;
 
-    [SerializeField] private Image _icon;
-    [SerializeField] private GameObject _emptyState;
-    [SerializeField] private Image _cooldownOverlay;
-    [SerializeField] private TMP_Text _cooldownText;
+    [SerializeField] 
+    private SlotSkill _skill;
 
-    private Button _button;
+    [SerializeField] 
+    private Image _icon;
+    [SerializeField]
+    private Image _cooldownOverlay;
+    [SerializeField] 
+    private TMP_Text _cooldownText;
+
     private int _lastSeconds = -1;
 
-    private void Awake()
-    {
-        _button = GetComponent<Button>();
-    }
 
     private void OnEnable()
     {
-        _button.onClick.AddListener(HandleClick);
-
-        bool isAssigned = _skill != SlotSkill.Empty;
-
-        if (_emptyState != null)
-        {
-            _emptyState.SetActive(!isAssigned);
-        }
-
         if (_icon != null)
         {
+            // 연결된 스킬에 스프라이트가 있을 때 아이콘을 표시한다.
             _icon.gameObject.SetActive(
-                isAssigned && _icon.sprite != null);
+                _skill != SlotSkill.Empty && _icon.sprite != null);
         }
 
         RefreshState();
-    }
-
-    private void OnDisable()
-    {
-        _button.onClick.RemoveListener(HandleClick);
     }
 
     private void Update()
@@ -58,33 +44,10 @@ public class SkillSlotUI : MonoBehaviour
         RefreshState();
     }
 
-    private void HandleClick()
-    {
-        if (_playerSkill == null ||
-            !_playerSkill.isActiveAndEnabled)
-        {
-            return;
-        }
-
-        switch (_skill)
-        {
-            case SlotSkill.WaterBall:
-                _playerSkill.UseWaterBall();
-                break;
-
-            case SlotSkill.FireArea:
-                _playerSkill.UseFireArea();
-                break;
-        }
-
-        RefreshState();
-    }
-
     private void RefreshState()
     {
         float remaining = 0f;
         float duration = 0f;
-        bool canUse = false;
 
         if (_playerSkill != null &&
             _playerSkill.isActiveAndEnabled)
@@ -94,18 +57,14 @@ public class SkillSlotUI : MonoBehaviour
                 case SlotSkill.WaterBall:
                     remaining = _playerSkill.WaterBallCooldownRemaining;
                     duration = _playerSkill.WaterBallCooldownDuration;
-                    canUse = _playerSkill.CanManuallyUseWaterBall;
                     break;
 
                 case SlotSkill.FireArea:
                     remaining = _playerSkill.FireAreaCooldownRemaining;
                     duration = _playerSkill.FireAreaCooldownDuration;
-                    canUse = _playerSkill.CanUseFireArea;
                     break;
             }
         }
-
-        _button.interactable = canUse;
 
         bool isCoolingDown = remaining > 0f;
 

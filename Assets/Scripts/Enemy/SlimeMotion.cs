@@ -171,6 +171,12 @@ public class SlimeMotion : MonoBehaviour
 
             if (moveTime > 0f)
             {
+                // 보스는 실제 이륙 시점에 착지 방향을 한 번 확정한다.
+                if (_enemy.EnemyState.IsBoss && _stateTime <= flightStart)
+                {
+                    SetJumpTrajectory(flightEnd - flightStart, _attackMoveSpeedMultiplier);
+                }
+
                 _rd.MovePosition(
                     _rd.position + _jumpDirection * _jumpSpeed * moveTime);
             }
@@ -188,7 +194,9 @@ public class SlimeMotion : MonoBehaviour
         }
 
         if (_stateTime < _stateDuration)
+        {
             return;
+        }
 
         switch (_state)
         {
@@ -217,20 +225,12 @@ public class SlimeMotion : MonoBehaviour
 
     private void BeginJump(bool attack)
     {
-        Vector2 offset =
-            (Vector2)_enemy.Target.position - _rd.position;
-
-        _jumpDirection = offset.normalized;
-
         float duration = attack
             ? _attackDuration * (AttackImpactTime - AttackTakeoffTime)
             : _jumpDuration;
         float speedMultiplier = attack ? _attackMoveSpeedMultiplier : 1f;
 
-        // 도약 시작 때 방향을 고정하고 당시 타깃 위치를 넘지 않게 한다.
-        _jumpSpeed = Mathf.Min(
-            Mathf.Max(0f, _enemy.MoveSpeed) * speedMultiplier,
-            offset.magnitude / Mathf.Max(0.01f, duration));
+        SetJumpTrajectory(duration, speedMultiplier);
 
         if (attack)
         {
@@ -239,6 +239,17 @@ public class SlimeMotion : MonoBehaviour
         }
 
         ChangeState(attack ? MotionState.Attack : MotionState.Jump);
+    }
+
+    private void SetJumpTrajectory(float duration, float speedMultiplier)
+    {
+        Vector2 offset = (Vector2)_enemy.Target.position - _rd.position;
+        _jumpDirection = offset.normalized;
+
+        // 도약 중 목표 지점을 지나치지 않도록 속도를 제한한다.
+        _jumpSpeed = Mathf.Min(
+            Mathf.Max(0f, _enemy.MoveSpeed) * speedMultiplier,
+            offset.magnitude / Mathf.Max(0.01f, duration));
     }
 
     private void ChangeState(MotionState state)

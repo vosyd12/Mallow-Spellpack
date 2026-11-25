@@ -116,6 +116,15 @@ public class Stage : MonoBehaviour
         float originalSize = camera.orthographicSize;
         bossPosition.z = originalPosition.z;
 
+        bool resumeFollow =
+            camera.TryGetComponent<PlayerCameraFollow>(out var follow) &&
+            follow.enabled;
+
+        if(resumeFollow)
+        {
+            follow.enabled = false;
+        }
+
         try
         {
             float elapsed = 0f;
@@ -152,6 +161,11 @@ public class Stage : MonoBehaviour
             {
                 _bossFightEndsAt = Time.time + _bossFightDuration;
                 _stageInfo?.StartBossTimerAnimation();
+            }
+
+            if(resumeFollow)
+            {
+                follow.enabled = true;
             }
         }
     }
@@ -208,10 +222,18 @@ public class Stage : MonoBehaviour
 
     public void GameOver()
     {
-        // 플레이어가 죽었는지 감지한다.
-        if(_isRestarting ||
-           _player == null || 
-           !_player.IsDead)
+        if(_player == null ||
+            !_player.IsDead)
+        {
+            return;
+        }
+
+        BeginStageRestart();
+    }
+
+    private void BeginStageRestart()
+    {
+        if(_isRestarting)
         {
             return;
         }
@@ -220,10 +242,11 @@ public class Stage : MonoBehaviour
             _enemySpawner == null ||
             _playerSpawnPoint == null)
         {
-            Debug.LogError("스테이지 재시작 참조를 확인해주세요.", this);
+            Debug.LogError("스테이지 재시작에 필요한 참조를 확인하세요.", this);
             return;
         }
 
+        // 화면 전환을 시작하기 전에 전투와 중복 재시작을 막는다.
         _isRestarting = true;
         ResetBossPresentation();
         StartCoroutine(RestartRoutine());
@@ -327,7 +350,15 @@ public class Stage : MonoBehaviour
             return;
         }
 
-        float remaining = Mathf.Max(0f, _bossFightEndsAt - Time.time);
+        float remaining = _bossFightEndsAt - Time.time;
+
+        if(remaining <= 0f)
+        {
+            // 타이머가 만료되면 같은 스테이지의 일반 전투로 돌아간다.
+            BeginStageRestart();
+            return;
+        }
+
         _stageInfo?.SetBossTimerSeconds(Mathf.CeilToInt(remaining));
     }
 

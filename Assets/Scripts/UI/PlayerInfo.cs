@@ -21,12 +21,10 @@ public class PlayerInfo : MonoBehaviour
     private Button _levelUpButton;
 
     public void SetInfo(
-        string name,
         int level,
         int exp,
         int levelExp)
     {
-        _nameText.text = name;
         _levelText.text = $"Lv. {level}";
 
         float ratio = levelExp > 0
@@ -37,8 +35,10 @@ public class PlayerInfo : MonoBehaviour
 
         _expFill.fillAmount = ratio;
 
-        // 충분한 경험치가 있을 때만 클릭할 수 있다.
-        _levelUpButton.interactable =
-            levelExp > 0 && exp >= levelExp;
+        // 레벨업 버튼이 있는 씬에서만 클릭 가능 상태를 갱신한다.
+        if (_levelUpButton != null)
+        {
+            _levelUpButton.interactable = levelExp > 0 && exp >= levelExp;
+        }
     }
 }

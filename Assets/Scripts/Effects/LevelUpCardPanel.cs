@@ -15,16 +15,21 @@ public class LevelUpCardPanel : MonoBehaviour
     private static readonly int ConfirmTrigger = Animator.StringToHash("Confirm");
     private static readonly int SelectedCard = Animator.StringToHash("SelectedCard");
 
-    [SerializeField] private Player _player;
-    [SerializeField] private GameObject _cardRoot;
-    [SerializeField] private Button[] _cardButtons;
-    [SerializeField] private CanvasGroup _levelUpButtonGroup;
+    [SerializeField] 
+    private Player _player;
+
+    [SerializeField] 
+    private GameObject _cardRoot;
+
+    [SerializeField] 
+    private Button[] _cardButtons;
 
     [SerializeField]
     private PlayerSkill _playerSkill;
 
     private Animator _animator;
     private PanelState _state;
+    private float _timeScaleBeforeCard;
 
     private void Awake()
     {
@@ -55,9 +60,12 @@ public class LevelUpCardPanel : MonoBehaviour
             return;
         }
 
-
+        // 현재 시간 배율을 저장하고 카드 선택 중 전투를 멈춘다.
+        _timeScaleBeforeCard = Time.timeScale;
         _state = PanelState.Opening;
-        _levelUpButtonGroup.interactable = false;
+        _player.SetLevelUpCardOpen(true);
+        Time.timeScale = 0f;
+
         SetCardButtonsInteractable(false);
         _cardRoot.SetActive(true);
         _animator.SetTrigger(OpenTrigger);
@@ -111,10 +119,14 @@ public class LevelUpCardPanel : MonoBehaviour
     private void Close()
     {
         _state = PanelState.Closed;
+
+        // 카드를 열기 전 배율로 복원하고 다음 레벨업을 허용한다.
+        Time.timeScale = _timeScaleBeforeCard;
+        _player.SetLevelUpCardOpen(false);
+
         _animator.ResetTrigger(OpenTrigger);
         _animator.ResetTrigger(ConfirmTrigger);
         _cardRoot.SetActive(false);
-        _levelUpButtonGroup.interactable = true;
     }
 
     private void SetCardButtonsInteractable(bool interactable)
