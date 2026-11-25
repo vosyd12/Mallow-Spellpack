@@ -82,6 +82,19 @@ public class Stage : MonoBehaviour
         GameOver();
         UpdateBossTimer();
 
+        if(!CanFight)
+        {
+            return;
+        }
+
+        // 마지막 적 처지로 레벨업과 보스 조건이 겹치면 카드를 먼저 연다.
+        _player.TryLevelUp();
+
+        if(_player.IsLevelUpCardOpen)
+        {
+            return;
+        }
+
         if (_killCount >= _killsForBoss && 
             CanSpawnNormalEnemies)
         {

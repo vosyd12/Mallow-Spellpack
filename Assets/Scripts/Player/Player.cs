@@ -60,6 +60,7 @@ public class Player : MonoBehaviour
     public Enemy Target => _target;
 
     private float _targetSearchTimer;
+    private PlayerSkill _playerSKill;
 
     public bool IsDead { get; private set; }
     public bool IsLevelUpCardOpen { get; private set; }
@@ -76,6 +77,7 @@ public class Player : MonoBehaviour
 
     private InputAction _moveAction;
     private Vector2 _moveVelocity;
+    private float _shieldExpiresAt;
 
     private void Awake()
     {
@@ -94,6 +96,7 @@ public class Player : MonoBehaviour
         _job = EPlayerJob.EWizard;
 
         _rd = GetComponent<Rigidbody2D>();
+        _playerSKill = GetComponent<PlayerSkill>();
 
         _moveAction = InputSystem.actions?.FindAction("Player/Move");
 
@@ -113,14 +116,6 @@ public class Player : MonoBehaviour
         {
             // 사망, 재시작, 보스 등장 중에는 이동 입력을 비운다.
             _moveVelocity = Vector2.zero;
-            return;
-        }
-
-        TryLevelUp();
-
-        // LeveledUp 이벤트로 카드가 열렸다면 이번 프레임의 이동 입력을 무시한다.
-        if(IsLevelUpCardOpen)
-        {
             return;
         }
 
@@ -261,14 +256,17 @@ public class Player : MonoBehaviour
             return;
         }
 
-        print($"플레이어가 {damage}만큼 공격당했습니다");
+        // 보호막이 유효하면 이번 피해를 막고 즉시 소모한다.
+        if (Time.time < _shieldExpiresAt)
+        {
+            _shieldExpiresAt = 0f;
+            return;
+        }
 
         _player.HP = Mathf.Max(0, _player.HP - damage);
 
         _healthBar.SetHealth(_player.HP, _maxHP);
         _hitReaction.Play();
-
-        print($"플레이어의 남은 HP {_player.HP} / {_maxHP}");
 
         // HP가 소진됐는지 검사하는 위치
         if (_player.HP <= 0)
@@ -320,9 +318,15 @@ public class Player : MonoBehaviour
             return;
         }
 
+        // 선택할 강화가 없으면 경험치와 레벨을 보존한다.
+        if(_playerSKill == null ||
+            !_playerSKill.HasAvailableUpgrade)
+        {
+            return;
+        }
+
         _player.Exp -= _levelExp;
         _player.Level++;
-
         _levelExp = (int)(_levelExp * 1.1f);
 
         RefreshPlayerInfo();
@@ -364,5 +368,19 @@ public class Player : MonoBehaviour
         {
             _moveVelocity = Vector2.zero;
         }
+    }
+
+    public bool TryGrantShield(float duration)
+    {
+        if (!CanAct ||
+            IsLevelUpCardOpen ||
+            duration <= 0f ||
+            Time.time < _shieldExpiresAt)
+        {
+            return false;
+        }
+
+        _shieldExpiresAt = Time.time + duration;
+        return true;
     }
 }

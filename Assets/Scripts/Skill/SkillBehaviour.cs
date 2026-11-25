@@ -1,16 +1,7 @@
 using UnityEngine;
 
-public class SkillBehaviour : MonoBehaviour
+public abstract class SkillBehaviour : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract SkillData Data { get; }
+    public abstract bool TryCast(Player player, EnemySpawner enemySpawner);
 }

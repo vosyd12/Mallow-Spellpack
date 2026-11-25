@@ -10,7 +10,8 @@ public class SkillData
         Projectile,
         Area,
         Chain,
-        Orbit
+        Orbit,
+        Shield
     }
 
     public string _skillId;

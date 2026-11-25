@@ -55,10 +55,12 @@ public class LevelUpCardPanel : MonoBehaviour
     private void Open()
     {
         if (_state != PanelState.Closed ||
-            (!CanSelectCard(0) && !CanSelectCard(1)))
+            _playerSkill == null ||
+            !_playerSkill.HasAvailableUpgrade)
         {
             return;
         }
+
 
         // 현재 시간 배율을 저장하고 카드 선택 중 전투를 멈춘다.
         _timeScaleBeforeCard = Time.timeScale;

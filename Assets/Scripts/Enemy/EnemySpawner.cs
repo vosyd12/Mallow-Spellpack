@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -33,6 +34,9 @@ public class EnemySpawner : MonoBehaviour
     private float _edgePadding = 0.3f;
     private readonly List<Enemy> _enemies = new List<Enemy>();
     private float _nextSpawnAttemptTime;
+
+    public IReadOnlyList<Enemy> SpawnedEnemies =>
+        _enemies;
 
     private void Update()
     {

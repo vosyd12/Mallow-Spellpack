@@ -84,6 +84,9 @@ public class SlimeMotion : MonoBehaviour
     private float _attackCooldownRemaining;
     private bool _attackDustSpawned;
 
+    private Vector2 _knockbackVelocity;
+    private float _knockbackTimeRemaining;
+
     private static readonly int DeathState =
         Animator.StringToHash("Base Layer.Death");
 
@@ -113,6 +116,8 @@ public class SlimeMotion : MonoBehaviour
 
     private void OnDisable()
     {
+        _knockbackTimeRemaining = 0f;
+
         if(_enemy != null)
         {
             _enemy.Died -= PlayDeath;
@@ -138,16 +143,22 @@ public class SlimeMotion : MonoBehaviour
         if (_enemy.Target == null)
         {
             if (_state != MotionState.Idle)
+            {
                 ChangeState(MotionState.Idle);
+            }
 
+            MoveWithKnockback(Vector2.zero);
             return;
         }
 
         if (_state == MotionState.Idle)
         {
             ChangeState(MotionState.Prepare);
+            MoveWithKnockback(Vector2.zero);
             return;
         }
+
+        Vector2 movement = Vector2.zero;
 
         if (_state == MotionState.Jump)
         {
@@ -155,13 +166,11 @@ public class SlimeMotion : MonoBehaviour
                 Time.fixedDeltaTime,
                 Mathf.Max(0f, _stateDuration - _stateTime));
 
-            _rd.MovePosition(
-                _rd.position +
-                _jumpDirection * _jumpSpeed * moveTime);
+            movement = _jumpDirection * _jumpSpeed * moveTime;
         }
         else if (_state == MotionState.Attack)
         {
-            // 압축·착지 반동 중에는 멈추고, 공중 구간에서만 전진한다.
+            // 압축과 착지 반동 사이의 공중 구간에서 전진한다.
             float flightStart = _stateDuration * AttackTakeoffTime;
             float flightEnd = _stateDuration * AttackImpactTime;
             float moveTime = Mathf.Max(
@@ -171,17 +180,19 @@ public class SlimeMotion : MonoBehaviour
 
             if (moveTime > 0f)
             {
-                // 보스는 실제 이륙 시점에 착지 방향을 한 번 확정한다.
+                // 보스는 실제 이륙 시점에 착지 방향을 확정한다.
                 if (_enemy.EnemyState.IsBoss && _stateTime <= flightStart)
                 {
-                    SetJumpTrajectory(flightEnd - flightStart, _attackMoveSpeedMultiplier);
+                    SetJumpTrajectory(
+                        flightEnd - flightStart, _attackMoveSpeedMultiplier);
                 }
 
-                _rd.MovePosition(
-                    _rd.position + _jumpDirection * _jumpSpeed * moveTime);
+                movement = _jumpDirection * _jumpSpeed * moveTime;
             }
         }
 
+        // 도약 이동과 넉백을 합쳐 물리 프레임당 한 번 이동한다.
+        MoveWithKnockback(movement);
         _stateTime += Time.fixedDeltaTime;
 
         if (_state == MotionState.Attack && !_attackDustSpawned &&
@@ -201,8 +212,7 @@ public class SlimeMotion : MonoBehaviour
         switch (_state)
         {
             case MotionState.Prepare:
-                Vector2 offset =
-                    (Vector2)_enemy.Target.position - _rd.position;
+                Vector2 offset = (Vector2)_enemy.Target.position - _rd.position;
                 bool attack = _attackCooldownRemaining <= 0f &&
                     offset.sqrMagnitude <= _attackRange * _attackRange;
                 BeginJump(attack);
@@ -214,9 +224,6 @@ public class SlimeMotion : MonoBehaviour
                 break;
 
             case MotionState.Land:
-                ChangeState(MotionState.Prepare);
-                break;
-
             case MotionState.Attack:
                 ChangeState(MotionState.Prepare);
                 break;
@@ -352,5 +359,30 @@ public class SlimeMotion : MonoBehaviour
         // 오브젝트를 제거하기 전에 사망 모션 종료를 전달한다.
         _enemy.NotifyDeathMotionFinished();
         Destroy(gameObject);
+    }
+
+    public bool TryKnockback(Vector2 direction, float speed, float duration)
+    {
+        if (!isActiveAndEnabled || !_enemy.CanAct || speed <= 0f || duration <= 0f)
+        {
+            return false;
+        }
+
+        _knockbackVelocity = direction * speed;
+        _knockbackTimeRemaining = duration;
+        return true;
+    }
+
+    private void MoveWithKnockback(Vector2 movement)
+    {
+        float stepTime = Mathf.Min(_knockbackTimeRemaining, Time.fixedDeltaTime);
+        _knockbackTimeRemaining -= stepTime;
+
+        // 기존 도약 이동과 넉백을 합쳐 물리 프레임당 한 번 이동한다.
+        Vector2 displacement = movement + _knockbackVelocity * stepTime;
+        if (displacement.sqrMagnitude > 0f)
+        {
+            _rd.MovePosition(_rd.position + displacement);
+        }
     }
 }

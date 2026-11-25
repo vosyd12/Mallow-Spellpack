@@ -58,6 +58,10 @@ public class PlayerSkill : MonoBehaviour
         _fireAreaSkill.isActiveAndEnabled &&
         FireAreaCooldownRemaining <= 0f;
 
+    public bool HasAvailableUpgrade =>
+        CanUpgrade(UpgradeTarget.WaterBall) ||
+        CanUpgrade(UpgradeTarget.FireArea);
+
 
     private void Awake()
     {
