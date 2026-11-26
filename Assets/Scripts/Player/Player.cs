@@ -4,6 +4,15 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    private const float ShieldExpireEffectDuration = 0.33f;
+    private static readonly int ShieldExpireTrigger = Animator.StringToHash("Expire");
+
+    [SerializeField]
+    private Animator _shieldEffectPrefab;
+
+    [SerializeField]
+    private GameObject _shieldBlockEffectPrefab;
+
     [SerializeField] 
     private EnemySpawner _enemySpawner;
     [SerializeField] 
@@ -78,6 +87,7 @@ public class Player : MonoBehaviour
     private InputAction _moveAction;
     private Vector2 _moveVelocity;
     private float _shieldExpiresAt;
+    private Animator _shieldEffect;
 
     private void Awake()
     {
@@ -111,6 +121,8 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        UpdateShieldEffect();
+
         if (!CanAct ||
             IsLevelUpCardOpen)
         {
@@ -259,7 +271,12 @@ public class Player : MonoBehaviour
         // 보호막이 유효하면 이번 피해를 막고 즉시 소모한다.
         if (Time.time < _shieldExpiresAt)
         {
-            _shieldExpiresAt = 0f;
+            ClearShield();
+            if (_shieldBlockEffectPrefab != null)
+            {
+                Instantiate(_shieldBlockEffectPrefab, transform.position, Quaternion.identity);
+            }
+
             return;
         }
 
@@ -286,6 +303,7 @@ public class Player : MonoBehaviour
         }
 
         IsDead = true;
+        ClearShield();
         _moveVelocity = Vector2.zero;
         _target = null;
 
@@ -380,7 +398,46 @@ public class Player : MonoBehaviour
             return false;
         }
 
+        UpdateShieldEffect();
         _shieldExpiresAt = Time.time + duration;
+        if (_shieldEffectPrefab != null)
+        {
+            _shieldEffect = Instantiate(_shieldEffectPrefab, transform.position, Quaternion.identity);
+            _shieldEffect.transform.SetParent(transform, true);
+        }
+
         return true;
+    }
+
+    private void UpdateShieldEffect()
+    {
+        if (_shieldExpiresAt <= 0f || Time.time < _shieldExpiresAt)
+        {
+            return;
+        }
+
+        _shieldExpiresAt = 0f;
+        if (_shieldEffect != null)
+        {
+            _shieldEffect.SetTrigger(ShieldExpireTrigger);
+            Destroy(_shieldEffect.gameObject, ShieldExpireEffectDuration);
+            _shieldEffect = null;
+        }
+    }
+
+    private void ClearShield()
+    {
+        _shieldExpiresAt = 0f;
+        if (_shieldEffect != null)
+        {
+            _shieldEffect.gameObject.SetActive(false);
+            Destroy(_shieldEffect.gameObject);
+            _shieldEffect = null;
+        }
+    }
+
+    private void OnDisable()
+    {
+        ClearShield();
     }
 }

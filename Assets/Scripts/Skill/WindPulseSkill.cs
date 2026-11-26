@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class WindPulseSkill : SkillBehaviour
 {
+    private const float EffectPrefabRadius = 2f;
+
+    [SerializeField]
+    private GameObject _pulsePrefab;
+
     [SerializeField, Min(0.1f)]
     private float _radius = 2f;
 
@@ -69,6 +74,12 @@ public class WindPulseSkill : SkillBehaviour
             {
                 pushedAnyEnemy = true;
             }
+        }
+
+        if (pushedAnyEnemy && _pulsePrefab != null)
+        {
+            GameObject pulse = Instantiate(_pulsePrefab, origin, Quaternion.identity);
+            pulse.transform.localScale *= radius / EffectPrefabRadius;
         }
 
         return pushedAnyEnemy;

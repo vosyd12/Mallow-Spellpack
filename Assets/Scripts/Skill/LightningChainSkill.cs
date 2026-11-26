@@ -1,8 +1,17 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LightningChainSkill : SkillBehaviour
 {
+    private const float ChainEffectInterval = 0.055f;
+
+    [SerializeField]
+    private GameObject _arcPrefab;
+
+    [SerializeField]
+    private GameObject _impactPrefab;
+
     [SerializeField, Min(0.1f)]
     private float _castRange = 6f;
 
@@ -48,6 +57,8 @@ public class LightningChainSkill : SkillBehaviour
 
         Vector2 origin = player.transform.position;
         float range = _castRange;
+        bool playEffects = _arcPrefab != null || _impactPrefab != null;
+        List<(Vector2 From, Vector2 To)> effectLinks = null;
 
         for (int i = 0; i < _maxTargets; i++)
         {
@@ -60,14 +71,53 @@ public class LightningChainSkill : SkillBehaviour
             _hitEnemies.Add(target);
 
             // 대상이 이번 공격으로 죽어도 타격 위치에서 다음 연쇄를 시작한다.
-            origin = target.transform.position;
+            Vector2 hitPosition = target.transform.position;
+            if (playEffects)
+            {
+                effectLinks ??= new List<(Vector2, Vector2)>(_maxTargets);
+                effectLinks.Add((origin, hitPosition));
+            }
+
+            origin = hitPosition;
             range = _chainRange;
 
             target.TakeDamage(damage);
         }
 
         // 첫 대상이 없으면 쿨다운을 시작할 필요가 없다.
+        if (effectLinks != null)
+        {
+            StartCoroutine(PlayChainEffects(effectLinks));
+        }
+
         return _hitEnemies.Count > 0;
+    }
+
+    private IEnumerator PlayChainEffects(List<(Vector2 From, Vector2 To)> links)
+    {
+        for (int i = 0; i < links.Count; i++)
+        {
+            if (i > 0)
+            {
+                yield return new WaitForSeconds(ChainEffectInterval);
+            }
+
+            var (from, to) = links[i];
+            Vector2 direction = to - from;
+            if (_arcPrefab != null && direction.sqrMagnitude > 0.0001f)
+            {
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                GameObject arc = Instantiate(_arcPrefab, from, Quaternion.Euler(0f, 0f, angle));
+                Vector3 scale = arc.transform.localScale;
+                scale.x *= direction.magnitude;
+                arc.transform.localScale = scale;
+            }
+
+            if (_impactPrefab != null)
+            {
+                Instantiate(_impactPrefab, to, Quaternion.identity);
+            }
+        }
     }
 
     private Enemy FindNextTarget(

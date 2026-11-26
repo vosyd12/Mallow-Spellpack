@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WaterBall : MonoBehaviour
+public class WaterBall : SkillBehaviour
 {
     [SerializeField]
     private Bullet _bulletPrefab;
@@ -21,22 +21,14 @@ public class WaterBall : MonoBehaviour
         _coolDown = 3f
     };
 
-    public float Cooldown =>
-        _data != null
-            ? Mathf.Max(0f, _data._coolDown)
-            : 0f;
+    public override SkillData Data => _data;
 
-    public bool CanLevelUp => 
-        _data?.CanLevelUp ?? false;
-
-    public bool TryLevelUp() => 
-        _data?.TryLevelUp() ?? false;
-
-    public bool TryCast(Player player, Enemy target)
+    public override bool TryCast(Player player, EnemySpawner enemySpawner)
     {
         if (!isActiveAndEnabled ||
             player == null ||
             !player.CanAct ||
+            enemySpawner == null ||
             _bulletPrefab == null ||
             _firePos == null ||
             _data == null)
@@ -44,9 +36,9 @@ public class WaterBall : MonoBehaviour
             return false;
         }
 
-        if (target == null ||
-            !target.isActiveAndEnabled ||
-            target.IsDead)
+        // 기존 자동 발동과 동일하게 가장 가까운 적을 찾는다.
+        Enemy target = enemySpawner.FindNearestEnemy(player.transform.position);
+        if (target == null)
         {
             return false;
         }

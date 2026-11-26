@@ -1,67 +1,28 @@
+
+using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Player))]
 public class PlayerSkill : MonoBehaviour
 {
-    public enum UpgradeTarget
-    {
-        WaterBall,
-        FireArea
-    }
-
     private const float AutoCastCheckInterval = 0.1f;
 
-    [SerializeField]
-    private WaterBall _waterBall;
+    // 카드에 등장할 수 있는 스킬을 Inspector에서 등록한다.
+    [SerializeField] 
+    private SkillBehaviour[] _skills = Array.Empty<SkillBehaviour>();
 
-    [SerializeField]
-    private FireAreaSkill _fireAreaSkill;
-
-    [SerializeField]
+    [SerializeField] 
     private EnemySpawner _enemySpawner;
 
-    [SerializeField]
-    private bool _autoWaterBall = true;
-
-    [SerializeField]
-    private bool _autoFireArea = true;
-
     private Player _player;
-
-    private float _waterBallNextUseTime;
-    private float _fireAreaNextUseTime;
     private float _nextAutoCastCheckTime;
 
-    public float WaterBallCooldownDuration { get; private set; }
-    public float FireAreaCooldownDuration { get; private set; }
+    private readonly List<SkillBehaviour> _learnedSkills = new();
 
-    public float WaterBallCooldownRemaining =>
-        Mathf.Max(0f, _waterBallNextUseTime - Time.time);
-
-    public float FireAreaCooldownRemaining =>
-        Mathf.Max(0f, _fireAreaNextUseTime - Time.time);
-
-    public bool CanUseWaterBall =>
-        _player != null &&
-        _player.CanAct &&
-        _waterBall != null &&
-        _waterBall.isActiveAndEnabled &&
-        WaterBallCooldownRemaining <= 0f;
-
-    public bool CanManuallyUseWaterBall =>
-        !_autoWaterBall && CanUseWaterBall;
-
-    public bool CanUseFireArea =>
-        _player != null &&
-        _player.CanAct &&
-        _fireAreaSkill != null &&
-        _fireAreaSkill.isActiveAndEnabled &&
-        FireAreaCooldownRemaining <= 0f;
-
+    // Player.TryLevelUp()이 사용한다. 첫 획득이 가능한 카드도 포함한다.
     public bool HasAvailableUpgrade =>
-        CanUpgrade(UpgradeTarget.WaterBall) ||
-        CanUpgrade(UpgradeTarget.FireArea);
-
+        Array.Exists(_skills, CanOfferCard);
 
     private void Awake()
     {
@@ -70,87 +31,72 @@ public class PlayerSkill : MonoBehaviour
 
     private void Update()
     {
-        if(Time.time < _nextAutoCastCheckTime)
+        if (!_player.CanAct ||
+            _player.IsLevelUpCardOpen ||
+            Time.time < _nextAutoCastCheckTime)
         {
             return;
         }
 
         _nextAutoCastCheckTime = Time.time + AutoCastCheckInterval;
-        
-        if(_autoWaterBall)
-        {
-            TryUseWaterBall();
-        }
 
-        if (_autoFireArea)
+        foreach (SkillBehaviour skill in _skills)
         {
-            UseFireArea();
-        }
-    }
-
-    public void UseWaterBall()
-    {
-        if(!_autoWaterBall)
-        {
-            TryUseWaterBall();
+            if (skill != null)
+            {
+                // 획득 여부와 쿨타임은 각 스킬이 확인한다.
+                skill.TryAutoCast(_player, _enemySpawner);
+            }
         }
     }
 
-    private void TryUseWaterBall()
+    public void GetCardCandidates(List<SkillBehaviour> candidates)
     {
-        if (!isActiveAndEnabled || !CanUseWaterBall || _enemySpawner == null)
+        candidates.Clear();
+
+        foreach (SkillBehaviour skill in _skills)
         {
-            return;
+            if (CanOfferCard(skill))
+            {
+                candidates.Add(skill);
+            }
         }
-
-        Enemy target = _enemySpawner.FindNearestEnemy(_player.transform.position);
-
-        if (target == null || !_waterBall.TryCast(_player, target))
-        {
-            return;
-        }
-
-        WaterBallCooldownDuration = Mathf.Max(0f, _waterBall.Cooldown);
-        _waterBallNextUseTime = Time.time + WaterBallCooldownDuration;
     }
 
-    public void UseFireArea()
+    private static bool CanOfferCard(SkillBehaviour skill)
     {
-        if (!CanUseFireArea)
-        {
-            return;
-        }
-
-        if (!_fireAreaSkill.TryCast(_player))
-        {
-            return;
-        }
-
-        FireAreaCooldownDuration =
-            Mathf.Max(0f, _fireAreaSkill.Cooldown);
-
-        _fireAreaNextUseTime =
-            Time.time + FireAreaCooldownDuration;
+        return skill != null && skill.isActiveAndEnabled && skill.CanChooseCard;
     }
 
-    // 카드 선택 가능 여부는 스킬의 강화 가능 레벨을 기준으로 판단한다.
-    public bool CanUpgrade(UpgradeTarget target)
+    public SkillBehaviour GetLearnedSkill(int slotIndex)
     {
-        return target switch
-        {
-            UpgradeTarget.WaterBall => _waterBall != null && _waterBall.CanLevelUp,
-            UpgradeTarget.FireArea => _fireAreaSkill != null && _fireAreaSkill.CanLevelUp,
-            _ => false
-        };
+        return slotIndex >= 0 && slotIndex < _learnedSkills.Count
+            ? _learnedSkills[slotIndex]
+            : null;
     }
 
-    public bool TryUpgrade(UpgradeTarget target)
+    public bool TryChooseSkill(SkillBehaviour skill)
     {
-        return target switch
+        if (!_player.IsLevelUpCardOpen ||
+            !CanOfferCard(skill) ||
+            Array.IndexOf(_skills, skill) < 0)
         {
-            UpgradeTarget.WaterBall => _waterBall != null && _waterBall.TryLevelUp(),
-            UpgradeTarget.FireArea => _fireAreaSkill != null && _fireAreaSkill.TryLevelUp(),
-            _ => false
-        };
+            return false;
+        }
+
+        bool isFirstChoice = !skill.IsLearned;
+
+        if (!skill.TryChooseCard())
+        {
+            return false;
+        }
+
+        // 강화한 스킬은 기존 슬롯에 유지한다.
+        if (isFirstChoice)
+        {
+            _learnedSkills.Add(skill);
+        }
+
+        return true;
     }
 }

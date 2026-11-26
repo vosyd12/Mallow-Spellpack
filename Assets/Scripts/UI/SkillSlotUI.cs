@@ -4,18 +4,11 @@ using UnityEngine.UI;
 
 public class SkillSlotUI : MonoBehaviour
 {
-    private enum SlotSkill
-    {
-        Empty,
-        WaterBall,
-        FireArea
-    }
-
     [SerializeField] 
     private PlayerSkill _playerSkill;
 
-    [SerializeField] 
-    private SlotSkill _skill;
+    [SerializeField, Min(0)]
+    private int _slotIndex;
 
     [SerializeField] 
     private Image _icon;
@@ -29,13 +22,6 @@ public class SkillSlotUI : MonoBehaviour
 
     private void OnEnable()
     {
-        if (_icon != null)
-        {
-            // 연결된 스킬에 스프라이트가 있을 때 아이콘을 표시한다.
-            _icon.gameObject.SetActive(
-                _skill != SlotSkill.Empty && _icon.sprite != null);
-        }
-
         RefreshState();
     }
 
@@ -46,44 +32,37 @@ public class SkillSlotUI : MonoBehaviour
 
     private void RefreshState()
     {
-        float remaining = 0f;
-        float duration = 0f;
+        SkillBehaviour skill = _playerSkill != null ?
+            _playerSkill.GetLearnedSkill(_slotIndex) : null;
 
-        if (_playerSkill != null &&
-            _playerSkill.isActiveAndEnabled)
+        // 아직 획득하지 않은 슬롯은 아이콘과 쿨타임을 숨긴다.
+        Sprite icon = skill != null ? skill.Data._iconSprite : null;
+        float remaining = skill != null ? skill.CooldownRemaining : 0f;
+        float duration = skill != null ? skill.CooldownDuration : 0f;
+        bool isCoolingDown = remaining > 0f && duration > 0f;
+
+        if (_icon != null)
         {
-            switch (_skill)
-            {
-                case SlotSkill.WaterBall:
-                    remaining = _playerSkill.WaterBallCooldownRemaining;
-                    duration = _playerSkill.WaterBallCooldownDuration;
-                    break;
-
-                case SlotSkill.FireArea:
-                    remaining = _playerSkill.FireAreaCooldownRemaining;
-                    duration = _playerSkill.FireAreaCooldownDuration;
-                    break;
-            }
+            _icon.sprite = icon;
+            _icon.enabled = icon != null;
         }
-
-        bool isCoolingDown = remaining > 0f;
 
         if (_cooldownOverlay != null)
         {
-            _cooldownOverlay.gameObject.SetActive(isCoolingDown);
-
-            _cooldownOverlay.fillAmount = duration > 0f
+            _cooldownOverlay.enabled = isCoolingDown;
+            _cooldownOverlay.fillAmount = isCoolingDown
                 ? Mathf.Clamp01(remaining / duration)
                 : 0f;
+            _cooldownOverlay.gameObject.SetActive(isCoolingDown);
         }
 
         if (_cooldownText != null)
         {
+            _cooldownText.enabled = isCoolingDown;
             _cooldownText.gameObject.SetActive(isCoolingDown);
 
             int seconds = Mathf.CeilToInt(remaining);
-
-            if (seconds != _lastSeconds)
+            if (isCoolingDown && seconds != _lastSeconds)
             {
                 _lastSeconds = seconds;
                 _cooldownText.text = seconds.ToString();

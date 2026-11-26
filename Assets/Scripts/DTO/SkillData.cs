@@ -33,6 +33,8 @@ public class SkillData
     [Min(0f)]
     public float _coolDown;
 
+    public Sprite _iconSprite;
+
     public float GetDamageMultiplier()
     {
         int maxLevel = Mathf.Max(1, _maxLevel);

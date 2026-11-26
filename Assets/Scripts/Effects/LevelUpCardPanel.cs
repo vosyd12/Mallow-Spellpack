@@ -1,5 +1,7 @@
-using UnityEngine.UI;
+using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelUpCardPanel : MonoBehaviour
 {
@@ -26,6 +28,13 @@ public class LevelUpCardPanel : MonoBehaviour
 
     [SerializeField]
     private PlayerSkill _playerSkill;
+
+    [SerializeField]
+    private TMP_Text[] _cardLabels = new TMP_Text[3];
+
+    [SerializeField]
+    private Image[] _cardIcons = new Image[3];
+    private readonly List<SkillBehaviour> _cardChoices = new();
 
     private Animator _animator;
     private PanelState _state;
@@ -56,7 +65,7 @@ public class LevelUpCardPanel : MonoBehaviour
     {
         if (_state != PanelState.Closed ||
             _playerSkill == null ||
-            !_playerSkill.HasAvailableUpgrade)
+            !PrepareCards())
         {
             return;
         }
@@ -89,16 +98,9 @@ public class LevelUpCardPanel : MonoBehaviour
     public void ConfirmSelection(int cardIndex)
     {
         if (_state != PanelState.Choosing ||
-            cardIndex < 0 || 
-            cardIndex >= _cardButtons.Length)
-        {
-            return;
-        }
-
-        var target = GetUpgradeTarget(cardIndex);
-
-        if (!target.HasValue || 
-            !_playerSkill.TryUpgrade(target.Value))
+            cardIndex < 0 ||
+            cardIndex >= _cardChoices.Count ||
+            !_playerSkill.TryChooseSkill(_cardChoices[cardIndex]))
         {
             return;
         }
@@ -135,23 +137,53 @@ public class LevelUpCardPanel : MonoBehaviour
     {
         for (int i = 0; i < _cardButtons.Length; i++)
         {
-            _cardButtons[i].interactable = interactable && CanSelectCard(i);
+            _cardButtons[i].interactable = interactable && i < _cardChoices.Count;
         }
     }
 
-    private PlayerSkill.UpgradeTarget? GetUpgradeTarget(int cardIndex)
+    private bool PrepareCards()
     {
-        return cardIndex switch
-        {
-            0 => PlayerSkill.UpgradeTarget.WaterBall,
-            1 => PlayerSkill.UpgradeTarget.FireArea,
-            _ => null
-        };
-    }
+        _playerSkill.GetCardCandidates(_cardChoices);
 
-    private bool CanSelectCard(int cardIndex)
-    {
-        var target = GetUpgradeTarget(cardIndex);
-        return target.HasValue && _playerSkill.CanUpgrade(target.Value);
+        int count = Mathf.Min(_cardChoices.Count, _cardButtons.Length);
+
+        // 이번 레벨업에 표시할 카드를 중복 없이 뽑는다.
+        for (int i = 0; i < count; i++)
+        {
+            int randomIndex = Random.Range(i, _cardChoices.Count);
+            (_cardChoices[i], _cardChoices[randomIndex]) =
+                (_cardChoices[randomIndex], _cardChoices[i]);
+        }
+
+        _cardChoices.RemoveRange(count, _cardChoices.Count - count);
+
+        for (int i = 0; i < _cardButtons.Length; i++)
+        {
+            bool hasChoice = i < count;
+            _cardButtons[i].gameObject.SetActive(hasChoice);
+
+            SkillBehaviour skill = hasChoice ? _cardChoices[i] : null;
+
+            // 카드가 열리기 전에 슬롯마다 뽑힌 스킬의 이미지를 넣는다.
+            if (i < _cardIcons.Length && _cardIcons[i] != null)
+            {
+                Image icon = _cardIcons[i];
+                icon.sprite = skill != null ? skill.Data._iconSprite : null;
+                icon.enabled = icon.sprite != null;
+            }
+
+            if (skill == null || i >= _cardLabels.Length || _cardLabels[i] == null)
+            {
+                continue;
+            }
+
+            string action = skill.IsLearned
+                ? $"강화 · Lv. {skill.Data._level + 1}"
+                : "획득 · Lv. 1";
+
+            _cardLabels[i].text = $"{skill.Data._skillId}\n{action}";
+        }
+
+        return count > 0;
     }
 }

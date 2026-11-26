@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FireAreaSkill : MonoBehaviour
+public class FireAreaSkill : SkillBehaviour
 {
     [SerializeField]
     private FireArea _areaPrefab;
@@ -27,16 +27,9 @@ public class FireAreaSkill : MonoBehaviour
         _coolDown = 5f
     };
 
-    public float Cooldown =>
-        _data != null
-            ? Mathf.Max(0f, _data._coolDown)
-            : 0f;
+    public override SkillData Data => _data;
 
-    public bool CanLevelUp => _data?.CanLevelUp ?? false;
-
-    public bool TryLevelUp() => _data?.TryLevelUp() ?? false;
-
-    public bool TryCast(Player player)
+    public override bool TryCast(Player player, EnemySpawner enemySpawner)
     {
         if (!isActiveAndEnabled ||
             player == null ||

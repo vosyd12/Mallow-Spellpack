@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PureTrailMark : MonoBehaviour
 {
+    [SerializeField] private GameObject _impactPrefab;
     [SerializeField, Min(0.1f)] private float _radius = 0.5f;
     [SerializeField, Min(0.1f)] private float _lifetime = 2f;
     [SerializeField] private LayerMask _enemyLayers = ~0;
@@ -57,6 +58,11 @@ public class PureTrailMark : MonoBehaviour
         foreach (Enemy enemy in _targets)
         {
             enemy.TakeDamage(_damage);
+        }
+
+        if (_impactPrefab != null)
+        {
+            Instantiate(_impactPrefab, transform.position, Quaternion.identity);
         }
 
         Destroy(gameObject);
