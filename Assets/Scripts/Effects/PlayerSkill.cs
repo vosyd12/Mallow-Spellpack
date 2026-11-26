@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerSkill : MonoBehaviour
 {
     private const float AutoCastCheckInterval = 0.1f;
+    private const int MaxLearnedSkills = 5;
 
     // 카드에 등장할 수 있는 스킬을 Inspector에서 등록한다.
     [SerializeField] 
@@ -63,9 +64,12 @@ public class PlayerSkill : MonoBehaviour
         }
     }
 
-    private static bool CanOfferCard(SkillBehaviour skill)
+    private bool CanOfferCard(SkillBehaviour skill)
     {
-        return skill != null && skill.isActiveAndEnabled && skill.CanChooseCard;
+        // 슬롯이 가득 차면 보유 스킬의 강화 카드만 허용한다.
+        return skill != null &&
+               skill.CanChooseCard &&
+               (skill.IsLearned || _learnedSkills.Count < MaxLearnedSkills);
     }
 
     public SkillBehaviour GetLearnedSkill(int slotIndex)
